@@ -14,7 +14,7 @@ const categories = [
                     { extensionCategory: "Gloves" }, 
                     { extensionCategory: "Kitchen Cleaners" },
                     { extensionCategory: "Mops, Buckets & Brooms" },
-                    { extensionCategory: "Mould & Moisture Treatments" },
+                    { extensionCategory: "Mould & Moisture Treatments" }, 
                     { extensionCategory: "Multipurpose Cleaners" },
                     { extensionCategory: "Sponges, Cloths & Wipes" },
                     { extensionCategory: "Window & Glass Cleaners" }, 
