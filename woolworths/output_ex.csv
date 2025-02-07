@@ -243,8 +243,8 @@ Pantry,129
 Pantry,13
 Pantry,303
 Pantry,65
-Pantry,0
-Pantry,0
+Pantry,23
+Pantry,35
 Pantry,99
 Pantry,175
 Pantry,72
@@ -276,7 +276,7 @@ Pantry,150
 Pantry,191
 Pantry,256
 Pantry,91
-Pantry,0
+Pantry,152
 Pantry,71
 Pantry,126
 Pantry,636
@@ -294,16 +294,16 @@ Pantry,28
 Pantry,16
 Pantry,129
 Pantry,54
-Pantry,0
-Pantry,0
-Pantry,0
-Pantry,0
-Pantry,0
-Pantry,0
+Pantry,152
+Pantry,179
+Pantry,64
+Pantry,151
+Pantry,80
+Pantry,189
 Pantry,274
 Pantry,138
-Pantry,0
-Pantry,0
+Pantry,256
+Pantry,37
 Pantry,37
 Pantry,200
 Pantry,200
@@ -328,8 +328,8 @@ Fruit & Veg,23
 Fruit & Veg,10
 Fruit & Veg,14
 Fruit & Veg,10
-Fruit & Veg,0
-Fruit & Veg,0
+Fruit & Veg,14
+Fruit & Veg,26
 Fruit & Veg,8
 Fruit & Veg,52
 Fruit & Veg,85
@@ -400,22 +400,23 @@ Fruit & Veg,41
 "Poultry, Meat & Seafood",5
 "Poultry, Meat & Seafood",14
 "Poultry, Meat & Seafood",2
-"Poultry, Meat & Seafood",0
-"Poultry, Meat & Seafood",0
-"Poultry, Meat & Seafood",0
-"Poultry, Meat & Seafood",0
-"Poultry, Meat & Seafood",0
+"Poultry, Meat & Seafood",11
+"Poultry, Meat & Seafood",32
+"Poultry, Meat & Seafood",6
+"Poultry, Meat & Seafood",9
+"Poultry, Meat & Seafood",18
+"Poultry, Meat & Seafood",8
 "Poultry, Meat & Seafood",7
 "Poultry, Meat & Seafood",0
 "Poultry, Meat & Seafood",10
 Freezer,231
 Freezer,13
-Freezer,0
+Freezer,68
+Freezer,28
 Freezer,164
 Freezer,44
 Freezer,18
-Freezer,0
-Freezer,0
+Freezer,3
 Freezer,65
 Freezer,9
 Freezer,43
@@ -458,7 +459,7 @@ Bakery,35
 Bakery,19
 Bakery,75
 Bakery,33
-Bakery,0
+Bakery,41
 Bakery,30
 Bakery,6
 Bakery,6
@@ -529,7 +530,7 @@ Drinks,0
 Drinks,0
 Drinks,0
 Drinks,0
-Deli & Chilled Meats,0
+Deli & Chilled Meats,50
 Deli & Chilled Meats,264
 Deli & Chilled Meats,180
 Deli & Chilled Meats,53

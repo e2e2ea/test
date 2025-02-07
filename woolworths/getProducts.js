@@ -14,27 +14,6 @@ const csvWriter = createArrayCsvWriter({
   header: ['Category', 'SubCategory', 'Extension', 'Products'],
 });
 
-const categoriesId = [
-  { id: '22770', name: 'Snacks & Confectionery', url: '/shop/browse/snacks-confectionery', location: '/shop/browse/snacks-confectionery' },
-  { id: '22060', name: 'Bakery', url: '/shop/browse/bakery', location: '/shop/browse/bakery' },
-  { id: '22351', name: 'Fruit & Veg', url: '/shop/browse/fruit-veg', location: '/shop/browse/fruit-veg' },
-  { id: '22713', name: 'Poultry, Meat & Seafood', url: '/shop/browse/poultry-meat-seafood', location: '/shop/browse/poultry-meat-seafood' },
-  { id: '24023', name: 'Deli & Chilled Meals', url: '/shop/browse/deli-chilled-meals', location: '/shop/browse/deli-chilled-meals' },
-  { id: '22089', name: 'Dairy, Eggs & Fridge', url: '/shop/browse/dairy-eggs-fridge', location: '/shop/browse/dairy-eggs-fridge' },
-  { id: '22770', name: 'Pantry', url: '/shop/browse/pantry', location: '/shop/browse/pantry' },
-  { id: '22280', name: 'Freezer', url: '/shop/browse/freezer', location: '/shop/browse/freezer' },
-  { id: '22164', name: 'Drinks', url: '/shop/browse/drinks', location: '/shop/browse/drinks' },
-  { id: '22394', name: 'Health & Wellness', url: '/shop/browse/health-wellness', location: '/shop/browse/health-wellness' },
-  { id: '22394', name: 'Beauty & Personal Care', url: '/shop/browse/beauty-personal-care', location: '/shop/browse/beauty-personal-care' },
-  { id: '22015', name: 'Baby', url: '/shop/browse/baby', location: '/shop/browse/baby' },
-  { id: '22459', name: 'Home & Lifestyle', url: '/shop/browse/home-lifestyle', location: '/shop/browse/home-lifestyle' },
-  { id: '22459', name: 'Cleaning & Maintenance', url: '/shop/browse/cleaning-maintenance', location: '/shop/browse/cleaning-maintenance' },
-  { id: '22916', name: 'Pet', url: '/shop/browse/pet', location: '/shop/browse/pet' },
-
-  { id: '', name: 'Back to School', url: '/shop/browse/pet', location: '/shop/browse/pet' },
-  { id: '', name: 'Beer, Wine & Spirits', url: '/shop/browse/pet', location: '/shop/browse/pet' },
-  { id: '22459', name: 'Electronics', url: '/shop/browse/pet', location: '/shop/browse/pet' },
-];
 const getData = async () => {
   // console.log('start clean');
   // await cleanUpPrices();
@@ -45,13 +24,8 @@ const getData = async () => {
   let data = [];
   for (const categ of categories) {
     const category = categ.category;
-    let categId = '';
-    const matchedCategory = categoriesId.find((cat) => cat.name === category);
-    if (matchedCategory) {
-      categId = matchedCategory.id;
-    } else {
-      console.warn(`Category "${category}" not found in categoriesId`);
-    }
+    let categId = categ.id;
+    
 
     for (const sub of categ.subCategories) {
       const subCategory = sub.subCategory;
