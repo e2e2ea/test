@@ -115,248 +115,240 @@ const scraper = async () => {
                   // Baby category
                   if (category === 'Baby') {
                     if (sub.subCategory === 'Baby Accessories') {
-                      if (ext.extensionCategory === 'a') url = `https://www.coles.com.au/browse/baby/nappies-nappy-pants`;
-                      if (ext.extensionCategory === 'b') url = `https://www.coles.com.au/browse/baby/baby-wipes`;
-                      if (ext.extensionCategory === 'c') url = `https://www.coles.com.au/browse/baby/baby-formula`;
-                      if (ext.extensionCategory === 'd') url = `https://www.coles.com.au/browse/baby/baby-feeding`;
-                      if (ext.extensionCategory === 'e') url = `https://www.coles.com.au/browse/baby/baby-accessories`;
-                      if (ext.extensionCategory === 'f') url = `https://www.coles.com.au/browse/baby/baby-toddler-food`;
-                      if (ext.extensionCategory === 'g') url = `https://www.coles.com.au/browse/baby/baby-meal-time`;
-                      if (ext.extensionCategory === 'h') url = `https://www.coles.com.au/browse/baby/bottles-feeding`;
-                      if (ext.extensionCategory === 'i') url = `https://www.coles.com.au/browse/baby/bath-skincare`;
-                      if (ext.extensionCategory === 'j') url = `https://www.coles.com.au/browse/baby/dummies-teething`;
-                      if (ext.extensionCategory === 'k') url = `https://www.coles.com.au/browse/baby/baby-clothing`;
-                      if (ext.extensionCategory === 'l') url = `https://www.coles.com.au/browse/baby/postpartum-care`;
+                      if (ext.extensionCategory === 'a') url = ``;
+                      if (ext.extensionCategory === 'b') url = ``;
+                      if (ext.extensionCategory === 'c') url = ``;
+                      if (ext.extensionCategory === 'd') url = ``;
+                      if (ext.extensionCategory === 'e') url = ``;
+                      if (ext.extensionCategory === 'f') url = ``;
+                      if (ext.extensionCategory === 'g') url = ``;
+                      if (ext.extensionCategory === 'h') url = ``;
+                      if (ext.extensionCategory === 'i') url = ``;
+                      if (ext.extensionCategory === 'j') url = ``;
+                      if (ext.extensionCategory === 'k') url = ``;
+                      if (ext.extensionCategory === 'l') url = ``;
                     }
                   }
                   // bakery category
                   if (category === 'Bakery') {
                     if (sub.subCategory === 'In-Store Bakery') {
-                      if (ext.extensionCategory === 'a') url = `https://www.coles.com.au/browse/bakery/chilled-cakes-desserts`;
-                      if (ext.extensionCategory === 'b') url = `https://www.coles.com.au/browse/bakery/easter-bakery`;
-                      if (ext.extensionCategory === 'c') url = `https://www.coles.com.au/browse/bakery/gluten-free-range`;
-                      if (ext.extensionCategory === 'd') url = `https://www.coles.com.au/browse/bakery/instore-bakery-breads-and-rolls`;
-                      if (ext.extensionCategory === 'e') url = `https://www.coles.com.au/browse/bakery/instore-bakery-sweet-treats`;
-                      if (ext.extensionCategory === 'f') url = `https://www.coles.com.au/browse/bakery/packaged-bread-rolls-and-buns`;
-                      if (ext.extensionCategory === 'g') url = `https://www.coles.com.au/browse/bakery/packaged-breads`;
-                      if (ext.extensionCategory === 'h') url = `https://www.coles.com.au/browse/bakery/packaged-breakfast-snacks`;
-                      if (ext.extensionCategory === 'i') url = `https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats`;
-                      if (ext.extensionCategory === 'j') url = `https://www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases`;
-                      if (ext.extensionCategory === 'k') url = `https://www.coles.com.au/browse/bakery/vegan-range`;
+                      if (ext.extensionCategory === 'a') url = ``;
+                      if (ext.extensionCategory === 'b') url = ``;
+                      if (ext.extensionCategory === 'c') url = ``;
+                      if (ext.extensionCategory === 'd') url = ``;
+                      if (ext.extensionCategory === 'e') url = ``;
+                      if (ext.extensionCategory === 'f') url = ``;
+                      if (ext.extensionCategory === 'g') url = ``;
+                      if (ext.extensionCategory === 'h') url = ``;
+                      if (ext.extensionCategory === 'i') url = ``;
+                      if (ext.extensionCategory === 'j') url = ``;
+                      if (ext.extensionCategory === 'k') url = ``;
                     }
                   }
                   // category Dairy, Eggs & Fridge
                   if (category === 'Dairy, Eggs & Fridge') {
                     if (sub.subCategory === 'Cheese') {
-                      if (ext.extensionCategory === `a`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/butter-margarine`;
-                      if (ext.extensionCategory === `b`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/cheese`;
-                      if (ext.extensionCategory === `c`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/cream-custard`;
-                      if (ext.extensionCategory === `d`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/dairy-desserts`;
-                      if (ext.extensionCategory === `e`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/dairy-world-foods`;
-                      if (ext.extensionCategory === `f`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/dips-pate`;
-                      if (ext.extensionCategory === `g`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/eggs`;
-                      if (ext.extensionCategory === `h`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/fresh-pasta-sauces`;
-                      if (ext.extensionCategory === `i`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/garlic-bread-pastry-sheets`;
-                      if (ext.extensionCategory === `j`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/long-life-milk`;
-                      if (ext.extensionCategory === `k`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/milk`;
-                      if (ext.extensionCategory === `l`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/packaged-deli-meats`;
-                      if (ext.extensionCategory === `m`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/ready-to-eat-meals`;
-                      if (ext.extensionCategory === `n`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/vegetarian-vegan`;
-                      if (ext.extensionCategory === `o`) url = `https://www.coles.com.au/browse/dairy-eggs-fridge/yoghurt`;
+                      if (ext.extensionCategory === `a`) url = ``;
+                      if (ext.extensionCategory === `b`) url = ``;
+                      if (ext.extensionCategory === `c`) url = ``;
+                      if (ext.extensionCategory === `d`) url = ``;
+                      if (ext.extensionCategory === `e`) url = ``;
+                      if (ext.extensionCategory === `f`) url = ``;
+                      if (ext.extensionCategory === `g`) url = ``;
+                      if (ext.extensionCategory === `h`) url = ``;
+                      if (ext.extensionCategory === `i`) url = ``;
+                      if (ext.extensionCategory === `j`) url = ``;
+                      if (ext.extensionCategory === `k`) url = ``;
+                      if (ext.extensionCategory === `l`) url = ``;
+                      if (ext.extensionCategory === `m`) url = ``;
+                      if (ext.extensionCategory === `n`) url = ``;
+                      if (ext.extensionCategory === `o`) url = ``;
                     }
                   }
                   // category Deli & Chilled Meats
                   if (category === 'Deli & Chilled Meats') {
                     if (sub.subCategory === 'Deli Meats') {
-                      if (ext.extensionCategory === 'a') url = `https://www.coles.com.au/browse/deli/deli-meats`;
-                      if (ext.extensionCategory === 'b') url = `https://www.coles.com.au/browse/deli/deli-packaged-meat`;
-                      if (ext.extensionCategory === 'c') url = `https://www.coles.com.au/browse/deli/deli-poultry`;
-                      if (ext.extensionCategory === 'd') url = `https://www.coles.com.au/browse/deli/deli-seafood`;
-                      if (ext.extensionCategory === 'e') url = `https://www.coles.com.au/browse/deli/entertaining`;
-                      if (ext.extensionCategory === 'f') url = `https://www.coles.com.au/browse/deli/gourmet-cheese`;
-                      if (ext.extensionCategory === 'g') url = `https://www.coles.com.au/browse/deli/pre-made-platters`;
-                      if (ext.extensionCategory === 'h') url = `https://www.coles.com.au/browse/deli/ready-to-eat`;
+                      if (ext.extensionCategory === 'a') url = ``;
+                      if (ext.extensionCategory === 'b') url = ``;
+                      if (ext.extensionCategory === 'c') url = ``;
+                      if (ext.extensionCategory === 'd') url = ``;
+                      if (ext.extensionCategory === 'e') url = ``;
+                      if (ext.extensionCategory === 'f') url = ``;
+                      if (ext.extensionCategory === 'g') url = ``;
+                      if (ext.extensionCategory === 'h') url = ``;
                     }
                   }
                   if (category === 'Drinks') {
                     if (sub.subCategory === 'Chilled Drinks') {
-                      if (ext.extensionCategory === 'a') url = `https://www.coles.com.au/browse/drinks/coffee-drinks`;
-                      if (ext.extensionCategory === 'b') url = `https://www.coles.com.au/browse/drinks/cold-drinks`;
-                      if (ext.extensionCategory === 'c') url = `https://www.coles.com.au/browse/drinks/cordials`;
-                      if (ext.extensionCategory === 'd') url = `https://www.coles.com.au/browse/drinks/energy-drinks`;
-                      if (ext.extensionCategory === 'e') url = `https://www.coles.com.au/browse/drinks/flavoured-milk`;
-                      if (ext.extensionCategory === 'f') url = `https://www.coles.com.au/browse/drinks/iced-tea`;
-                      if (ext.extensionCategory === 'g') url = `https://www.coles.com.au/browse/drinks/juice`;
-                      if (ext.extensionCategory === 'h') url = `https://www.coles.com.au/browse/drinks/long-life-milk`;
-                      if (ext.extensionCategory === 'i') url = `https://www.coles.com.au/browse/drinks/non-alcoholic`;
-                      if (ext.extensionCategory === 'j') url = `https://www.coles.com.au/browse/drinks/soft-drinks`;
-                      if (ext.extensionCategory === 'k') url = `https://www.coles.com.au/browse/drinks/sports-drinks`;
-                      if (ext.extensionCategory === 'l') url = `https://www.coles.com.au/browse/drinks/tea-drinks`;
-                      if (ext.extensionCategory === 'm') url = `https://www.coles.com.au/browse/drinks/water`;
+                      if (ext.extensionCategory === 'a') url = ``;
+                      if (ext.extensionCategory === 'b') url = ``;
+                      if (ext.extensionCategory === 'c') url = ``;
+                      if (ext.extensionCategory === 'd') url = ``;
+                      if (ext.extensionCategory === 'e') url = ``;
+                      if (ext.extensionCategory === 'f') url = ``;
+                      if (ext.extensionCategory === 'g') url = ``;
+                      if (ext.extensionCategory === 'h') url = ``;
+                      if (ext.extensionCategory === 'i') url = ``;
+                      if (ext.extensionCategory === 'j') url = ``;
+                      if (ext.extensionCategory === 'k') url = ``;
+                      if (ext.extensionCategory === 'l') url = ``;
+                      if (ext.extensionCategory === 'm') url = ``;
                     }
                   }
                   // category Freezer
                   if (category === 'Freezer') {
                     if (sub.subCategory === 'Chips & Wedges') {
-                      if (ext.extensionCategory === 'a') url = `https://www.coles.com.au/browse/frozen/ice-cream`;
-                      if (ext.extensionCategory === 'b') url = `https://www.coles.com.au/browse/frozen/frozen-baby-toddler-meals`;
-                      if (ext.extensionCategory === 'c') url = `https://www.coles.com.au/browse/frozen/frozen-chicken-beef-pork`;
-                      if (ext.extensionCategory === 'd') url = `https://www.coles.com.au/browse/frozen/frozen-chips-wedges`;
-                      if (ext.extensionCategory === 'e') url = `https://www.coles.com.au/browse/frozen/frozen-desserts`;
-                      if (ext.extensionCategory === 'f') url = `https://www.coles.com.au/browse/frozen/frozen-fish-seafood`;
-                      if (ext.extensionCategory === 'g') url = `https://www.coles.com.au/browse/frozen/frozen-fruit`;
-                      if (ext.extensionCategory === 'h') url = `https://www.coles.com.au/browse/frozen/frozen-gluten-free`;
-                      if (ext.extensionCategory === 'i') url = `https://www.coles.com.au/browse/frozen/frozen-meals`;
-                      if (ext.extensionCategory === 'j') url = `https://www.coles.com.au/browse/frozen/frozen-pastry-party-food`;
-                      if (ext.extensionCategory === 'k') url = `https://www.coles.com.au/browse/frozen/frozen-pizza-bases`;
-                      if (ext.extensionCategory === 'l') url = `https://www.coles.com.au/browse/frozen/frozen-vegan-vegetarian`;
-                      if (ext.extensionCategory === 'm') url = `https://www.coles.com.au/browse/frozen/frozen-vegetables`;
-                      if (ext.extensionCategory === 'n') url = `https://www.coles.com.au/browse/frozen/frozen-world-food`;
+                      if (ext.extensionCategory === 'a') url = ``;
+                      if (ext.extensionCategory === 'b') url = ``;
+                      if (ext.extensionCategory === 'c') url = ``;
+                      if (ext.extensionCategory === 'd') url = ``;
+                      if (ext.extensionCategory === 'e') url = ``;
+                      if (ext.extensionCategory === 'f') url = ``;
+                      if (ext.extensionCategory === 'g') url = ``;
+                      if (ext.extensionCategory === 'h') url = ``;
+                      if (ext.extensionCategory === 'i') url = ``;
+                      if (ext.extensionCategory === 'j') url = ``;
+                      if (ext.extensionCategory === 'k') url = ``;
+                      if (ext.extensionCategory === 'l') url = ``;
+                      if (ext.extensionCategory === 'm') url = ``;
+                      if (ext.extensionCategory === 'n') url = ``;
                     }
                   }
                   // category Fruit & Veg
                   if (category === 'Fruit & Veg') {
                     if (sub.subCategory === 'Organic') {
-                      if (ext.extensionCategory === 'a') url = `https://www.coles.com.au/browse/fruit-vegetables/fruit`;
-                      if (ext.extensionCategory === 'b') url = `https://www.coles.com.au/browse/fruit-vegetables/vegetables`;
-                      if (ext.extensionCategory === 'c') url = `https://www.coles.com.au/browse/fruit-vegetables/nuts-dried-fruit`;
-                      if (ext.extensionCategory === 'd') url = `https://www.coles.com.au/browse/fruit-vegetables/organic-fruits-vegetables`;
-                      if (ext.extensionCategory === 'e') url = `https://www.coles.com.au/browse/fruit-vegetables/packaged-salad`;
-                      if (ext.extensionCategory === 'f') url = `https://www.coles.com.au/browse/fruit-vegetables/prepared-vegetable`;
-                      if (ext.extensionCategory === 'g') url = `https://www.coles.com.au/browse/fruit-vegetables/salad-herbs`;
-                      if (ext.extensionCategory === 'h') url = `https://www.coles.com.au/browse/fruit-vegetables/scoop-weigh`;
+                      if (ext.extensionCategory === 'a') url = ``;
+                      if (ext.extensionCategory === 'b') url = ``;
+                      if (ext.extensionCategory === 'c') url = ``;
+                      if (ext.extensionCategory === 'd') url = ``;
+                      if (ext.extensionCategory === 'e') url = ``;
+                      if (ext.extensionCategory === 'f') url = ``;
+                      if (ext.extensionCategory === 'g') url = ``;
+                      if (ext.extensionCategory === 'h') url = ``;
                     }
                   }
                   // category Health & Beauty
                   if (category === 'Health & Beauty') {
                     if (sub.subCategory === 'Cosmetics') {
-                      if (ext.extensionCategory === 'a') url = `https://www.coles.com.au/browse/health-beauty/continence-care`;
-                      if (ext.extensionCategory === 'b') url = `https://www.coles.com.au/browse/health-beauty/cosmetics`;
-                      if (ext.extensionCategory === 'c') url = `https://www.coles.com.au/browse/health-beauty/dental-care`;
-                      if (ext.extensionCategory === 'd') url = `https://www.coles.com.au/browse/health-beauty/first-aid-medicinal`;
-                      if (ext.extensionCategory === 'e') url = `https://www.coles.com.au/browse/health-beauty/hair-care`;
-                      if (ext.extensionCategory === 'f') url = `https://www.coles.com.au/browse/health-beauty/period-care`;
-                      if (ext.extensionCategory === 'g') url = `https://www.coles.com.au/browse/health-beauty/personal-care`;
-                      if (ext.extensionCategory === 'h') url = `https://www.coles.com.au/browse/health-beauty/shaving-hair-removal`;
-                      if (ext.extensionCategory === 'i') url = `https://www.coles.com.au/browse/health-beauty/shower-bath-care`;
-                      if (ext.extensionCategory === 'j') url = `https://www.coles.com.au/browse/health-beauty/skin-care`;
-                      if (ext.extensionCategory === 'k') url = `https://www.coles.com.au/browse/health-beauty/sun-protection`;
-                      if (ext.extensionCategory === 'l') url = `https://www.coles.com.au/browse/health-beauty/travel-packs-and-minis`;
-                      if (ext.extensionCategory === 'm') url = `https://www.coles.com.au/browse/health-beauty/vitamins-supplements`;
+                      if (ext.extensionCategory === 'a') url = ``;
+                      if (ext.extensionCategory === 'b') url = ``;
+                      if (ext.extensionCategory === 'c') url = ``;
+                      if (ext.extensionCategory === 'd') url = ``;
+                      if (ext.extensionCategory === 'e') url = ``;
+                      if (ext.extensionCategory === 'f') url = ``;
+                      if (ext.extensionCategory === 'g') url = ``;
+                      if (ext.extensionCategory === 'h') url = ``;
+                      if (ext.extensionCategory === 'i') url = ``;
+                      if (ext.extensionCategory === 'j') url = ``;
+                      if (ext.extensionCategory === 'k') url = ``;
+                      if (ext.extensionCategory === 'l') url = ``;
+                      if (ext.extensionCategory === 'm') url = ``;
                     }
                   }
                   // category Household
                   if (category === 'Household') {
                     if (sub.subCategory === 'Homewares') {
-                      if (ext.extensionCategory === 'a') url = `https://www.coles.com.au/browse/household/air-fresheners-home-fragrance`;
-                      if (ext.extensionCategory === 'b') url = `https://www.coles.com.au/browse/household/charity-donations`;
-                      if (ext.extensionCategory === 'c') url = `https://www.coles.com.au/browse/household/cleaning-goods`;
-                      if (ext.extensionCategory === 'd') url = `https://www.coles.com.au/browse/household/clothing-accessories`;
-                      if (ext.extensionCategory === 'e') url = `https://www.coles.com.au/browse/household/craft-toys-games`;
-                      if (ext.extensionCategory === 'f') url = `https://www.coles.com.au/browse/household/dishwashing`;
-                      if (ext.extensionCategory === 'g') url = `https://www.coles.com.au/browse/household/diy-car`;
-                      if (ext.extensionCategory === 'h') url = `https://www.coles.com.au/browse/household/electrical`;
-                      if (ext.extensionCategory === 'i') url = `https://www.coles.com.au/browse/household/food-storage`;
-                      if (ext.extensionCategory === 'j') url = `https://www.coles.com.au/browse/household/garden`;
-                      if (ext.extensionCategory === 'k') url = `https://www.coles.com.au/browse/household/gifting`;
-                      if (ext.extensionCategory === 'l') url = `https://www.coles.com.au/browse/household/homewares`;
-                      if (ext.extensionCategory === 'm') url = `https://www.coles.com.au/browse/household/kitchen`;
-                      if (ext.extensionCategory === 'n') url = `https://www.coles.com.au/browse/household/laundry`;
-                      if (ext.extensionCategory === 'o') url = `https://www.coles.com.au/browse/household/mobile-tech-accessories`;
-                      if (ext.extensionCategory === 'p') url = `https://www.coles.com.au/browse/household/outdoors`;
-                      if (ext.extensionCategory === 'q') url = `https://www.coles.com.au/browse/household/party-supplies`;
-                      if (ext.extensionCategory === 'r') url = `https://www.coles.com.au/browse/household/pest-control`;
-                      if (ext.extensionCategory === 's') url = `https://www.coles.com.au/browse/household/reusable-shopping-bags`;
-                      if (ext.extensionCategory === 't') url = `https://www.coles.com.au/browse/household/sporting-essentials`;
-                      if (ext.extensionCategory === 'u') url = `https://www.coles.com.au/browse/household/stationery-media`;
-                      if (ext.extensionCategory === 'v') url = `https://www.coles.com.au/browse/household/tech-accessories`;
-                      if (ext.extensionCategory === 'w') url = `https://www.coles.com.au/browse/household/toilet-paper-tissues-paper-towels`;
+                      if (ext.extensionCategory === 'a') url = ``;
+                      if (ext.extensionCategory === 'b') url = ``;
+                      if (ext.extensionCategory === 'c') url = ``;
+                      if (ext.extensionCategory === 'd') url = ``;
+                      if (ext.extensionCategory === 'e') url = ``;
+                      if (ext.extensionCategory === 'f') url = ``;
+                      if (ext.extensionCategory === 'g') url = ``;
+                      if (ext.extensionCategory === 'h') url = ``;
+                      if (ext.extensionCategory === 'i') url = ``;
+                      if (ext.extensionCategory === 'j') url = ``;
+                      if (ext.extensionCategory === 'k') url = ``;
+                      if (ext.extensionCategory === 'l') url = ``;
+                      if (ext.extensionCategory === 'm') url = ``;
+                      if (ext.extensionCategory === 'n') url = ``;
+                      if (ext.extensionCategory === 'o') url = ``;
+                      if (ext.extensionCategory === 'p') url = ``;
+                      if (ext.extensionCategory === 'q') url = ``;
+                      if (ext.extensionCategory === 'r') url = ``;
+                      if (ext.extensionCategory === 's') url = ``;
+                      if (ext.extensionCategory === 't') url = ``;
+                      if (ext.extensionCategory === 'u') url = ``;
+                      if (ext.extensionCategory === 'v') url = ``;
+                      if (ext.extensionCategory === 'w') url = ``;
                     }
                   }
                   // category Pantry
                   if (category === 'Pantry') {
                     if (sub.subCategory === 'Baking') {
-                      if (ext.extensionCategory === 'a') url = `https://www.coles.com.au/browse/pantry/baking`;
-                      if (ext.extensionCategory === 'b') url = `https://www.coles.com.au/browse/pantry/breakfast`;
-                      if (ext.extensionCategory === 'c') url = `https://www.coles.com.au/browse/pantry/canned-food-soups-noodles`;
-                      if (ext.extensionCategory === 'd') url = `https://www.coles.com.au/browse/pantry/coffee`;
-                      if (ext.extensionCategory === 'f') url = `https://www.coles.com.au/browse/pantry/desserts`;
-                      if (ext.extensionCategory === 'g') url = `https://www.coles.com.au/browse/pantry/health-foods`;
-                      if (ext.extensionCategory === 'h') url = `https://www.coles.com.au/browse/pantry/health-foods-sports-nutrition-diet`;
-                      if (ext.extensionCategory === 'i') url = `https://www.coles.com.au/browse/pantry/herbs-spices`;
-                      if (ext.extensionCategory === 'j') url = `https://www.coles.com.au/browse/pantry/international-foods`;
-                      if (ext.extensionCategory === 'k') url = `https://www.coles.com.au/browse/pantry/jams-honey-spreads`;
-                      if (ext.extensionCategory === 'l') url = `https://www.coles.com.au/browse/pantry/local-foods`;
-                      if (ext.extensionCategory === 'm') url = `https://www.coles.com.au/browse/pantry/oils-vinegars`;
-                      if (ext.extensionCategory === 'n') url = `https://www.coles.com.au/browse/pantry/pasta-rice-legumes-grains`;
-                      if (ext.extensionCategory === 'o') url = `https://www.coles.com.au/browse/pantry/pickled-vegetables-condiments`;
-                      if (ext.extensionCategory === 'p') url = `https://www.coles.com.au/browse/pantry/sauces`;
-                      if (ext.extensionCategory === 'q') url = `https://www.coles.com.au/browse/pantry/stocks-gravy`;
-                      if (ext.extensionCategory === 'r') url = `https://www.coles.com.au/browse/pantry/tea`;
-                      // if (ext.extensionCategory === 's') url = `https://www.coles.com.au/browse/pantry/chips-crackers-snacks`;
-                      if (ext.extensionCategory === 'e') url = `https://www.coles.com.au/browse/chips-chocolates-snacks/biscuits-cookies`;
-                      if (ext.extensionCategory === 't') url = `https://www.coles.com.au/browse/chips-chocolates-snacks/chips`;
-                      if (ext.extensionCategory === 'u') url = `https://www.coles.com.au/browse/chips-chocolates-snacks/chocolates`;
-                      if (ext.extensionCategory === 'v') url = `https://www.coles.com.au/browse/chips-chocolates-snacks/crackers-rice-cakes`;
-                      if (ext.extensionCategory === 'w') url = `https://www.coles.com.au/browse/chips-chocolates-snacks/gum-mints-lozenges`;
-                      if (ext.extensionCategory === 'x') url = `https://www.coles.com.au/browse/chips-chocolates-snacks/lollies-licorice`;
-                      if (ext.extensionCategory === 'y') url = `https://www.coles.com.au/browse/chips-chocolates-snacks/snacks`;
+                      if (ext.extensionCategory === 'a') url = ``;
+                      if (ext.extensionCategory === 'b') url = ``;
+                      if (ext.extensionCategory === 'c') url = ``;
+                      if (ext.extensionCategory === 'd') url = ``;
+                      if (ext.extensionCategory === 'f') url = ``;
+                      if (ext.extensionCategory === 'g') url = ``;
+                      if (ext.extensionCategory === 'h') url = ``;
+                      if (ext.extensionCategory === 'i') url = ``;
+                      if (ext.extensionCategory === 'j') url = ``;
+                      if (ext.extensionCategory === 'k') url = ``;
+                      if (ext.extensionCategory === 'l') url = ``;
+                      if (ext.extensionCategory === 'm') url = ``;
+                      if (ext.extensionCategory === 'n') url = ``;
+                      if (ext.extensionCategory === 'o') url = ``;
+                      if (ext.extensionCategory === 'p') url = ``;
+                      if (ext.extensionCategory === 'q') url = ``;
+                      if (ext.extensionCategory === 'r') url = ``;
+                      // if (ext.extensionCategory === 's') url = ``;
+                      if (ext.extensionCategory === 'e') url = ``;
+                      if (ext.extensionCategory === 't') url = ``;
+                      if (ext.extensionCategory === 'u') url = ``;
+                      if (ext.extensionCategory === 'v') url = ``;
+                      if (ext.extensionCategory === 'w') url = ``;
+                      if (ext.extensionCategory === 'x') url = ``;
+                      if (ext.extensionCategory === 'y') url = ``;
                     }
                   }
                   // category Pet
                   if (category === 'Pet') {
                     if (sub.subCategory === 'Birds') {
-                      if (ext.extensionCategory === 'a') url = `https://www.coles.com.au/browse/pet/birds`;
-                      if (ext.extensionCategory === 'b') url = `https://www.coles.com.au/browse/pet/cat-kitten`;
-                      if (ext.extensionCategory === 'c') url = `https://www.coles.com.au/browse/pet/dog-puppy`;
-                      if (ext.extensionCategory === 'd') url = `https://www.coles.com.au/browse/pet/fish-food-accessories`;
-                      if (ext.extensionCategory === 'e') url = `https://www.coles.com.au/browse/pet/pet-scoop-weigh`;
-                      if (ext.extensionCategory === 'f') url = `https://www.coles.com.au/browse/pet/small-pets`;
+                      if (ext.extensionCategory === 'a') url = ``;
+                      if (ext.extensionCategory === 'b') url = ``;
+                      if (ext.extensionCategory === 'c') url = ``;
+                      if (ext.extensionCategory === 'd') url = ``;
+                      if (ext.extensionCategory === 'e') url = ``;
+                      if (ext.extensionCategory === 'f') url = ``;
                     }
                   }
                   if (category === 'Poultry, Meat & Seafood') {
                     if (sub.subCategory === 'BBQ Meat & Seafood') {
-                      if (ext.extensionCategory === 'a') url = `https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers`;
-                      if (ext.extensionCategory === 'b') url = `https://www.coles.com.au/browse/meat-seafood/beef-veal`;
-                      if (ext.extensionCategory === 'c') url = `https://www.coles.com.au/browse/meat-seafood/coles-made-easy-range`;
-                      if (ext.extensionCategory === 'd') url = `https://www.coles.com.au/browse/meat-seafood/game`;
-                      if (ext.extensionCategory === 'e') url = `https://www.coles.com.au/browse/meat-seafood/ham`;
-                      if (ext.extensionCategory === 'f') url = `https://www.coles.com.au/browse/meat-seafood/lamb`;
-                      if (ext.extensionCategory === 'g') url = `https://www.coles.com.au/browse/meat-seafood/mince`;
-                      if (ext.extensionCategory === 'h') url = `https://www.coles.com.au/browse/meat-seafood/organic-meat`;
-                      if (ext.extensionCategory === 'i') url = `https://www.coles.com.au/browse/meat-seafood/pork`;
-                      if (ext.extensionCategory === 'j') url = `https://www.coles.com.au/browse/meat-seafood/poultry`;
-                      if (ext.extensionCategory === 'k') url = `https://www.coles.com.au/browse/meat-seafood/seafood`;
+                      if (ext.extensionCategory === 'a') url = ``;
+                      if (ext.extensionCategory === 'b') url = ``;
+                      if (ext.extensionCategory === 'c') url = ``;
+                      if (ext.extensionCategory === 'd') url = ``;
+                      if (ext.extensionCategory === 'e') url = ``;
+                      if (ext.extensionCategory === 'f') url = ``;
+                      if (ext.extensionCategory === 'g') url = ``;
+                      if (ext.extensionCategory === 'h') url = ``;
+                      if (ext.extensionCategory === 'i') url = ``;
+                      if (ext.extensionCategory === 'j') url = ``;
+                      if (ext.extensionCategory === 'k') url = ``;
                     }
                   }
                   if (category === 'Back to School') {
                     if (sub.subCategory === 'BBQ Meat & Seafood') {
-                      if (ext.extensionCategory === 'a') url = `https://www.coles.com.au/browse/back-to-school/easy-school-night-dinners`;
-                      if (ext.extensionCategory === 'b') url = `https://www.coles.com.au/browse/back-to-school/school-breakfast`;
-                      if (ext.extensionCategory === 'c') url = `https://www.coles.com.au/browse/back-to-school/school-lunches-snacking`;
-                      if (ext.extensionCategory === 'd') url = `https://www.coles.com.au/browse/back-to-school/school-stationery-accessories`;
-                    }
-                  }
-                  if (category === 'Back to School') {
-                    if (sub.subCategory === 'BBQ Meat & Seafood') {
-                      if (ext.extensionCategory === 'a') url = `https://www.coles.com.au/browse/back-to-school/easy-school-night-dinners`;
-                      if (ext.extensionCategory === 'b') url = `https://www.coles.com.au/browse/back-to-school/school-breakfast`;
-                      if (ext.extensionCategory === 'c') url = `https://www.coles.com.au/browse/back-to-school/school-lunches-snacking`;
-                      if (ext.extensionCategory === 'd') url = `https://www.coles.com.au/browse/back-to-school/school-stationery-accessories`;
+                      if (ext.extensionCategory === 'a') url = ``;
+                      if (ext.extensionCategory === 'b') url = ``;
+                      if (ext.extensionCategory === 'c') url = ``;
+                      if (ext.extensionCategory === 'd') url = ``;
                     }
                   }
                   if (category === 'Liquor') {
                     if (sub.subCategory === 'BBQ Meat & Seafood') {
-                      if (ext.extensionCategory === 'a') url = `https://www.coles.com.au/browse/liquor/beer`;
-                      if (ext.extensionCategory === 'b') url = `https://www.coles.com.au/browse/liquor/cask-fortified-wine`;
-                      if (ext.extensionCategory === 'c') url = `https://www.coles.com.au/browse/liquor/champagne-sparkling`;
-                      if (ext.extensionCategory === 'd') url = `https://www.coles.com.au/browse/liquor/cider`;
-                      if (ext.extensionCategory === 'e') url = `https://www.coles.com.au/browse/liquor/low-mid-strength`;
-                      if (ext.extensionCategory === 'f') url = `https://www.coles.com.au/browse/liquor/premixed-drinks`;
-                      if (ext.extensionCategory === 'g') url = `https://www.coles.com.au/browse/liquor/red-wine`;
-                      if (ext.extensionCategory === 'h') url = `https://www.coles.com.au/browse/liquor/rose`;
-                      if (ext.extensionCategory === 'i') url = `https://www.coles.com.au/browse/liquor/spirits`;
-                      if (ext.extensionCategory === 'j') url = `https://www.coles.com.au/browse/liquor/white-wine`;
+                      if (ext.extensionCategory === 'a') url = ``;
+                      if (ext.extensionCategory === 'b') url = ``;
+                      if (ext.extensionCategory === 'c') url = ``;
+                      if (ext.extensionCategory === 'd') url = ``;
+                      if (ext.extensionCategory === 'e') url = ``;
+                      if (ext.extensionCategory === 'f') url = ``;
+                      if (ext.extensionCategory === 'g') url = ``;
+                      if (ext.extensionCategory === 'h') url = ``;
+                      if (ext.extensionCategory === 'i') url = ``;
+                      if (ext.extensionCategory === 'j') url = ``;
                     }
                   }
                   let page;
@@ -621,7 +613,7 @@ const scraper = async () => {
                               barcode: '',
                               shop: 'coles',
                               weight: weight,
-                              prices: getPrices(loc.location, priceInCents, pricePerUnit, unit),
+                              prices: getPrices(loc.location, pricePerUnit, priceInCents, unit),
                             };
                           });
                         },

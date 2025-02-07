@@ -374,7 +374,7 @@ const scrapeURL = async (page, request, myloc) => {
       category: product.AdditionalAttributes.piesdepartmentnamesjson,
       subCategory: product.AdditionalAttributes.piescategorynamesjson,
       extensionCategory: product.AdditionalAttributes.piessubcategorynamesjson,
-      prices: getPrices(location, priceInCentsPerUnits, priceInCents, unit),
+      prices: getPrices(location, priceInCents, priceInCentsPerUnits, unit),
     };
   });
   if (products.length > 0) {

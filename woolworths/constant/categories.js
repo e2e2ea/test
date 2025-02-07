@@ -1,6 +1,7 @@
 const categories = [
     {
         category: "Cleaning & Maintenance",
+        id: '22459',
         subCategories: [
             {
                 subCategory: "Cleaning Goods",
@@ -93,6 +94,7 @@ const categories = [
     },
     {
         category: "Home & Lifestyle",
+        id: '22459',
         subCategories: [
             {
                 subCategory: "Dining & Entertaining",
@@ -252,6 +254,7 @@ const categories = [
     },
     {
         category: "Baby",
+        id: "22015",
         subCategories: [
             {
                 subCategory: "Nappies",
@@ -314,7 +317,7 @@ const categories = [
                     { extensionCategory: "Cleaning & Sterilising" },
                     { extensionCategory: "Food Preparation & Storage" },
                     { extensionCategory: "Utensils & Feeding Accessories" },
-                    { extensionCategory: "Baby Bibs" },
+                    { extensionCategory: "Baby Bibs", subId: '22019', id: '', },
                 ]
             },
             {
@@ -388,6 +391,7 @@ const categories = [
     },
     {
         category: "Pantry",
+        id: '22770',
         subCategories: [
             {
                 subCategory: "Breakfast & Spreads",
@@ -449,8 +453,8 @@ const categories = [
                 childItems: [
                     { extensionCategory: "Dried Herbs & Spices" },
                     { extensionCategory: "Salt & Pepper" },
-                    { extensionCategory: "Breadcrumbs & Stuffings" },
-                    { extensionCategory: "Fresh Herbs, Garlic & Ginger Paste" },
+                    { extensionCategory: "Breadcrumbs & Stuffing" },
+                    { extensionCategory: "Fresh Herb, Garlic & Ginger Paste" },
                 ]
             },
             {
@@ -502,7 +506,7 @@ const categories = [
                     { extensionCategory: "Marinades & Seasoning" },
                     { extensionCategory: "Soy & Asian Sauces" },
                     { extensionCategory: "Sweet Chilli & Hot Sauce" },
-                    { extensionCategory: "Simmer Sauces & Recipe Bases" },
+                    { extensionCategory: "Simmer Sauce & Recipe Bases" },
                     { extensionCategory: "Tomato & BBQ Sauce" },
                     { extensionCategory: "Stock & Gravy" },
                 ]
@@ -539,18 +543,18 @@ const categories = [
             },
         ]
     },
-    //added
     {
         category: 'Snacks & Confectionery',
+        id: '22770',
         subCategories: [
             {
-                subCategory: 'Confectionary',
+                subCategory: 'Confectionery',
                 childItems: [
-                    { extensionCategory: "Chocolate Share Packs" },
                     { extensionCategory: "Chocolate Bars" },
                     { extensionCategory: "Chocolate Blocks" },
+                    { extensionCategory: "Chocolate Bites" },
+                    { extensionCategory: "Chocolate Share Packs" },
                     { extensionCategory: "Chocolate Boxes & Gifts" },
-                    { extensionCategory: "Corn Chips & Salsa" },
                     { extensionCategory: "Sweets, Lollies & Licorice" },
                 ]
             },
@@ -559,13 +563,13 @@ const categories = [
                 childItems: [
                     { extensionCategory: "Biscuits & Cookies" },
                     { extensionCategory: "Rice Cakes & Crispbread" },
-                    { extensionCategory: "Crakers" }
+                    { extensionCategory: "Crackers" }
                 ]
             },
             {
                 subCategory: 'Snacks',
                 childItems: [
-                    { extensionCategory: "Pretzels & Jerkey" },
+                    { extensionCategory: "Pretzels & Jerky" },
                     { extensionCategory: "Popcorn" },
                     { extensionCategory: "Muesli Bars & Snack Bars" },
                     { extensionCategory: "Nuts, Dried Fruit & Snack Pots" },
@@ -602,6 +606,7 @@ const categories = [
     },    
     {
         category: "Fruit & Veg",
+        id: "22351",
         subCategories: [
             {
                 subCategory: "Fruit",
@@ -615,8 +620,8 @@ const categories = [
                     { extensionCategory: "Grapes" },
                     { extensionCategory: "Melons & Mangoes" },
                     { extensionCategory: "Avocados" },
-                    { extensionCategory: "Pineapples & Kiwi Fruit" },
-                    { extensionCategory: "Tropical & Exotic Fruit" },
+                    { extensionCategory: "Pineapples, Kiwi & Tropical Fruit" },
+                    { extensionCategory: "Asian & Exotic Fruit" },
                     { extensionCategory: "Cut Fruit" },
                 ]
             },
@@ -694,6 +699,7 @@ const categories = [
     },
     {
         category: "Poultry, Meat & Seafood",
+        id: "22713",
         subCategories: [
             {
                 subCategory: "Poultry",
@@ -745,13 +751,14 @@ const categories = [
                 ]
             },
             {
-                subCategory: "BBQ Meat & Seafood",
+                subCategory: "BBQ Meat",
                 childItems: [
-                    { extensionCategory: "Burgers & Sausages" },
+                    { extensionCategory: "Burgers" },
+                    { extensionCategory: "Sausages" },
+                    { extensionCategory: "Pork" },
+                    { extensionCategory: "Kebabs" },
                     { extensionCategory: "Chicken" },
                     { extensionCategory: "Lamb" },
-                    { extensionCategory: "Prawns" },
-                    { extensionCategory: "Pork" },
                 ]
             },
             {
@@ -766,13 +773,15 @@ const categories = [
     },
     {
         category: "Freezer",
+        id: "22280",
         subCategories: [
             {
                 subCategory: "Frozen Meals",
                 childItems: [
                     { extensionCategory: "Frozen Meals" },
                     { extensionCategory: "Kid's Frozen Meals" },
-                    { extensionCategory: "Wedges" },
+                    { extensionCategory: "Frozen Dumplings" },
+                    { extensionCategory: "Plant Based Meals" },
                 ]
             },
             {
@@ -786,8 +795,7 @@ const categories = [
                 childItems: [
                     { extensionCategory: "Chips" },
                     { extensionCategory: "Hashbrowns" },
-                    { extensionCategory: "Frozen Dumplings" },
-                    { extensionCategory: "Plant Based Meals" },
+                    { extensionCategory: "Wedges" },
                 ]
             },
             {
@@ -866,6 +874,7 @@ const categories = [
     },
     {
         category: "Bakery",
+        id: "22060",
         subCategories: [
             {
                 subCategory: "In-Store Bakery",
@@ -890,7 +899,7 @@ const categories = [
                     { extensionCategory: "Pizza Bases" },
                     { extensionCategory: "Wraps & Flatbread" },
                     { extensionCategory: "Rolls & Bagels" },
-                    { extensionCategory: "Gluten-Free" },
+                    { extensionCategory: "Gluten Free Bakery" },
                     { extensionCategory: "Pies & Quiches" },
                     { extensionCategory: "Bake At Home" },
                     { extensionCategory: "Organic Bakery" },
@@ -906,6 +915,7 @@ const categories = [
     },
     {
         category: "Pet",
+        id: "22916",
         subCategories: [
             {
                 subCategory: "Cat & Kitten",
@@ -951,6 +961,7 @@ const categories = [
     },
     {
         category: "Drinks",
+        id: "22164",
         subCategories: [
             {
                 subCategory: "Chilled Drinks",
@@ -1057,6 +1068,7 @@ const categories = [
     },
     {
         category: "Deli & Chilled Meals",
+        id: "24023",
         subCategories: [
             {
                 subCategory: "Deli Meats",
@@ -1099,6 +1111,7 @@ const categories = [
     },
     {
         category: "Dairy, Eggs & Fridge",
+        id: "22089",
         subCategories: [
             {
                 subCategory: "Cheese",
@@ -1201,6 +1214,7 @@ const categories = [
     },
     {
         category: "Beauty & Personal Care",
+        id: "22394",
         subCategories: [
             {
                 subCategory: "Shower, Bath & Body",
@@ -1306,6 +1320,7 @@ const categories = [
     },
     {
         category: "Health & Wellness",
+        id: "22394",
         subCategories: [
             {
                 subCategory: "Health Foods",
