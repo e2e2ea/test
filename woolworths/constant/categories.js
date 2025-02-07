@@ -11,7 +11,7 @@ const categories = [
                     { extensionCategory: "Drain Cleaners & Solvents" },
                     { extensionCategory: "Fabric, Metal & Furniture Care" },
                     { extensionCategory: "Floor/Carpet Cleaners" },
-                    { extensionCategory: "Gloves" }, 
+                    { extensionCategory: "Gloves" }, asdasdasdasdasd
                     { extensionCategory: "Kitchen Cleaners" },
                     { extensionCategory: "Mops, Buckets & Brooms" },
                     { extensionCategory: "Mould & Moisture Treatments" }, 
