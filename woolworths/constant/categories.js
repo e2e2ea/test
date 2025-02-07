@@ -48,7 +48,7 @@ const categories = [
             {
                 subCategory: "Kitchen",
                 childItems: [
-                    { extensionCategory: "Cling Wrap, Foil & Baking Paper:" },
+                    { extensionCategory: "Cling Wrap, Foil & Baking Paper" },
                     { extensionCategory: "Dishwashing" },
                     { extensionCategory: "Garbage Bags" },
                     { extensionCategory: "Gloves" },
@@ -262,7 +262,6 @@ const categories = [
                     { extensionCategory: "Nappies 6-12 Months (7-10kg)" },
                     { extensionCategory: "Nappies 12-18 Months (9-12kg)" },
                     { extensionCategory: "Nappies 18 Months+ (10kg+)" },
-                    { extensionCategory: "Nappy Pants" },
                     { extensionCategory: "Swimming Nappies" },
                     { extensionCategory: "Nighttime Nappies" },
                     { extensionCategory: "Reusable Nappies" },
@@ -1062,7 +1061,7 @@ const categories = [
             {
                 subCategory: "Deli Meats",
                 childItems: [
-                    { extensionCategory: "Deli Poultry" },
+                    { extensionCategory: "Sausages & Frankfurts" },
                     { extensionCategory: "Packaged Ham, Bacon & Salami" },
                     { extensionCategory: "Sliced & Shaved Deli Meat" },
                 ]
@@ -1332,7 +1331,6 @@ const categories = [
                     { extensionCategory: "Men's Health" },
                     { extensionCategory: "Pregnancy & Family Planning" },
                     { extensionCategory: "Cold, Flu & Allergies" },
-                    { extensionCategory: "Multi Vitamins" },
                     { extensionCategory: "Multi Vitamins" },
                     { extensionCategory: "Digestion & Probiotics" },
                     { extensionCategory: "Fatigue, Stress & Sleep" },

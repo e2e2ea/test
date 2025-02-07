@@ -67,19 +67,19 @@ const getData = async () => {
 
           // console.log('mycat', mycat)
           // First, check if category matches
-          const hasCategory = parsedFields.productCategories.some((cat) => cat.toLowerCase() === category.toLowerCase());
+          const hasCategory = parsedFields.productCategories.some((cat) => cat.toLowerCase().replace(/\s{2,}/g, ' ') === category.toLowerCase().replace(/\s{2,}/g, ' '));
           if (!hasCategory) return false;
 
           let mySubCategory;
           mySubCategory = subCategory;
-          const hasSubCategory = parsedFields.productSubCategories.some((sub) => sub.toLowerCase() === mySubCategory.toLowerCase());
+          const hasSubCategory = parsedFields.productSubCategories.some((sub) => sub.toLowerCase().replace(/\s{2,}/g, ' ') === mySubCategory.toLowerCase().replace(/\s{2,}/g, ' '));
 
           if (!hasSubCategory) return false;
 
           let mySubCategoryExtension;
           mySubCategoryExtension = extensionCategory;
           const hasExtensionSubCategories = parsedFields.productExtensionSubCategories.some(
-            (ext) => ext.toLowerCase() === mySubCategoryExtension.toLowerCase()
+            (ext) => ext.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, '').replace(/\s{2,}/g, ' ') === mySubCategoryExtension.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, '').replace(/\s{2,}/g, ' ')
           );
 
           return hasExtensionSubCategories;
@@ -162,7 +162,7 @@ const getData = async () => {
       }
     }
   }
-  // console.log('total', total)
+  console.log('total', total)
   csvWriter
     .writeRecords(data)
     .then(() => {
