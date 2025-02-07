@@ -621,7 +621,7 @@ const scraper = async () => {
                               barcode: '',
                               shop: 'coles',
                               weight: weight,
-                              prices: getPrices(loc.location, priceInCents, pricePerUnit, unit),
+                              prices: getPrices(loc.location, pricePerUnit, priceInCents, unit),
                             };
                           });
                         },
