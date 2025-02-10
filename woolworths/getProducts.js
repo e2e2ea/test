@@ -25,7 +25,6 @@ const getData = async () => {
   for (const categ of categories) {
     const category = categ.category;
     let categId = categ.id;
-    
 
     for (const sub of categ.subCategories) {
       const subCategory = sub.subCategory;
@@ -53,7 +52,17 @@ const getData = async () => {
           let mySubCategoryExtension;
           mySubCategoryExtension = extensionCategory;
           const hasExtensionSubCategories = parsedFields.productExtensionSubCategories.some(
-            (ext) => ext.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, '').replace(/\s{2,}/g, ' ') === mySubCategoryExtension.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, '').replace(/\s{2,}/g, ' ')
+            (ext) =>
+              ext
+                .toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .replace(/\s{2,}/g, ' ') ===
+              mySubCategoryExtension
+                .toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .replace(/\s{2,}/g, ' ')
           );
 
           return hasExtensionSubCategories;
@@ -86,9 +95,11 @@ const getData = async () => {
             source_url: productObj.source_url || null,
             name: productObj.name || null,
             image_url: productObj.image_url || null,
-            source_id: `Woolworths - ${productObj.retailer_product_id}` || null,
+            source_id: `${productObj.retailer_product_id}` || null,
             barcode: productObj.barcode || null,
             category_id: categId || '',
+            subcategory_id: ext.subId || '',
+            subsubcategory_id: ext.childId || '',
             shop: productObj.shop || null,
             weight: productObj.weight || null,
             prices: cleanedPrices,
@@ -99,44 +110,45 @@ const getData = async () => {
         // console.log('Filtered product format:', productsData[0])
         if (productsData && productsData.length > 0) {
           total += productsData.length;
-          const baseFolder = `./woolworths/data/${process.env.FOLDER_DATE}/${mycat}/${subCategory}`;
+          const baseFolder = `./woolworths/data/${process.env.FOLDER_DATE}/${categId}`;
           const folderPath = path.join(baseFolder);
 
           if (!fs.existsSync(folderPath)) {
             fs.mkdirSync(folderPath, { recursive: true });
             // console.log(`Created folder: ${folderPath}`);
           }
+          if (ext.subId && ext.childId) {
+            const fileName = `${ext.subId} - ${ext.childId}.json`;
+            const filePath = path.join(folderPath, fileName);
+            if (fs.existsSync(filePath)) {
+              console.log(`File already exists: ${filePath}. Skipping save.`);
+              const data = JSON.parse(fs.readFileSync(`woolworths/data/${process.env.FOLDER_DATE}/${categId}/${ext.subId} - ${ext.childId}.json`, 'utf8'));
 
-          const fileName = `${extensionCategory ? `${extensionCategory === 'Floor/Carpet Cleaners' ? 'Floor - Carpet Cleaners' : extensionCategory}` : ''}.json`;
-          const filePath = path.join(folderPath, fileName);
-          if (fs.existsSync(filePath)) {
-            console.log(`File already exists: ${filePath}. Skipping save.`);
-            const data = JSON.parse(fs.readFileSync(`woolworths/data/${process.env.FOLDER_DATE}/${mycat}/${subCategory}/${extensionCategory}.json`, 'utf8'));
+              // Merge existing and new data
+              const combinedData = [...data, ...productsData];
 
-            // Merge existing and new data
-            const combinedData = [...data, ...productsData];
+              // Remove duplicates based on source_id
+              const uniqueData = combinedData.filter((item, index, self) => index === self.findIndex((t) => t.source_id === item.source_id));
 
-            // Remove duplicates based on source_id
-            const uniqueData = combinedData.filter((item, index, self) => index === self.findIndex((t) => t.source_id === item.source_id));
-
-            fs.writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
-            // return; // Skip saving the file
-          } else {
-            try {
-              // console.log(`${fileName} - ${productsData.length} products`);
-              fs.writeFileSync(filePath, JSON.stringify(productsData, null, 2));
-              // console.log(`Data saved to ${filePath}`);
-            } catch (error) {
-              console.error('Error writing data to file:', error);
+              fs.writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
+              // return; // Skip saving the file
+            } else {
+              try {
+                // console.log(`${fileName} - ${productsData.length} products`);
+                fs.writeFileSync(filePath, JSON.stringify(productsData, null, 2));
+                // console.log(`Data saved to ${filePath}`);
+              } catch (error) {
+                console.error('Error writing data to file:', error);
+              }
             }
           }
-        }else{
+        } else {
           console.log(`no products found in ${mycat} ${subCategory} ${extensionCategory}`);
         }
       }
     }
   }
-  console.log('total', total)
+  console.log('total', total);
   csvWriter
     .writeRecords(data)
     .then(() => {
