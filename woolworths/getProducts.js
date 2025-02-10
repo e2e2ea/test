@@ -119,7 +119,7 @@ const getData = async () => {
           }
           if (ext.subId) {
             total += productsData.length;
-            const fileName = `${ext.subId} - ${ext.childId}.json`;
+            const fileName = `${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`;
             const filePath = path.join(folderPath, fileName);
             if (fs.existsSync(filePath)) {
               console.log(`File already exists: ${filePath}. Skipping save.`);
