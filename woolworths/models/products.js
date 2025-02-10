@@ -4,9 +4,9 @@ const ProductSchema = new mongoose.Schema(
     {
         source_url: { type: String, default: 'N/A' },
         retailer_product_id: { type: String },
-        category: [{ type: String }],
-        subCategory: [{ type: String }],
-        extensionCategory: [{ type: String }],
+        category: { type: [String], default: [] },
+        subCategory: { type: [String], default: [] },
+        extensionCategory: { type: [String], default: [] },
         name: { type: String, default: 'N/A' },
         image_url: { type: String, default: 'N/A' },
         barcode: { type: String, default: 'N/A' },

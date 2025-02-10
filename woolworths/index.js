@@ -36,9 +36,10 @@ const userAgents = [
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36",
 ];
 
-const mylocation = ["nsw", "vic", "qld", "wa", "sa", "tas", "act", "nt"];
+//const mylocation = ["nsw", "vic", "qld", "wa", "sa", "tas", "act", "nt"];
 // const mylocation = ["nsw", "vic", "qld", "wa"];
 // const mylocation = [ 'tas', 'act', 'nt'];
+const mylocation = [ "vic", "qld", "wa", "sa", "tas", "act", "nt" ];
 
 const getPrices = (location, priceInCents, priceInCentsPerUnits, unit) => {
   const prices = [];
@@ -122,18 +123,21 @@ const CATEGORIES = [
   // { id: '1_3151F6F', name: 'Deli & Chilled Meats', url: '/shop/browse/deli-chilled-meals', location: '/shop/browse/deli-chilled-meals' },
   // { id: '1_5AF3A0A', name: 'Drinks', url: '/shop/browse/drinks', location: '/shop/browse/drinks' },
   // { id: '1_ACA2FC2', name: 'Freezer', url: '/shop/browse/freezer', location: '/shop/browse/freezer' },
-  // { id: '1-E5BEE36E', name: 'Fruit & Veg', url: '/shop/browse/fruit-veg', location: '/shop/browse/fruit-veg' },
-  // { id: '1_894D0A8', name: 'Health & Beauty', url: '/shop/browse/beauty-personal-care', location: '/shop/browse/beauty-personal-care' },
-  // { id: '1_9851658', name: 'Health & Wellness', url: '/shop/browse/health-wellness', location: '/shop/browse/health-wellness' },
-  // { id: '1_D5A2236', name: 'Poultry, Meat & Seafood', url: '/shop/browse/poultry-meat-seafood', location: '/shop/browse/poultry-meat-seafood' },
-  // { id: '1_2432B58', name: 'Household', url: '/shop/browse/cleaning-maintenance', location: '/shop/browse/cleaning-maintenance' },
-  // { id: '1_39FD49C', name: 'Pantry', url: '/shop/browse/pantry', location: '/shop/browse/pantry' },
-  // { id: '1_61D6FEB', name: 'Pet', url: '/shop/browse/pet', location: '/shop/browse/pet' },
-  // { id: '1_DEA3ED5', name: 'Home & Lifestyle', url: '/shop/browse/home-lifestyle', location: '/shop/browse/home-lifestyle' },
-  // { id: '1_717445A', name: 'Snacks & Confectionery', url: '/shop/browse/snacks-confectionery', location: '/shop/browse/snacks-confectionery' },
-  { id: '1_9E92C35', name: 'Back to School', url: '/shop/browse/back-to-school', location: '/shop/browse/back-to-school' },
-  { id: '1_8E4DA6F', name: 'Beer, Wine & Spirits', url: '/shop/browse/beer-wine-spirits', location: '/shop/browse/beer-wine-spirits' },
-];
+
+  { id: '1-E5BEE36E', name: 'Fruit & Veg', url: '/shop/browse/fruit-veg', location: '/shop/browse/fruit-veg' },
+  { id: '1_894D0A8', name: 'Health & Beauty', url: '/shop/browse/beauty-personal-care', location: '/shop/browse/beauty-personal-care' },
+  { id: '1_9851658', name: 'Health & Wellness', url: '/shop/browse/health-wellness', location: '/shop/browse/health-wellness' },
+  { id: '1_D5A2236', name: 'Poultry, Meat & Seafood', url: '/shop/browse/poultry-meat-seafood', location: '/shop/browse/poultry-meat-seafood' },
+  { id: '1_2432B58', name: 'Household', url: '/shop/browse/cleaning-maintenance', location: '/shop/browse/cleaning-maintenance' },
+  { id: '1_39FD49C', name: 'Pantry', url: '/shop/browse/pantry', location: '/shop/browse/pantry' },
+
+//   { id: '1_61D6FEB', name: 'Pet', url: '/shop/browse/pet', location: '/shop/browse/pet' },
+//   { id: '1_DEA3ED5', name: 'Home & Lifestyle', url: '/shop/browse/home-lifestyle', location: '/shop/browse/home-lifestyle' },
+//   { id: '1_717445A', name: 'Snacks & Confectionery', url: '/shop/browse/snacks-confectionery', location: '/shop/browse/snacks-confectionery' },
+//   { id: '1_9E92C35', name: 'Back to School', url: '/shop/browse/back-to-school', location: '/shop/browse/back-to-school' },
+//   { id: '1_8E4DA6F', name: 'Beer, Wine & Spirits', url: '/shop/browse/beer-wine-spirits', location: '/shop/browse/beer-wine-spirits' },
+ ];
+
 const WOOLWORTHS_URL = "https://www.woolworths.com.au";
 const SPEED_LIMIT = 20;
 
@@ -147,7 +151,7 @@ function delay(time) {
   const browser2 = await puppeteer.launch({
     headless: false,
     executablePath: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-    userDataDir: "C:\\Users\\OBI - Raymond\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1",
+    userDataDir: "C:\\Users\\OBI - Sunny\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1",
   });
 
   for (let i = 0; i < mylocation.length; i++) {
@@ -359,6 +363,21 @@ const scrapeURL = async (page, request, myloc) => {
     const priceInCentsPerUnits = parseFloat(price2) * 100;
     // Remove numbers and keep only letters
     const unit = inputString.replace(/[0-9]/g, "");
+
+     // normalize items from array
+   const cleanText = (str) => {
+    return str
+        .normalize("NFD") // Decomposes special characters (e.g., á -> a +  ́)
+        .replace(/[\u0300-\u036f]/g, "") // Removes diacritical marks
+        .replace(/\s+/g, " ") // Replaces multiple spaces with a single space
+        .trim(); // Trims leading/trailing spaces
+   };
+const cleanArray = (arr) => arr.map(cleanText);
+
+const cat = cleanArray(JSON.parse(product.AdditionalAttributes.piesdepartmentnamesjson));
+const subCat = cleanArray(JSON.parse(product.AdditionalAttributes.piescategorynamesjson));
+const extCat = cleanArray(JSON.parse(product.AdditionalAttributes.piessubcategorynamesjson));
+
     return {
       name: product.DisplayName,
       discounted_from: product.WasPrice,
@@ -371,9 +390,9 @@ const scrapeURL = async (page, request, myloc) => {
       realName: product.name,
       isNew: product.IsNew,
       weight: product.CupMeasure,
-      category: product.AdditionalAttributes.piesdepartmentnamesjson,
-      subCategory: product.AdditionalAttributes.piescategorynamesjson,
-      extensionCategory: product.AdditionalAttributes.piessubcategorynamesjson,
+      category: cat,
+      subCategory: subCat,
+      extensionCategory: extCat,
       prices: getPrices(location, priceInCents, priceInCentsPerUnits, unit),
     };
   });
