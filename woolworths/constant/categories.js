@@ -6,88 +6,88 @@ const categories = [
             {
                 subCategory: "Cleaning Goods",
                 childItems: [
-                    { extensionCategory: "Air Fresheners" },
-                    { extensionCategory: "Bathroom Cleaners" },
-                    { extensionCategory: "Disinfectant & Bleach" },
-                    { extensionCategory: "Drain Cleaners & Solvents" },
-                    { extensionCategory: "Fabric, Metal & Furniture Care" },
-                    { extensionCategory: "Floor/Carpet Cleaners" },
-                    { extensionCategory: "Gloves" }, 
-                    { extensionCategory: "Kitchen Cleaners" },
-                    { extensionCategory: "Mops, Buckets & Brooms" },
-                    { extensionCategory: "Mould & Moisture Treatments" }, 
-                    { extensionCategory: "Multipurpose Cleaners" },
-                    { extensionCategory: "Sponges, Cloths & Wipes" },
-                    { extensionCategory: "Window & Glass Cleaners" }, 
+                    { extensionCategory: "Air Fresheners", subId: "", childId: "" },
+                    { extensionCategory: "Bathroom Cleaners", subId: "", childId: "" },
+                    { extensionCategory: "Disinfectant & Bleach", subId: "", childId: "" },
+                    { extensionCategory: "Drain Cleaners & Solvents", subId: "", childId: "" },
+                    { extensionCategory: "Fabric, Metal & Furniture Care", subId: "", childId: "" },
+                    { extensionCategory: "Floor/Carpet Cleaners", subId: "", childId: "" },
+                    { extensionCategory: "Gloves", subId: "", childId: "" }, 
+                    { extensionCategory: "Kitchen Cleaners", subId: "", childId: "" },
+                    { extensionCategory: "Mops, Buckets & Brooms", subId: "", childId: "" },
+                    { extensionCategory: "Mould & Moisture Treatments", subId: "", childId: "" }, 
+                    { extensionCategory: "Multipurpose Cleaners", subId: "", childId: "" },
+                    { extensionCategory: "Sponges, Cloths & Wipes", subId: "", childId: "" },
+                    { extensionCategory: "Window & Glass Cleaners", subId: "", childId: "" }, 
                 ]
             },
             {
                 subCategory: "Garden & Outdoors",
                 childItems: [
-                    { extensionCategory: "Insecticide & Weed Control" },
-                    { extensionCategory: "Potting Mix & Fertilisers" },
-                    { extensionCategory: "Lawn Care & Plant Food" },
-                    { extensionCategory: "Gloves, Tools & Watering" },
-                    { extensionCategory: "Seeds & Plants" },
-                    { extensionCategory: "Garden Power Tools & Equipment" },
-                    { extensionCategory: "Garage Storage & Organisation" },
-                    { extensionCategory: "Pool Maintenance" },
-                    { extensionCategory: "Garden Décor & Accessories" },
-                    { extensionCategory: "Automotive" },
+                    { extensionCategory: "Insecticide & Weed Control", subId: "", childId: "" },
+                    { extensionCategory: "Potting Mix & Fertilisers", subId: "", childId: "" },
+                    { extensionCategory: "Lawn Care & Plant Food", subId: "", childId: "" },
+                    { extensionCategory: "Gloves, Tools & Watering", subId: "", childId: "" },
+                    { extensionCategory: "Seeds & Plants", subId: "", childId: "" },
+                    { extensionCategory: "Garden Power Tools & Equipment", subId: "", childId: "" },
+                    { extensionCategory: "Garage Storage & Organisation", subId: "", childId: "" },
+                    { extensionCategory: "Pool Maintenance", subId: "", childId: "" },
+                    { extensionCategory: "Garden Décor & Accessories", subId: "", childId: "" },
+                    { extensionCategory: "Automotive", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Hardware",
                 childItems: [
-                    { extensionCategory: "Extension Cords & Adapters" },
-                    { extensionCategory: "Lighting & Torches" },
-                    { extensionCategory: "Adhesives, Glues & Tapes" },
-                    { extensionCategory: "Hooks & Fasteners" },
-                    { extensionCategory: "Tools & Accessories" },
+                    { extensionCategory: "Extension Cords & Adapters", subId: "", childId: "" },
+                    { extensionCategory: "Lighting & Torches", subId: "", childId: "" },
+                    { extensionCategory: "Adhesives, Glues & Tapes", subId: "", childId: "" },
+                    { extensionCategory: "Hooks & Fasteners", subId: "", childId: "" },
+                    { extensionCategory: "Tools & Accessories", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Kitchen",
                 childItems: [
-                    { extensionCategory: "Cling Wrap, Foil & Baking Paper" },
-                    { extensionCategory: "Dishwashing" },
-                    { extensionCategory: "Garbage Bags" },
-                    { extensionCategory: "Gloves" },
-                    { extensionCategory: "Lunch Boxes & Drink Bottles" },
-                    { extensionCategory: "Sandwich & Freezer Bags" },
-                    { extensionCategory: "Water Filtration" },
-                    { extensionCategory: "Waste Bins" },
+                    { extensionCategory: "Cling Wrap, Foil & Baking Paper", subId: "", childId: "" },
+                    { extensionCategory: "Dishwashing", subId: "", childId: "" },
+                    { extensionCategory: "Garbage Bags", subId: "", childId: "" },
+                    { extensionCategory: "Gloves", subId: "", childId: "" },
+                    { extensionCategory: "Lunch Boxes & Drink Bottles", subId: "", childId: "" },
+                    { extensionCategory: "Sandwich & Freezer Bags", subId: "", childId: "" },
+                    { extensionCategory: "Water Filtration", subId: "", childId: "" },
+                    { extensionCategory: "Waste Bins", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Laundry",
                 childItems: [
-                    { extensionCategory: "Fabric Softener" },
-                    { extensionCategory: "Ironing & Accessories" },
-                    { extensionCategory: "Laundry Capsules" },
-                    { extensionCategory: "Laundry Liquid" },
-                    { extensionCategory: "Laundry Powder" },
-                    { extensionCategory: "Pegs, Baskets & Hangers" },
-                    { extensionCategory: "Stain Removal" },
+                    { extensionCategory: "Fabric Softener", subId: "", childId: "" },
+                    { extensionCategory: "Ironing & Accessories", subId: "", childId: "" },
+                    { extensionCategory: "Laundry Capsules", subId: "", childId: "" },
+                    { extensionCategory: "Laundry Liquid", subId: "", childId: "" },
+                    { extensionCategory: "Laundry Powder", subId: "", childId: "" },
+                    { extensionCategory: "Pegs, Baskets & Hangers", subId: "", childId: "" },
+                    { extensionCategory: "Stain Removal", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Pest Control",
                 childItems: [
-                    { extensionCategory: "Crawling Insects" },
-                    { extensionCategory: "Flying Insects" },
-                    { extensionCategory: "Garden Pests" },
-                    { extensionCategory: "Insect Repellent" },
-                    { extensionCategory: "Mosquitoes" },
-                    { extensionCategory: "Rodents" },
+                    { extensionCategory: "Crawling Insects", subId: "", childId: "" },
+                    { extensionCategory: "Flying Insects", subId: "", childId: "" },
+                    { extensionCategory: "Garden Pests", subId: "", childId: "" },
+                    { extensionCategory: "Insect Repellent", subId: "", childId: "" },
+                    { extensionCategory: "Mosquitoes", subId: "", childId: "" },
+                    { extensionCategory: "Rodents", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Toilet Paper, Tissues & Paper Towels",
                 childItems: [
-                    { extensionCategory: "Toilet Paper" },
-                    { extensionCategory: "Paper Towels" },
-                    { extensionCategory: "Tissues & Wipes" }
+                    { extensionCategory: "Toilet Paper", subId: "", childId: "" },
+                    { extensionCategory: "Paper Towels", subId: "", childId: "" },
+                    { extensionCategory: "Tissues & Wipes", subId: "", childId: "" }
                 ]
             },
         ]
@@ -259,132 +259,132 @@ const categories = [
             {
                 subCategory: "Nappies",
                 childItems: [
-                    { extensionCategory: "Nappy Pants" },
-                    { extensionCategory: "Newborn Nappies (3-5kg)" },
-                    { extensionCategory: "Nappies 3-6 Months (5-7kg)" },
-                    { extensionCategory: "Nappies 6-12 Months (7-10kg)" },
-                    { extensionCategory: "Nappies 12-18 Months (9-12kg)" },
-                    { extensionCategory: "Nappies 18 Months+ (10kg+)" },
-                    { extensionCategory: "Swimming Nappies" },
-                    { extensionCategory: "Nighttime Nappies" },
-                    { extensionCategory: "Reusable Nappies" },
+                    { extensionCategory: "Nappy Pants", subId: "", childId: "" },
+                    { extensionCategory: "Newborn Nappies (3-5kg)", subId: "", childId: "" },
+                    { extensionCategory: "Nappies 3-6 Months (5-7kg)", subId: "", childId: "" },
+                    { extensionCategory: "Nappies 6-12 Months (7-10kg)", subId: "", childId: "" },
+                    { extensionCategory: "Nappies 12-18 Months (9-12kg)", subId: "", childId: "" },
+                    { extensionCategory: "Nappies 18 Months+ (10kg+)", subId: "", childId: "" },
+                    { extensionCategory: "Swimming Nappies", subId: "", childId: "" },
+                    { extensionCategory: "Nighttime Nappies", subId: "", childId: "" },
+                    { extensionCategory: "Reusable Nappies", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Wipes & Changing",
                 childItems: [
-                    { extensionCategory: "Wipes" },
-                    { extensionCategory: "Change Tables & Accessories" },
+                    { extensionCategory: "Wipes", subId: "", childId: "" },
+                    { extensionCategory: "Change Tables & Accessories", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Baby Food",
                 childItems: [
-                    { extensionCategory: "Organic Baby Food" },
-                    { extensionCategory: "Baby Food 4 Months+" },
-                    { extensionCategory: "Baby Food 6 Months+" },
-                    { extensionCategory: "Baby Food 8 Months+" },
-                    { extensionCategory: "Baby Food 12 Months+" },
-                    { extensionCategory: "Baby & Toddler Snacks" },
+                    { extensionCategory: "Organic Baby Food", subId: "", childId: "" },
+                    { extensionCategory: "Baby Food 4 Months+", subId: "", childId: "" },
+                    { extensionCategory: "Baby Food 6 Months+", subId: "", childId: "" },
+                    { extensionCategory: "Baby Food 8 Months+", subId: "", childId: "" },
+                    { extensionCategory: "Baby Food 12 Months+", subId: "", childId: "" },
+                    { extensionCategory: "Baby & Toddler Snacks", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Baby Formula & Toddler Milk",
                 childItems: [
-                    { extensionCategory: "Newborn" },
-                    { extensionCategory: "Infant" },
-                    { extensionCategory: "Specialty" },
-                    { extensionCategory: "Toddler" },
+                    { extensionCategory: "Newborn", subId: "", childId: "" },
+                    { extensionCategory: "Infant", subId: "", childId: "" },
+                    { extensionCategory: "Specialty", subId: "", childId: "" },
+                    { extensionCategory: "Toddler", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Bath & Skincare",
                 childItems: [
-                    { extensionCategory: "Bath Time" },
-                    { extensionCategory: "Skincare" },
-                    { extensionCategory: "Grooming" },
-                    { extensionCategory: "Bathtubs & Bath Seats" },
-                    { extensionCategory: "Bath Toys" },
-                    { extensionCategory: "Potty & Toilet Training" },
+                    { extensionCategory: "Bath Time", subId: "22016", childId: "23821" },
+                    { extensionCategory: "Skincare", subId: "22016", childId: "23821" },
+                    { extensionCategory: "Grooming", subId: "22016", childId: "23821" },
+                    { extensionCategory: "Bathtubs & Bath Seats", subId: "22016", childId: "23821" },
+                    { extensionCategory: "Bath Toys", subId: "22016", childId: "23821" },
+                    { extensionCategory: "Potty & Toilet Training", subId: "22016", childId: "23821" },
                 ]
             },
             {
                 subCategory: "Bottles & Baby Feeding",
                 childItems: [
-                    { extensionCategory: "Bottles & Bottle Accessories" },
-                    { extensionCategory: "Baby Teething & Soothers" },
-                    { extensionCategory: "Breast Feeding" },
-                    { extensionCategory: "Cleaning & Sterilising" },
-                    { extensionCategory: "Food Preparation & Storage" },
-                    { extensionCategory: "Utensils & Feeding Accessories" },
-                    { extensionCategory: "Baby Bibs", subId: '22019', id: '', },
+                    { extensionCategory: "Bottles & Bottle Accessories", subId: "", childId: "" },
+                    { extensionCategory: "Baby Teething & Soothers", subId: "", childId: "" },
+                    { extensionCategory: "Breast Feeding", subId: "", childId: "" },
+                    { extensionCategory: "Cleaning & Sterilising", subId: "", childId: "" },
+                    { extensionCategory: "Food Preparation & Storage", subId: "", childId: "" },
+                    { extensionCategory: "Utensils & Feeding Accessories", subId: "", childId: "" },
+                    { extensionCategory: "Baby Bibs", subId: "22016", childId: "23824" },
                 ]
             },
             {
                 subCategory: "Health & Safety",
                 childItems: [
-                    { extensionCategory: "Health" },
-                    { extensionCategory: "Safety & Proofing" },
-                    { extensionCategory: "Monitors" },
+                    { extensionCategory: "Health", subId: "22016", childId: "23822" },
+                    { extensionCategory: "Safety & Proofing", subId: "22016", childId: "23822" },
+                    { extensionCategory: "Monitors", subId: "22016", childId: "23822" },
                 ]
             },
             {
                 subCategory: "Nursery & Sleeping",
                 childItems: [
-                    { extensionCategory: "Manchester & Bedding" },
-                    { extensionCategory: "Decor" },
-                    { extensionCategory: "Pillows & Sleep Positioners" },
-                    { extensionCategory: "Sleeping Accessories" },
-                    { extensionCategory: "Wraps" },
+                    { extensionCategory: "Manchester & Bedding", subId: "", childId: "" },
+                    { extensionCategory: "Decor", subId: "", childId: "" },
+                    { extensionCategory: "Pillows & Sleep Positioners", subId: "", childId: "" },
+                    { extensionCategory: "Sleeping Accessories", subId: "", childId: "" },
+                    { extensionCategory: "Wraps", subId: "", childId: "" },
                     { extensionCategory: "Swaddles" },
-                    { extensionCategory: "Sleeping Bags" },
+                    { extensionCategory: "Sleeping Bags", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Baby & Toddler Clothing",
                 childItems: [
-                    { extensionCategory: "Newborn" },
-                    { extensionCategory: "Specialty" },
-                    { extensionCategory: "Toddler" },
+                    { extensionCategory: "Newborn", subId: "", childId: "" },
+                    { extensionCategory: "Specialty", subId: "", childId: "" },
+                    { extensionCategory: "Toddler", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Pregnancy Care & Family Planning",
                 childItems: [
-                    { extensionCategory: "Pregnancy Tests" },
-                    { extensionCategory: "Vitamins" },
-                    { extensionCategory: "After Pregnancy Care" },
+                    { extensionCategory: "Pregnancy Tests", subId: "", childId: "" },
+                    { extensionCategory: "Vitamins", subId: "", childId: "" },
+                    { extensionCategory: "After Pregnancy Care", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Baby Furniture",
                 childItems: [
-                    { extensionCategory: "High Chairs" },
-                    { extensionCategory: "Cots & Bassinets" },
-                    { extensionCategory: "Mattresses" },
+                    { extensionCategory: "High Chairs", subId: "", childId: "" },
+                    { extensionCategory: "Cots & Bassinets", subId: "", childId: "" },
+                    { extensionCategory: "Mattresses", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Toys & Playtime",
                 childItems: [
-                    { extensionCategory: "Books" },
-                    { extensionCategory: "Soft Plush Toys" },
-                    { extensionCategory: "Education & Learning" },
-                    { extensionCategory: "Interactive Toys" },
-                    { extensionCategory: "Play Mats & Activity Gyms" },
-                    { extensionCategory: "Activity Centres & Walkers" },
-                    { extensionCategory: "Trikes, Cars & Rockers" },
-                    { extensionCategory: "Playpens & Playsets" },
-                    { extensionCategory: "Rockers & Bouncers" },
+                    { extensionCategory: "Books", subId: "22016", childId: "23823" },
+                    { extensionCategory: "Soft Plush Toys", subId: "22016", childId: "23823" },
+                    { extensionCategory: "Education & Learning", subId: "22016", childId: "23823" },
+                    { extensionCategory: "Interactive Toys", subId: "22016", childId: "23823" },
+                    { extensionCategory: "Play Mats & Activity Gyms", subId: "22016", childId: "23823" },
+                    { extensionCategory: "Activity Centres & Walkers", subId: "22016", childId: "23823" },
+                    { extensionCategory: "Trikes, Cars & Rockers", subId: "22016", childId: "23823" },
+                    { extensionCategory: "Playpens & Playsets", subId: "22016", childId: "23823" },
+                    { extensionCategory: "Rockers & Bouncers", subId: "22016", childId: "23823" },
                 ]
             },
             {
                 subCategory: "Baby Travel & Accessories",
                 childItems: [
-                    { extensionCategory: "Carriers" },
-                    { extensionCategory: "Car Seats" },
-                    { extensionCategory: "Prams" },
-                    { extensionCategory: "Strollers" },
+                    { extensionCategory: "Carriers", subId: "", childId: "" },
+                    { extensionCategory: "Car Seats", subId: "", childId: "" },
+                    { extensionCategory: "Prams", subId: "", childId: "" },
+                    { extensionCategory: "Strollers", subId: "", childId: "" },
                 ]
             },
         ]
@@ -396,149 +396,149 @@ const categories = [
             {
                 subCategory: "Breakfast & Spreads",
                 childItems: [
-                    { extensionCategory: "Breakfast Cereal" },
-                    { extensionCategory: "Muesli & Oats" },
-                    { extensionCategory: "Breakfast Snacks & Drinks" },
-                    { extensionCategory: "Jam" },
-                    { extensionCategory: "Honey" },
-                    { extensionCategory: "Peanut Butter" },
-                    { extensionCategory: "Savoury Spread" },
-                    { extensionCategory: "Sweet Spread" },  
-                    { extensionCategory: "Pancake Mix" },  
+                    { extensionCategory: "Breakfast Cereal", subId: "", childId: "" },
+                    { extensionCategory: "Muesli & Oats", subId: "", childId: "" },
+                    { extensionCategory: "Breakfast Snacks & Drinks", subId: "", childId: "" },
+                    { extensionCategory: "Jam", subId: "", childId: "" },
+                    { extensionCategory: "Honey", subId: "", childId: "" },
+                    { extensionCategory: "Peanut Butter", subId: "", childId: "" },
+                    { extensionCategory: "Savoury Spread", subId: "", childId: "" },
+                    { extensionCategory: "Sweet Spread", subId: "", childId: "" },  
+                    { extensionCategory: "Pancake Mix", subId: "", childId: "" },  
                 ]
             },
             {
                 subCategory: "Tea & Coffee",
                 childItems: [
-                    { extensionCategory: "Black Tea" },
-                    { extensionCategory: "Green Tea" },
-                    { extensionCategory: "Herbal Tea" },
-                    { extensionCategory: "Specialty Tea" },
-                    { extensionCategory: "Coffee Beans" },
-                    { extensionCategory: "Ground Coffee" },
-                    { extensionCategory: "Coffee Capsules" },
-                    { extensionCategory: "Instant & Flavoured Coffee" },
+                    { extensionCategory: "Black Tea", subId: "", childId: "" },
+                    { extensionCategory: "Green Tea", subId: "", childId: "" },
+                    { extensionCategory: "Herbal Tea", subId: "", childId: "" },
+                    { extensionCategory: "Specialty Tea", subId: "", childId: "" },
+                    { extensionCategory: "Coffee Beans", subId: "", childId: "" },
+                    { extensionCategory: "Ground Coffee", subId: "", childId: "" },
+                    { extensionCategory: "Coffee Capsules", subId: "", childId: "" },
+                    { extensionCategory: "Instant & Flavoured Coffee", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Long Life Milk",    
                 childItems: [
-                    { extensionCategory: "Almond & Other Nut Milks" },
-                    { extensionCategory: "Soy Milk" },
-                    { extensionCategory: "Oat & Rice Milk" },
-                    { extensionCategory: "Powdered Milk" },
-                    { extensionCategory: "Long Life Milk" },
-                    { extensionCategory: "Condensed & Evaporated Milk" },
+                    { extensionCategory: "Almond & Other Nut Milks", subId: "", childId: "" },
+                    { extensionCategory: "Soy Milk", subId: "", childId: "" },
+                    { extensionCategory: "Oat & Rice Milk", subId: "", childId: "" },
+                    { extensionCategory: "Powdered Milk", subId: "", childId: "" },
+                    { extensionCategory: "Long Life Milk", subId: "", childId: "" },
+                    { extensionCategory: "Condensed & Evaporated Milk", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Baking",
                 childItems: [
-                    { extensionCategory: "Flour" },
-                    { extensionCategory: "Sugar & Sweeteners" },
-                    { extensionCategory: "Yeast & Baking Ingredients" },
-                    { extensionCategory: "Icing & Cake Decorating" },
-                    { extensionCategory: "Cake & Dessert Mix" },
-                    { extensionCategory: "Flavouring, Essence & Food Colouring" },
-                    { extensionCategory: "Dried Fruit" },
-                    { extensionCategory: "Cooking Chocolate & Cocoa" },
-                    { extensionCategory: "Pancake Mix" },
-                    { extensionCategory: "Nuts, Seeds & Coconut" },
-                    { extensionCategory: "Gluten Free Baking" },
-                    { extensionCategory: "Bread Mix" }, 
+                    { extensionCategory: "Flour", subId: "", childId: "" },
+                    { extensionCategory: "Sugar & Sweeteners", subId: "", childId: "" },
+                    { extensionCategory: "Yeast & Baking Ingredients", subId: "", childId: "" },
+                    { extensionCategory: "Icing & Cake Decorating", subId: "", childId: "" },
+                    { extensionCategory: "Cake & Dessert Mix", subId: "", childId: "" },
+                    { extensionCategory: "Flavouring, Essence & Food Colouring", subId: "", childId: "" },
+                    { extensionCategory: "Dried Fruit", subId: "", childId: "" },
+                    { extensionCategory: "Cooking Chocolate & Cocoa", subId: "", childId: "" },
+                    { extensionCategory: "Pancake Mix", subId: "", childId: "" },
+                    { extensionCategory: "Nuts, Seeds & Coconut", subId: "", childId: "" },
+                    { extensionCategory: "Gluten Free Baking", subId: "", childId: "" },
+                    { extensionCategory: "Bread Mix", subId: "", childId: "" }, 
                 ]
             },
             {
                 subCategory: "Herbs & Spices",
                 childItems: [
-                    { extensionCategory: "Dried Herbs & Spices" },
-                    { extensionCategory: "Salt & Pepper" },
-                    { extensionCategory: "Breadcrumbs & Stuffing" },
-                    { extensionCategory: "Fresh Herb, Garlic & Ginger Paste" },
+                    { extensionCategory: "Dried Herbs & Spices", subId: "", childId: "" },
+                    { extensionCategory: "Salt & Pepper", subId: "", childId: "" },
+                    { extensionCategory: "Breadcrumbs & Stuffing", subId: "", childId: "" },
+                    { extensionCategory: "Fresh Herb, Garlic & Ginger Paste", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Condiments",
                 childItems: [
-                    { extensionCategory: "Chutney & Relish" },
-                    { extensionCategory: "Salad Dressings" },
-                    { extensionCategory: "Mayonnaise" },
-                    { extensionCategory: "Mustard" },
-                    { extensionCategory: "Pickled Vegetables" },
-                    { extensionCategory: "Tomato & BBQ Sauce" },
-                    { extensionCategory: "Sweet Chilli & Hot Sauce" },
+                    { extensionCategory: "Chutney & Relish", subId: "", childId: "" },
+                    { extensionCategory: "Salad Dressings", subId: "", childId: "" },
+                    { extensionCategory: "Mayonnaise", subId: "", childId: "" },
+                    { extensionCategory: "Mustard", subId: "", childId: "" },
+                    { extensionCategory: "Pickled Vegetables", subId: "", childId: "" },
+                    { extensionCategory: "Tomato & BBQ Sauce", subId: "", childId: "" },
+                    { extensionCategory: "Sweet Chilli & Hot Sauce", subId: "", childId: "" },
                     { extensionCategory: "Fruit Sauce" },
                 ]
             },
             {
                 subCategory: "Canned Food & Instant Meals",
                 childItems: [
-                    { extensionCategory: "Instant Meals & Sides" },
-                    { extensionCategory: "Instant Noodles" },
-                    { extensionCategory: "Baked Beans & Spaghetti" },
-                    { extensionCategory: "Canned Soup & Soup Ingredients" },
-                    { extensionCategory: "Canned Tuna" },
-                    { extensionCategory: "Canned Salmon & Seafood" },
-                    { extensionCategory: "Canned Meat" },
-                    { extensionCategory: "Canned Vegetables" },
-                    { extensionCategory: "Canned Beans & Legumes" },
-                    { extensionCategory: "Canned Fruit" },
-                    { extensionCategory: "Canned Tomatoes" },
-                    { extensionCategory: "Canned & Packet Ready Meals" }
+                    { extensionCategory: "Instant Meals & Sides", subId: "", childId: "" },
+                    { extensionCategory: "Instant Noodles", subId: "", childId: "" },
+                    { extensionCategory: "Baked Beans & Spaghetti", subId: "", childId: "" },
+                    { extensionCategory: "Canned Soup & Soup Ingredients", subId: "", childId: "" },
+                    { extensionCategory: "Canned Tuna", subId: "", childId: "" },
+                    { extensionCategory: "Canned Salmon & Seafood", subId: "", childId: "" },
+                    { extensionCategory: "Canned Meat", subId: "", childId: "" },
+                    { extensionCategory: "Canned Vegetables", subId: "", childId: "" },
+                    { extensionCategory: "Canned Beans & Legumes", subId: "", childId: "" },
+                    { extensionCategory: "Canned Fruit", subId: "", childId: "" },
+                    { extensionCategory: "Canned Tomatoes", subId: "", childId: "" },
+                    { extensionCategory: "Canned & Packet Ready Meals", subId: "", childId: "" }
                 ]
             },
             {
                 subCategory: "Pasta, Rice & Grains",
                 childItems: [
-                    { extensionCategory: "Dried Pasta" },
-                    { extensionCategory: "Pasta Sheets" },
-                    { extensionCategory: "Pasta Meals" },
-                    { extensionCategory: "Gluten Free Pasta" },
-                    { extensionCategory: "Rice" },
-                    { extensionCategory: "Beans & Legumes" },
-                    { extensionCategory: "Quinoa, Cous Cous & Other Grains" },
+                    { extensionCategory: "Dried Pasta", subId: "", childId: "" },
+                    { extensionCategory: "Pasta Sheets", subId: "", childId: "" },
+                    { extensionCategory: "Pasta Meals", subId: "", childId: "" },
+                    { extensionCategory: "Gluten Free Pasta", subId: "", childId: "" },
+                    { extensionCategory: "Rice", subId: "", childId: "" },
+                    { extensionCategory: "Beans & Legumes", subId: "", childId: "" },
+                    { extensionCategory: "Quinoa, Cous Cous & Other Grains", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Cooking Sauces & Recipe Bases",
                 childItems: [
-                    { extensionCategory: "Pizza & Pasta Sauce" },
-                    { extensionCategory: "Marinades & Seasoning" },
-                    { extensionCategory: "Soy & Asian Sauces" },
-                    { extensionCategory: "Sweet Chilli & Hot Sauce" },
-                    { extensionCategory: "Simmer Sauce & Recipe Bases" },
-                    { extensionCategory: "Tomato & BBQ Sauce" },
-                    { extensionCategory: "Stock & Gravy" },
+                    { extensionCategory: "Pizza & Pasta Sauce", subId: "", childId: "" },
+                    { extensionCategory: "Marinades & Seasoning", subId: "", childId: "" },
+                    { extensionCategory: "Soy & Asian Sauces", subId: "", childId: "" },
+                    { extensionCategory: "Sweet Chilli & Hot Sauce", subId: "", childId: "" },
+                    { extensionCategory: "Simmer Sauce & Recipe Bases", subId: "", childId: "" },
+                    { extensionCategory: "Tomato & BBQ Sauce", subId: "", childId: "" },
+                    { extensionCategory: "Stock & Gravy", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "International Foods",
                 childItems: [
-                    { extensionCategory: "Asian" }, 
-                    { extensionCategory: "European" },
-                    { extensionCategory: "Indian" },
-                    { extensionCategory: "Mexican" },
-                    { extensionCategory: "Middle Eastern" },
-                    { extensionCategory: "South African" },
-                    { extensionCategory: "UK Foods" },
-                    { extensionCategory: "Italian" },
-                    { extensionCategory: "Kosher" },
+                    { extensionCategory: "Asian", subId: "", childId: "" }, 
+                    { extensionCategory: "European", subId: "", childId: "" },
+                    { extensionCategory: "Indian", subId: "", childId: "" },
+                    { extensionCategory: "Mexican", subId: "", childId: "" },
+                    { extensionCategory: "Middle Eastern", subId: "", childId: "" },
+                    { extensionCategory: "South African", subId: "", childId: "" },
+                    { extensionCategory: "UK Foods", subId: "", childId: "" },
+                    { extensionCategory: "Italian", subId: "", childId: "" },
+                    { extensionCategory: "Kosher", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Desserts",
                 childItems: [
-                    { extensionCategory: "Ice Cream Cones, Syrups & Toppings" },
-                    { extensionCategory: "Jelly" },
-                    { extensionCategory: "Puddings" },
-                    { extensionCategory: "Ready to Freeze Ice Blocks" },
+                    { extensionCategory: "Ice Cream Cones, Syrups & Toppings", subId: "", childId: "" },
+                    { extensionCategory: "Jelly", subId: "", childId: "" },
+                    { extensionCategory: "Puddings", subId: "", childId: "" },
+                    { extensionCategory: "Ready to Freeze Ice Blocks", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Oil & Vinegar",
                 childItems: [
-                    { extensionCategory: "Oil" },
-                    { extensionCategory: "Vinegar" }
+                    { extensionCategory: "Oil", subId: "", childId: "" },
+                    { extensionCategory: "Vinegar", subId: "", childId: "" }
                 ]
             },
         ]
@@ -550,56 +550,56 @@ const categories = [
             {
                 subCategory: 'Confectionery',
                 childItems: [
-                    { extensionCategory: "Chocolate Bars" },
-                    { extensionCategory: "Chocolate Blocks" },
-                    { extensionCategory: "Chocolate Bites" },
-                    { extensionCategory: "Chocolate Share Packs" },
-                    { extensionCategory: "Chocolate Boxes & Gifts" },
-                    { extensionCategory: "Sweets, Lollies & Licorice" },
+                    { extensionCategory: "Chocolate Bars", subId: "", childId: "" },
+                    { extensionCategory: "Chocolate Blocks", subId: "", childId: "" },
+                    { extensionCategory: "Chocolate Bites", subId: "", childId: "" },
+                    { extensionCategory: "Chocolate Share Packs", subId: "", childId: "" },
+                    { extensionCategory: "Chocolate Boxes & Gifts", subId: "", childId: "" },
+                    { extensionCategory: "Sweets, Lollies & Licorice", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: 'Biscuits & Crackers',
                 childItems: [
-                    { extensionCategory: "Biscuits & Cookies" },
-                    { extensionCategory: "Rice Cakes & Crispbread" },
-                    { extensionCategory: "Crackers" }
+                    { extensionCategory: "Biscuits & Cookies", subId: "", childId: "" },
+                    { extensionCategory: "Rice Cakes & Crispbread", subId: "", childId: "" },
+                    { extensionCategory: "Crackers", subId: "", childId: "" }
                 ]
             },
             {
                 subCategory: 'Snacks',
                 childItems: [
-                    { extensionCategory: "Pretzels & Jerky" },
-                    { extensionCategory: "Popcorn" },
-                    { extensionCategory: "Muesli Bars & Snack Bars" },
-                    { extensionCategory: "Nuts, Dried Fruit & Snack Pots" },
-                    { extensionCategory: "Lunch Box Snacks" },
-                    { extensionCategory: "Gluten Free Snacks" }
+                    { extensionCategory: "Pretzels & Jerky", subId: "", childId: "" },
+                    { extensionCategory: "Popcorn", subId: "", childId: "" },
+                    { extensionCategory: "Muesli Bars & Snack Bars", subId: "", childId: "" },
+                    { extensionCategory: "Nuts, Dried Fruit & Snack Pots", subId: "", childId: "" },
+                    { extensionCategory: "Lunch Box Snacks", subId: "", childId: "" },
+                    { extensionCategory: "Gluten Free Snacks", subId: "", childId: "" }
                 ]
             },
             {
                 subCategory: 'Gum, Mints & Lozenges',
                 childItems: [
-                    { extensionCategory: "Gum" },
-                    { extensionCategory: "Mints" },
-                    { extensionCategory: "Lozenges" }
+                    { extensionCategory: "Gum", subId: "", childId: "" },
+                    { extensionCategory: "Mints", subId: "", childId: "" },
+                    { extensionCategory: "Lozenges", subId: "", childId: "" }
                 ]
             },
             {
                 subCategory: 'Chips',
                 childItems: [
-                    { extensionCategory: "Chips Single Pack" },
-                    { extensionCategory: "Chips Sharing" },
-                    { extensionCategory: "Chips Multi-Pack" },
-                    { extensionCategory: "Corn Chips & Salsa" }
+                    { extensionCategory: "Chips Single Pack", subId: "", childId: "" },
+                    { extensionCategory: "Chips Sharing", subId: "", childId: "" },
+                    { extensionCategory: "Chips Multi-Pack", subId: "", childId: "" },
+                    { extensionCategory: "Corn Chips & Salsa", subId: "", childId: "" }
                 ]
             },
             {
                 subCategory: 'Easter Chocolates & Treats',
                 childItems: [
-                    { extensionCategory: "Easter Bunnies" },
-                    { extensionCategory: "Easter Eggs" },
-                    { extensionCategory: "Easter Chocolate Gifting" },
+                    { extensionCategory: "Easter Bunnies", subId: "", childId: "" },
+                    { extensionCategory: "Easter Eggs", subId: "", childId: "" },
+                    { extensionCategory: "Easter Chocolate Gifting", subId: "", childId: "" },
                 ]
             }
         ]
@@ -611,40 +611,40 @@ const categories = [
             {
                 subCategory: "Fruit",
                 childItems: [
-                    { extensionCategory: "Organic Fruit" },
-                    { extensionCategory: "Apples & Pears" },
-                    { extensionCategory: "Bananas" },
-                    { extensionCategory: "Berries & Cherries" },
-                    { extensionCategory: "Citrus Fruit" },
-                    { extensionCategory: "Stone Fruit" },
-                    { extensionCategory: "Grapes" },
-                    { extensionCategory: "Melons & Mangoes" },
-                    { extensionCategory: "Avocados" },
-                    { extensionCategory: "Pineapples, Kiwi & Tropical Fruit" },
-                    { extensionCategory: "Asian & Exotic Fruit" },
-                    { extensionCategory: "Cut Fruit" },
+                    { extensionCategory: "Organic Fruit", subId: "", childId: "" },
+                    { extensionCategory: "Apples & Pears", subId: "", childId: "" },
+                    { extensionCategory: "Bananas", subId: "", childId: "" },
+                    { extensionCategory: "Berries & Cherries", subId: "", childId: "" },
+                    { extensionCategory: "Citrus Fruit", subId: "", childId: "" },
+                    { extensionCategory: "Stone Fruit", subId: "", childId: "" },
+                    { extensionCategory: "Grapes", subId: "", childId: "" },
+                    { extensionCategory: "Melons & Mangoes", subId: "", childId: "" },
+                    { extensionCategory: "Avocados", subId: "", childId: "" },
+                    { extensionCategory: "Pineapples, Kiwi & Tropical Fruit", subId: "", childId: "" },
+                    { extensionCategory: "Asian & Exotic Fruit", subId: "", childId: "" },
+                    { extensionCategory: "Cut Fruit", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Vegetables",
                 childItems: [
-                    { extensionCategory: "Organic Vegetables" },
-                    { extensionCategory: "Prepacked Vegetables" },
-                    { extensionCategory: "Potatoes & Pumpkins" },
-                    { extensionCategory: "Carrots, Onions & Root Veg" },
-                    { extensionCategory: "Lettuce, Kale & Leafy Greens" },
-                    { extensionCategory: "Broccoli, Cauliflower & Cabbage" },
-                    { extensionCategory: "Peas, Beans, Corn & Asparagus" },
-                    { extensionCategory: "Capsicum" },
-                    { extensionCategory: "Tomatoes" },
-                    { extensionCategory: "Celery" },
-                    { extensionCategory: "Avocados" },
-                    { extensionCategory: "Cucumber" },
-                    { extensionCategory: "Mushrooms" },
-                    { extensionCategory: "Fresh Herbs, Garlic & Chillies" },
-                    { extensionCategory: "Zucchini, Eggplant & Squash" },
-                    { extensionCategory: "Sprouts" },
-                    { extensionCategory: "Snacking" },
+                    { extensionCategory: "Organic Vegetables", subId: "", childId: "" },
+                    { extensionCategory: "Prepacked Vegetables", subId: "", childId: "" },
+                    { extensionCategory: "Potatoes & Pumpkins", subId: "", childId: "" },
+                    { extensionCategory: "Carrots, Onions & Root Veg", subId: "", childId: "" },
+                    { extensionCategory: "Lettuce, Kale & Leafy Greens", subId: "", childId: "" },
+                    { extensionCategory: "Broccoli, Cauliflower & Cabbage", subId: "", childId: "" },
+                    { extensionCategory: "Peas, Beans, Corn & Asparagus", subId: "", childId: "" },
+                    { extensionCategory: "Capsicum", subId: "", childId: "" },
+                    { extensionCategory: "Tomatoes", subId: "", childId: "" },
+                    { extensionCategory: "Celery", subId: "", childId: "" },
+                    { extensionCategory: "Avocados", subId: "", childId: "" },
+                    { extensionCategory: "Cucumber", subId: "", childId: "" },
+                    { extensionCategory: "Mushrooms", subId: "", childId: "" },
+                    { extensionCategory: "Fresh Herbs, Garlic & Chillies", subId: "", childId: "" },
+                    { extensionCategory: "Zucchini, Eggplant & Squash", subId: "", childId: "" },
+                    { extensionCategory: "Sprouts", subId: "", childId: "" },
+                    { extensionCategory: "Snacking", subId: "", childId: "" },
                 ]
             },
             {
@@ -664,35 +664,35 @@ const categories = [
             {
                 subCategory: "Prepared Vegetables",
                 childItems: [
-                    { extensionCategory: "Cut Veg" },
-                    { extensionCategory: "Microwave Ready Sides" },
-                    { extensionCategory: "Oven Ready Sides" },
-                    { extensionCategory: "Stir Fry & Soup Kits" },
-                    { extensionCategory: "Sprouts" },
-                    { extensionCategory: "Entertaining Sides" },
+                    { extensionCategory: "Cut Veg", subId: "", childId: "" },
+                    { extensionCategory: "Microwave Ready Sides", subId: "", childId: "" },
+                    { extensionCategory: "Oven Ready Sides", subId: "", childId: "" },
+                    { extensionCategory: "Stir Fry & Soup Kits", subId: "", childId: "" },
+                    { extensionCategory: "Sprouts", subId: "", childId: "" },
+                    { extensionCategory: "Entertaining Sides", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Organic",
                 childItems: [
-                    { extensionCategory: "Organic Fruit" },
-                    { extensionCategory: "Organic Vegetables" },
-                    { extensionCategory: "Organic Salad" },
-                    { extensionCategory: "Organic Loose" },
+                    { extensionCategory: "Organic Fruit", subId: "", childId: "" },
+                    { extensionCategory: "Organic Vegetables", subId: "", childId: "" },
+                    { extensionCategory: "Organic Salad", subId: "", childId: "" },
+                    { extensionCategory: "Organic Loose", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Fresh Herbs, Garlic & Chillies",
                 childItems: [
-                    { extensionCategory: "Fresh Herbs" },
-                    { extensionCategory: "Garlic, Chillies & Spices" },
+                    { extensionCategory: "Fresh Herbs", subId: "", childId: "" },
+                    { extensionCategory: "Garlic, Chillies & Spices", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Snacking",
                 childItems: [
-                    { extensionCategory: "Prepacked Vegetables" },
-                    { extensionCategory: "Prepacked Fruit" },
+                    { extensionCategory: "Prepacked Vegetables", subId: "", childId: "" },
+                    { extensionCategory: "Prepacked Fruit", subId: "", childId: "" },
                 ]
             },
         ]
@@ -704,69 +704,69 @@ const categories = [
             {
                 subCategory: "Poultry",
                 childItems: [
-                    { extensionCategory: "Fresh Chicken" },
-                    { extensionCategory: "Free Range Chicken" },
-                    { extensionCategory: "Crumbed" },
-                    { extensionCategory: "Kebabs & Marinated" },
-                    { extensionCategory: "Deli Chicken" },
-                    { extensionCategory: "Turkey" },
-                    { extensionCategory: "Duck & Game" },
+                    { extensionCategory: "Fresh Chicken", subId: "", childId: "" },
+                    { extensionCategory: "Free Range Chicken", subId: "", childId: "" },
+                    { extensionCategory: "Crumbed", subId: "", childId: "" },
+                    { extensionCategory: "Kebabs & Marinated", subId: "", childId: "" },
+                    { extensionCategory: "Deli Chicken", subId: "", childId: "" },
+                    { extensionCategory: "Turkey", subId: "", childId: "" },
+                    { extensionCategory: "Duck & Game", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Meat",
                 childItems: [
-                    { extensionCategory: "Beef & Veal" },
-                    { extensionCategory: "Lamb" },
-                    { extensionCategory: "Pork" },
-                    { extensionCategory: "Game" },
-                    { extensionCategory: "Burgers & Sausages" },
-                    { extensionCategory: "Deli Meat" },
-                    { extensionCategory: "Organic Meat" },
-                    { extensionCategory: "Gluten Free Meat" },
-                    { extensionCategory: "Mince" },
-                    { extensionCategory: "Oven Ready Meat" },
+                    { extensionCategory: "Beef & Veal", subId: "", childId: "" },
+                    { extensionCategory: "Lamb", subId: "", childId: "" },
+                    { extensionCategory: "Pork", subId: "", childId: "" },
+                    { extensionCategory: "Game", subId: "", childId: "" },
+                    { extensionCategory: "Burgers & Sausages", subId: "", childId: "" },
+                    { extensionCategory: "Deli Meat", subId: "", childId: "" },
+                    { extensionCategory: "Organic Meat", subId: "", childId: "" },
+                    { extensionCategory: "Gluten Free Meat", subId: "", childId: "" },
+                    { extensionCategory: "Mince", subId: "", childId: "" },
+                    { extensionCategory: "Oven Ready Meat", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Seafood",
                 childItems: [
-                    { extensionCategory: "Salmon & Other Fish" },
-                    { extensionCategory: "Prawns" },
-                    { extensionCategory: "Seafood Entertaining" },
-                    { extensionCategory: "Frozen Prepacked Seafood" },
-                    { extensionCategory: "Squid, Octopus & Marinara" },
-                    { extensionCategory: "Crab & Lobster" },
-                    { extensionCategory: "Oysters, Mussels & Scallops" },
-                    { extensionCategory: "Sauce & Condiments" },
+                    { extensionCategory: "Salmon & Other Fish", subId: "", childId: "" },
+                    { extensionCategory: "Prawns", subId: "", childId: "" },
+                    { extensionCategory: "Seafood Entertaining", subId: "", childId: "" },
+                    { extensionCategory: "Frozen Prepacked Seafood", subId: "", childId: "" },
+                    { extensionCategory: "Squid, Octopus & Marinara", subId: "", childId: "" },
+                    { extensionCategory: "Crab & Lobster", subId: "", childId: "" },
+                    { extensionCategory: "Oysters, Mussels & Scallops", subId: "", childId: "" },
+                    { extensionCategory: "Sauce & Condiments", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Mince",
                 childItems: [
-                    { extensionCategory: "Beef Mince" },
-                    { extensionCategory: "Pork Mince" },
-                    { extensionCategory: "Chicken & Turkey Mince" },
-                    { extensionCategory: "Lamb Mince" },
+                    { extensionCategory: "Beef Mince", subId: "", childId: "" },
+                    { extensionCategory: "Pork Mince", subId: "", childId: "" },
+                    { extensionCategory: "Chicken & Turkey Mince", subId: "", childId: "" },
+                    { extensionCategory: "Lamb Mince", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "BBQ Meat",
                 childItems: [
-                    { extensionCategory: "Burgers" },
-                    { extensionCategory: "Sausages" },
-                    { extensionCategory: "Pork" },
-                    { extensionCategory: "Kebabs" },
-                    { extensionCategory: "Chicken" },
-                    { extensionCategory: "Lamb" },
+                    { extensionCategory: "Burgers", subId: "", childId: "" },
+                    { extensionCategory: "Sausages", subId: "", childId: "" },
+                    { extensionCategory: "Pork", subId: "", childId: "" },
+                    { extensionCategory: "Kebabs", subId: "", childId: "" },
+                    { extensionCategory: "Chicken", subId: "", childId: "" },
+                    { extensionCategory: "Lamb", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Organic Meat & Poultry",
                 childItems: [
-                    { extensionCategory: "Organic Beef" },
-                    { extensionCategory: "Organic Lamb" },
-                    { extensionCategory: "Organic Chicken" },
+                    { extensionCategory: "Organic Beef", subId: "", childId: "" },
+                    { extensionCategory: "Organic Lamb", subId: "", childId: "" },
+                    { extensionCategory: "Organic Chicken", subId: "", childId: "" },
                 ]
             },
         ]
@@ -778,96 +778,96 @@ const categories = [
             {
                 subCategory: "Frozen Meals",
                 childItems: [
-                    { extensionCategory: "Frozen Meals" },
-                    { extensionCategory: "Kid's Frozen Meals" },
-                    { extensionCategory: "Frozen Dumplings" },
-                    { extensionCategory: "Plant Based Meals" },
+                    { extensionCategory: "Frozen Meals", subId: "", childId: "" },
+                    { extensionCategory: "Kid's Frozen Meals", subId: "", childId: "" },
+                    { extensionCategory: "Frozen Dumplings", subId: "", childId: "" },
+                    { extensionCategory: "Plant Based Meals", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Frozen Gluten Free",
                 childItems: [
-                    { extensionCategory: "Gluten Free" },
+                    { extensionCategory: "Gluten Free", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Chips & Wedges",
                 childItems: [
-                    { extensionCategory: "Chips" },
-                    { extensionCategory: "Hashbrowns" },
-                    { extensionCategory: "Wedges" },
+                    { extensionCategory: "Chips", subId: "", childId: "" },
+                    { extensionCategory: "Hashbrowns", subId: "", childId: "" },
+                    { extensionCategory: "Wedges", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Frozen Seafood",
                 childItems: [
-                    { extensionCategory: "Fish Fillets" },
-                    { extensionCategory: "Fish Fingers & Cakes" },
-                    { extensionCategory: "Frozen Seafood" },
+                    { extensionCategory: "Fish Fillets", subId: "", childId: "" },
+                    { extensionCategory: "Fish Fingers & Cakes", subId: "", childId: "" },
+                    { extensionCategory: "Frozen Seafood", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Frozen Meat",
                 childItems: [
-                    { extensionCategory: "Beef & Pork" },
-                    { extensionCategory: "Chicken Pieces & Nuggets" },
-                    { extensionCategory: "Whole Birds & Roasts" },
+                    { extensionCategory: "Beef & Pork", subId: "", childId: "" },
+                    { extensionCategory: "Chicken Pieces & Nuggets", subId: "", childId: "" },
+                    { extensionCategory: "Whole Birds & Roasts", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Frozen Pizzas",
                 childItems: [
-                    { extensionCategory: "Pizzas" },
+                    { extensionCategory: "Pizzas", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Frozen Vegetables",
                 childItems: [
-                    { extensionCategory: "Beans & Peas" },
-                    { extensionCategory: "Corn" },
-                    { extensionCategory: "Mixed Vegetables" },
-                    { extensionCategory: "Steam Packs" },
-                    { extensionCategory: "Other Vegetables" },
+                    { extensionCategory: "Beans & Peas", subId: "", childId: "" },
+                    { extensionCategory: "Corn", subId: "", childId: "" },
+                    { extensionCategory: "Mixed Vegetables", subId: "", childId: "" },
+                    { extensionCategory: "Steam Packs", subId: "", childId: "" },
+                    { extensionCategory: "Other Vegetables", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Frozen Fruit",
                 childItems: [
-                    { extensionCategory: "Berries & Tropical" },
+                    { extensionCategory: "Berries & Tropical", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Ice Cream",
                 childItems: [
-                    { extensionCategory: "Ice Cream Tubs" },
-                    { extensionCategory: "Ice Cream Sticks & Cones" },
-                    { extensionCategory: "Premium Ice Cream" },
-                    { extensionCategory: "Frozen Yoghurt" },
-                    { extensionCategory: "Gelato & Sorbet" },
-                    { extensionCategory: "Ice Cream Cakes" },
+                    { extensionCategory: "Ice Cream Tubs", subId: "", childId: "" },
+                    { extensionCategory: "Ice Cream Sticks & Cones", subId: "", childId: "" },
+                    { extensionCategory: "Premium Ice Cream", subId: "", childId: "" },
+                    { extensionCategory: "Frozen Yoghurt", subId: "", childId: "" },
+                    { extensionCategory: "Gelato & Sorbet", subId: "", childId: "" },
+                    { extensionCategory: "Ice Cream Cakes", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Frozen Desserts",
                 childItems: [
-                    { extensionCategory: "Assorted Desserts" },
-                    { extensionCategory: "Cakes & Cheesecakes" },
-                    { extensionCategory: "Dessert Pies & Pastries" },
-                    { extensionCategory: "Pastry Sheets" },
+                    { extensionCategory: "Assorted Desserts", subId: "", childId: "" },
+                    { extensionCategory: "Cakes & Cheesecakes", subId: "", childId: "" },
+                    { extensionCategory: "Dessert Pies & Pastries", subId: "", childId: "" },
+                    { extensionCategory: "Pastry Sheets", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Frozen Party Food",
                 childItems: [
-                    { extensionCategory: "Pastry Sheets" },
-                    { extensionCategory: "Pies, Pastries & Quiches" },
-                    { extensionCategory: "Frozen Finger Food" },
+                    { extensionCategory: "Pastry Sheets", subId: "", childId: "" },
+                    { extensionCategory: "Pies, Pastries & Quiches", subId: "", childId: "" },
+                    { extensionCategory: "Frozen Finger Food", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Frozen Pies & Sausage Rolls",
                 childItems: [
-                    { extensionCategory: "Pies & Sausage Rolls" },
+                    { extensionCategory: "Pies & Sausage Rolls", subId: "", childId: "" },
                 ]
             },
         ]
@@ -879,36 +879,36 @@ const categories = [
             {
                 subCategory: "In-Store Bakery",
                 childItems: [
-                    { extensionCategory: "Bread" },
-                    { extensionCategory: "Sourdough & Specialty Bread" },
-                    { extensionCategory: "Muffins & Scones" },
-                    { extensionCategory: "Bread Rolls" },
-                    { extensionCategory: "Donuts & Cookies" },
-                    { extensionCategory: "Bakery Cakes" },
-                    { extensionCategory: "Pastries & Desserts" },
+                    { extensionCategory: "Bread", subId: "", childId: "" },
+                    { extensionCategory: "Sourdough & Specialty Bread", subId: "", childId: "" },
+                    { extensionCategory: "Muffins & Scones", subId: "", childId: "" },
+                    { extensionCategory: "Bread Rolls", subId: "", childId: "" },
+                    { extensionCategory: "Donuts & Cookies", subId: "", childId: "" },
+                    { extensionCategory: "Bakery Cakes", subId: "", childId: "" },
+                    { extensionCategory: "Pastries & Desserts", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Packaged Bread & Bakery",
                 childItems: [
-                    { extensionCategory: "Cakes" },
-                    { extensionCategory: "Packaged Bread" },
-                    { extensionCategory: "Crumpets & Pancakes" },
-                    { extensionCategory: "Muffins, Scones & Cupcakes" },
-                    { extensionCategory: "Desserts & Pastries" },
-                    { extensionCategory: "Pizza Bases" },
-                    { extensionCategory: "Wraps & Flatbread" },
-                    { extensionCategory: "Rolls & Bagels" },
-                    { extensionCategory: "Gluten Free Bakery" },
-                    { extensionCategory: "Pies & Quiches" },
-                    { extensionCategory: "Bake At Home" },
-                    { extensionCategory: "Organic Bakery" },
+                    { extensionCategory: "Cakes", subId: "", childId: "" },
+                    { extensionCategory: "Packaged Bread", subId: "", childId: "" },
+                    { extensionCategory: "Crumpets & Pancakes", subId: "", childId: "" },
+                    { extensionCategory: "Muffins, Scones & Cupcakes", subId: "", childId: "" },
+                    { extensionCategory: "Desserts & Pastries", subId: "", childId: "" },
+                    { extensionCategory: "Pizza Bases", subId: "", childId: "" },
+                    { extensionCategory: "Wraps & Flatbread", subId: "", childId: "" },
+                    { extensionCategory: "Rolls & Bagels", subId: "", childId: "" },
+                    { extensionCategory: "Gluten Free Bakery", subId: "", childId: "" },
+                    { extensionCategory: "Pies & Quiches", subId: "", childId: "" },
+                    { extensionCategory: "Bake At Home", subId: "", childId: "" },
+                    { extensionCategory: "Organic Bakery", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Easter Hot Cross Buns & Desserts",
                 childItems: [
-                    { extensionCategory: "Hot Cross Buns" },
+                    { extensionCategory: "Hot Cross Buns", subId: "", childId: "" },
                 ]
             },
         ]
@@ -920,41 +920,41 @@ const categories = [
             {
                 subCategory: "Cat & Kitten",
                 childItems: [
-                    { extensionCategory: "Dry Cat Food" },
-                    { extensionCategory: "Chilled Cat Food" },
-                    { extensionCategory: "Trays & Cans Cat Food" },
-                    { extensionCategory: "Kitten Food.." },
-                    { extensionCategory: "Cat Grooming, Accessories & Toys" },
-                    { extensionCategory: "Cat Healthcare" },
-                    { extensionCategory: "Cat Litter" },
-                    { extensionCategory: "Cat Treats & Milk" },
+                    { extensionCategory: "Dry Cat Food", subId: "", childId: "" },
+                    { extensionCategory: "Chilled Cat Food", subId: "", childId: "" },
+                    { extensionCategory: "Trays & Cans Cat Food", subId: "", childId: "" },
+                    { extensionCategory: "Kitten Food..", subId: "", childId: "" },
+                    { extensionCategory: "Cat Grooming, Accessories & Toys", subId: "", childId: "" },
+                    { extensionCategory: "Cat Healthcare", subId: "", childId: "" },
+                    { extensionCategory: "Cat Litter", subId: "", childId: "" },
+                    { extensionCategory: "Cat Treats & Milk", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Dog & Puppy",
                 childItems: [
-                    { extensionCategory: "Dry Dog Food" },
-                    { extensionCategory: "Chilled Dog Food" },
-                    { extensionCategory: "Frozen Dog Food" },
-                    { extensionCategory: "Trays & Cans Dog Food" },
+                    { extensionCategory: "Dry Dog Food", subId: "", childId: "" },
+                    { extensionCategory: "Chilled Dog Food", subId: "", childId: "" },
+                    { extensionCategory: "Frozen Dog Food", subId: "", childId: "" },
+                    { extensionCategory: "Trays & Cans Dog Food", subId: "", childId: "" },
                     { extensionCategory: "Puppy Food" },
-                    { extensionCategory: "Dog Grooming, Accessories & Toys" },
-                    { extensionCategory: "Dog Healthcare" },
-                    { extensionCategory: "Dog Collars & Leads" },
-                    { extensionCategory: "Dog Treats & Milk" },
-                    { extensionCategory: "Dog Bedding & Carriers" },
+                    { extensionCategory: "Dog Grooming, Accessories & Toys", subId: "", childId: "" },
+                    { extensionCategory: "Dog Healthcare", subId: "", childId: "" },
+                    { extensionCategory: "Dog Collars & Leads", subId: "", childId: "" },
+                    { extensionCategory: "Dog Treats & Milk", subId: "", childId: "" },
+                    { extensionCategory: "Dog Bedding & Carriers", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Birds, Fish & Small Pets",
                 childItems: [
-                    { extensionCategory: "Bird Food" },
-                    { extensionCategory: "Bird Treats" },
-                    { extensionCategory: "Fish Food" },
-                    { extensionCategory: "Small Pets Food" },
-                    { extensionCategory: "Small Pet Accessories" },
-                    { extensionCategory: "Bird Accessories" },
-                    { extensionCategory: "Fish Tanks, Cleaning & Accessories" },
+                    { extensionCategory: "Bird Food", subId: "", childId: "" },
+                    { extensionCategory: "Bird Treats", subId: "", childId: "" },
+                    { extensionCategory: "Fish Food", subId: "", childId: "" },
+                    { extensionCategory: "Small Pets Food", subId: "", childId: "" },
+                    { extensionCategory: "Small Pet Accessories", subId: "", childId: "" },
+                    { extensionCategory: "Bird Accessories", subId: "", childId: "" },
+                    { extensionCategory: "Fish Tanks, Cleaning & Accessories", subId: "", childId: "" },
                 ]
             },
         ]
@@ -966,102 +966,102 @@ const categories = [
             {
                 subCategory: "Chilled Drinks",
                 childItems: [
-                    { extensionCategory: "Chilled Soft Drinks & Energy Drinks" },
-                    { extensionCategory: "Chilled Water" },
-                    { extensionCategory: "Chilled Juices, Iced Teas & Iced Coffee" },
+                    { extensionCategory: "Chilled Soft Drinks & Energy Drinks", subId: "", childId: "" },
+                    { extensionCategory: "Chilled Water", subId: "", childId: "" },
+                    { extensionCategory: "Chilled Juices, Iced Teas & Iced Coffee", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Soft Drinks",
                 childItems: [
-                    { extensionCategory: "Mixers" },
-                    { extensionCategory: "Soft Drink Bottles" },
-                    { extensionCategory: "Soft Drink Cans" },
+                    { extensionCategory: "Mixers", subId: "", childId: "" },
+                    { extensionCategory: "Soft Drink Bottles", subId: "", childId: "" },
+                    { extensionCategory: "Soft Drink Cans", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Cordials, Juices & Iced Teas",
                 childItems: [
-                    { extensionCategory: "Cordials" },
-                    { extensionCategory: "Juices" },
-                    { extensionCategory: "Chilled Juices" },
-                    { extensionCategory: "Iced Teas" },
-                    { extensionCategory: "Lunch Box Juice" },
+                    { extensionCategory: "Cordials", subId: "", childId: "" },
+                    { extensionCategory: "Juices", subId: "", childId: "" },
+                    { extensionCategory: "Chilled Juices", subId: "", childId: "" },
+                    { extensionCategory: "Iced Teas", subId: "", childId: "" },
+                    { extensionCategory: "Lunch Box Juice", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Water",
                 childItems: [
-                    { extensionCategory: "Flavoured & Coconut Water" },
-                    { extensionCategory: "Sparkling Water" },
-                    { extensionCategory: "Still Water" },
+                    { extensionCategory: "Flavoured & Coconut Water", subId: "", childId: "" },
+                    { extensionCategory: "Sparkling Water", subId: "", childId: "" },
+                    { extensionCategory: "Still Water", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Sports & Energy Drinks",
                 childItems: [
-                    { extensionCategory: "Energy Drinks" },
-                    { extensionCategory: "Sports Drinks" },
+                    { extensionCategory: "Energy Drinks", subId: "", childId: "" },
+                    { extensionCategory: "Sports Drinks", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Tea",
                 childItems: [
-                    { extensionCategory: "Black Tea" },
-                    { extensionCategory: "Green Tea" },
-                    { extensionCategory: "Herbal & Specialty Tea" },
+                    { extensionCategory: "Black Tea", subId: "", childId: "" },
+                    { extensionCategory: "Green Tea", subId: "", childId: "" },
+                    { extensionCategory: "Herbal & Specialty Tea", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Coffee",
                 childItems: [
-                    { extensionCategory: "Coffee Beans" },
-                    { extensionCategory: "Coffee Capsules" },
-                    { extensionCategory: "Ground Coffee" },
-                    { extensionCategory: "Instant & Flavoured Coffee" },
+                    { extensionCategory: "Coffee Beans", subId: "", childId: "" },
+                    { extensionCategory: "Coffee Capsules", subId: "", childId: "" },
+                    { extensionCategory: "Ground Coffee", subId: "", childId: "" },
+                    { extensionCategory: "Instant & Flavoured Coffee", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Flavoured Milk",
                 childItems: [
-                    { extensionCategory: "Bubble Tea" },
-                    { extensionCategory: "Drinking Chocolate" },
-                    { extensionCategory: "Drinks & Powders" },
-                    { extensionCategory: "Kids Milk" },
+                    { extensionCategory: "Bubble Tea", subId: "", childId: "" },
+                    { extensionCategory: "Drinking Chocolate", subId: "", childId: "" },
+                    { extensionCategory: "Drinks & Powders", subId: "", childId: "" },
+                    { extensionCategory: "Kids Milk", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Long Life Milk",
                 childItems: [
-                    { extensionCategory: "Almond Milk" },
-                    { extensionCategory: "Soy Milk" },
-                    { extensionCategory: "Powdered Milk" },
-                    { extensionCategory: "Oat & Rice Milk" },
-                    { extensionCategory: "Lactose Free Milk" },
-                    { extensionCategory: "Long Life Milk" },
+                    { extensionCategory: "Almond Milk", subId: "", childId: "" },
+                    { extensionCategory: "Soy Milk", subId: "", childId: "" },
+                    { extensionCategory: "Powdered Milk", subId: "", childId: "" },
+                    { extensionCategory: "Oat & Rice Milk", subId: "", childId: "" },
+                    { extensionCategory: "Lactose Free Milk", subId: "", childId: "" },
+                    { extensionCategory: "Long Life Milk", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Home Brew",
                 childItems: [
-                    { extensionCategory: "Home Brew" },
+                    { extensionCategory: "Home Brew", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Low & Non Alcoholic Drinks",
                 childItems: [
-                    { extensionCategory: "Low & Non Alcoholic Beer" },
-                    { extensionCategory: "Low & Non Alcoholic Wine" },
-                    { extensionCategory: "Low & Non Alcoholic Spirits" },
-                    { extensionCategory: "Low & Non Alcoholic Home Brew" },
+                    { extensionCategory: "Low & Non Alcoholic Beer", subId: "", childId: "" },
+                    { extensionCategory: "Low & Non Alcoholic Wine", subId: "", childId: "" },
+                    { extensionCategory: "Low & Non Alcoholic Spirits", subId: "", childId: "" },
+                    { extensionCategory: "Low & Non Alcoholic Home Brew", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Hampers & Gifting",
                 childItems: [
-                    { extensionCategory: "Liquor Hampers" },
-                    { extensionCategory: "No & Very Low Alcohol Hampers" },
-                    { extensionCategory: "Drinks Gift Sets" },
+                    { extensionCategory: "Liquor Hampers", subId: "", childId: "" },
+                    { extensionCategory: "No & Very Low Alcohol Hampers", subId: "", childId: "" },
+                    { extensionCategory: "Drinks Gift Sets", subId: "", childId: "" },
                 ]
             },
         ]
@@ -1325,60 +1325,60 @@ const categories = [
             {
                 subCategory: "Health Foods",
                 childItems: [
-                    { extensionCategory: "Gluten Free" },
-                    { extensionCategory: "Vegan" },
-                    { extensionCategory: "Dairy Free" },
-                    { extensionCategory: "Breakfast & Spreads" },
-                    { extensionCategory: "Sweet & Savoury Snacks" },
-                    { extensionCategory: "Confectionery" },
-                    { extensionCategory: "Dried Fruit, Nuts & Seeds" },
-                    { extensionCategory: "Baking" },
-                    { extensionCategory: "Pasta, Rice & Grains" },
-                    { extensionCategory: "Cooking Needs" },
-                    { extensionCategory: "Drinks" },
+                    { extensionCategory: "Gluten Free", subId: "1", childId: "" },
+                    { extensionCategory: "Vegan", subId: "2", childId: "" },
+                    { extensionCategory: "Dairy Free", subId: "3", childId: "" },
+                    { extensionCategory: "Breakfast & Spreads", subId: "4", childId: "" },
+                    { extensionCategory: "Sweet & Savoury Snacks", subId: "", childId: "" },
+                    { extensionCategory: "Confectionery", subId: "", childId: "" },
+                    { extensionCategory: "Dried Fruit, Nuts & Seeds", subId: "", childId: "" },
+                    { extensionCategory: "Baking", subId: "", childId: "" },
+                    { extensionCategory: "Pasta, Rice & Grains", subId: "", childId: "" },
+                    { extensionCategory: "Cooking Needs", subId: "", childId: "" },
+                    { extensionCategory: "Drinks", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Vitamins",
                 childItems: [
-                    { extensionCategory: "Children's Health" },
-                    { extensionCategory: "Women's Health" },
-                    { extensionCategory: "Men's Health" },
-                    { extensionCategory: "Pregnancy & Family Planning" },
-                    { extensionCategory: "Cold, Flu & Allergies" },
-                    { extensionCategory: "Multi Vitamins" },
-                    { extensionCategory: "Digestion & Probiotics" },
-                    { extensionCategory: "Fatigue, Stress & Sleep" },
-                    { extensionCategory: "Bones, Joints & Muscle Health" },
-                    { extensionCategory: "Omega-3" },
-                    { extensionCategory: "Hair, Skin & Nails" },
-                    { extensionCategory: "Brain & Heart" },
+                    { extensionCategory: "Children's Health", subId: "", childId: "" },
+                    { extensionCategory: "Women's Health", subId: "", childId: "" },
+                    { extensionCategory: "Men's Health", subId: "", childId: ""},
+                    { extensionCategory: "Pregnancy & Family Planning", subId: "", childId: "" },
+                    { extensionCategory: "Cold, Flu & Allergies", subId: "", childId: "" },
+                    { extensionCategory: "Multi Vitamins", subId: "", childId: "" },
+                    { extensionCategory: "Digestion & Probiotics", subId: "", childId: "" },
+                    { extensionCategory: "Fatigue, Stress & Sleep", subId: "", childId: "" },
+                    { extensionCategory: "Bones, Joints & Muscle Health", subId: "", childId: "" },
+                    { extensionCategory: "Omega-3", subId: "", childId: "" },
+                    { extensionCategory: "Hair, Skin & Nails", subId: "", childId: "" },
+                    { extensionCategory: "Brain & Heart", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Diet & Sports Nutrition",
                 childItems: [
-                    { extensionCategory: "Sports Nutrition Powders" },
-                    { extensionCategory: "Weight Management" },
-                    { extensionCategory: "Ready To Drink" },
-                    { extensionCategory: "Protein Bars & Snacks" },
+                    { extensionCategory: "Sports Nutrition Powders", subId: "", childId: "" },
+                    { extensionCategory: "Weight Management", subId: "", childId: "" },
+                    { extensionCategory: "Ready To Drink", subId: "", childId: "" },
+                    { extensionCategory: "Protein Bars & Snacks", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "First Aid & Medicinal",
                 childItems: [
-                    { extensionCategory: "Pain Relief" },
-                    { extensionCategory: "Cold, Flu & Allergies" },
-                    { extensionCategory: "First Aid & Bandages" },
-                    { extensionCategory: "Digestive Health" },
-                    { extensionCategory: "Natural Remedies & Oils" },
-                    { extensionCategory: "Intimate Wellness" },
-                    { extensionCategory: "Eye, Ear & Mouth Care" },
-                    { extensionCategory: "Pregnancy Tests" },
-                    { extensionCategory: "Foot Care" },
-                    { extensionCategory: "Cotton Wool & Cotton Buds" },
-                    { extensionCategory: "Nicotine Replacement" },
-                    { extensionCategory: "Test Kits & Face Masks" },
+                    { extensionCategory: "Pain Relief", subId: "", childId: "" },
+                    { extensionCategory: "Cold, Flu & Allergies", subId: "", childId: "" },
+                    { extensionCategory: "First Aid & Bandages", subId: "", childId: "" },
+                    { extensionCategory: "Digestive Health", subId: "", childId: "" },
+                    { extensionCategory: "Natural Remedies & Oils", subId: "", childId: "" },
+                    { extensionCategory: "Intimate Wellness", subId: "", childId: "" },
+                    { extensionCategory: "Eye, Ear & Mouth Care", subId: "", childId: "" },
+                    { extensionCategory: "Pregnancy Tests", subId: "", childId: "" },
+                    { extensionCategory: "Foot Care", subId: "", childId: "" },
+                    { extensionCategory: "Cotton Wool & Cotton Buds", subId: "", childId: "" },
+                    { extensionCategory: "Nicotine Replacement", subId: "", childId: "" },
+                    { extensionCategory: "Test Kits & Face Masks", subId: "", childId: "" },
                 ]
             },
         ]
