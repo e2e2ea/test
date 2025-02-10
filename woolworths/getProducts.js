@@ -109,7 +109,7 @@ const getData = async () => {
         });
         // console.log('Filtered product format:', productsData[0])
         if (productsData && productsData.length > 0) {
-          total += productsData.length;
+          
           const baseFolder = `./woolworths/data/${process.env.FOLDER_DATE}/${categId}`;
           const folderPath = path.join(baseFolder);
 
@@ -118,6 +118,7 @@ const getData = async () => {
             // console.log(`Created folder: ${folderPath}`);
           }
           if (ext.subId && ext.childId) {
+            total += productsData.length;
             const fileName = `${ext.subId} - ${ext.childId}.json`;
             const filePath = path.join(folderPath, fileName);
             if (fs.existsSync(filePath)) {
