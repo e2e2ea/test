@@ -40,7 +40,7 @@ const getData = async () => {
         source_url: productObj.source_url || null,
         name: productObj.name || null,
         image_url: productObj.image_url || null,
-        source_id: `Coles - ${productObj.coles_product_id}` || null,
+        source_id: `${productObj.coles_product_id}` || null,
         barcode: productObj.barcode || '',
         category_id: categId || '',
         shop: productObj.shop || null,
