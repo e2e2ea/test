@@ -396,27 +396,27 @@ const categories = [
             {
                 subCategory: "Breakfast & Spreads",
                 childItems: [
-                    { extensionCategory: "Breakfast Cereal", subId: "", childId: "" },
-                    { extensionCategory: "Muesli & Oats", subId: "", childId: "" },
-                    { extensionCategory: "Breakfast Snacks & Drinks", subId: "", childId: "" },
-                    { extensionCategory: "Jam", subId: "", childId: "" },
-                    { extensionCategory: "Honey", subId: "", childId: "" },
+                    { extensionCategory: "Breakfast Cereal", subId: "22785", childId: "22786" },
+                    { extensionCategory: "Muesli & Oats", subId: "22785", childId: "22791" },
+                    { extensionCategory: "Breakfast Snacks & Drinks", subId: "22785", childId: "22787" },
+                    { extensionCategory: "Jam", subId: "22785", childId: "22790" },
+                    { extensionCategory: "Honey", subId: "22785", childId: "22789" },
                     { extensionCategory: "Peanut Butter", subId: "", childId: "" },
-                    { extensionCategory: "Savoury Spread", subId: "", childId: "" },
-                    { extensionCategory: "Sweet Spread", subId: "", childId: "" },  
+                    { extensionCategory: "Savoury Spread", subId: "22785", childId: "22794" },
+                    { extensionCategory: "Sweet Spread", subId: "22785", childId: "22795" },  
                     { extensionCategory: "Pancake Mix", subId: "", childId: "" },  
                 ]
             },
             {
                 subCategory: "Tea & Coffee",
                 childItems: [
-                    { extensionCategory: "Black Tea", subId: "", childId: "" },
-                    { extensionCategory: "Green Tea", subId: "", childId: "" },
-                    { extensionCategory: "Herbal Tea", subId: "", childId: "" },
-                    { extensionCategory: "Specialty Tea", subId: "", childId: "" },
-                    { extensionCategory: "Coffee Beans", subId: "", childId: "" },
-                    { extensionCategory: "Ground Coffee", subId: "", childId: "" },
-                    { extensionCategory: "Coffee Capsules", subId: "", childId: "" },
+                    { extensionCategory: "Black Tea", subId: "22908", childId: "22909" },
+                    { extensionCategory: "Green Tea", subId: "22908", childId: "22912" },
+                    { extensionCategory: "Herbal Tea", subId: "22908", childId: "22914" },
+                    { extensionCategory: "Specialty Tea", subId: "22908", childId: "22914" },
+                    { extensionCategory: "Coffee Beans", subId: "22908", childId: "22910" },
+                    { extensionCategory: "Ground Coffee", subId: "22908", childId: "22913" },
+                    { extensionCategory: "Coffee Capsules", subId: "22908", childId: "22911" },
                     { extensionCategory: "Instant & Flavoured Coffee", subId: "", childId: "" },
                 ]
             },
@@ -879,30 +879,30 @@ const categories = [
             {
                 subCategory: "In-Store Bakery",
                 childItems: [
-                    { extensionCategory: "Bread", subId: "", childId: "" },
-                    { extensionCategory: "Sourdough & Specialty Bread", subId: "", childId: "" },
+                    { extensionCategory: "Bread", subId: "22062", childId: "22064" },
+                    { extensionCategory: "Sourdough & Specialty Bread", subId: "22062", childId: "22069" },
                     { extensionCategory: "Muffins & Scones", subId: "", childId: "" },
-                    { extensionCategory: "Bread Rolls", subId: "", childId: "" },
-                    { extensionCategory: "Donuts & Cookies", subId: "", childId: "" },
+                    { extensionCategory: "Bread Rolls", subId: "22062", childId: "22065" },
+                    { extensionCategory: "Donuts & Cookies", subId: "22062", childId: "22066" },
                     { extensionCategory: "Bakery Cakes", subId: "", childId: "" },
-                    { extensionCategory: "Pastries & Desserts", subId: "", childId: "" },
+                    { extensionCategory: "Pastries & Desserts", subId: "22062", childId: "22068" },
                 ]
             },
             {
                 subCategory: "Packaged Bread & Bakery",
                 childItems: [
-                    { extensionCategory: "Cakes", subId: "", childId: "" },
-                    { extensionCategory: "Packaged Bread", subId: "", childId: "" },
-                    { extensionCategory: "Crumpets & Pancakes", subId: "", childId: "" },
-                    { extensionCategory: "Muffins, Scones & Cupcakes", subId: "", childId: "" },
-                    { extensionCategory: "Desserts & Pastries", subId: "", childId: "" },
-                    { extensionCategory: "Pizza Bases", subId: "", childId: "" },
-                    { extensionCategory: "Wraps & Flatbread", subId: "", childId: "" },
-                    { extensionCategory: "Rolls & Bagels", subId: "", childId: "" },
-                    { extensionCategory: "Gluten Free Bakery", subId: "", childId: "" },
-                    { extensionCategory: "Pies & Quiches", subId: "", childId: "" },
-                    { extensionCategory: "Bake At Home", subId: "", childId: "" },
-                    { extensionCategory: "Organic Bakery", subId: "", childId: "" },
+                    { extensionCategory: "Cakes", subId: "22074", childId: "22076" },
+                    { extensionCategory: "Packaged Bread", subId: "22074", childId: "22083" },
+                    { extensionCategory: "Crumpets & Pancakes", subId: "22074", childId: "22077" },
+                    { extensionCategory: "Muffins, Scones & Cupcakes", subId: "22074", childId: "22081" },
+                    { extensionCategory: "Desserts & Pastries", subId: "22074", childId: "22078" },
+                    { extensionCategory: "Pizza Bases", subId: "22074", childId: "22086" },
+                    { extensionCategory: "Wraps & Flatbread", subId: "22074", childId: "22088" },
+                    { extensionCategory: "Rolls & Bagels", subId: "22074", childId: "22087" },
+                    { extensionCategory: "Gluten Free Bakery", subId: "22074", childId: "22079" },
+                    { extensionCategory: "Pies & Quiches", subId: "22074", childId: "22085" },
+                    { extensionCategory: "Bake At Home", subId: "22074", childId: "22075" },
+                    { extensionCategory: "Organic Bakery", subId: "22074", childId: "22082" },
                 ]
             },
             {
@@ -920,10 +920,10 @@ const categories = [
             {
                 subCategory: "Cat & Kitten",
                 childItems: [
-                    { extensionCategory: "Dry Cat Food", subId: "", childId: "" },
-                    { extensionCategory: "Chilled Cat Food", subId: "", childId: "" },
+                    { extensionCategory: "Dry Cat Food", subId: "23952", childId: "23953" },
+                    { extensionCategory: "Chilled Cat Food", subId: "23952", childId: "23954" },
                     { extensionCategory: "Trays & Cans Cat Food", subId: "", childId: "" },
-                    { extensionCategory: "Kitten Food..", subId: "", childId: "" },
+                    { extensionCategory: "Kitten Food..", subId: "23952", childId: "23957" },
                     { extensionCategory: "Cat Grooming, Accessories & Toys", subId: "", childId: "" },
                     { extensionCategory: "Cat Healthcare", subId: "", childId: "" },
                     { extensionCategory: "Cat Litter", subId: "", childId: "" },
@@ -934,10 +934,10 @@ const categories = [
                 subCategory: "Dog & Puppy",
                 childItems: [
                     { extensionCategory: "Dry Dog Food", subId: "", childId: "" },
-                    { extensionCategory: "Chilled Dog Food", subId: "", childId: "" },
-                    { extensionCategory: "Frozen Dog Food", subId: "", childId: "" },
+                    { extensionCategory: "Chilled Dog Food", subId: "23373", childId: "22959" },
+                    { extensionCategory: "Frozen Dog Food", subId: "23373", childId: "22937" },
                     { extensionCategory: "Trays & Cans Dog Food", subId: "", childId: "" },
-                    { extensionCategory: "Puppy Food" },
+                    { extensionCategory: "Puppy Food", subId: "23373", childId: "22939" },
                     { extensionCategory: "Dog Grooming, Accessories & Toys", subId: "", childId: "" },
                     { extensionCategory: "Dog Healthcare", subId: "", childId: "" },
                     { extensionCategory: "Dog Collars & Leads", subId: "", childId: "" },
@@ -949,9 +949,9 @@ const categories = [
                 subCategory: "Birds, Fish & Small Pets",
                 childItems: [
                     { extensionCategory: "Bird Food", subId: "", childId: "" },
-                    { extensionCategory: "Bird Treats", subId: "", childId: "" },
+                    { extensionCategory: "Bird Treats", subId: "22917", childId: "22919" },
                     { extensionCategory: "Fish Food", subId: "", childId: "" },
-                    { extensionCategory: "Small Pets Food", subId: "", childId: "" },
+                    { extensionCategory: "Small Pets Food", subId: "22917", childId: "22921" },
                     { extensionCategory: "Small Pet Accessories", subId: "", childId: "" },
                     { extensionCategory: "Bird Accessories", subId: "", childId: "" },
                     { extensionCategory: "Fish Tanks, Cleaning & Accessories", subId: "", childId: "" },
@@ -966,78 +966,78 @@ const categories = [
             {
                 subCategory: "Chilled Drinks",
                 childItems: [
-                    { extensionCategory: "Chilled Soft Drinks & Energy Drinks", subId: "", childId: "" },
-                    { extensionCategory: "Chilled Water", subId: "", childId: "" },
-                    { extensionCategory: "Chilled Juices, Iced Teas & Iced Coffee", subId: "", childId: "" },
+                    { extensionCategory: "Chilled Soft Drinks & Energy Drinks", subId: "22164", childId: "23943" },
+                    { extensionCategory: "Chilled Water", subId: "22164", childId: "23942" },
+                    { extensionCategory: "Chilled Juices, Iced Teas & Iced Coffee", subId: "22164", childId: "22167" },
                 ]
             },
             {
                 subCategory: "Soft Drinks",
                 childItems: [
-                    { extensionCategory: "Mixers", subId: "", childId: "" },
-                    { extensionCategory: "Soft Drink Bottles", subId: "", childId: "" },
-                    { extensionCategory: "Soft Drink Cans", subId: "", childId: "" },
+                    { extensionCategory: "Mixers", subId: "22216", childId: "22217" },
+                    { extensionCategory: "Soft Drink Bottles", subId: "22216", childId: "22218" },
+                    { extensionCategory: "Soft Drink Cans", subId: "22216", childId: "22219" },
                 ]
             },
             {
                 subCategory: "Cordials, Juices & Iced Teas",
                 childItems: [
-                    { extensionCategory: "Cordials", subId: "", childId: "" },
-                    { extensionCategory: "Juices", subId: "", childId: "" },
-                    { extensionCategory: "Chilled Juices", subId: "", childId: "" },
-                    { extensionCategory: "Iced Teas", subId: "", childId: "" },
-                    { extensionCategory: "Lunch Box Juice", subId: "", childId: "" },
+                    { extensionCategory: "Cordials", subId: "22176", childId: "22178" },
+                    { extensionCategory: "Juices", subId: "22176", childId: "22181" },
+                    { extensionCategory: "Chilled Juices", subId: "22176", childId: "22177" },
+                    { extensionCategory: "Iced Teas", subId: "22176", childId: "22180" },
+                    { extensionCategory: "Lunch Box Juice", subId: "22176", childId: "22182" },
                 ]
             },
             {
                 subCategory: "Water",
                 childItems: [
-                    { extensionCategory: "Flavoured & Coconut Water", subId: "", childId: "" },
-                    { extensionCategory: "Sparkling Water", subId: "", childId: "" },
-                    { extensionCategory: "Still Water", subId: "", childId: "" },
+                    { extensionCategory: "Flavoured & Coconut Water", subId: "22230", childId: "22231" },
+                    { extensionCategory: "Sparkling Water", subId: "22230", childId: "22232" },
+                    { extensionCategory: "Still Water", subId: "22230", childId: "22233" },
                 ]
             },
             {
                 subCategory: "Sports & Energy Drinks",
                 childItems: [
-                    { extensionCategory: "Energy Drinks", subId: "", childId: "" },
-                    { extensionCategory: "Sports Drinks", subId: "", childId: "" },
+                    { extensionCategory: "Energy Drinks", subId: "22221", childId: "22222" },
+                    { extensionCategory: "Sports Drinks", subId: "22221", childId: "22223" },
                 ]
             },
             {
                 subCategory: "Tea",
                 childItems: [
-                    { extensionCategory: "Black Tea", subId: "", childId: "" },
-                    { extensionCategory: "Green Tea", subId: "", childId: "" },
-                    { extensionCategory: "Herbal & Specialty Tea", subId: "", childId: "" },
+                    { extensionCategory: "Black Tea", subId: "22225", childId: "23944" },
+                    { extensionCategory: "Green Tea", subId: "22225", childId: "23946" },
+                    { extensionCategory: "Herbal & Specialty Tea", subId: "22225", childId: "22228" },
                 ]
             },
             {
                 subCategory: "Coffee",
                 childItems: [
-                    { extensionCategory: "Coffee Beans", subId: "", childId: "" },
-                    { extensionCategory: "Coffee Capsules", subId: "", childId: "" },
-                    { extensionCategory: "Ground Coffee", subId: "", childId: "" },
-                    { extensionCategory: "Instant & Flavoured Coffee", subId: "", childId: "" },
+                    { extensionCategory: "Coffee Beans", subId: "22170", childId: "22171" },
+                    { extensionCategory: "Coffee Capsules", subId: "22170", childId: "22172" },
+                    { extensionCategory: "Ground Coffee", subId: "22170", childId: "22174" },
+                    { extensionCategory: "Instant & Flavoured Coffee", subId: "22170", childId: "22175" },
                 ]
             },
             {
                 subCategory: "Flavoured Milk",
                 childItems: [
-                    { extensionCategory: "Bubble Tea", subId: "", childId: "" },
-                    { extensionCategory: "Drinking Chocolate", subId: "", childId: "" },
-                    { extensionCategory: "Drinks & Powders", subId: "", childId: "" },
-                    { extensionCategory: "Kids Milk", subId: "", childId: "" },
+                    { extensionCategory: "Bubble Tea", subId: "22187", childId: "22188" },
+                    { extensionCategory: "Drinking Chocolate", subId: "22187", childId: "22189" },
+                    { extensionCategory: "Drinks & Powders", subId: "22187", childId: "22190" },
+                    { extensionCategory: "Kids Milk", subId: "22187", childId: "22192" },
                 ]
             },
             {
                 subCategory: "Long Life Milk",
                 childItems: [
-                    { extensionCategory: "Almond Milk", subId: "", childId: "" },
-                    { extensionCategory: "Soy Milk", subId: "", childId: "" },
-                    { extensionCategory: "Powdered Milk", subId: "", childId: "" },
-                    { extensionCategory: "Oat & Rice Milk", subId: "", childId: "" },
-                    { extensionCategory: "Lactose Free Milk", subId: "", childId: "" },
+                    { extensionCategory: "Almond Milk", subId: "22199", childId: "22839" },
+                    { extensionCategory: "Soy Milk", subId: "22199", childId: "23842" },
+                    { extensionCategory: "Powdered Milk", subId: "22199", childId: "23840" },
+                    { extensionCategory: "Oat & Rice Milk", subId: "22199", childId: "23843" },
+                    { extensionCategory: "Lactose Free Milk", subId: "22199", childId: "23841" },
                     { extensionCategory: "Long Life Milk", subId: "", childId: "" },
                 ]
             },
@@ -1050,10 +1050,10 @@ const categories = [
             {
                 subCategory: "Low & Non Alcoholic Drinks",
                 childItems: [
-                    { extensionCategory: "Low & Non Alcoholic Beer", subId: "", childId: "" },
-                    { extensionCategory: "Low & Non Alcoholic Wine", subId: "", childId: "" },
-                    { extensionCategory: "Low & Non Alcoholic Spirits", subId: "", childId: "" },
-                    { extensionCategory: "Low & Non Alcoholic Home Brew", subId: "", childId: "" },
+                    { extensionCategory: "Low & Non Alcoholic Beer", subId: "22213", childId: "22214" },
+                    { extensionCategory: "Low & Non Alcoholic Wine", subId: "22213", childId: "22214" },
+                    { extensionCategory: "Low & Non Alcoholic Spirits", subId: "22213", childId: "22214" },
+                    { extensionCategory: "Low & Non Alcoholic Home Brew", subId: "22213", childId: "22214" },
                 ]
             },
             {
@@ -1073,38 +1073,38 @@ const categories = [
             {
                 subCategory: "Deli Meats",
                 childItems: [
-                    { extensionCategory: "Sausages & Frankfurts" },
-                    { extensionCategory: "Packaged Ham, Bacon & Salami" },
-                    { extensionCategory: "Sliced & Shaved Deli Meat" },
+                    { extensionCategory: "Sausages & Frankfurts", subId: "24024", childId: "24030" },
+                    { extensionCategory: "Packaged Ham, Bacon & Salami", subId: "24024", childId: "24028" },
+                    { extensionCategory: "Sliced & Shaved Deli Meat", subId: "24024", childId: "24029" },
                 ]
             },
             {
                 subCategory: "Deli Specialties",
                 childItems: [
-                    { extensionCategory: "Antipasto" },
-                    { extensionCategory: "Dips & Pate" },
-                    { extensionCategory: "Gourmet Cheese" },
-                    { extensionCategory: "Platters" },
+                    { extensionCategory: "Antipasto", subId: "24025", childId: "24033" },
+                    { extensionCategory: "Dips & Pate", subId: "24025", childId: "24031" },
+                    { extensionCategory: "Gourmet Cheese", subId: "24025", childId: "24032" },
+                    { extensionCategory: "Platters", subId: "24025", childId: "24034" },
                 ]
             },
             {
                 subCategory: "Ready to Eat Meals",
                 childItems: [
-                    { extensionCategory: "Chilled Pizza & Garlic Bread" },
-                    { extensionCategory: "Chilled Quiches & Pies" },
-                    { extensionCategory: "Chilled Soup" },
-                    { extensionCategory: "Entertaining & Sides" },
-                    { extensionCategory: "Family Meals" },
-                    { extensionCategory: "Fresh Pasta & Sauces" },
-                    { extensionCategory: "Packaged Salads" },
-                    { extensionCategory: "Single Serve" },
+                    { extensionCategory: "Chilled Pizza & Garlic Bread", subId: "24026", childId: "24041" },
+                    { extensionCategory: "Chilled Quiches & Pies", subId: "24026", childId: "24037"},
+                    { extensionCategory: "Chilled Soup", subId: "24026", childId: "24038" },
+                    { extensionCategory: "Entertaining & Sides", subId: "24026", childId: "24043" },
+                    { extensionCategory: "Family Meals", subId: "24026", childId: "24036" },
+                    { extensionCategory: "Fresh Pasta & Sauces", subId: "24026", childId: "24040" },
+                    { extensionCategory: "Packaged Salads", subId: "24026", childId: "24042" },
+                    { extensionCategory: "Single Serve", subId: "24026", childId: "24035" },
                 ]
             },
             {
                 subCategory: "Vegetarian & Vegan",
                 childItems: [
-                    { extensionCategory: "Vegan" },
-                    { extensionCategory: "Vegetarian" },
+                    { extensionCategory: "Vegan", subId: "24027", childId: "24044" },
+                    { extensionCategory: "Vegetarian", subId: "24027", childId: "24045" },
                 ]
             },
         ]
@@ -1116,96 +1116,96 @@ const categories = [
             {
                 subCategory: "Cheese",
                 childItems: [
-                    { extensionCategory: "Block Cheese" },
-                    { extensionCategory: "Sliced Cheese" },
-                    { extensionCategory: "Grated Cheese" },
-                    { extensionCategory: "Entertaining Cheese" },
-                    { extensionCategory: "Soft Cheese" },
-                    { extensionCategory: "Snacking Cheese" },
-                    { extensionCategory: "Cooking Cheese" },
-                    { extensionCategory: "Fetta & Goat's Cheese" },
-                    { extensionCategory: "Parmesan & Italian Cheese" },
-                    { extensionCategory: "Ricotta, Cottage & Cream Cheese" },
+                    { extensionCategory: "Block Cheese", subId: "22090", childId: "22091" },
+                    { extensionCategory: "Sliced Cheese", subId: "22090", childId: "22099" },
+                    { extensionCategory: "Grated Cheese", subId: "22090", childId: "22096" },
+                    { extensionCategory: "Entertaining Cheese", subId: "22090", childId: "22094" },
+                    { extensionCategory: "Soft Cheese", subId: "22090", childId: "22101" },
+                    { extensionCategory: "Snacking Cheese", subId: "22090", childId: "22100" },
+                    { extensionCategory: "Cooking Cheese", subId: "22090", childId: "22093" },
+                    { extensionCategory: "Fetta & Goat's Cheese", subId: "22090", childId: "22095" },
+                    { extensionCategory: "Parmesan & Italian Cheese", subId: "22090", childId: "22097" },
+                    { extensionCategory: "Ricotta, Cottage & Cream Cheese", subId: "22090", childId: "22098" },
                 ]
             },
             {
                 subCategory: "Milk",
                 childItems: [
-                    { extensionCategory: "Full Cream Milk" },
-                    { extensionCategory: "Skim & Reduced Fat Milk" },
-                    { extensionCategory: "Soy & Speciality Milk" },
-                    { extensionCategory: "Flavoured Milk" },
-                    { extensionCategory: "Long Life Milk" },
-                    { extensionCategory: "Lactose Free Milk" },
+                    { extensionCategory: "Full Cream Milk", subId: "22132", childId: "22134" },
+                    { extensionCategory: "Skim & Reduced Fat Milk", subId: "22132", childId: "22138" },
+                    { extensionCategory: "Soy & Speciality Milk", subId: "22132", childId: "22139" },
+                    { extensionCategory: "Flavoured Milk", subId: "22132", childId: "22133" },
+                    { extensionCategory: "Long Life Milk", subId: "22132", childId: "22136" },
+                    { extensionCategory: "Lactose Free Milk", subId: "22132", childId: "23985" },
                 ]
             },
             {
                 subCategory: "Yoghurt",
                 childItems: [
-                    { extensionCategory: "Everyday Yoghurt" },
-                    { extensionCategory: "Greek Yoghurt & Natural Yoghurt" },
-                    { extensionCategory: "Thick & Creamy Yoghurt" },
-                    { extensionCategory: "Kids Yoghurt" },
-                    { extensionCategory: "High Protein Yoghurt" },
-                    { extensionCategory: "Probiotic & Gut Health Yoghurt" },
-                    { extensionCategory: "Plant Based Yoghurt" },
-                    { extensionCategory: "Lactose Free" },
-                    { extensionCategory: "Kefir" },
+                    { extensionCategory: "Everyday Yoghurt", subId: "", childId: "" },
+                    { extensionCategory: "Greek Yoghurt & Natural Yoghurt", subId: "22158", childId: "22161" },
+                    { extensionCategory: "Thick & Creamy Yoghurt", subId: "", childId: "" },
+                    { extensionCategory: "Kids Yoghurt", subId: "22158", childId: "22159" },
+                    { extensionCategory: "High Protein Yoghurt", subId: "", childId: "" },
+                    { extensionCategory: "Probiotic & Gut Health Yoghurt", subId: "22158", childId: "23991" },
+                    { extensionCategory: "Plant Based Yoghurt", subId: "22158", childId: "" },
+                    { extensionCategory: "Lactose Free", subId: "22158", childId: "23990" },
+                    { extensionCategory: "Kefir", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Cream, Custard & Desserts",
                 childItems: [
-                    { extensionCategory: "Cream" },
-                    { extensionCategory: "Custard" },
-                    { extensionCategory: "Desserts" },
+                    { extensionCategory: "Cream", subId: "22102", childId: "22103" },
+                    { extensionCategory: "Custard", subId: "22102", childId: "22105" },
+                    { extensionCategory: "Desserts", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Eggs, Butter & Margarine",
                 childItems: [
-                    { extensionCategory: "Eggs" },
-                    { extensionCategory: "Butter & Margarine" },
+                    { extensionCategory: "Eggs", subId: "22112", childId: "22114" },
+                    { extensionCategory: "Butter & Margarine", subId: "22112", childId: "22113" },
                 ]
             },
             {
                 subCategory: "Dips & Pate",
                 childItems: [
-                    { extensionCategory: "Dips" },
-                    { extensionCategory: "Pate, Paste & Caviar" },
+                    { extensionCategory: "Dips", subId: "22108", childId: "22109" },
+                    { extensionCategory: "Pate, Paste & Caviar", subId: "22108", childId: "22111" },
                 ]
             },
             {
                 subCategory: "Ready to Eat Meals",
                 childItems: [
-                    { extensionCategory: "Italian Meals" },
-                    { extensionCategory: "Asian Meals" },
-                    { extensionCategory: "Indian Meals" },
-                    { extensionCategory: "Chilled Soup" },
-                    { extensionCategory: "Chilled Ready Meals" },
-                    { extensionCategory: "Chilled Pizza & Bread" },
-                    { extensionCategory: "Packaged Salads & Sides" },
-                    { extensionCategory: "Vegetarian & Meat Free" },
+                    { extensionCategory: "Italian Meals", subId: "22140", childId: "22146" },
+                    { extensionCategory: "Asian Meals", subId: "22140", childId: "22141" },
+                    { extensionCategory: "Indian Meals", subId: "22140", childId: "22145" },
+                    { extensionCategory: "Chilled Soup", subId: "22140", childId: "22144" },
+                    { extensionCategory: "Chilled Ready Meals", subId: "22140", childId: "22144" },
+                    { extensionCategory: "Chilled Pizza & Bread", subId: "22140", childId: "22142" },
+                    { extensionCategory: "Packaged Salads & Sides", subId: "22140", childId: "22147" },
+                    { extensionCategory: "Vegetarian & Meat Free", subId: "22140", childId: "22149" },
                 ]
             },
             {
                 subCategory: "Fresh Pasta & Sauces",
                 childItems: [
-                    { extensionCategory: "Fresh Pasta & Noodles" },
-                    { extensionCategory: "Pasta Sauces" },
+                    { extensionCategory: "Fresh Pasta & Noodles", subId: "22116", childId: "22117" },
+                    { extensionCategory: "Pasta Sauces", subId: "22116", childId: "22119" },
                 ]
             },
             {
                 subCategory: "Vegetarian & Vegan",
                 childItems: [
-                    { extensionCategory: "Vegetarian & Meat Free" },
-                    { extensionCategory: "Vegan" },
+                    { extensionCategory: "Vegetarian & Meat Free", subId: "22154", childId: "22155" },
+                    { extensionCategory: "Vegan", subId: "22154", childId: "22156" },
                 ]
             },
             {
                 subCategory: "International Foods",
                 childItems: [
-                    { extensionCategory: "Chilled Asian" },
+                    { extensionCategory: "Chilled Asian", subId: "22120", childId: "22121" },
                 ]
             },
             
@@ -1233,63 +1233,63 @@ const categories = [
             {
                 subCategory: "Hair Care",
                 childItems: [
-                    { extensionCategory: "Colouring" },
-                    { extensionCategory: "Shampoo & Conditioner" },
-                    { extensionCategory: "Hair Treatments" },
-                    { extensionCategory: "Styling Products" },
-                    { extensionCategory: "Hair Accessories & Brushes" },
+                    { extensionCategory: "Colouring", subId: "22423", childId: "23903" },
+                    { extensionCategory: "Shampoo & Conditioner", subId: "22423", childId: "23904" },
+                    { extensionCategory: "Hair Treatments", subId: "22423", childId: "" },
+                    { extensionCategory: "Styling Products", subId: "22423", childId: "23905" },
+                    { extensionCategory: "Hair Accessories & Brushes", subId: "22423", childId: "23906" },
                 ]
             },
             {
                 subCategory: "Oral Care",
                 childItems: [
-                    { extensionCategory: "Floss & Mouthwash" },
-                    { extensionCategory: "Toothbrushes" },
-                    { extensionCategory: "Toothpaste" },
-                    { extensionCategory: "Teeth Whitening" },
-                    { extensionCategory: "Denture Care" },
+                    { extensionCategory: "Floss & Mouthwash", subId: "22394", childId: "23817"  },
+                    { extensionCategory: "Toothbrushes", subId: "22394", childId: "23818"  },
+                    { extensionCategory: "Toothpaste", subId: "22394", childId: "23855"  },
+                    { extensionCategory: "Teeth Whitening", subId: "22394", childId: "23854"  },
+                    { extensionCategory: "Denture Care", subId: "22394", childId: "22406"  },
                 ]
             },
             {
                 subCategory: "Men's Care",
                 childItems: [
-                    { extensionCategory: "Men's Blades & Razors" },
-                    { extensionCategory: "Men's Shave Gels & Foams" },
-                    { extensionCategory: "Men's Aftershave" },
-                    { extensionCategory: "Men's Skin" },
-                    { extensionCategory: "Men's Body Sprays" },
-                    { extensionCategory: "Men's Deodorants" },
-                    { extensionCategory: "Men's Shower Gels" },
-                    { extensionCategory: "Men's Hair Care" },
+                    { extensionCategory: "Men's Blades & Razors", subId: "", childId: "" },
+                    { extensionCategory: "Men's Shave Gels & Foams", subId: "23864", childId: "23901" },
+                    { extensionCategory: "Men's Aftershave", subId: "23864", childId: "23898" },
+                    { extensionCategory: "Men's Skin", subId: "", childId: "" },
+                    { extensionCategory: "Men's Body Sprays", subId: "", childId: "" },
+                    { extensionCategory: "Men's Deodorants", subId: "22440", childId: "23921" },
+                    { extensionCategory: "Men's Shower Gels", subId: "", childId: "" },
+                    { extensionCategory: "Men's Hair Care", subId: "22423", childId: "23924" },
                 ]
             },
             {
                 subCategory: "Period & Continence Care",
                 childItems: [
-                    { extensionCategory: "Pads & Pants" },
-                    { extensionCategory: "Tampons" },
-                    { extensionCategory: "Liners" },
-                    { extensionCategory: "Period Underwear & Reusables" },
-                    { extensionCategory: "Maternity Pads" },
-                    { extensionCategory: "Intimate Hygiene" },
-                    { extensionCategory: "Continence Pants" },
-                    { extensionCategory: "Continence Pads" },
-                    { extensionCategory: "Continence Liners" },
-                    { extensionCategory: "Continence Underwear & Reusables" },
-                    { extensionCategory: "Continence Mens" },
+                    { extensionCategory: "Pads & Pants", subId: "22440", childId: "23922" },
+                    { extensionCategory: "Tampons", subId: "22440", childId: "23922" },
+                    { extensionCategory: "Liners", subId: "22440", childId: "23922" },
+                    { extensionCategory: "Period Underwear & Reusables", subId: "22440", childId: "23922" },
+                    { extensionCategory: "Maternity Pads", subId: "22440", childId: "23922" },
+                    { extensionCategory: "Intimate Hygiene", subId: "22440", childId: "23922" },
+                    { extensionCategory: "Continence Pants", subId: "22440", childId: "23922" },
+                    { extensionCategory: "Continence Pads", subId: "22440", childId: "23922" },
+                    { extensionCategory: "Continence Liners", subId: "22440", childId: "23922" },
+                    { extensionCategory: "Continence Underwear & Reusables", subId: "22440", childId: "23922"},
+                    { extensionCategory: "Continence Mens", subId: "22440", childId: "23922" },
                 ]
             },
             {
                 subCategory: "Skin Care",
                 childItems: [
-                    { extensionCategory: "Body Moisturiser" },
-                    { extensionCategory: "Face Moisturiser" },
-                    { extensionCategory: "Facial Cleansers, Toners & Scrubs" },
-                    { extensionCategory: "Face Masks & Treatments" },
-                    { extensionCategory: "Hand Moisturiser" },
-                    { extensionCategory: "Lip Care" },
-                    { extensionCategory: "Self-Tanning" },
-                    { extensionCategory: "Sun Protection" },
+                    { extensionCategory: "Body Moisturiser", subId: "23883", childId: "23885" },
+                    { extensionCategory: "Face Moisturiser", subId: "23883", childId: "23886" },
+                    { extensionCategory: "Facial Cleansers, Toners & Scrubs", subId: "23883", childId: "23887" },
+                    { extensionCategory: "Face Masks & Treatments", subId: "", childId: "" },
+                    { extensionCategory: "Hand Moisturiser", subId: "23883", childId: "23889" },
+                    { extensionCategory: "Lip Care", subId: "23883", childId: "23890" },
+                    { extensionCategory: "Self-Tanning", subId: "23883", childId: "23891" },
+                    { extensionCategory: "Sun Protection", subId: "23883", childId: "23892" },
                 ]
             },
             {
@@ -1302,11 +1302,11 @@ const categories = [
             {
                 subCategory: "Cosmetics",
                 childItems: [
-                    { extensionCategory: "Eyes" },
-                    { extensionCategory: "Face" },
-                    { extensionCategory: "Lips" },
-                    { extensionCategory: "Nails" },
-                    { extensionCategory: "Cosmetic Tools & Accessories" },
+                    { extensionCategory: "Eyes", subId: "22400", childId: "23851"  },
+                    { extensionCategory: "Face", subId: "22400", childId: "23852"  },
+                    { extensionCategory: "Lips", subId: "22400", childId: "22402"  },
+                    { extensionCategory: "Nails", subId: "22400", childId: "22403"  },
+                    { extensionCategory: "Cosmetic Tools & Accessories", subId: "22400", childId: "23853"  },
                 ]
             },
             {
@@ -1325,17 +1325,17 @@ const categories = [
             {
                 subCategory: "Health Foods",
                 childItems: [
-                    { extensionCategory: "Gluten Free", subId: "1", childId: "" },
-                    { extensionCategory: "Vegan", subId: "2", childId: "" },
-                    { extensionCategory: "Dairy Free", subId: "3", childId: "" },
-                    { extensionCategory: "Breakfast & Spreads", subId: "4", childId: "" },
-                    { extensionCategory: "Sweet & Savoury Snacks", subId: "", childId: "" },
-                    { extensionCategory: "Confectionery", subId: "", childId: "" },
-                    { extensionCategory: "Dried Fruit, Nuts & Seeds", subId: "", childId: "" },
-                    { extensionCategory: "Baking", subId: "", childId: "" },
-                    { extensionCategory: "Pasta, Rice & Grains", subId: "", childId: "" },
-                    { extensionCategory: "Cooking Needs", subId: "", childId: "" },
-                    { extensionCategory: "Drinks", subId: "", childId: "" },
+                    { extensionCategory: "Gluten Free", subId: "24007", childId: "" },
+                    { extensionCategory: "Vegan", subId: "24007", childId: "" },
+                    { extensionCategory: "Dairy Free", subId: "24007", childId: "" },
+                    { extensionCategory: "Breakfast & Spreads", subId: "24007", childId: "" },
+                    { extensionCategory: "Sweet & Savoury Snacks", subId: "24007", childId: "" },
+                    { extensionCategory: "Confectionery", subId: "24007", childId: "" },
+                    { extensionCategory: "Dried Fruit, Nuts & Seeds", subId: "24007", childId: "" },
+                    { extensionCategory: "Baking", subId: "24007", childId: "" },
+                    { extensionCategory: "Pasta, Rice & Grains", subId: "24007", childId: "" },
+                    { extensionCategory: "Cooking Needs", subId: "24007", childId: "" },
+                    { extensionCategory: "Drinks", subId: "24007", childId: "" },
                 ]
             },
             {
@@ -1345,14 +1345,14 @@ const categories = [
                     { extensionCategory: "Women's Health", subId: "", childId: "" },
                     { extensionCategory: "Men's Health", subId: "", childId: ""},
                     { extensionCategory: "Pregnancy & Family Planning", subId: "", childId: "" },
-                    { extensionCategory: "Cold, Flu & Allergies", subId: "", childId: "" },
-                    { extensionCategory: "Multi Vitamins", subId: "", childId: "" },
-                    { extensionCategory: "Digestion & Probiotics", subId: "", childId: "" },
-                    { extensionCategory: "Fatigue, Stress & Sleep", subId: "", childId: "" },
-                    { extensionCategory: "Bones, Joints & Muscle Health", subId: "", childId: "" },
-                    { extensionCategory: "Omega-3", subId: "", childId: "" },
-                    { extensionCategory: "Hair, Skin & Nails", subId: "", childId: "" },
-                    { extensionCategory: "Brain & Heart", subId: "", childId: "" },
+                    { extensionCategory: "Cold, Flu & Allergies", subId: "22450", childId: "" },
+                    { extensionCategory: "Multi Vitamins", subId: "22450", childId: "" },
+                    { extensionCategory: "Digestion & Probiotics", subId: "22450", childId: "23872" },
+                    { extensionCategory: "Fatigue, Stress & Sleep", subId: "22450", childId: "" },
+                    { extensionCategory: "Bones, Joints & Muscle Health", subId: "22450", childId: "" },
+                    { extensionCategory: "Omega-3", subId: "22450", childId: "23916" },
+                    { extensionCategory: "Hair, Skin & Nails", subId: "22450", childId: "22453" },
+                    { extensionCategory: "Brain & Heart", subId: "22450", childId: "23870" },
                 ]
             },
             {
@@ -1368,16 +1368,16 @@ const categories = [
                 subCategory: "First Aid & Medicinal",
                 childItems: [
                     { extensionCategory: "Pain Relief", subId: "", childId: "" },
-                    { extensionCategory: "Cold, Flu & Allergies", subId: "", childId: "" },
-                    { extensionCategory: "First Aid & Bandages", subId: "", childId: "" },
+                    { extensionCategory: "Cold, Flu & Allergies", subId: "22414", childId: "22417" },
+                    { extensionCategory: "First Aid & Bandages", subId: "22414", childId: "22416" },
                     { extensionCategory: "Digestive Health", subId: "", childId: "" },
-                    { extensionCategory: "Natural Remedies & Oils", subId: "", childId: "" },
-                    { extensionCategory: "Intimate Wellness", subId: "", childId: "" },
+                    { extensionCategory: "Natural Remedies & Oils", subId: "22414", childId: "22421" },
+                    { extensionCategory: "Intimate Wellness", subId: "22440", childId: "23894" },
                     { extensionCategory: "Eye, Ear & Mouth Care", subId: "", childId: "" },
-                    { extensionCategory: "Pregnancy Tests", subId: "", childId: "" },
-                    { extensionCategory: "Foot Care", subId: "", childId: "" },
-                    { extensionCategory: "Cotton Wool & Cotton Buds", subId: "", childId: "" },
-                    { extensionCategory: "Nicotine Replacement", subId: "", childId: "" },
+                    { extensionCategory: "Pregnancy Tests", subId: "22440", childId: "23895" },
+                    { extensionCategory: "Foot Care", subId: "22440", childId: "23893" },
+                    { extensionCategory: "Cotton Wool & Cotton Buds", subId: "22414", childId: "22418" },
+                    { extensionCategory: "Nicotine Replacement", subId: "22414", childId: "22422" },
                     { extensionCategory: "Test Kits & Face Masks", subId: "", childId: "" },
                 ]
             },
