@@ -34,7 +34,7 @@ const getData = async () => {
         
 
         try {
-          woolworthsData = JSON.parse(fs.readFileSync(`woolworths/data/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId} - ${ext.childId}.json`, 'utf8'));
+          woolworthsData = JSON.parse(fs.readFileSync(`woolworths/data/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
         } catch (error) {
           console.log(`Skipping ${mycat} - ${subCategory} - ${extensionCategory}: File(s) missing.`, error);
           continue;
@@ -71,7 +71,7 @@ const getData = async () => {
               shop: data.shop || null,
               category_id: data.category_id,
               subcategory_id: data.subcategory_id,
-              subsubcategory_id: data.subsubcategory_id,
+              subsubcategory_id: data.subsubcategory_id || "",
               weight: data.weight || null,
               prices: data.prices,
             };
@@ -86,7 +86,7 @@ const getData = async () => {
             console.log('totalProducts', totalProducts);
             const baseFolder = `./matched/${process.env.FOLDER_DATE}/${categ.id}`;
             const folderPath = path.join(baseFolder);
-            const fileName = `${ext.subId} - ${ext.childId}.json`;
+            const fileName = `${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`;
             const filePath = path.join(folderPath, fileName);
             if (!fs.existsSync(folderPath)) {
               fs.mkdirSync(folderPath, { recursive: true });
