@@ -34,7 +34,7 @@ const getData = async () => {
         
 
         try {
-          woolworthsData = JSON.parse(fs.readFileSync(`woolworths/data/${process.env.FOLDER_DATE}/${mycat}/${subCategory}/${extensionCategory === 'Floor/Carpet Cleaners' ? 'Floor - Carpet Cleaners' : extensionCategory}.json`, 'utf8'));
+          woolworthsData = JSON.parse(fs.readFileSync(`woolworths/data/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId} - ${ext.childId}.json`, 'utf8'));
         } catch (error) {
           console.log(`Skipping ${mycat} - ${subCategory} - ${extensionCategory}: File(s) missing.`, error);
           continue;
@@ -56,7 +56,9 @@ const getData = async () => {
               source_id: filteredProducts[0].source_id || null,
               barcode: filteredProducts[0].barcode || null,
               shop: filteredProducts[0].shop || null,
-              category_id: filteredProducts[0].category_id,
+              category_id: data.category_id,
+              subcategory_id: data.subcategory_id,
+              subsubcategory_id: data.subsubcategory_id,
               weight: filteredProducts[0].weight || null,
               prices: filteredProducts[0].prices,
             };
@@ -68,6 +70,8 @@ const getData = async () => {
               barcode: data.barcode || null,
               shop: data.shop || null,
               category_id: data.category_id,
+              subcategory_id: data.subcategory_id,
+              subsubcategory_id: data.subsubcategory_id,
               weight: data.weight || null,
               prices: data.prices,
             };
@@ -80,9 +84,9 @@ const getData = async () => {
           if (productsMatched && productsMatched.length > 0) {
             totalProducts = totalProducts + productsMatched.length;
             console.log('totalProducts', totalProducts);
-            const baseFolder = `./matched/${process.env.FOLDER_DATE}/${mycat}/${subCategory}`;
+            const baseFolder = `./matched/${process.env.FOLDER_DATE}/${categ.id}`;
             const folderPath = path.join(baseFolder);
-            const fileName = `${extensionCategory === 'Floor/Carpet Cleaners' ? 'Floor - Carpet Cleaners' : extensionCategory}.json`;
+            const fileName = `${ext.subId} - ${ext.childId}.json`;
             const filePath = path.join(folderPath, fileName);
             if (!fs.existsSync(folderPath)) {
               fs.mkdirSync(folderPath, { recursive: true });
