@@ -117,13 +117,13 @@ const getData = async () => {
             fs.mkdirSync(folderPath, { recursive: true });
             // console.log(`Created folder: ${folderPath}`);
           }
-          if (ext.subId && ext.childId) {
+          if (ext.subId) {
             total += productsData.length;
             const fileName = `${ext.subId} - ${ext.childId}.json`;
             const filePath = path.join(folderPath, fileName);
             if (fs.existsSync(filePath)) {
               console.log(`File already exists: ${filePath}. Skipping save.`);
-              const data = JSON.parse(fs.readFileSync(`woolworths/data/${process.env.FOLDER_DATE}/${categId}/${ext.subId} - ${ext.childId}.json`, 'utf8'));
+              const data = JSON.parse(fs.readFileSync(`woolworths/data/${process.env.FOLDER_DATE}/${categId}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
 
               // Merge existing and new data
               const combinedData = [...data, ...productsData];
