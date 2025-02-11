@@ -296,43 +296,185 @@ const categories = [
         },
       ],
     },
-    // {
-    //   category: 'Pet',
-    //   subCategories: [
-    //     {
-    //       subCategory: 'Birds',
-    //       childItems: [
-    //         { extensionCategory: 'a', url: 'https://www.coles.com.au/browse/pet/birds' },
-    //         { extensionCategory: 'b', url: 'https://www.coles.com.au/browse/pet/cat-kitten' },
-    //         { extensionCategory: 'c', url: 'https://www.coles.com.au/browse/pet/dog-puppy' },
-    //         { extensionCategory: 'd', url: 'https://www.coles.com.au/browse/pet/fish-food-accessories' },
-    //         { extensionCategory: 'e', url: 'https://www.coles.com.au/browse/pet/pet-scoop-weigh' },
-    //         { extensionCategory: 'f', url: 'https://www.coles.com.au/browse/pet/small-pets' }, // 6
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   category: 'Poultry, Meat & Seafood',
-    //   subCategories: [
-    //     {
-    //       subCategory: 'BBQ Meat & Seafood',
-    //       childItems: [
-    //         { extensionCategory: 'a', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers' },
-    //         { extensionCategory: 'b', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal' },
-    //         { extensionCategory: 'c', url: 'https://www.coles.com.au/browse/meat-seafood/coles-made-easy-range' },
-    //         { extensionCategory: 'd', url: 'https://www.coles.com.au/browse/meat-seafood/game' },
-    //         { extensionCategory: 'e', url: 'https://www.coles.com.au/browse/meat-seafood/ham' },
-    //         { extensionCategory: 'f', url: 'https://www.coles.com.au/browse/meat-seafood/lamb' },
-    //         { extensionCategory: 'g', url: 'https://www.coles.com.au/browse/meat-seafood/mince' },
-    //         { extensionCategory: 'h', url: 'https://www.coles.com.au/browse/meat-seafood/organic-meat' },
-    //         { extensionCategory: 'i', url: 'https://www.coles.com.au/browse/meat-seafood/pork' },
-    //         { extensionCategory: 'j', url: 'https://www.coles.com.au/browse/meat-seafood/poultry },
-    //         { extensionCategory: 'k', url: 'https://www.coles.com.au/browse/meat-seafood/seafood' }, // 11
-    //       ],
-    //     },
-    //   ],
-    // },
+    {
+      category: 'Pet',
+      subCategories: [
+        {
+          subCategory: 'Birds',
+          childItems: [
+            { extensionCategory: 'Bird Food', url: 'https://www.coles.com.au/browse/pet/birds/bird-food' },
+            { extensionCategory: 'Bird Treats', url: 'https://www.coles.com.au/browse/pet/birds/bird-treats' },
+          ],
+        },
+        {
+          subCategory: 'Cat & Kitten',
+          childItems: [
+            { extensionCategory: 'Cat Accessories, Grooming & Toys', url: 'https://www.coles.com.au/browse/pet/cat-kitten/cat-accessories-grooming-toys' },
+            { extensionCategory: 'Cat Flea & Worming', url: 'https://www.coles.com.au/browse/pet/cat-kitten/cat-flea-worming' },
+            { extensionCategory: 'Cat Litter', url: 'https://www.coles.com.au/browse/pet/cat-kitten/cat-litter' },
+            { extensionCategory: 'Cat Treats & Milk', url: 'https://www.coles.com.au/browse/pet/cat-kitten/cat-treats-milk' },
+            { extensionCategory: 'Chilled Cat Food', url: 'https://www.coles.com.au/browse/pet/cat-kitten/chilled-cat-food' },
+            { extensionCategory: '', url: '' },
+            { extensionCategory: '', url: '' },
+            { extensionCategory: '', url: '' },
+            { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
+            { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
+            { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
+            { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
+            { extensionCategory: '', url: '' },
+          ],
+        },
+      ],
+    },
+    {
+      category: 'Poultry, Meat & Seafood',
+      subCategories: [
+        {
+          subCategory: 'Bbq, Sausages & Burgers',
+          childItems: [
+            { extensionCategory: 'Burgers & Rissoles', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/burgers-rissoles' },
+            { extensionCategory: 'Kebabs', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/kebabs' },
+            { extensionCategory: 'Meatballs', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/meatballs' },
+            { extensionCategory: 'Sausage Mince', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/sausage-mince' },
+            { extensionCategory: 'Sausages', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/sausages' },
+            { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: 'Beef & Veal',
+          childItems: [
+            { extensionCategory: 'Beef & Veal Mince', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/beef-veal-mince' },
+            { extensionCategory: 'Beef Bones & Offal', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/beef-bones-offal' },
+            { extensionCategory: 'Beef Roasts', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/beef-roasts' },
+            { extensionCategory: 'Beef Steaks', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/beef-steaks' },
+            { extensionCategory: 'Crumbed Beef', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/crumbed-beef' },
+            { extensionCategory: 'Graze Beef', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/graze-beef' },
+            { extensionCategory: 'Slow Cook & Casserole Beef', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/slow-cook-casserole-beef' },
+            { extensionCategory: 'Stir Fry & Diced Beef', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/stir-fry-diced-beef' },
+            { extensionCategory: 'Veal', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/veal' },
+          ],
+        },
+        {
+          subCategory: 'Coles Made Easy Range',
+          childItems: [
+            { extensionCategory: 'Easy Meals', url: 'https://www.coles.com.au/browse/meat-seafood/coles-made-easy-range/easy-meals' },
+            { extensionCategory: 'Grill', url: 'https://www.coles.com.au/browse/meat-seafood/coles-made-easy-range/grill' },
+            { extensionCategory: 'Pastry', url: 'https://www.coles.com.au/browse/meat-seafood/coles-made-easy-range/pastry' },
+            { extensionCategory: 'Slow Cook', url: 'https://www.coles.com.au/browse/meat-seafood/coles-made-easy-range/slow-cook' },
+            { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: 'Game',
+          childItems: [
+            { extensionCategory: 'Kangaroo', url: 'https://www.coles.com.au/browse/meat-seafood/game/kangaroo' },
+            { extensionCategory: 'Other Game', url: 'https://www.coles.com.au/browse/meat-seafood/game/other-game' },
+          ],
+        },
+        {
+          subCategory: 'Ham',
+          childItems: [
+            { extensionCategory: 'Ham Portions', url: 'https://www.coles.com.au/browse/meat-seafood/ham/ham-portions' },
+            { extensionCategory: 'Ham Shoulder & Steaks', url: 'https://www.coles.com.au/browse/meat-seafood/ham/ham-shoulder-steaks' },
+          ],
+        },
+        {
+          subCategory: 'Lamb',
+          childItems: [
+            { extensionCategory: 'Diced Lamb', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/diced-lamb' },
+            { extensionCategory: 'Graze Grass-Fed Lamb', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/graze-grass-fed-lamb' },
+            { extensionCategory: 'Lamb Chops', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-chops' },
+            { extensionCategory: 'Lamb Cutlets', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-cutlets' },
+            { extensionCategory: 'Lamb Offal', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-offal' },
+            { extensionCategory: 'Lamb Roasts', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-roasts' },
+            { extensionCategory: 'Lamb Shanks', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-shanks' },
+            { extensionCategory: 'Lamb Steak', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-steak' },
+          ],
+        },
+        {
+          subCategory: 'Mince',
+          childItems: [
+            { extensionCategory: 'Beef & Veal Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/beef-veal-mince' },
+            { extensionCategory: 'Chicken & Turkey Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/chicken-turkey-mince' },
+            { extensionCategory: 'Kangaroo & Wallaby Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/kangaroo-wallaby-mince' },
+            { extensionCategory: 'Lamb Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/lamb-mince' },
+            { extensionCategory: 'Pork Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/pork-mince' },
+            { extensionCategory: 'Sausage Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/sausage-mince' },
+          ],
+        },
+        {
+          subCategory: 'Organic Meat',
+          childItems: [
+            { extensionCategory: 'Organic Beef', url: 'https://www.coles.com.au/browse/meat-seafood/organic-meat/organic-beef' },
+            { extensionCategory: 'Organic Lamb', url: 'https://www.coles.com.au/browse/meat-seafood/organic-meat/organic-lamb' },
+            { extensionCategory: 'Organic Poultry', url: 'https://www.coles.com.au/browse/meat-seafood/organic-meat/organic-poultry' },
+            { extensionCategory: 'Organic Sausages & Meatballs', url: 'https://www.coles.com.au/browse/meat-seafood/organic-meat/organic-sausages-meatballs' },
+          ],
+        },
+        {
+          subCategory: 'Pork',
+          childItems: [
+            { extensionCategory: 'Free Range Pork', url: 'https://www.coles.com.au/browse/meat-seafood/pork/free-range-pork' },
+            { extensionCategory: 'Pork Chops', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-chops' },
+            { extensionCategory: 'Pork Marinade', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-marinade' },
+            { extensionCategory: 'Pork Mince', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-mince' },
+            { extensionCategory: 'Pork Ribs', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-ribs' },
+            { extensionCategory: 'Pork Roasts', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-roasts' },
+            { extensionCategory: 'Pork Steaks', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-steaks' },
+            { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: 'Poultry',
+          childItems: [
+            { extensionCategory: 'Breast Fillets', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/breast-fillets' },
+            { extensionCategory: 'Chicken Offal', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/chicken-offal' },
+            { extensionCategory: 'Chicken Wings', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/chicken-wings' },
+            { extensionCategory: 'Crumbed Chicken', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/crumbed-chicken' },
+            { extensionCategory: 'Diced, Stir-Fry & Tenders', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/diced-stir-fry-tenders' },
+            { extensionCategory: 'Drumsticks & Maryland', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/drumsticks-maryland' },
+            { extensionCategory: 'Duck', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/duck' },
+            { extensionCategory: 'Free Range Chicken', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/free-range-chicken' },
+            { extensionCategory: 'Kebabs & Bites', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/kebabs-bites' },
+            { extensionCategory: 'Marinated & Roast Chicken', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/marinated-roast-chicken' },
+            { extensionCategory: 'Poultry Deli', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/poultry-deli' },
+            { extensionCategory: 'Thigh Fillets', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/thigh-fillets' },
+            { extensionCategory: 'Turkey', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/turkey' },
+            { extensionCategory: 'Whole Chicken', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/whole-chicken' },
+          ],
+        },
+        {
+          subCategory: 'Seafood',
+          childItems: [
+            { extensionCategory: 'Deli Fish', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/deli-fish' },
+            { extensionCategory: 'Deli Marinara Mix and Other Seafood', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/deli-marinara-mix-and-other-seafood' },
+            { extensionCategory: 'Deli Prawns', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/deli-prawns' },
+            { extensionCategory: 'Prepacked Seafood', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/prepacked-seafood' },
+            { extensionCategory: 'Smoked and Cured Fish', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/smoked-and-cured-fish' },
+          ],
+        },
+      ],
+    },
     // {
     //   category: 'Back to School',
     //   subCategories: [
