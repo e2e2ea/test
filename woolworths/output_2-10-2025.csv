@@ -338,6 +338,7 @@ Fruit & Veg,52
 Fruit & Veg,85
 Fruit & Veg,39
 Fruit & Veg,39
+Fruit & Veg,39
 Fruit & Veg,37
 Fruit & Veg,22
 Fruit & Veg,16
@@ -393,6 +394,7 @@ Fruit & Veg,41
 "Poultry, Meat & Seafood",30
 "Poultry, Meat & Seafood",99
 "Poultry, Meat & Seafood",99
+"Poultry, Meat & Seafood",99
 "Poultry, Meat & Seafood",51
 "Poultry, Meat & Seafood",51
 "Poultry, Meat & Seafood",66
@@ -401,6 +403,7 @@ Fruit & Veg,41
 "Poultry, Meat & Seafood",2
 "Poultry, Meat & Seafood",2
 "Poultry, Meat & Seafood",2
+"Poultry, Meat & Seafood",3
 "Poultry, Meat & Seafood",3
 "Poultry, Meat & Seafood",9
 "Poultry, Meat & Seafood",9
@@ -583,6 +586,9 @@ Deli & Chilled Meats,31
 "Dairy, Eggs & Fridge",61
 "Dairy, Eggs & Fridge",26
 "Dairy, Eggs & Fridge",62
+"Dairy, Eggs & Fridge",61
+"Dairy, Eggs & Fridge",26
+"Dairy, Eggs & Fridge",62
 "Dairy, Eggs & Fridge",29
 "Dairy, Eggs & Fridge",97
 "Dairy, Eggs & Fridge",133
@@ -654,6 +660,10 @@ Health & Beauty,143
 Health & Beauty,36
 Health & Beauty,116
 Health & Beauty,36
+Health & Beauty,56
+Health & Beauty,40
+Health & Beauty,93
+Health & Beauty,345
 Health & Beauty,345
 Health & Beauty,187
 Health & Beauty,141

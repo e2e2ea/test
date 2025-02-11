@@ -110,7 +110,7 @@ const getData = async () => {
         // console.log('Filtered product format:', productsData[0])
         if (productsData && productsData.length > 0) {
           
-          const baseFolder = `./woolworths/data/${process.env.FOLDER_DATE}/${categId}`;
+          const baseFolder = `./woolworths/data/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categId}`;
           const folderPath = path.join(baseFolder);
 
           if (!fs.existsSync(folderPath)) {
@@ -123,7 +123,7 @@ const getData = async () => {
             const filePath = path.join(folderPath, fileName);
             if (fs.existsSync(filePath)) {
               console.log(`File already exists: ${filePath}. Skipping save.`);
-              const data = JSON.parse(fs.readFileSync(`woolworths/data/${process.env.FOLDER_DATE}/${categId}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
+              const data = JSON.parse(fs.readFileSync(`woolworths/data/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categId}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
 
               // Merge existing and new data
               const combinedData = [...data, ...productsData];

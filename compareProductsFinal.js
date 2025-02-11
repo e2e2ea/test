@@ -31,12 +31,10 @@ const getData = async () => {
         const extensionCategory = ext.extensionCategory ? ext.extensionCategory : '';
         let productsMatched = [];
         let woolworthsData;
-        
 
         try {
           woolworthsData = JSON.parse(fs.readFileSync(`woolworths/data/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
         } catch (error) {
-          console.log(`Skipping ${mycat} - ${subCategory} - ${extensionCategory}: File(s) missing.`, error);
           continue;
         }
         for (const data of woolworthsData) {
@@ -71,7 +69,7 @@ const getData = async () => {
               shop: data.shop || null,
               category_id: data.category_id,
               subcategory_id: data.subcategory_id,
-              subsubcategory_id: data.subsubcategory_id || "",
+              subsubcategory_id: data.subsubcategory_id || '',
               weight: data.weight || null,
               prices: data.prices,
             };
@@ -81,48 +79,91 @@ const getData = async () => {
         }
 
         try {
+          const filteredProductsMatched = productsMatched.filter((p) => p.shop === 'woolworths');
+
+          // Remove matched products from woolworthsData to get only unmatched products
+          const unmatchedWoolworthsProducts = woolworthsData.filter((w) => !filteredProductsMatched.some((p) => p.source_id === w.source_id));
+
+          // now we need to do a filteredProductsMatched id seen in "woolworthsData" variable will be removed so we can know what products in woolworths doesnt match
           if (productsMatched && productsMatched.length > 0) {
             totalProducts = totalProducts + productsMatched.length;
             console.log('totalProducts', totalProducts);
-            const baseFolder = `./matched/${process.env.FOLDER_DATE}/${categ.id}`;
+            const baseFolder = `./matched/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}`;
             const folderPath = path.join(baseFolder);
             const fileName = `${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`;
             const filePath = path.join(folderPath, fileName);
             if (!fs.existsSync(folderPath)) {
               fs.mkdirSync(folderPath, { recursive: true });
-              console.log(`Created folder: ${folderPath}`);
+              // console.log(`Created folder: ${folderPath}`);
             }
-            fs.writeFileSync(filePath, JSON.stringify(productsMatched, null, 2));
-            console.log(`Data saved to ${filePath}`);
+            if (fs.existsSync(filePath)) {
+              // Merge existing and new data
+              console.log(`File already exists: ${filePath}. Skipping save.`);
+              const data = JSON.parse(fs.readFileSync(`matched/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
+              const combinedData = [...data, ...productsData];
+
+              // Remove duplicates based on source_id
+              const uniqueData = combinedData.filter((item, index, self) => index === self.findIndex((t) => t.source_id === item.source_id && t.shop === item.shop));
+              fs.writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
+            } else {
+              fs.mkdirSync(folderPath, { recursive: true });
+              console.log(`Created folder: ${folderPath}`);
+              fs.writeFileSync(filePath, JSON.stringify(productsMatched, null, 2));
+              console.log(`Data saved to ${filePath}`);
+            }
 
             const chunkSize = 100;
             const skipCount = 3600; //3700
-            for (let i = skipCount; i < productsMatched.length; i += chunkSize) {
-              const chunk = productsMatched.slice(skipCount, skipCount + chunkSize); // Get 100 items at a time
-              console.log('chunk', chunk.length);
-              // fs.writeFileSync(`${category}1.json`, JSON.stringify(chunk, null, 2));
-              // try {
-              //   const externalApiUrl = process.env.JARROD_API;
-              //   const apiKey = process.env.JARROD_KEY;
+            // for (let i = skipCount; i < productsMatched.length; i += chunkSize) {
+            //   const chunk = productsMatched.slice(skipCount, skipCount + chunkSize); // Get 100 items at a time
+            //   console.log('chunk', chunk.length);
+            //   // fs.writeFileSync(`${category}1.json`, JSON.stringify(chunk, null, 2));
+            //   // try {
+            //   //   const externalApiUrl = process.env.JARROD_API;
+            //   //   const apiKey = process.env.JARROD_KEY;
 
-              //   const response = await axios.post(externalApiUrl, chunk, {
-              //     headers: {
-              //       accept: 'application/json',
-              //       'X-API-Key': apiKey,
-              //       'Content-Type': 'application/json',
-              //     },
-              //   });
+            //   //   const response = await axios.post(externalApiUrl, chunk, {
+            //   //     headers: {
+            //   //       accept: 'application/json',
+            //   //       'X-API-Key': apiKey,
+            //   //       'Content-Type': 'application/json',
+            //   //     },
+            //   //   });
 
-              //   console.log(`Success! category: ${category} Batch in  ${i / chunkSize + 1}`, response.data);
-              // } catch (error) {
-              //   if (error.response) {
-              //     console.error('Error response:', error.response.status, error.response.data);
-              //   } else if (error.request) {
-              //     console.error('No response received:', error.request);
-              //   } else {
-              //     console.error('Error:', error.message);
-              //   }
-              // }
+            //   //   console.log(`Success! category: ${category} Batch in  ${i / chunkSize + 1}`, response.data);
+            //   // } catch (error) {
+            //   //   if (error.response) {
+            //   //     console.error('Error response:', error.response.status, error.response.data);
+            //   //   } else if (error.request) {
+            //   //     console.error('No response received:', error.request);
+            //   //   } else {
+            //   //     console.error('Error:', error.message);
+            //   //   }
+            //   // }
+            // }
+          }
+          if (unmatchedWoolworthsProducts && unmatchedWoolworthsProducts.length > 0) {
+            const baseFolder = `./notMatched/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}`;
+            const folderPath = path.join(baseFolder);
+            if (!fs.existsSync(folderPath)) {
+              fs.mkdirSync(folderPath, { recursive: true });
+            }
+            const fileName = `${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`;
+            const filePath = path.join(folderPath, fileName);
+            if (fs.existsSync(filePath)) {
+              // Merge existing and new data
+              console.log(`File already exists: ${filePath}. Skipping save.`);
+              const data = JSON.parse(fs.readFileSync(`notMatched/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
+              const combinedData = [...data, ...unmatchedWoolworthsProducts];
+
+              // Remove duplicates based on source_id
+              const uniqueData = combinedData.filter((item, index, self) => index === self.findIndex((t) => t.source_id === item.source_id && t.shop === item.shop));
+              fs.writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
+            } else {
+              fs.mkdirSync(folderPath, { recursive: true });
+              console.log(`Created folder: ${folderPath}`);
+              fs.writeFileSync(filePath, JSON.stringify(productsMatched, null, 2));
+              console.log(`Data saved to ${filePath}`);
             }
           }
         } catch (error) {

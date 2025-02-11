@@ -2,6 +2,7 @@ node_modules
 brightdata_proxy_ca
 matched
 similar
+notMatched
 
 coles/data
 woolworths/data
