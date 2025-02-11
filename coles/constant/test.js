@@ -1,6 +1,7 @@
 const categories = [
     {
       category: 'Baby',
+
       subCategories: [
         {
           subCategory: 'Baby Accessories',
@@ -23,55 +24,80 @@ const categories = [
         {
           subCategory: 'Nappies & Nappy Pants',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Nappies', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/nappies' },
+            { extensionCategory: 'Nappy Pants', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/nappy-pants' },
+            { extensionCategory: 'Night Pants', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/night-pants' },
+            { extensionCategory: 'Swimmers', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/swimmers' },
           ],
         },
         {
           subCategory: 'Baby Wipes',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Extra Large Pack', url: 'https://www.coles.com.au/browse/baby/baby-wipes/extra-large-pack' },
+            { extensionCategory: 'Large Pack', url: 'http://coles.com.au/browse/baby/baby-wipes/large-pack' },
+            { extensionCategory: 'Medium Pack', url: 'https://www.coles.com.au/browse/baby/baby-wipes/medium-pack' },
+            { extensionCategory: 'Refill Pack', url: 'https://www.coles.com.au/browse/baby/baby-wipes/refill-pack' },
+            { extensionCategory: 'Small Pack', url: 'https://www.coles.com.au/browse/baby/baby-wipes/small-pack' },
           ],
         },
         {
           subCategory: 'Baby Feeding',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Nursing Care', url: 'https://www.coles.com.au/browse/baby/baby-feeding/nursing-care' },
           ],
         },
         {
           subCategory: 'Baby & Toddler Food',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Baby & Toddler Snacks', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-toddler-snacks' },
+            { extensionCategory: 'Baby Cereals', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-cereals' },
+            { extensionCategory: 'Baby Food Jars', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-food-jars' },
+            { extensionCategory: 'Baby Food Pouches', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-food-pouches' },
+            { extensionCategory: 'Baby Pasta', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-pasta' },
+            { extensionCategory: 'Baby Rusks', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-rusks' },
           ],
         },
         {
           subCategory: 'Baby Meal Time',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Baby Plates & Bowls', url: 'https://www.coles.com.au/browse/baby/baby-meal-time/baby-plates-bowls' },
           ],
         },
         {
           subCategory: 'Bottles & Feeding',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Baby Bottles', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/baby-bottles' },
+            { extensionCategory: 'Baby Cups', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/baby-cups' },
+            { extensionCategory: 'Baby Teats', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/baby-teats' },
+            { extensionCategory: 'Bottle Accessories', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/bottle-accessories' },
+            { extensionCategory: 'Bottle Cleaning', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/bottle-cleaning' },
+            { extensionCategory: 'Bottle Feeding', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/bottle-feeding' },
           ],
         },
         {
           subCategory: 'Bath & Skincare',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Baby Bath', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-bath' },
+            { extensionCategory: 'Baby Cotton Buds', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-cotton-buds' },
+            { extensionCategory: 'Baby Hair & Body Wash', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-hair-body-wash' },
+            { extensionCategory: 'Baby Hair Care', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-hair-care' },
+            { extensionCategory: 'Baby Medicinal', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-medicinal' },
+            { extensionCategory: 'Baby Moisturiser', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-moisturiser' },
+            { extensionCategory: 'Baby Oil', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-oil' },
+            { extensionCategory: 'Baby Powder', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-powder' },
+            { extensionCategory: 'Nappy Rash Treatment', url: 'https://www.coles.com.au/browse/baby/bath-skincare/nappy-rash-treatment' },
           ],
         },
         {
           subCategory: 'Dummies & Teething',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Soothers & Teethers', url: 'https://www.coles.com.au/browse/baby/dummies-teething/soothers-teethers' },
           ],
         },
         {
           subCategory: 'Postpartum Care',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Postpartum Care', url: 'https://www.coles.com.au/browse/baby/postpartum-care/postpartum-underwear' },
           ],
         },
       ],
@@ -82,15 +108,72 @@ const categories = [
         {
           subCategory: 'In-Store Bakery',
           childItems: [
-            { extensionCategory: 'Chilled Cakes & Desserts', url: 'https://www.coles.com.au/browse/bakery/chilled-cakes-desserts' },
-            { extensionCategory: 'Chilled Cakes & Desserts', url: '' },
             { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
             { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
             { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
             { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
             { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
             { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
             { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
+            { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
+            { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
+            { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
+            { extensionCategory: '', url: '' },
+          ],
+        },
+        {
+          subCategory: '',
+          childItems: [
             { extensionCategory: '', url: '' },
           ],
         },

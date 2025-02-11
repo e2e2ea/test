@@ -8,6 +8,7 @@ import axios from 'axios';
 
 const getData = async () => {
   let totalProducts = 0;
+  let totalProductsNotMatchInW = 0;
   for (const categ of categories) {
     const category = categ.category;
     let mycat = category;
@@ -83,7 +84,7 @@ const getData = async () => {
 
           // Remove matched products from woolworthsData to get only unmatched products
           const unmatchedWoolworthsProducts = woolworthsData.filter((w) => !filteredProductsMatched.some((p) => p.source_id === w.source_id));
-
+          
           // now we need to do a filteredProductsMatched id seen in "woolworthsData" variable will be removed so we can know what products in woolworths doesnt match
           if (productsMatched && productsMatched.length > 0) {
             totalProducts = totalProducts + productsMatched.length;
@@ -143,6 +144,7 @@ const getData = async () => {
             // }
           }
           if (unmatchedWoolworthsProducts && unmatchedWoolworthsProducts.length > 0) {
+            
             const baseFolder = `./notMatched/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}`;
             const folderPath = path.join(baseFolder);
             if (!fs.existsSync(folderPath)) {
