@@ -636,7 +636,8 @@ const categories = [
                     { extensionCategory: "Prepacked Vegetables", subId: "22379", childId: "22390" },
                     { extensionCategory: "Potatoes & Pumpkins", subId: "22379", childId: "22389" },
                     { extensionCategory: "Carrots, Onions & Root Veg", subId: "22379", childId: "22383" },
-                    { extensionCategory: "Lettuce, Kale & Leafy Greens", subId: "22386", childId: "22391" },
+                    { extensionCategory: "Carrots, Onions & Root Veg", subId: "22379", childId: "22386" },
+                    { extensionCategory: "Lettuce, Kale & Leafy Greens", subId: "22379", childId: "22391" },
                     { extensionCategory: "Broccoli, Cauliflower & Cabbage", subId: "22379", childId: "22381" },
                     { extensionCategory: "Peas, Beans, Corn & Asparagus", subId: "22379", childId: "22388" },
                     { extensionCategory: "Capsicum", subId: "22379", childId: "22382" },
@@ -725,7 +726,7 @@ const categories = [
                     { extensionCategory: "Pork", subId: "", childId: "" },
                     { extensionCategory: "Game", subId: "", childId: "" },
                     { extensionCategory: "Burgers & Sausages", subId: "", childId: "" },
-                    { extensionCategory: "Deli Meat", subId: "", childId: "" },
+                    { extensionCategory: "Deli Meat", subId: "24058", childId: "" },
                     { extensionCategory: "Organic Meat", subId: "", childId: "" },
                     { extensionCategory: "Gluten Free Meat", subId: "", childId: "" },
                     { extensionCategory: "Mince", subId: "", childId: "" },
@@ -737,6 +738,7 @@ const categories = [
                 childItems: [
                     { extensionCategory: "Salmon & Other Fish", subId: "22714", childId: "22718" },
                     { extensionCategory: "Salmon & Other Fish", subId: "22758", childId: "22761" },
+                    { extensionCategory: "Salmon & Other Fish", subId: "22713", childId: "23984" },
                     { extensionCategory: "Prawns", subId: "22714", childId: "22721" },
                     { extensionCategory: "Prawns", subId: "22758", childId: "22766" },
                     { extensionCategory: "Seafood Entertaining", subId: "", childId: "" },
@@ -746,6 +748,7 @@ const categories = [
                     { extensionCategory: "Squid, Octopus & Marinara", subId: "22758", childId: "22769" },
                     { extensionCategory: "Crab & Lobster", subId: "22758", childId: "22759" },
                     { extensionCategory: "Oysters, Mussels & Scallops", subId: "22758", childId: "22764" },
+                    { extensionCategory: "Oysters, Mussels & Scallops", subId: "22758", childId: "22765" },
                     { extensionCategory: "Sauce & Condiments", subId: "", childId: "" },
                 ]
             },
@@ -1165,6 +1168,12 @@ const categories = [
             {
                 subCategory: "Cream, Custard & Desserts",
                 childItems: [
+                    // For pantry
+                    { extensionCategory: "Cream", catId: '22770', subId: "22821", childId: "22983" },
+                    { extensionCategory: "Custard", catId: '22770', subId: "22821", childId: "22983" },
+                    { extensionCategory: "Desserts", catId: '22770', subId: "22821", childId: "22983" },
+
+
                     { extensionCategory: "Cream", subId: "22102", childId: "22103" },
                     { extensionCategory: "Custard", subId: "22102", childId: "22105" },
                     { extensionCategory: "Desserts", subId: "", childId: "" },
@@ -1334,6 +1343,12 @@ const categories = [
             {
                 subCategory: "Health Foods",
                 childItems: [
+                    // for pantry
+                    { extensionCategory: "Breakfast & Spreads", catId: '22770', subId: "22832", childId: "22834" },
+                    { extensionCategory: "Pasta, Rice & Grains", catId: '22770', subId: "22832", childId: "22835" },
+                    { extensionCategory: "Cooking Needs", catId: '22770', subId: "22832", childId: "22835" },
+                    { extensionCategory: "Gluten Free", catId: '22770', subId: "22832", childId: "22838" },
+
                     { extensionCategory: "Gluten Free", subId: "24007", childId: "" },
                     { extensionCategory: "Vegan", subId: "24007", childId: "" },
                     { extensionCategory: "Dairy Free", subId: "24007", childId: "" },
