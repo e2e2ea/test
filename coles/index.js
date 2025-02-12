@@ -286,76 +286,76 @@ const scraper = async () => {
                             let ext;
                             ext = extensionCategory;
 
-                            // baby category
-                            if (subCategory === 'Nappies & Nappy Pants') sub = 'Nappies Wipes';
-                            // if (extensionCategory === 'Specialty Formula') ext = 'Specialty'
-                            if (extensionCategory === 'Swimmers') ext = 'Swimming Nappies';
+                            // // baby category
+                            // if (subCategory === 'Nappies & Nappy Pants') sub = 'Nappies Wipes';
+                            // // if (extensionCategory === 'Specialty Formula') ext = 'Specialty'
+                            // if (extensionCategory === 'Swimmers') ext = 'Swimming Nappies';
 
-                            // bakery category
-                            if (subCategory === 'In-Store Bakery') {
-                              sub = `In-Store Bakery`;
-                              if (ext === 'Donuts') ext = 'Donuts & Cookies';
-                              if (ext === 'Cookies') ext = 'Donuts & Cookies';
-                            }
-                            if (subCategory === 'Packaged Bread & Bakery') {
-                              sub = `Packaged Bread & Bakery`;
-                            }
+                            // // bakery category
+                            // if (subCategory === 'In-Store Bakery') {
+                            //   sub = `In-Store Bakery`;
+                            //   if (ext === 'Donuts') ext = 'Donuts & Cookies';
+                            //   if (ext === 'Cookies') ext = 'Donuts & Cookies';
+                            // }
+                            // if (subCategory === 'Packaged Bread & Bakery') {
+                            //   sub = `Packaged Bread & Bakery`;
+                            // }
 
-                            // category Dairy, Eggs & Fridge
-                            if (category === 'Dairy, Eggs & Fridge') {
-                              if (subCategory === 'Dips & Pate') {
-                                if (extensionCategory === 'Pate') ext = 'Pate, Paste & Caviar';
-                                if (extensionCategory === 'Paste') ext = 'Pate, Paste & Caviar';
-                              }
-                            }
-                            // category Drinks
-                            if (category === 'Drinks') {
-                              if (subCategory === 'Chilled Drinks') {
-                                if (extensionCategory === 'Soft Drinks' || extensionCategory === 'Energy Drinks') ext = 'Chilled Soft Drinks & Energy Drinks';
-                              }
-                            }
-                            // category Freezer
-                            if (category === 'Freezer') {
-                              if (subCategory === 'Frozen Fruit') {
-                                if (extensionCategory === 'Berries' || extensionCategory === 'Tropical') ext = 'Berries & Tropical';
-                              }
-                              if (subCategory === 'Frozen Party Food') {
-                                if (extensionCategory === 'Pastries' || extensionCategory === 'Pies & Quiches') ext = 'Pies, Pastries & Quiches';
-                              }
-                              if (subCategory === 'Frozen Vegetables') {
-                                if (extensionCategory === 'Beans' || extensionCategory === 'Peas') ext = 'Beans & Peas';
-                              }
-                            }
-                            // category Fruit & Veg
-                            if (category === 'Fruit & Veg') {
-                              if (subCategory === 'Fruit') {
-                                if (extensionCategory === 'Apples' || extensionCategory === 'Pears') ext = 'Apples & Pears';
-                                if (extensionCategory === 'Melons' || extensionCategory === 'Mangoes') ext = 'Melons & Mangoes';
-                                if (extensionCategory === 'Pineapples' || extensionCategory === 'Kiwi Fruit') ext = 'Pineapples & Kiwi Fruit';
-                              }
-                              if (subCategory === 'Vegetables') {
-                                if (extensionCategory === 'Potatoes' || extensionCategory === 'Pumpkins') ext = 'Potatoes & Pumpkins';
-                                if (extensionCategory === 'Eggplant' || extensionCategory === 'Zucchini & Squash') ext = 'Zucchini, Eggplant & Squash';
-                              }
-                            }
-                            // category Household
-                            if (category === 'Household') {
-                              if (subCategory === 'Laundry') {
-                                if (extensionCategory === 'Ironing' || extensionCategory === 'Accessories') ext = `Ironing & Accessories`;
-                              }
-                            }
-                            // category Pantry
-                            if (category === 'Pantry') {
-                              if (subCategory === 'Breakfast & Spreads') {
-                                if (extensionCategory === 'Muesli' || extensionCategory === 'Oats') ext = `Muesli & Oats`;
-                              }
-                            }
-                            // category Poultry, Meat & Seafood
-                            if (category === 'Poultry, Meat & Seafood') {
-                              if (subCategory === 'BBQ Meat & Seafood') {
-                                if (extensionCategory === 'Burgers' || extensionCategory === 'Sausages') ext = `Burgers & Sausages`;
-                              }
-                            }
+                            // // category Dairy, Eggs & Fridge
+                            // if (category === 'Dairy, Eggs & Fridge') {
+                            //   if (subCategory === 'Dips & Pate') {
+                            //     if (extensionCategory === 'Pate') ext = 'Pate, Paste & Caviar';
+                            //     if (extensionCategory === 'Paste') ext = 'Pate, Paste & Caviar';
+                            //   }
+                            // }
+                            // // category Drinks
+                            // if (category === 'Drinks') {
+                            //   if (subCategory === 'Chilled Drinks') {
+                            //     if (extensionCategory === 'Soft Drinks' || extensionCategory === 'Energy Drinks') ext = 'Chilled Soft Drinks & Energy Drinks';
+                            //   }
+                            // }
+                            // // category Freezer
+                            // if (category === 'Freezer') {
+                            //   if (subCategory === 'Frozen Fruit') {
+                            //     if (extensionCategory === 'Berries' || extensionCategory === 'Tropical') ext = 'Berries & Tropical';
+                            //   }
+                            //   if (subCategory === 'Frozen Party Food') {
+                            //     if (extensionCategory === 'Pastries' || extensionCategory === 'Pies & Quiches') ext = 'Pies, Pastries & Quiches';
+                            //   }
+                            //   if (subCategory === 'Frozen Vegetables') {
+                            //     if (extensionCategory === 'Beans' || extensionCategory === 'Peas') ext = 'Beans & Peas';
+                            //   }
+                            // }
+                            // // category Fruit & Veg
+                            // if (category === 'Fruit & Veg') {
+                            //   if (subCategory === 'Fruit') {
+                            //     if (extensionCategory === 'Apples' || extensionCategory === 'Pears') ext = 'Apples & Pears';
+                            //     if (extensionCategory === 'Melons' || extensionCategory === 'Mangoes') ext = 'Melons & Mangoes';
+                            //     if (extensionCategory === 'Pineapples' || extensionCategory === 'Kiwi Fruit') ext = 'Pineapples & Kiwi Fruit';
+                            //   }
+                            //   if (subCategory === 'Vegetables') {
+                            //     if (extensionCategory === 'Potatoes' || extensionCategory === 'Pumpkins') ext = 'Potatoes & Pumpkins';
+                            //     if (extensionCategory === 'Eggplant' || extensionCategory === 'Zucchini & Squash') ext = 'Zucchini, Eggplant & Squash';
+                            //   }
+                            // }
+                            // // category Household
+                            // if (category === 'Household') {
+                            //   if (subCategory === 'Laundry') {
+                            //     if (extensionCategory === 'Ironing' || extensionCategory === 'Accessories') ext = `Ironing & Accessories`;
+                            //   }
+                            // }
+                            // // category Pantry
+                            // if (category === 'Pantry') {
+                            //   if (subCategory === 'Breakfast & Spreads') {
+                            //     if (extensionCategory === 'Muesli' || extensionCategory === 'Oats') ext = `Muesli & Oats`;
+                            //   }
+                            // }
+                            // // category Poultry, Meat & Seafood
+                            // if (category === 'Poultry, Meat & Seafood') {
+                            //   if (subCategory === 'BBQ Meat & Seafood') {
+                            //     if (extensionCategory === 'Burgers' || extensionCategory === 'Sausages') ext = `Burgers & Sausages`;
+                            //   }
+                            // }
                             let categId = '';
                             const matchedCategory = categoriesId.find((cat) => cat.name === category);
                             if (matchedCategory) {
