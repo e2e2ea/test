@@ -84,7 +84,7 @@ const getData = async () => {
 
           // Remove matched products from woolworthsData to get only unmatched products
           const unmatchedWoolworthsProducts = woolworthsData.filter((w) => !filteredProductsMatched.some((p) => p.source_id === w.source_id));
-          
+
           // now we need to do a filteredProductsMatched id seen in "woolworthsData" variable will be removed so we can know what products in woolworths doesnt match
           if (productsMatched && productsMatched.length > 0) {
             totalProducts = totalProducts + productsMatched.length;
@@ -144,7 +144,6 @@ const getData = async () => {
             // }
           }
           if (unmatchedWoolworthsProducts && unmatchedWoolworthsProducts.length > 0) {
-            
             const baseFolder = `./notMatched/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}`;
             const folderPath = path.join(baseFolder);
             if (!fs.existsSync(folderPath)) {
@@ -179,3 +178,48 @@ const getData = async () => {
 (async () => {
   await getData();
 })();
+
+const checkIds = async (categId, subId, childId) => {
+  try {
+    let item = [];
+    if (subId) {
+      switch (subId) {
+        case '1':
+          if (childId) {
+            item = await checkChildIds(categId, subId, childId);
+            return item;
+          } else {
+            item = JSON.parse(fs.readFileSync(`coles/data/${process.env.FOLDER_DATE}/${categId}/${subId}${childId && ` - ${childId}`}.json`, 'utf8'));
+          }
+          return item;
+        default:
+          item = JSON.parse(fs.readFileSync(`coles/data/${process.env.FOLDER_DATE}/${subId}.json`, 'utf8'));
+          return item;
+      }
+    }
+    return [];
+  } catch (error) {
+    console.log('error:', error);
+    return [];
+  }
+};
+
+const checkChildIds = async (categId, subId, childId) => {
+  try {
+    let item = [];
+    if (childId) {
+      switch (childId) {
+        case '1':
+          item = JSON.parse(fs.readFileSync(`coles/data/${process.env.FOLDER_DATE}/${categId ? categId : categId}/${subId}${childId && ` - ${childId}`}.json`, 'utf8'));
+          return item;
+        default:
+          // item = JSON.parse(fs.readFileSync(`coles/data/${process.env.FOLDER_DATE}/${categId ? categId : categId}/${subId}${childId && ` - ${childId}`}.json`, 'utf8'));
+          return item;
+      }
+    }
+    return [];
+  } catch (error) {
+    console.log('error:', error);
+    return [];
+  }
+};
