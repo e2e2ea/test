@@ -1555,40 +1555,40 @@ const categories = [
       },
     ],
   },
-  // {
-  //   category: 'Back to School',
-  //   subCategories: [
-  //     {
-  //       subCategory: 'BBQ Meat & Seafood',
-  //       childItems: [
-  //         { extensionCategory: 'a', url: 'https://www.coles.com.au/browse/back-to-school/easy-school-night-dinners' },
-  //         { extensionCategory: 'b', url: 'https://www.coles.com.au/browse/back-to-school/school-breakfast' },
-  //         { extensionCategory: 'c', url: 'https://www.coles.com.au/browse/back-to-school/school-lunches-snacking' },
-  //         { extensionCategory: 'd', url: 'https://www.coles.com.au/browse/back-to-school/school-stationery-accessories' },
-  //       ],
-  //     },
-  //   ],
-  // },
-  // {
-  //   category: 'Liquor',
-  //   subCategories: [
-  //     {
-  //       subCategory: 'BBQ Meat & Seafood',
-  //       childItems: [
-  //         { extensionCategory: 'a', url: 'https://www.coles.com.au/browse/liquor/beer' },
-  //         { extensionCategory: 'b', url: 'https://www.coles.com.au/browse/liquor/cask-fortified-wine' },
-  //         { extensionCategory: 'c', url: 'https://www.coles.com.au/browse/liquor/champagne-sparkling' },
-  //         { extensionCategory: 'd', url: 'https://www.coles.com.au/browse/liquor/cider' },
-  //         { extensionCategory: 'e', url: 'https://www.coles.com.au/browse/liquor/low-mid-strength' },
-  //         { extensionCategory: 'f', url: 'https://www.coles.com.au/browse/liquor/premixed-drinks' },
-  //         { extensionCategory: 'g', url: 'https://www.coles.com.au/browse/liquor/red-wine' },
-  //         { extensionCategory: 'h', url: 'https://www.coles.com.au/browse/liquor/rose' },
-  //         { extensionCategory: 'i', url: 'https://www.coles.com.au/browse/liquor/spirits' },
-  //         { extensionCategory: 'j', url: 'https://www.coles.com.au/browse/liquor/white-wine' },
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    category: 'Back to School',
+    subCategories: [
+      {
+        subCategory: 'BBQ Meat & Seafood',
+        childItems: [
+          { extensionCategory: 'a', url: 'https://www.coles.com.au/browse/back-to-school/easy-school-night-dinners' },
+          { extensionCategory: 'b', url: 'https://www.coles.com.au/browse/back-to-school/school-breakfast' },
+          { extensionCategory: 'c', url: 'https://www.coles.com.au/browse/back-to-school/school-lunches-snacking' },
+          { extensionCategory: 'd', url: 'https://www.coles.com.au/browse/back-to-school/school-stationery-accessories' },
+        ],
+      },
+    ],
+  },
+  {
+    category: 'Liquor',
+    subCategories: [
+      {
+        subCategory: 'BBQ Meat & Seafood',
+        childItems: [
+          { extensionCategory: 'a', url: 'https://www.coles.com.au/browse/liquor/beer' },
+          { extensionCategory: 'b', url: 'https://www.coles.com.au/browse/liquor/cask-fortified-wine' },
+          { extensionCategory: 'c', url: 'https://www.coles.com.au/browse/liquor/champagne-sparkling' },
+          { extensionCategory: 'd', url: 'https://www.coles.com.au/browse/liquor/cider' },
+          { extensionCategory: 'e', url: 'https://www.coles.com.au/browse/liquor/low-mid-strength' },
+          { extensionCategory: 'f', url: 'https://www.coles.com.au/browse/liquor/premixed-drinks' },
+          { extensionCategory: 'g', url: 'https://www.coles.com.au/browse/liquor/red-wine' },
+          { extensionCategory: 'h', url: 'https://www.coles.com.au/browse/liquor/rose' },
+          { extensionCategory: 'i', url: 'https://www.coles.com.au/browse/liquor/spirits' },
+          { extensionCategory: 'j', url: 'https://www.coles.com.au/browse/liquor/white-wine' },
+        ],
+      },
+    ],
+  },
 ];
 
 export default categories;
