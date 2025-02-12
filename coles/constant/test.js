@@ -106,75 +106,123 @@ const categories = [
       category: 'Bakery',
       subCategories: [
         {
-          subCategory: 'In-Store Bakery',
+          subCategory: 'Chilled Cakes & Desserts',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: '2 Pack & Individual Serve Desserts', url: 'https://www.coles.com.au/browse/bakery/chilled-cakes-desserts/2-pack-individual-serve-desserts' },
+            { extensionCategory: 'Birthday & Celebration Cakes', url: 'https://www.coles.com.au/browse/bakery/chilled-cakes-desserts/birthday-celebration-cakes' },
+            { extensionCategory: 'Cheesecakes', url: 'https://www.coles.com.au/browse/bakery/chilled-cakes-desserts/cheesecakes' },
+            { extensionCategory: 'Cream Cakes', url: 'https://www.coles.com.au/browse/bakery/chilled-cakes-desserts/cream-cakes' },
+            { extensionCategory: 'Pavlova & Meringue', url: 'https://www.coles.com.au/browse/bakery/chilled-cakes-desserts/pavlova-meringue' },
+            { extensionCategory: 'Tarts & Pies', url: 'https://www.coles.com.au/browse/bakery/chilled-cakes-desserts/tarts-pies' },
           ],
         },
         {
-          subCategory: '',
+          subCategory: 'Easter Bakery',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Hot Cross Buns', url: 'https://www.coles.com.au/browse/bakery/easter-bakery/hot-cross-buns' },
           ],
         },
         {
-          subCategory: '',
+          subCategory: 'Gluten Free Range',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'All Packaged Bread', url: 'https://www.coles.com.au/browse/bakery/gluten-free-range/all-packaged-bread' },
+            { extensionCategory: 'Gluten Free Hot Cross Buns', url: 'https://www.coles.com.au/browse/bakery/gluten-free-range/gluten-free-hot-cross-buns' },
+            { extensionCategory: 'Packaged Breakfast Snack', url: 'https://www.coles.com.au/browse/bakery/gluten-free-range/packaged-breakfast-snack' },
+            { extensionCategory: 'Packaged Buns & Bread Rolls', url: 'https://www.coles.com.au/browse/bakery/gluten-free-range/packaged-buns-bread-rolls' },
+            { extensionCategory: 'Packaged Cake & Sweet Treats', url: 'https://www.coles.com.au/browse/bakery/gluten-free-range/packaged-cake-sweet-treats' },
+            { extensionCategory: 'Packaged Wraps, Flat Bread and Pizza Bases', url: 'https://www.coles.com.au/browse/bakery/gluten-free-range/packaged-wraps-flat-bread-and-pizza-bases' },
+        ],
+        },
+        {
+          subCategory: 'Instore Bakery Breads and Rolls',
+          childItems: [
+            { extensionCategory: 'Artisan Style Breads By Laurent', url: 'https://www.coles.com.au/browse/bakery/instore-bakery-breads-and-rolls/artisan-style-breads-by-laurent' },
+            { extensionCategory: 'Baguettes', url: 'https://www.coles.com.au/browse/bakery/instore-bakery-breads-and-rolls/baguettes' },
+            { extensionCategory: 'Bread Loaves', url: 'https://www.coles.com.au/browse/bakery/instore-bakery-breads-and-rolls/bread-loaves' },
+            { extensionCategory: 'Bread Rolls', url: 'https://www.coles.com.au/browse/bakery/instore-bakery-breads-and-rolls/bread-rolls' },
+            { extensionCategory: 'Healthier Breads', url: 'https://www.coles.com.au/browse/bakery/instore-bakery-breads-and-rolls/healthier-breads' },
           ],
         },
         {
-          subCategory: '',
+          subCategory: 'Instore Bakery Sweet Treats',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Cookies', url: 'https://www.coles.com.au/browse/bakery/instore-bakery-sweet-treats/cookies' },
+            { extensionCategory: 'Donuts', url: 'https://www.coles.com.au/browse/bakery/instore-bakery-sweet-treats/donuts' },
+            { extensionCategory: 'Easter Treats', url: 'https://www.coles.com.au/browse/bakery/instore-bakery-sweet-treats/easter-treats' },
+            { extensionCategory: 'Pastries & Danishes', url: 'https://www.coles.com.au/browse/bakery/instore-bakery-sweet-treats/pastries-danishes' },
+            { extensionCategory: 'Scones', url: 'https://www.coles.com.au/browse/bakery/instore-bakery-sweet-treats/scones' },
           ],
         },
         {
-          subCategory: '',
+          subCategory: 'Packaged Bread Rolls and Buns',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Brioche', url: 'https://www.coles.com.au/browse/bakery/packaged-bread-rolls-and-buns/brioche' },
+            { extensionCategory: 'Burger Buns and Hot Dog Rolls', url: 'https://www.coles.com.au/browse/bakery/packaged-bread-rolls-and-buns/burger-buns-and-hot-dog-rolls' },
+            { extensionCategory: 'Gluten Free Rolls & Buns', url: 'https://www.coles.com.au/browse/bakery/packaged-bread-rolls-and-buns/gluten-free-rolls-buns' },
+            { extensionCategory: 'Thins', url: 'https://www.coles.com.au/browse/bakery/packaged-bread-rolls-and-buns/thins' },
+        ],
+        },
+        {
+          subCategory: 'Packaged Breads',
+          childItems: [
+            { extensionCategory: 'Digestive Health & Speciality Bread', url: 'https://www.coles.com.au/browse/bakery/packaged-breads/digestive-health-speciality-bread' },
+            { extensionCategory: 'Gluten Free Packaged Bread', url: 'https://www.coles.com.au/browse/bakery/packaged-breads/gluten-free-packaged-bread' },
+            { extensionCategory: 'Multigrain & Seeded Bread', url: 'https://www.coles.com.au/browse/bakery/packaged-breads/multigrain-seeded-bread' },
+            { extensionCategory: 'Rye Bread', url: 'https://www.coles.com.au/browse/bakery/packaged-breads/rye-bread' },
+            { extensionCategory: 'White Bread', url: 'https://www.coles.com.au/browse/bakery/packaged-breads/white-bread' },
+            { extensionCategory: 'Wholemeal Bread', url: 'https://www.coles.com.au/browse/bakery/packaged-breads/wholemeal-bread' },
           ],
         },
         {
-          subCategory: '',
+          subCategory: 'Packaged Breakfast Snacks',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Bagels', url: 'https://www.coles.com.au/browse/bakery/packaged-breakfast-snacks/bagels' },
+            { extensionCategory: 'Croissants & Pastries', url: 'https://www.coles.com.au/browse/bakery/packaged-breakfast-snacks/croissants-pastries' },
+            { extensionCategory: 'Crumpet', url: 'https://www.coles.com.au/browse/bakery/packaged-breakfast-snacks/crumpet' },
+            { extensionCategory: 'English Muffins', url: 'https://www.coles.com.au/browse/bakery/packaged-breakfast-snacks/english-muffins' },
+            { extensionCategory: 'Fruit Bread', url: 'https://www.coles.com.au/browse/bakery/packaged-breakfast-snacks/fruit-bread' },
+            { extensionCategory: 'Gluten Free Packaged Snacks', url: 'https://www.coles.com.au/browse/bakery/packaged-breakfast-snacks/gluten-free-packaged-snacks' },
+            { extensionCategory: 'Pikelets, Pancakes and Crepes', url: 'https://www.coles.com.au/browse/bakery/packaged-breakfast-snacks/pikelets-pancakes-and-crepes' },
+            { extensionCategory: 'Waffles', url: 'https://www.coles.com.au/browse/bakery/packaged-breakfast-snacks/waffles' },
           ],
         },
         {
-          subCategory: '',
+          subCategory: 'Packaged Cakes & Sweet Treats',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Cookies & Biscuits', url: 'https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats/cookies-biscuits' },
+            { extensionCategory: 'Cupcakes', url: 'https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats/cupcakes' },
+            { extensionCategory: 'Fruit Cakes', url: 'https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats/fruit-cakes' },
+            { extensionCategory: 'Gluten Free Cakes & Treats', url: 'https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats/gluten-free-cakes-treats' },
+            { extensionCategory: 'Lamingtons', url: 'https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats/lamingtons' },
+            { extensionCategory: 'Loaf Cakes', url: 'https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats/loaf-cakes' },
+            { extensionCategory: 'Meringues & Pavlovas', url: 'https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats/meringues-pavlovas' },
+            { extensionCategory: 'Muffins & Muffin Bars', url: 'https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats/muffins-muffin-bars' },
+            { extensionCategory: 'Pastry Shells', url: 'https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats/pastry-shells' },
+            { extensionCategory: 'Slices & Bites', url: 'https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats/slices-bites' },
+            { extensionCategory: 'Sponge & Mud Cakes', url: 'https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats/sponge-mud-cakes' },
+            { extensionCategory: 'Sponge Rolls & Cake Bars', url: 'https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats/sponge-rolls-cake-bars' },
+            { extensionCategory: 'Sweet Brioche', url: 'https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats/sweet-brioche' },
+            { extensionCategory: 'Tea Cakes', url: 'https://www.coles.com.au/browse/bakery/packaged-cakes-sweet-treats/tea-cakes' },
           ],
         },
         {
-          subCategory: '',
+          subCategory: 'Packaged Flat Bread, Wraps and Pizza Bases',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Flavoured Wraps', url: 'https://www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/flavoured-wraps' },
+            { extensionCategory: 'Gluten Free Wraps & Flat Bread', url: 'https://www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/gluten-free-wraps-flat-bread' },
+            { extensionCategory: 'Naan Bread and Gyros', url: 'https://www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/naan-bread-and-gyros' },
+            { extensionCategory: 'Other Flat Breads', url: 'https://www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/other-flat-breads' },
+            { extensionCategory: 'Pizza Bases', url: 'https://www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/pizza-bases' },
+            { extensionCategory: 'Turkish and Ciabatta', url: 'https://www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/turkish-and-ciabatta' },
+            { extensionCategory: 'White Wraps', url: 'https://www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/white-wraps' },
+            { extensionCategory: 'Wholegrain & Seeded Wraps', url: 'https://www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/wholegrain-seeded-wraps' },
+            { extensionCategory: 'Wholemeal Wraps', url: 'https://www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/wholemeal-wraps' },
           ],
         },
         {
-          subCategory: '',
+          subCategory: 'Vegan Range',
           childItems: [
-            { extensionCategory: '', url: '' },
-          ],
-        },
-        {
-          subCategory: '',
-          childItems: [
-            { extensionCategory: '', url: '' },
-          ],
-        },
-        {
-          subCategory: '',
-          childItems: [
-            { extensionCategory: '', url: '' },
-          ],
-        },
-        {
-          subCategory: '',
-          childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'All Vegan Range', url: 'https://www.coles.com.au/browse/bakery/vegan-range/all-vegan-range' },
           ],
         },
       ],
@@ -183,68 +231,319 @@ const categories = [
       category: 'Dairy, Eggs & Fridge',
       subCategories: [
         {
+          subCategory: 'Butter & Margarine',
+          childItems: [
+            { extensionCategory: 'Blends', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/butter-margarine/blends' },
+            { extensionCategory: 'Butter', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/butter-margarine/butter' },
+            { extensionCategory: 'Margarine', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/butter-margarine/margarine' },
+           
+            ],
+        },
+        {
           subCategory: 'Cheese',
           childItems: [
-            { extensionCategory: 'a', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/butter-margarine' },
-            { extensionCategory: 'b', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cheese' },
-            { extensionCategory: 'c', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cream-custard' },
-            // { extensionCategory: 'd', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/dairy-desserts' },
-            // { extensionCategory: 'e', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/dairy-world-foods' },
-            // { extensionCategory: 'f', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/dips-pate' },
-            // { extensionCategory: 'g', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/eggs' },
-            // { extensionCategory: 'h', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/fresh-pasta-sauces' },
-            // { extensionCategory: 'i', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/garlic-bread-pastry-sheets' },
-            // { extensionCategory: 'j', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/long-life-milk' },
-            // { extensionCategory: 'k', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/milk' },
-            // { extensionCategory: 'l', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/packaged-deli-meats' },
-            // { extensionCategory: 'm', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/ready-to-eat-meals' },
-            // { extensionCategory: 'n', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/vegetarian-vegan' },
-            // { extensionCategory: 'o', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/yoghurt' },
-          ],
+            { extensionCategory: 'Block Cheese', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cheese/block-cheese' },
+            { extensionCategory: 'Blue Cheese', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cheese/blue-cheese' },
+            { extensionCategory: 'Brie & Soft Cheese', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cheese/brie-soft-cheese' },
+            { extensionCategory: 'Cheddar & Tasty Cheese', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cheese/cheddar-tasty-cheese' },
+            { extensionCategory: 'Cheese Snacks', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cheese/cheese-snacks' },
+            { extensionCategory: 'Cream Cheese & Spreads', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cheese/cream-cheese-spreads' },
+            { extensionCategory: 'Feta Cheese', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cheese/feta-cheese' },
+            { extensionCategory: 'Firm Cheese', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cheese/firm-cheese' },
+            { extensionCategory: 'Gourmet Cheese', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cheese/gourmet-cheese' },
+            { extensionCategory: 'Grated Cheese', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cheese/grated-cheese' },
+            { extensionCategory: 'Pates & Platters', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cheese/pates-platters' },
+            { extensionCategory: 'Sliced Cheese', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cheese/sliced-cheese' },
+            { extensionCategory: 'Specialty & Entertaining Cheese', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cheese/specialty-entertaining-cheese' },
+            ],
+        },
+        {
+          subCategory: 'Cream & Custard',
+          childItems: [
+            { extensionCategory: 'Cream', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cream-custard/cream' },
+            { extensionCategory: 'Custards', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cream-custard/custards' },
+            { extensionCategory: 'Sour Cream', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/cream-custard/sour-cream' },
+            ],
+        },
+        {
+          subCategory: 'Dairy Desserts',
+          childItems: [
+            { extensionCategory: 'Chilled Dairy Desserts', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/dairy-desserts/chilled-dairy-desserts' },
+            ],
+        },
+        {
+          subCategory: 'Dairy World Foods',
+          childItems: [
+            { extensionCategory: 'Asian Foods', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/dairy-world-foods/asian-foods' },
+            ],
+        },
+        {
+          subCategory: 'Dips & Pate',
+          childItems: [
+            { extensionCategory: 'Dips', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/dips-pate/dips' },
+            { extensionCategory: 'Paste', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/dips-pate/paste' },
+            { extensionCategory: 'Pate', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/dips-pate/pate' },
+            ],
+        },
+        {
+          subCategory: 'Eggs',
+          childItems: [
+            { extensionCategory: 'Barn Eggs', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/eggs/barn-eggs' },
+            { extensionCategory: 'Cage Eggs', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/eggs/cage-eggs' },
+            { extensionCategory: 'Egg Whites', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/eggs/egg-whites' },
+            { extensionCategory: 'Free Range Eggs', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/eggs/free-range-eggs' },
+            { extensionCategory: 'Specialty Eggs', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/eggs/specialty-eggs' },
+            ],
+        },
+        {
+          subCategory: 'Fresh Pasta & Sauces',
+          childItems: [
+            { extensionCategory: 'Fresh Pasta & Noodles', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/fresh-pasta-sauces/fresh-pasta-noodles' },
+            { extensionCategory: 'Pasta Sauces', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/fresh-pasta-sauces/pasta-sauces' },
+            ],
+        },
+        {
+          subCategory: 'Garlic Bread & Pastry Sheets',
+          childItems: [
+            { extensionCategory: 'Chilled Garlic & Specialty Breads', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/garlic-bread-pastry-sheets/chilled-garlic-specialty-breads' },
+            { extensionCategory: 'Chilled Pastry & Dough', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/garlic-bread-pastry-sheets/chilled-pastry-dough' },
+            ],
+        },
+        {
+          subCategory: 'Long Life Milk',
+          childItems: [
+            { extensionCategory: 'Almond & Other Nut Milk', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/long-life-milk/almond-other-nut-milk' },
+              ],
+        },
+        {
+          subCategory: 'Milk',
+          childItems: [
+            { extensionCategory: 'Flavoured Milk', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/milk/flavoured-milk' },
+            { extensionCategory: 'Full Cream Milk', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/milk/full-cream-milk' },
+            { extensionCategory: 'Probiotic Milk', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/milk/probiotic-milk' },
+            { extensionCategory: 'Skim & Low Fat Milk', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/milk/skim-low-fat-milk' },
+            { extensionCategory: 'Soy & Almond Milk', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/milk/soy-almond-milk' },
+            { extensionCategory: 'Specialty Milk', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/milk/specialty-milk' },
+            ],
+        },
+        {
+          subCategory: 'Packaged Deli Meats',
+          childItems: [
+            { extensionCategory: 'Packaged Bacon', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/packaged-deli-meats/packaged-bacon' },
+            { extensionCategory: 'Packaged Deli Meat', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/packaged-deli-meats/packaged-deli-meat' },
+            { extensionCategory: 'Packaged Frankfurts', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/packaged-deli-meats/packaged-frankfurts' },
+            { extensionCategory: 'Packaged Salami & Kabana', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/packaged-deli-meats/packaged-salami-kabana' },
+            ],
+        },
+        {
+          subCategory: 'Ready to Eat Meals',
+          childItems: [
+            { extensionCategory: 'Bbq', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/ready-to-eat-meals/bbq' },
+            { extensionCategory: 'Grab & Go Snacks', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/ready-to-eat-meals/grab-go-snacks' },
+            { extensionCategory: 'Hot Snacks & Sides', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/ready-to-eat-meals/hot-snacks-sides' },
+            { extensionCategory: 'Indian Food & Meals', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/ready-to-eat-meals/indian-food-meals' },
+            { extensionCategory: 'Italian Meals & Pasta', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/ready-to-eat-meals/italian-meals-pasta' },
+            { extensionCategory: 'Other Ready Meals', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/ready-to-eat-meals/other-ready-meals' },
+            { extensionCategory: 'Pies & Pastries', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/ready-to-eat-meals/pies-pastries' },
+            { extensionCategory: 'Pizzas', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/ready-to-eat-meals/pizzas' },
+            { extensionCategory: 'Soups & Stews', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/ready-to-eat-meals/soups-stews' },
+            { extensionCategory: 'Thai Meals', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/ready-to-eat-meals/thai-meals' },
+            { extensionCategory: 'the Kitchen Meals', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/ready-to-eat-meals/the-kitchen-meals' },
+            ],
+        },
+        {
+          subCategory: 'Vegetarian & Vegan',
+          childItems: [
+            { extensionCategory: 'Falafels', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/vegetarian-vegan/falafels' },
+            { extensionCategory: 'Soy', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/vegetarian-vegan/soy' },
+            { extensionCategory: 'Tofu', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/vegetarian-vegan/tofu' },
+            { extensionCategory: 'Vegan Cheese', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/vegetarian-vegan/vegan-cheese' },
+            { extensionCategory: 'Vegetarian Snacking', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/vegetarian-vegan/vegetarian-snacking' },
+            { extensionCategory: 'Veggie Burgers & Sausages', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/vegetarian-vegan/veggie-burgers-sausages' },
+            { extensionCategory: 'Veggie Meat & Chicken', url: 'https://www.coles.com.au/browse/dairy-eggs-fridge/vegetarian-vegan/veggie-meat-chicken' },
+            ],
         },
       ],
     },
-    // {
-    //   category: 'Deli & Chilled Meats',
-    //   subCategories: [
-    //     {
-    //       subCategory: 'Deli Meats',
-    //       childItems: [
-    //         { extensionCategory: 'a', url: 'https://www.coles.com.au/browse/deli/deli-meats' },
-    //         { extensionCategory: 'b', url: 'https://www.coles.com.au/browse/deli/deli-packaged-meat' },
-    //         { extensionCategory: 'c', url: 'https://www.coles.com.au/browse/deli/deli-poultry' },
-    //         { extensionCategory: 'd', url: 'https://www.coles.com.au/browse/deli/deli-seafood' },
-    //         { extensionCategory: 'e', url: 'https://www.coles.com.au/browse/deli/entertaining' },
-    //         { extensionCategory: 'f', url: 'https://www.coles.com.au/browse/deli/gourmet-cheese' },
-    //         { extensionCategory: 'g', url: 'https://www.coles.com.au/browse/deli/pre-made-platters' },
-    //         { extensionCategory: 'h', url: 'https://www.coles.com.au/browse/deli/ready-to-eat' },
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   category: 'Drinks',
-    //   subCategories: [
-    //     {
-    //       subCategory: 'Chilled Drinks',
-    //       childItems: [
-    //         // { extensionCategory: 'a', url: 'https://www.coles.com.au/browse/drinks/coffee-drinks' },
-    //         // { extensionCategory: 'b', url: 'https://www.coles.com.au/browse/drinks/cold-drinks' },
-    //         // { extensionCategory: 'c', url: 'https://www.coles.com.au/browse/drinks/cordials' },
-    //         // { extensionCategory: 'd', url: 'https://www.coles.com.au/browse/drinks/energy-drinks' },
-    //         // { extensionCategory: 'e', url: 'https://www.coles.com.au/browse/drinks/flavoured-milk' },
-    //         // { extensionCategory: 'f', url: 'https://www.coles.com.au/browse/drinks/iced-tea' },
-    //         // { extensionCategory: 'g', url: 'https://www.coles.com.au/browse/drinks/juice' },
-    //         // { extensionCategory: 'h', url: 'https://www.coles.com.au/browse/drinks/long-life-milk' },
-    //         // { extensionCategory: 'i', url: 'https://www.coles.com.au/browse/drinks/non-alcoholic' },
-    //         { extensionCategory: 'j', url: 'https://www.coles.com.au/browse/drinks/soft-drinks' },
-    //         { extensionCategory: 'k', url: 'https://www.coles.com.au/browse/drinks/sports-drinks' },
-    //         { extensionCategory: 'l', url: 'https://www.coles.com.au/browse/drinks/tea-drinks' },
-    //         { extensionCategory: 'm', url: 'https://www.coles.com.au/browse/drinks/water' },
-    //       ],
-    //     },
-    //   ],
-    // },
+    {
+      category: 'Deli',
+      subCategories: [
+        {
+          subCategory: 'Deli Meats',
+          childItems: [
+            { extensionCategory: 'Beef & Lamb', url: 'https://www.coles.com.au/browse/deli/deli-meats/beef-lamb' },
+            { extensionCategory: 'Chicken & Turkey', url: 'https://www.coles.com.au/browse/deli/deli-meats/chicken-turkey' },
+            { extensionCategory: 'Deli Bacon', url: 'https://www.coles.com.au/browse/deli/deli-meats/deli-bacon' },
+            { extensionCategory: 'Ham', url: 'https://www.coles.com.au/browse/deli/deli-meats/ham' },
+            { extensionCategory: 'Kabana, Pancetta & Mortdella', url: 'https://www.coles.com.au/browse/deli/deli-meats/kabana-pancetta-mortdella' },
+            { extensionCategory: 'Other Sliced Meats', url: 'https://www.coles.com.au/browse/deli/deli-meats/other-sliced-meats' },
+            { extensionCategory: 'Salami', url: 'https://www.coles.com.au/browse/deli/deli-meats/salami' },
+            { extensionCategory: 'Sausages, Frankfurts & Kransky', url: 'https://www.coles.com.au/browse/deli/deli-meats/sausages-frankfurts-kransky' },
+            ],
+        },
+        {
+          subCategory: 'Deli Packaged Meat',
+          childItems: [
+            { extensionCategory: 'Frankfurts & Kransky Packaged', url: 'https://www.coles.com.au/browse/deli/deli-packaged-meat/frankfurts-kransky-packaged' },
+            { extensionCategory: 'Meat Packaged', url: 'https://www.coles.com.au/browse/deli/deli-packaged-meat/meat-packaged' },
+            { extensionCategory: 'Packaged Bacon', url: 'https://www.coles.com.au/browse/deli/deli-packaged-meat/packaged-bacon' },
+            { extensionCategory: 'Packaged Ham', url: 'https://www.coles.com.au/browse/deli/deli-packaged-meat/packaged-ham' },
+            { extensionCategory: 'Salami & Kabana Packaged', url: 'https://www.coles.com.au/browse/deli/deli-packaged-meat/salami-kabana-packaged' },
+            ],
+        },
+        {
+          subCategory: 'Deli Poultry',
+          childItems: [
+            { extensionCategory: 'Breast & Thigh Fillets', url: 'https://www.coles.com.au/browse/deli/deli-poultry/breast-thigh-fillets' },
+            { extensionCategory: 'Diced & Tenders', url: 'https://www.coles.com.au/browse/deli/deli-poultry/diced-tenders' },
+            { extensionCategory: 'Kebabs, Nibbles & Crumbed', url: 'https://www.coles.com.au/browse/deli/deli-poultry/kebabs-nibbles-crumbed' },
+            { extensionCategory: 'Wings & Drumsticks', url: 'https://www.coles.com.au/browse/deli/deli-poultry/wings-drumsticks' },
+            ],
+        },
+        {
+          subCategory: 'Deli Seafood',
+          childItems: [
+            { extensionCategory: 'Fish', url: 'https://www.coles.com.au/browse/deli/deli-seafood/fish' },
+            { extensionCategory: 'Marinara Mix', url: 'https://www.coles.com.au/browse/deli/deli-seafood/marinara-mix' },
+            { extensionCategory: 'Prawn & Crustaceans', url: 'https://www.coles.com.au/browse/deli/deli-seafood/prawn-crustaceans' },
+            { extensionCategory: 'Prepackaged Seafood', url: 'https://www.coles.com.au/browse/deli/deli-seafood/prepackaged-seafood' },
+            ],
+        },
+        {
+          subCategory: 'Entertaining',
+          childItems: [
+            { extensionCategory: 'Antipasto', url: 'https://www.coles.com.au/browse/deli/entertaining/antipasto' },
+            { extensionCategory: 'Crackers, Dips & Pate', url: 'https://www.coles.com.au/browse/deli/entertaining/crackers-dips-pate' },
+            { extensionCategory: 'Olives', url: 'https://www.coles.com.au/browse/deli/entertaining/olives' },
+            { extensionCategory: 'Prepacked Olives & Antipasto', url: 'https://www.coles.com.au/browse/deli/entertaining/prepacked-olives-antipasto' },
+            ],
+        },
+        {
+          subCategory: 'Gourmet Cheese',
+          childItems: [
+            { extensionCategory: 'Brie & Camembert', url: 'https://www.coles.com.au/browse/deli/gourmet-cheese/brie-camembert' },
+            { extensionCategory: 'Cheddar', url: 'https://www.coles.com.au/browse/deli/gourmet-cheese/cheddar' },
+            { extensionCategory: 'Deli Blue Cheese', url: 'https://www.coles.com.au/browse/deli/gourmet-cheese/deli-blue-cheese' },
+            { extensionCategory: 'Fetta, Haloumi & Other', url: 'https://www.coles.com.au/browse/deli/gourmet-cheese/fetta-haloumi-other' },
+            { extensionCategory: 'Fruit & Flavoured Cheese', url: 'https://www.coles.com.au/browse/deli/gourmet-cheese/fruit-flavoured-cheese' },
+            { extensionCategory: 'Goats Cheese', url: 'https://www.coles.com.au/browse/deli/gourmet-cheese/goats-cheese' },
+            { extensionCategory: 'Hard Cheese', url: 'https://www.coles.com.au/browse/deli/gourmet-cheese/hard-cheese' },
+            ],
+        },
+        {
+          subCategory: 'Pre-Made Platters',
+          childItems: [
+            { extensionCategory: 'Deli Platter', url: 'https://www.coles.com.au/browse/deli/pre-made-platters/deli-platter' },
+            ],
+        },
+        {
+          subCategory: 'Ready to Eat',
+          childItems: [
+            { extensionCategory: 'Chilled Quiches & Pies', url: 'https://www.coles.com.au/browse/deli/ready-to-eat/chilled-quiches-pies' },
+            { extensionCategory: 'Heat & Eat', url: 'https://www.coles.com.au/browse/deli/ready-to-eat/heat-eat' },
+            { extensionCategory: 'Hot Food', url: 'https://www.coles.com.au/browse/deli/ready-to-eat/hot-food' },
+            ],
+        },
+      ],
+    },
+    {
+      category: 'Drinks',
+      subCategories: [
+        {
+          subCategory: 'Coffee Drinks',
+          childItems: [
+            { extensionCategory: 'Accessories Coffee', url: 'https://www.coles.com.au/browse/drinks/coffee-drinks/accessories-coffee' },
+            { extensionCategory: 'Beans Coffee', url: 'https://www.coles.com.au/browse/drinks/coffee-drinks/beans-coffee' },
+            { extensionCategory: 'Coffee Capsules', url: 'https://www.coles.com.au/browse/drinks/coffee-drinks/coffee-capsules' },
+            { extensionCategory: 'Coffee Ground', url: 'https://www.coles.com.au/browse/drinks/coffee-drinks/coffee-ground' },
+            { extensionCategory: 'Coffee Instant', url: 'https://www.coles.com.au/browse/drinks/coffee-drinks/coffee-instant' },
+            { extensionCategory: 'Mixes Coffee', url: 'https://www.coles.com.au/browse/drinks/coffee-drinks/mixes-coffee' },
+             ],
+        },
+        {
+          subCategory: 'Cold Drinks',
+          childItems: [
+            { extensionCategory: 'Cold Soft Drinks', url: 'https://www.coles.com.au/browse/drinks/cold-drinks/cold-soft-drinks' },
+            { extensionCategory: 'Cold Water', url: 'https://www.coles.com.au/browse/drinks/cold-drinks/cold-water' },
+            { extensionCategory: 'Other Cold Drinks', url: 'https://www.coles.com.au/browse/drinks/cold-drinks/other-cold-drinks' },
+             ],
+        },
+        {
+          subCategory: 'Cordials',
+          childItems: [
+            { extensionCategory: 'All Cordials', url: 'https://www.coles.com.au/browse/drinks/cordials/all-cordials' },
+             ],
+        },
+        {
+          subCategory: 'Energy Drinks',
+          childItems: [
+            { extensionCategory: 'Multipack Cans', url: 'https://www.coles.com.au/browse/drinks/energy-drinks/multipack-cans' },
+            { extensionCategory: 'Single Cans', url: 'https://www.coles.com.au/browse/drinks/energy-drinks/single-cans' },
+             ],
+        },
+        {
+          subCategory: 'Flavoured Milk',
+          childItems: [
+            { extensionCategory: 'Drinking Chocolate', url: 'https://www.coles.com.au/browse/drinks/flavoured-milk/drinking-chocolate' },
+            { extensionCategory: 'Drinks & Powders', url: 'https://www.coles.com.au/browse/drinks/flavoured-milk/drinks-powders' },
+            { extensionCategory: 'Kids Milk', url: 'https://www.coles.com.au/browse/drinks/flavoured-milk/kids-milk' },
+             ],
+        },
+        {
+          subCategory: 'Iced Tea',
+          childItems: [
+            { extensionCategory: 'Single & Multi Serve', url: 'https://www.coles.com.au/browse/drinks/iced-tea/single-multi-serve' },
+             ],
+        },
+        {
+          subCategory: 'Juice',
+          childItems: [
+            { extensionCategory: 'Canned Juices', url: 'https://www.coles.com.au/browse/drinks/juice/canned-juices' },
+            { extensionCategory: '', url: '' },
+            { extensionCategory: '', url: '' },
+            { extensionCategory: '', url: '' },
+            { extensionCategory: '', url: '' },
+            { extensionCategory: '', url: '' },
+             ],
+        },
+        {
+          subCategory: 'Long-Life Milk',
+          childItems: [
+            { extensionCategory: '', url: '' },
+             ],
+        },
+        {
+          subCategory: 'Non-Alcoholic',
+          childItems: [
+            { extensionCategory: '', url: '' },
+             ],
+        },
+        {
+          subCategory: 'Soft Drinks',
+          childItems: [
+            { extensionCategory: '', url: '' },
+             ],
+        },
+        {
+          subCategory: 'Sports Drinks',
+          childItems: [
+            { extensionCategory: '', url: '' },
+             ],
+        },
+        {
+          subCategory: 'Tea Drinks',
+          childItems: [
+            { extensionCategory: '', url: '' },
+             ],
+        },
+        {
+          subCategory: 'Water',
+          childItems: [
+            { extensionCategory: '', url: '' },
+             ],
+        },
+      ],
+    },
     // {
     //   category: 'Freezer',
     //   subCategories: [
