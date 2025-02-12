@@ -785,15 +785,22 @@ const categories = [
            ],
         },
         {
-          subCategory: '',
+          subCategory: 'Salad & Herbs',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Herbs', url: 'https://www.coles.com.au/browse/fruit-vegetables/salad-herbs/herbs' },
+            { extensionCategory: 'Sprouts', url: 'https://www.coles.com.au/browse/fruit-vegetables/salad-herbs/sprouts' },
            ],
         },
         {
-          subCategory: '',
+          subCategory: 'Scoop & Weigh',
           childItems: [
-            { extensionCategory: '', url: '' },
+            { extensionCategory: 'Almond', url: 'https://www.coles.com.au/browse/fruit-vegetables/scoop-weigh/almond' },
+            { extensionCategory: 'Cashew', url: 'https://www.coles.com.au/browse/fruit-vegetables/scoop-weigh/cashew' },
+            { extensionCategory: 'Dry Fruits', url: 'https://www.coles.com.au/browse/fruit-vegetables/scoop-weigh/dry-fruits' },
+            { extensionCategory: 'Macadamia, Hazelnuts & Pecans', url: 'https://www.coles.com.au/browse/fruit-vegetables/scoop-weigh/macadamia-hazelnuts-pecans' },
+            { extensionCategory: 'Mixed Scoop & Weigh', url: 'https://www.coles.com.au/browse/fruit-vegetables/scoop-weigh/mixed-scoop-weigh' },
+            { extensionCategory: 'Other Scoop & Weigh', url: 'https://www.coles.com.au/browse/fruit-vegetables/scoop-weigh/other-scoop-weigh' },
+            { extensionCategory: 'Walnuts, Pistachio & Peanut', url: 'https://www.coles.com.au/browse/fruit-vegetables/scoop-weigh/walnuts-pistachio-peanut' },
            ],
         },
       ],
