@@ -1277,9 +1277,9 @@ const categories = [
             { subId: '22785', childId: '22786', extensionCategory: 'Breakfast Cereal', url: 'https:www.coles.com.au/browse/pantry/breakfast/breakfast-cereal' },
             { subId: '22785', childId: '22791', extensionCategory: 'Breakfast Muesli', url: 'https:www.coles.com.au/browse/pantry/breakfast/breakfast-muesli' },
             { subId: '22785', childId: '22791', extensionCategory: 'Breakfast Oats', url: 'https:www.coles.com.au/browse/pantry/breakfast/breakfast-oats' },
-            { subId: '', childId: '', extensionCategory: 'Family Favourites', url: 'https:www.coles.com.au/browse/pantry/breakfast/family-favourites' },
+            { subId: '22785', childId: '22786', extensionCategory: 'Family Favourites', url: 'https:www.coles.com.au/browse/pantry/breakfast/family-favourites' },
             { subId: '22785', childId: '22786', extensionCategory: 'Gluten Free Cereal', url: 'https:www.coles.com.au/browse/pantry/breakfast/gluten-free-cereal' },
-            { subId: '', childId: '', extensionCategory: 'Healthier Start', url: 'https:www.coles.com.au/browse/pantry/breakfast/healthier-start' },
+            { subId: '22785', childId: '22786', extensionCategory: 'Healthier Start', url: 'https:www.coles.com.au/browse/pantry/breakfast/healthier-start' },
             { subId: '', childId: '', extensionCategory: 'On the Go', url: 'https:www.coles.com.au/browse/pantry/breakfast/on-the-go' },
           ],
         },
@@ -1457,7 +1457,7 @@ const categories = [
    },
    {
     category: 'Chips, Chocolates & Snacks',
-    
+
     subCategories: [
       {
         subCategory: 'Biscuits & Cookies',
@@ -1479,8 +1479,8 @@ const categories = [
       {
         subCategory: 'Chocolates',
         childItems: [
-          { subId: '', childId: '', extensionCategory: 'Boxed Chocolate & Gifts', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chocolates/boxed-chocolate-gifts' },
-          { subId: '', childId: '', extensionCategory: 'Chocolate Bars', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chocolates/chocolate-bars' },
+          { subId: '', childId: '23969', extensionCategory: 'Boxed Chocolate & Gifts', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chocolates/boxed-chocolate-gifts' },
+          { subId: '', childId: '22894', extensionCategory: 'Chocolate Bars', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chocolates/chocolate-bars' },
           { subId: '', childId: '', extensionCategory: 'Chocolate Bites', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chocolates/chocolate-bites' },
           { subId: '', childId: '', extensionCategory: 'Chocolate Blocks', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chocolates/chocolate-blocks' },
           { subId: '', childId: '', extensionCategory: 'Chocolate Multipacks', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chocolates/chocolate-multipacks' },
@@ -1499,22 +1499,22 @@ const categories = [
       {
         subCategory: 'Gum, Mints & Lozenges',
         childItems: [
-          { subId: '', childId: '', extensionCategory: 'Gum', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/gum-mints-lozenges/gum' },
-          { subId: '', childId: '', extensionCategory: 'Medicated Lozenges', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/gum-mints-lozenges/medicated-lozenges' },
-          { subId: '', childId: '', extensionCategory: 'Mints', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/gum-mints-lozenges/mints' },
+          { subId: '22889', childId: '23988', extensionCategory: 'Gum', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/gum-mints-lozenges/gum' },
+          { subId: '22889', childId: '23988', extensionCategory: 'Medicated Lozenges', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/gum-mints-lozenges/medicated-lozenges' },
+          { subId: '22889', childId: '23988', extensionCategory: 'Mints', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/gum-mints-lozenges/mints' },
           ],
       },
       {
         subCategory: 'Lollies & Licorice',
         childItems: [
-          { subId: '', childId: '', extensionCategory: 'Licorice', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/lollies-licorice/licorice' },
-          { subId: '', childId: '', extensionCategory: 'Lollies', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/lollies-licorice/lollies' },
+          { subId: '22889', childId: '23970', extensionCategory: 'Licorice', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/lollies-licorice/licorice' },
+          { subId: '22889', childId: '23970', extensionCategory: 'Lollies', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/lollies-licorice/lollies' },
           ],
       },
       {
         subCategory: 'Snacks',
         childItems: [
-          { subId: '', childId: '', extensionCategory: 'Muesli Bars & Fruit Snacks', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/snacks/muesli-bars-fruit-snacks' },
+          { subId: '', childId: '22902', extensionCategory: 'Muesli Bars & Fruit Snacks', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/snacks/muesli-bars-fruit-snacks' },
           { subId: '', childId: '', extensionCategory: 'Nuts & Trail Mix', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/snacks/nuts-trail-mix' },
           { subId: '', childId: '', extensionCategory: 'Popcorn', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/snacks/popcorn' },
           { subId: '', childId: '', extensionCategory: 'Pretzels & Other Snacks', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/snacks/pretzels-other-snacks' },
