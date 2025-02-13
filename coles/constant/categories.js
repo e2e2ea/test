@@ -1253,6 +1253,7 @@ const categories = [
   },
    {
      category: 'Pantry',
+     id: "22770",
      subCategories: [
        {
          subCategory: 'Baking',
@@ -1457,7 +1458,7 @@ const categories = [
    },
    {
     category: 'Chips, Chocolates & Snacks',
-
+    id: "22770",
     subCategories: [
       {
         subCategory: 'Biscuits & Cookies',
@@ -1524,6 +1525,7 @@ const categories = [
   },
    {
      category: 'Pet',
+     id: '22916',
      subCategories: [
        {
          subCategory: 'Birds',
@@ -1578,6 +1580,7 @@ const categories = [
    },
    {
      category: 'Poultry, Meat & Seafood',
+     id: '22713',
      subCategories: [
        {
          subCategory: 'Bbq, Sausages & Burgers',
