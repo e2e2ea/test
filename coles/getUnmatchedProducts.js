@@ -35,7 +35,6 @@ const getData = async () => {
       let childId = '';
       const matchedCategory = categories.find((cat) => cat.category === category);
       if (matchedCategory) {
-        console.log('matchedCategory', matchedCategory)
         const sub = matchedCategory.subCategories.find((sub) => sub.name === productObj.subCategory);
         if (Array.isArray(matchedCategory.subCategories)) {
           const sub = matchedCategory.subCategories.find((sub) => sub.name === productObj.subCategory);
@@ -89,17 +88,34 @@ const getData = async () => {
 
       const fileName = `${category}.json`;
       const filePath = path.join(folderPath, fileName);
-      // Check if the file already exists
-      if (fs.existsSync(filePath)) {
-        console.log(`File already exists: ${filePath}. Skipping save.`);
-        // continue; // Skip saving the file
-      }
+
       try {
+        if (fs.existsSync(filePath)) {
+          // Merge existing and new data
+         try {
+            console.log(`File already exists: ${filePath}. Skipping save.`);
+            const data = JSON.parse(fs.readFileSync(`${baseFolder}/${category}.json`, 'utf8'));
+            const combinedData = [...data, ...productsData];
+  
+            // Remove duplicates based on source_id
+            const uniqueData = combinedData.filter((item, index, self) => index === self.findIndex((t) => t.source_id === item.source_id && t.shop === item.shop));
+            fs.writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
+         } catch (error) {
+            console.log('error')
+         }
+        } else {
+          if (productsData.length > 0) {
+            fs.mkdirSync(folderPath, { recursive: true });
+            console.log(`Created folder: ${folderPath}`);
+
+            fs.writeFileSync(filePath, JSON.stringify(productsData, null, 2));
+            console.log(`Data saved to ${filePath}`);
+          }
+        }
+
         total += productsData.length;
         console.log('totalProducts', total);
-        console.log(`${fileName} - ${productsData.length} products`);
-        fs.writeFileSync(filePath, JSON.stringify(productsData, null, 2)); // Pretty print with 2 spaces
-        console.log(`Data saved to ${filePath}`);
+
       } catch (error) {
         console.error('Error writing data to file:', error);
       }
