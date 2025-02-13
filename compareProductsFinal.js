@@ -154,7 +154,7 @@ const getData = async () => {
             if (fs.existsSync(filePath)) {
               // Merge existing and new data
               console.log(`File already exists: ${filePath}. Skipping save.`);
-              const data = JSON.parse(fs.readFileSync(`notMatched/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
+              const data = JSON.parse(fs.readFileSync(`unMatched/woolworths/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
               const combinedData = [...data, ...unmatchedWoolworthsProducts];
 
               // Remove duplicates based on source_id
