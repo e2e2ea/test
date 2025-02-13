@@ -113,6 +113,7 @@ const categories = [
    },
    {
      category: 'Bakery',
+     id: "22060",
      subCategories: [
        {
          subCategory: 'Chilled Cakes & Desserts',
@@ -730,6 +731,7 @@ const categories = [
    },
    {
      category: 'Fruit & Vegetables',
+     id: "22351",
      subCategories: [
        {
          subCategory: 'Fruit',
@@ -1020,6 +1022,7 @@ const categories = [
    },
   {
     category: 'Household',
+    id: "22459",
     subCategories: [
       {
         subCategory: 'Air Fresheners & Home Fragrance',
