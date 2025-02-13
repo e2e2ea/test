@@ -119,9 +119,13 @@ const getData = async () => {
             try {
               const filteredProductsMatched = productsMatched.filter((p) => p.shop.toLowerCase() === 'coles');
               let a = [];
-              if(ext?.subId){
-                a = await ColesData.filter((p) => p.source_id.toLowerCase() === 'coles' && ext?.subId === p.subcategory_id);
-                console.log('a', a.length)
+              if (ext?.subId) {
+                if (ext.childId) {
+                  a = await ColesData.filter((p) => p.shop.toLowerCase() === 'coles' && ext?.subId === p.subcategory_id);
+                } else {
+                  a = await ColesData.filter((p) => p.shop.toLowerCase() === 'coles' && ext?.subId === p.subcategory_id && ext?.childId === p.subsubcategory_id);
+                }
+                console.log('a', a.length);
               }
               unMatchedColes = a.filter((c) => !filteredProductsMatched.some((p) => p.source_id === c.source_id));
               if (unMatchedColes.length > 0) {
@@ -142,7 +146,7 @@ const getData = async () => {
                   const uniqueData = combinedData.filter((item, index, self) => index === self.findIndex((t) => t.source_id === item.source_id && t.shop === item.shop));
                   fs.writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
                 } else {
-                  if (unMatchedColes > 0) {
+                  if (unMatchedColes.length > 0) {
                     fs.mkdirSync(folderPath, { recursive: true });
                     console.log(`Created folder: ${folderPath}`);
 
@@ -189,30 +193,30 @@ const getData = async () => {
             //   // }
             // }
           }
-          // if (unmatchedWoolworthsProducts && unmatchedWoolworthsProducts.length > 0) {
-          //   const baseFolder = `./unMatched/woolworths/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}`;
-          //   const folderPath = path.join(baseFolder);
-          //   if (!fs.existsSync(folderPath)) {
-          //     fs.mkdirSync(folderPath, { recursive: true });
-          //   }
-          //   const fileName = `${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`;
-          //   const filePath = path.join(folderPath, fileName);
-          //   if (fs.existsSync(filePath)) {
-          //     // Merge existing and new data
-          //     console.log(`File already exists: ${filePath}. Skipping save.`);
-          //     const data = JSON.parse(fs.readFileSync(`unMatched/woolworths/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
-          //     const combinedData = [...data, ...unmatchedWoolworthsProducts];
+          if (unmatchedWoolworthsProducts && unmatchedWoolworthsProducts.length > 0) {
+            const baseFolder = `./unMatched/woolworths/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}`;
+            const folderPath = path.join(baseFolder);
+            if (!fs.existsSync(folderPath)) {
+              fs.mkdirSync(folderPath, { recursive: true });
+            }
+            const fileName = `${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`;
+            const filePath = path.join(folderPath, fileName);
+            if (fs.existsSync(filePath)) {
+              // Merge existing and new data
+              console.log(`File already exists: ${filePath}. Skipping save.`);
+              const data = JSON.parse(fs.readFileSync(`unMatched/woolworths/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
+              const combinedData = [...data, ...unmatchedWoolworthsProducts];
 
-          //     // Remove duplicates based on source_id
-          //     const uniqueData = combinedData.filter((item, index, self) => index === self.findIndex((t) => t.source_id === item.source_id && t.shop === item.shop));
-          //     fs.writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
-          //   } else {
-          //     fs.mkdirSync(folderPath, { recursive: true });
-          //     console.log(`Created folder: ${folderPath}`);
-          //     fs.writeFileSync(filePath, JSON.stringify(unmatchedWoolworthsProducts, null, 2));
-          //     console.log(`Data saved to ${filePath}`);
-          //   }
-          // }
+              // Remove duplicates based on source_id
+              const uniqueData = combinedData.filter((item, index, self) => index === self.findIndex((t) => t.source_id === item.source_id && t.shop === item.shop));
+              fs.writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
+            } else {
+              fs.mkdirSync(folderPath, { recursive: true });
+              console.log(`Created folder: ${folderPath}`);
+              fs.writeFileSync(filePath, JSON.stringify(unmatchedWoolworthsProducts, null, 2));
+              console.log(`Data saved to ${filePath}`);
+            }
+          }
         } catch (error) {
           console.error('Error writing data to file:', error);
         }
