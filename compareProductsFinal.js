@@ -80,7 +80,7 @@ const getData = async () => {
         }
 
         try {
-          const filteredProductsMatched = productsMatched.filter((p) => p.shop === 'woolworths');
+          const filteredProductsMatched = productsMatched.filter((p) => p.shop === 'Woolworths');
 
           // Remove matched products from woolworthsData to get only unmatched products
           const unmatchedWoolworthsProducts = woolworthsData.filter((w) => !filteredProductsMatched.some((p) => p.source_id === w.source_id));
@@ -163,7 +163,7 @@ const getData = async () => {
             } else {
               fs.mkdirSync(folderPath, { recursive: true });
               console.log(`Created folder: ${folderPath}`);
-              fs.writeFileSync(filePath, JSON.stringify(productsMatched, null, 2));
+              fs.writeFileSync(filePath, JSON.stringify(unmatchedWoolworthsProducts, null, 2));
               console.log(`Data saved to ${filePath}`);
             }
           }
