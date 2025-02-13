@@ -75,7 +75,6 @@ const getBarcode = async () => {
         // for (const product of products) {
         try {
           const barcode = await ColesBarcode.findOne({ coles_product_id: product.coles_product_id });
- 
           if (!barcode) {
             const { data } = await axiosInstance.get(`https://barcodes.groceryscraper.mc.hzuccon.com/barcode?product=${product.coles_product_id}`);
             console.log(`data${i}`, `${data}-${product.name}`);

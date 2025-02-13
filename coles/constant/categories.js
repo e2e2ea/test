@@ -14,8 +14,12 @@ const categories = [
        {
          subCategory: 'Baby Formula',
          childItems: [
-           { subId: '', childId: '', extensionCategory: 'A2 Formula', url: 'https:www.coles.com.au/browse/baby/baby-formula/a2-formula' },
-           { subId: '', childId: '', extensionCategory: 'Cow Formula', url: 'https:www.coles.com.au/browse/baby/baby-formula/cow-formula' },
+           { subId: '22027', childId: '23832', extensionCategory: 'A2 Formula', url: 'https:www.coles.com.au/browse/baby/baby-formula/a2-formula' },
+           { subId: '22027', childId: '23832', extensionCategory: 'Cow Formula', url: 'https:www.coles.com.au/browse/baby/baby-formula/cow-formula' },
+           { subId: '22027', childId: '23831', extensionCategory: 'A2 Formula', url: 'https:www.coles.com.au/browse/baby/baby-formula/a2-formula' },
+           { subId: '22027', childId: '23831', extensionCategory: 'Cow Formula', url: 'https:www.coles.com.au/browse/baby/baby-formula/cow-formula' },
+           { subId: '22027', childId: 'Toddler', extensionCategory: 'A2 Formula', url: 'https:www.coles.com.au/browse/baby/baby-formula/a2-formula' },
+           { subId: '22027', childId: 'Toddler', extensionCategory: 'Cow Formula', url: 'https:www.coles.com.au/browse/baby/baby-formula/cow-formula' },
            { subId: '', childId: '', extensionCategory: 'Goat Formula', url: 'https:www.coles.com.au/browse/baby/baby-formula/goat-formula' },
            { subId: '', childId: '', extensionCategory: 'Organic Formula', url: 'https:www.coles.com.au/browse/baby/baby-formula/organic-formula' },
            { subId: '22027', childId: '23830', extensionCategory: 'Specialty Formula', url: 'https:www.coles.com.au/browse/baby/baby-formula/specialty-formula' },
@@ -24,20 +28,32 @@ const categories = [
        {
          subCategory: 'Nappies & Nappy Pants',
          childItems: [
-           { subId: '', childId: '', extensionCategory: 'Nappies', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappies' },
+          { subId: '22048', childId: '22050', extensionCategory: 'Night Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/night-pants' },
+          { subId: '22048', childId: '22051', extensionCategory: 'Night Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/night-pants' },
+          { subId: '22048', childId: '22052', extensionCategory: 'Night Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/night-pants' },
+          { subId: '22048', childId: '22055', extensionCategory: 'Night Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/night-pants' },
+           { subId: '22048', childId: '22055', extensionCategory: 'Nappies', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappies' },
+           { subId: '22048', childId: '22055', extensionCategory: 'Nappy Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappy-pants' },
+           { subId: '22048', childId: '22052', extensionCategory: 'Nappies', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappies' },
+           { subId: '22048', childId: '22052', extensionCategory: 'Nappy Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappy-pants' },
+           { subId: '22048', childId: '22051', extensionCategory: 'Nappies', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappies' },
+           { subId: '22048', childId: '22051', extensionCategory: 'Nappy Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappy-pants' },
+           { subId: '22048', childId: '22050', extensionCategory: 'Nappies', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappies' },
+           { subId: '22048', childId: '22050', extensionCategory: 'Nappy Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappy-pants' },
+           { subId: '22048', childId: '22049', extensionCategory: 'Nappies', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappies' },
+           { subId: '22048', childId: '22049', extensionCategory: 'Nappy Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappy-pants' },
            { subId: '22048', childId: '22054', extensionCategory: 'Nappy Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappy-pants' },
-           { subId: '', childId: '', extensionCategory: 'Night Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/night-pants' },
            { subId: '22048', childId: '22058', extensionCategory: 'Swimmers', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/swimmers' },
          ],
        },
        {
          subCategory: 'Baby Wipes',
          childItems: [
-           { subId: '', childId: '', extensionCategory: 'Extra Large Pack', url: 'https:www.coles.com.au/browse/baby/baby-wipes/extra-large-pack' },
-           { subId: '', childId: '', extensionCategory: 'Large Pack', url: 'http:coles.com.au/browse/baby/baby-wipes/large-pack' },
-           { subId: '', childId: '', extensionCategory: 'Medium Pack', url: 'https:www.coles.com.au/browse/baby/baby-wipes/medium-pack' },
-           { subId: '', childId: '', extensionCategory: 'Refill Pack', url: 'https:www.coles.com.au/browse/baby/baby-wipes/refill-pack' },
-           { subId: '', childId: '', extensionCategory: 'Small Pack', url: 'https:www.coles.com.au/browse/baby/baby-wipes/small-pack' },
+           { subId: '22048', childId: '22059', extensionCategory: 'Extra Large Pack', url: 'https:www.coles.com.au/browse/baby/baby-wipes/extra-large-pack' },
+           { subId: '22048', childId: '22059', extensionCategory: 'Large Pack', url: 'http:coles.com.au/browse/baby/baby-wipes/large-pack' },
+           { subId: '22048', childId: '22059', extensionCategory: 'Medium Pack', url: 'https:www.coles.com.au/browse/baby/baby-wipes/medium-pack' },
+           { subId: '22048', childId: '22059', extensionCategory: 'Refill Pack', url: 'https:www.coles.com.au/browse/baby/baby-wipes/refill-pack' },
+           { subId: '22048', childId: '22059', extensionCategory: 'Small Pack', url: 'https:www.coles.com.au/browse/baby/baby-wipes/small-pack' },
          ],
        },
        {
@@ -49,12 +65,48 @@ const categories = [
        {
          subCategory: 'Baby & Toddler Food',
          childItems: [
-           { subId: '', childId: '', extensionCategory: 'Baby & Toddler Snacks', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-toddler-snacks' },
-           { subId: '', childId: '', extensionCategory: 'Baby Cereals', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-cereals' },
-           { subId: '', childId: '', extensionCategory: 'Baby Food Jars', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-food-jars' },
-           { subId: '', childId: '', extensionCategory: 'Baby Food Pouches', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-food-pouches' },
-           { subId: '', childId: '', extensionCategory: 'Baby Pasta', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-pasta' },
-           { subId: '', childId: '', extensionCategory: 'Baby Rusks', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-rusks' },
+           { subId: '22019', childId: '22026', extensionCategory: 'Baby Food Jars', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-food-jars' },
+           { subId: '22019', childId: '22026', extensionCategory: 'Baby Food Pouches', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-food-pouches' },
+
+           { subId: '22019', childId: '22025', extensionCategory: 'Baby & Toddler Snacks', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-toddler-snacks' },
+           { subId: '22019', childId: '22025', extensionCategory: 'Baby Cereals', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-cereals' },
+           { subId: '22019', childId: '22025', extensionCategory: 'Baby Food Jars', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-food-jars' },
+           { subId: '22019', childId: '22025', extensionCategory: 'Baby Food Pouches', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-food-pouches' },
+           { subId: '22019', childId: '22025', extensionCategory: 'Baby Pasta', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-pasta' },
+           { subId: '22019', childId: '22025', extensionCategory: 'Baby Rusks', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-rusks' },
+           
+           // for 12months
+           { subId: '22019', childId: '22020', extensionCategory: 'Baby & Toddler Snacks', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-toddler-snacks' },
+           { subId: '22019', childId: '22020', extensionCategory: 'Baby Cereals', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-cereals' },
+           { subId: '22019', childId: '22020', extensionCategory: 'Baby Food Jars', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-food-jars' },
+           { subId: '22019', childId: '22020', extensionCategory: 'Baby Food Pouches', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-food-pouches' },
+           { subId: '22019', childId: '22020', extensionCategory: 'Baby Pasta', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-pasta' },
+           { subId: '22019', childId: '22020', extensionCategory: 'Baby Rusks', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-rusks' },
+          
+           // for 6months
+           { subId: '22019', childId: '22023', extensionCategory: 'Baby & Toddler Snacks', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-toddler-snacks' },
+           { subId: '22019', childId: '22023', extensionCategory: 'Baby Cereals', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-cereals' },
+           { subId: '22019', childId: '22023', extensionCategory: 'Baby Food Jars', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-food-jars' },
+           { subId: '22019', childId: '22023', extensionCategory: 'Baby Food Pouches', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-food-pouches' },
+           { subId: '22019', childId: '22023', extensionCategory: 'Baby Pasta', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-pasta' },
+           { subId: '22019', childId: '22023', extensionCategory: 'Baby Rusks', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-rusks' },
+           
+           // for 4months
+           { subId: '22019', childId: '22021', extensionCategory: 'Baby & Toddler Snacks', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-toddler-snacks' },
+           { subId: '22019', childId: '22021', extensionCategory: 'Baby Cereals', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-cereals' },
+           { subId: '22019', childId: '22021', extensionCategory: 'Baby Food Jars', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-food-jars' },
+           { subId: '22019', childId: '22021', extensionCategory: 'Baby Food Pouches', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-food-pouches' },
+           { subId: '22019', childId: '22021', extensionCategory: 'Baby Pasta', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-pasta' },
+           { subId: '22019', childId: '22021', extensionCategory: 'Baby Rusks', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-rusks' },
+           
+           // for8months
+           { subId: '22019', childId: '22023', extensionCategory: 'Baby & Toddler Snacks', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-toddler-snacks' },
+           { subId: '22019', childId: '22023', extensionCategory: 'Baby Cereals', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-cereals' },
+           { subId: '22019', childId: '22023', extensionCategory: 'Baby Food Jars', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-food-jars' },
+           { subId: '22019', childId: '22023', extensionCategory: 'Baby Food Pouches', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-food-pouches' },
+           { subId: '22019', childId: '22023', extensionCategory: 'Baby Pasta', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-pasta' },
+           { subId: '22019', childId: '22023', extensionCategory: 'Baby Rusks', url: 'https:www.coles.com.au/browse/baby/baby-toddler-food/baby-rusks' },
+           
          ],
        },
        {
@@ -141,11 +193,13 @@ const categories = [
            { subId: '22075', childId: '22079', extensionCategory: 'Packaged Buns & Bread Rolls', url: 'https:www.coles.com.au/browse/bakery/gluten-free-range/packaged-buns-bread-rolls' },
            { subId: '22075', childId: '22079', extensionCategory: 'Packaged Cake & Sweet Treats', url: 'https:www.coles.com.au/browse/bakery/gluten-free-range/packaged-cake-sweet-treats' },
            { subId: '22075', childId: '22079', extensionCategory: 'Packaged Wraps, Flat Bread and Pizza Bases', url: 'https:www.coles.com.au/browse/bakery/gluten-free-range/packaged-wraps-flat-bread-and-pizza-bases' },
+           { subId: '22075', childId: '22075', extensionCategory: 'Packaged Wraps, Flat Bread and Pizza Bases', url: 'https:www.coles.com.au/browse/bakery/gluten-free-range/packaged-wraps-flat-bread-and-pizza-bases' },
        ],
        },
        {
          subCategory: 'Instore Bakery Breads and Rolls',
          childItems: [
+           { subId: '22062', childId: '22069', extensionCategory: 'Artisan Style Breads By Laurent', url: 'https:www.coles.com.au/browse/bakery/instore-bakery-breads-and-rolls/artisan-style-breads-by-laurent' },
            { subId: '22062', childId: '22064', extensionCategory: 'Artisan Style Breads By Laurent', url: 'https:www.coles.com.au/browse/bakery/instore-bakery-breads-and-rolls/artisan-style-breads-by-laurent' },
            { subId: '22062', childId: '22064', extensionCategory: 'Baguettes', url: 'https:www.coles.com.au/browse/bakery/instore-bakery-breads-and-rolls/baguettes' },
            { subId: '22062', childId: '22064', extensionCategory: 'Bread Loaves', url: 'https:www.coles.com.au/browse/bakery/instore-bakery-breads-and-rolls/bread-loaves' },
@@ -223,9 +277,11 @@ const categories = [
          childItems: [
            { subId: '22074', childId: '22088', extensionCategory: 'Flavoured Wraps', url: 'https:www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/flavoured-wraps' },
            { subId: '22074', childId: '22088', extensionCategory: 'Gluten Free Wraps & Flat Bread', url: 'https:www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/gluten-free-wraps-flat-bread' },
+           { catId: '22770', subId: '22771', childId: '22779', extensionCategory: 'Gluten Free Wraps & Flat Bread', url: 'https:www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/gluten-free-wraps-flat-bread' },
            { subId: '22074', childId: '22088', extensionCategory: 'Naan Bread and Gyros', url: 'https:www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/naan-bread-and-gyros' },
            { subId: '22074', childId: '22088', extensionCategory: 'Other Flat Breads', url: 'https:www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/other-flat-breads' },
            { subId: '22074', childId: '22086', extensionCategory: 'Pizza Bases', url: 'https:www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/pizza-bases' },
+           { subId: '22074', childId: '22075', extensionCategory: 'Pizza Bases', url: 'https:www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/pizza-bases' },
            { subId: '22074', childId: '22088', extensionCategory: 'Turkish and Ciabatta', url: 'https:www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/turkish-and-ciabatta' },
            { subId: '22074', childId: '22088', extensionCategory: 'White Wraps', url: 'https:www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/white-wraps' },
            { subId: '22074', childId: '22088', extensionCategory: 'Wholegrain & Seeded Wraps', url: 'https:www.coles.com.au/browse/bakery/packaged-flat-bread-wraps-and-pizza-bases/wholegrain-seeded-wraps' },
@@ -259,13 +315,15 @@ const categories = [
            { subId: '22090', childId: '22091', extensionCategory: 'Block Cheese', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/block-cheese' },
            { subId: '', childId: '', extensionCategory: 'Blue Cheese', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/blue-cheese' },
            { subId: '22090', childId: '22101', extensionCategory: 'Brie & Soft Cheese', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/brie-soft-cheese' },
-           { subId: '', childId: '', extensionCategory: 'Cheddar & Tasty Cheese', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/cheddar-tasty-cheese' },
+           { subId: '22090', childId: '22093', extensionCategory: 'Cheddar & Tasty Cheese', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/cheddar-tasty-cheese' },
            { subId: '22090', childId: '22100', extensionCategory: 'Cheese Snacks', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/cheese-snacks' },
            { subId: '22090', childId: '22098', extensionCategory: 'Cream Cheese & Spreads', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/cream-cheese-spreads' },
            { subId: '22090', childId: '22095', extensionCategory: 'Feta Cheese', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/feta-cheese' },
-           { subId: '', childId: '', extensionCategory: 'Firm Cheese', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/firm-cheese' },
+           { subId: '22090', childId: '22097', extensionCategory: 'Firm Cheese', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/firm-cheese' },
            { subId: '', childId: '', extensionCategory: 'Gourmet Cheese', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/gourmet-cheese' },
            { subId: '22090', childId: '22096', extensionCategory: 'Grated Cheese', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/grated-cheese' },
+           { subId: '22090', childId: '22093', extensionCategory: 'Grated Cheese', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/grated-cheese' },
+           { subId: '22090', childId: '22097', extensionCategory: 'Grated Cheese', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/grated-cheese' },
            { subId: '', childId: '', extensionCategory: 'Pates & Platters', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/pates-platters' },
            { subId: '22090', childId: '22099', extensionCategory: 'Sliced Cheese', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/sliced-cheese' },
            { subId: '22090', childId: '22094', extensionCategory: 'Specialty & Entertaining Cheese', url: 'https:www.coles.com.au/browse/dairy-eggs-fridge/cheese/specialty-entertaining-cheese' },
@@ -686,6 +744,7 @@ const categories = [
          subCategory: 'Frozen Meals',
          childItems: [
            { subId: '22299', childId: '22300', extensionCategory: 'Convenience Meals', url: 'https:www.coles.com.au/browse/frozen/frozen-meals/convenience-meals' },
+           { subId: '22299', childId: '23989', extensionCategory: 'Convenience Meals', url: 'https:www.coles.com.au/browse/frozen/frozen-meals/convenience-meals' },
            ],
        },
        {
@@ -1156,7 +1215,7 @@ const categories = [
          childItems: [
            { subId: '', childId: '', extensionCategory: 'Baking Tins & Trays', url: 'https:www.coles.com.au/browse/household/kitchen/baking-tins-trays' },
            { subId: '22552', childId: '22553', extensionCategory: 'Foil, Baking Paper & Oven Bags', url: 'https:www.coles.com.au/browse/household/kitchen/foil-baking-paper-oven-bags' },
-           { subId: '', childId: '', extensionCategory: 'Food Tubs & Containers', url: 'https:www.coles.com.au/browse/household/kitchen/food-tubs-containers' },
+           { subId: '22552', childId: '22560', extensionCategory: 'Food Tubs & Containers', url: 'https:www.coles.com.au/browse/household/kitchen/food-tubs-containers' },
            { subId: '22552', childId: '22557', extensionCategory: 'Kitchen Tidy & Garbage Bags', url: 'https:www.coles.com.au/browse/household/kitchen/kitchen-tidy-garbage-bags' },
            { subId: '', childId: '', extensionCategory: 'Plastic Wraps & Bags', url: 'https:www.coles.com.au/browse/household/kitchen/plastic-wraps-bags' },
            { subId: '', childId: '', extensionCategory: 'Pots & Saucepans', url: 'https:www.coles.com.au/browse/household/kitchen/pots-saucepans' },
@@ -1253,6 +1312,7 @@ const categories = [
   },
    {
      category: 'Pantry',
+     id: "22770",
      subCategories: [
        {
          subCategory: 'Baking',
@@ -1291,10 +1351,13 @@ const categories = [
             { subId: '22796', childId: '22800', extensionCategory: 'Canned Fruit', url: 'https:www.coles.com.au/browse/pantry/canned-food-soups-noodles/canned-fruit' },
             { subId: '22796', childId: '22801', extensionCategory: 'Canned Meat', url: 'https:www.coles.com.au/browse/pantry/canned-food-soups-noodles/canned-meat' },
             { subId: '22796', childId: '22807', extensionCategory: 'Canned Vegetables', url: 'https:www.coles.com.au/browse/pantry/canned-food-soups-noodles/canned-vegetables' },
+            { subId: '22796', childId: '22805', extensionCategory: 'Canned Vegetables', url: 'https:www.coles.com.au/browse/pantry/canned-food-soups-noodles/canned-vegetables' },
             { catId: '22164', subId: '22199', childId: '22838', extensionCategory: 'Condensed & Evaporated Milk', url: 'https:www.coles.com.au/browse/pantry/canned-food-soups-noodles/condensed-evaporated-milk' },
             { subId: '', childId: '', extensionCategory: 'Condensed & Evaporated Milk', url: 'https:www.coles.com.au/browse/pantry/canned-food-soups-noodles/condensed-evaporated-milk' },
             { subId: '22796', childId: '22806', extensionCategory: 'Fish & Seafood', url: 'https:www.coles.com.au/browse/pantry/canned-food-soups-noodles/fish-seafood' },
+            { subId: '22796', childId: '22803', extensionCategory: 'Fish & Seafood', url: 'https:www.coles.com.au/browse/pantry/canned-food-soups-noodles/fish-seafood' },
             { subId: '22796', childId: '22809', extensionCategory: 'Instant Meals & Sides', url: 'https:www.coles.com.au/browse/pantry/canned-food-soups-noodles/instant-meals-sides' },
+            { subId: '22796', childId: '22802', extensionCategory: 'Instant Meals & Sides', url: 'https:www.coles.com.au/browse/pantry/canned-food-soups-noodles/instant-meals-sides' },
             { subId: '22796', childId: '22810', extensionCategory: 'Noodles', url: 'https:www.coles.com.au/browse/pantry/canned-food-soups-noodles/noodles' },
             { subId: '22796', childId: '22804', extensionCategory: 'Soups', url: 'https:www.coles.com.au/browse/pantry/canned-food-soups-noodles/soups' },
           ],
@@ -1313,11 +1376,11 @@ const categories = [
         {
           subCategory: 'Desserts',
           childItems: [
-            { subId: '', childId: '', extensionCategory: 'Custard, Cream & Yoghurt Desserts', url: 'https:www.coles.com.au/browse/pantry/desserts/custard-cream-yoghurt-desserts' },
-            { subId: '', childId: '', extensionCategory: 'Icecream Cones, Syrups & Toppings', url: 'https:www.coles.com.au/browse/pantry/desserts/icecream-cones-syrups-toppings' },
-            { subId: '', childId: '', extensionCategory: 'Jelly', url: 'https:www.coles.com.au/browse/pantry/desserts/jelly' },
-            { subId: '', childId: '', extensionCategory: 'Puddings', url: 'https:www.coles.com.au/browse/pantry/desserts/puddings' },
-            { subId: '', childId: '', extensionCategory: 'ready-to-freeze Ice Blocks', url: 'https:www.coles.com.au/browse/pantry/desserts/ready-to-freeze-ice-blocks' },  
+            { subId: '22821', childId: '22983', extensionCategory: 'Custard, Cream & Yoghurt Desserts', url: 'https:www.coles.com.au/browse/pantry/desserts/custard-cream-yoghurt-desserts' },
+            { subId: '22821', childId: '23823', extensionCategory: 'Icecream Cones, Syrups & Toppings', url: 'https:www.coles.com.au/browse/pantry/desserts/icecream-cones-syrups-toppings' },
+            { subId: '22821', childId: '22824', extensionCategory: 'Jelly', url: 'https:www.coles.com.au/browse/pantry/desserts/jelly' },
+            { subId: '22821', childId: '22825', extensionCategory: 'Puddings', url: 'https:www.coles.com.au/browse/pantry/desserts/puddings' },
+            { subId: '22821', childId: '22826', extensionCategory: 'ready-to-freeze Ice Blocks', url: 'https:www.coles.com.au/browse/pantry/desserts/ready-to-freeze-ice-blocks' },  
           ],
         },
         {
@@ -1353,8 +1416,10 @@ const categories = [
           childItems: [
             { subId: '22842', childId: '22844', extensionCategory: 'Dried Herbs & Spices', url: 'https:www.coles.com.au/browse/pantry/herbs-spices/dried-herbs-spices' },
             { subId: '22842', childId: '22844', extensionCategory: 'Dried Spices', url: 'https:www.coles.com.au/browse/pantry/herbs-spices/dried-spices' },
-            { subId: '', childId: '', extensionCategory: 'Jars & Pastes', url: 'https:www.coles.com.au/browse/pantry/herbs-spices/jars-pastes' },
-            { subId: '', childId: '', extensionCategory: 'Packet Seasonings', url: 'https:www.coles.com.au/browse/pantry/herbs-spices/packet-seasonings' },
+
+            { subId: '', childId: '', extensionCategory: 'Dried Spices', url: 'https:www.coles.com.au/browse/pantry/herbs-spices/dried-spices' },
+            { subId: '22842', childId: '22845', extensionCategory: 'Jars & Pastes', url: 'https:www.coles.com.au/browse/pantry/herbs-spices/jars-pastes' },
+            { subId: '22842', childId: '22843', extensionCategory: 'Packet Seasonings', url: 'https:www.coles.com.au/browse/pantry/herbs-spices/packet-seasonings' },
             { subId: '22842', childId: '22847', extensionCategory: 'Salt & Pepper', url: 'https:www.coles.com.au/browse/pantry/herbs-spices/salt-pepper' },
           ],
         },
@@ -1365,21 +1430,22 @@ const categories = [
             { subId: '22848', childId: '22850', extensionCategory: 'European', url: 'https:www.coles.com.au/browse/pantry/international-foods/european' },
             { subId: '22848', childId: '22851', extensionCategory: 'Indian', url: 'https:www.coles.com.au/browse/pantry/international-foods/indian' },
             { subId: '22848', childId: '22854', extensionCategory: 'Kosher', url: 'https:www.coles.com.au/browse/pantry/international-foods/kosher' },
-            { subId: '22848', childId: '', extensionCategory: 'Mediterranean', url: 'https:www.coles.com.au/browse/pantry/international-foods/mediterranean' },
-            { subId: '22848', childId: '', extensionCategory: 'Mexican', url: 'https:www.coles.com.au/browse/pantry/international-foods/mexican' },
+            { subId: '', childId: '', extensionCategory: 'Mediterranean', url: 'https:www.coles.com.au/browse/pantry/international-foods/mediterranean' },
+            { subId: '22848', childId: '22855', extensionCategory: 'Mexican', url: 'https:www.coles.com.au/browse/pantry/international-foods/mexican' },
             { subId: '22848', childId: '22856', extensionCategory: 'Middle Eastern', url: 'https:www.coles.com.au/browse/pantry/international-foods/middle-eastern' },
-            { subId: '22848', childId: '', extensionCategory: 'New Zealand', url: 'https:www.coles.com.au/browse/pantry/international-foods/new-zealand' },
+            { subId: '', childId: '', extensionCategory: 'New Zealand', url: 'https:www.coles.com.au/browse/pantry/international-foods/new-zealand' },
             { subId: '22848', childId: '22858', extensionCategory: 'South African', url: 'https:www.coles.com.au/browse/pantry/international-foods/south-african' },
             { subId: '22848', childId: '22859', extensionCategory: 'Uk', url: 'https:www.coles.com.au/browse/pantry/international-foods/uk' },
-            { subId: '22848', childId: '', extensionCategory: 'Usa', url: 'https:www.coles.com.au/browse/pantry/international-foods/usa' },
+            { subId: '', childId: '', extensionCategory: 'Usa', url: 'https:www.coles.com.au/browse/pantry/international-foods/usa' },
           ],
         },
         {
           subCategory: 'Jams, Honey & Spreads',
           childItems: [
-            { subId: '', childId: '', extensionCategory: 'Chocolate Spreads', url: 'https:www.coles.com.au/browse/pantry/jams-honey-spreads/chocolate-spreads' },
+            { subId: '22785', childId: '22795', extensionCategory: 'Chocolate Spreads', url: 'https:www.coles.com.au/browse/pantry/jams-honey-spreads/chocolate-spreads' },
             { subId: '22785', childId: '22789', extensionCategory: 'Honey', url: 'https:www.coles.com.au/browse/pantry/jams-honey-spreads/honey' },
             { subId: '22785', childId: '22790', extensionCategory: 'Jams', url: 'https:www.coles.com.au/browse/pantry/jams-honey-spreads/jams' },
+            { subId: '22785', childId: '22795', extensionCategory: 'Jams', url: 'https:www.coles.com.au/browse/pantry/jams-honey-spreads/jams' },
             { subId: '', childId: '', extensionCategory: 'Nut Spreads', url: 'https:www.coles.com.au/browse/pantry/jams-honey-spreads/nut-spreads' },
             { subId: '22785', childId: '22794', extensionCategory: 'Savoury Spreads', url: 'https:www.coles.com.au/browse/pantry/jams-honey-spreads/savoury-spreads' },
           ],
@@ -1404,6 +1470,8 @@ const categories = [
             { subId: '22832', childId: '22835', extensionCategory: 'Fresh Pasta', url: 'https:www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/fresh-pasta' },
             { subId: '22868', childId: '22876', extensionCategory: 'Microwave Rice', url: 'https:www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/microwave-rice' },
             { subId: '22832', childId: '22835', extensionCategory: 'Pasta', url: 'https:www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/pasta' },
+            { subId: '22832', childId: '22870', extensionCategory: 'Pasta', url: 'https:www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/pasta' },
+            { subId: '22832', childId: '22870', extensionCategory: '22871', url: 'https:www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/pasta' },
             { subId: '22868', childId: '22875', extensionCategory: 'Polenta & Other Grains', url: 'https:www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/polenta-other-grains' },
             { subId: '22868', childId: '22876', extensionCategory: 'Rice', url: 'https:www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/rice' },
           ],
@@ -1414,9 +1482,11 @@ const categories = [
             { subId: '22811', childId: '22815', extensionCategory: 'Mayonnaise', url: 'https:www.coles.com.au/browse/pantry/pickled-vegetables-condiments/mayonnaise' },
             { subId: '22811', childId: '22816', extensionCategory: 'Mustard', url: 'https:www.coles.com.au/browse/pantry/pickled-vegetables-condiments/mustard' },
             { subId: '22811', childId: '22812', extensionCategory: 'Pickles, Chutney & Relish', url: 'https:www.coles.com.au/browse/pantry/pickled-vegetables-condiments/pickles-chutney-relish' },
+            { subId: '22811', childId: '22817', extensionCategory: 'Pickles, Chutney & Relish', url: 'https:www.coles.com.au/browse/pantry/pickled-vegetables-condiments/pickles-chutney-relish' },
             { subId: '22811', childId: '22818', extensionCategory: 'Salad Dressings', url: 'https:www.coles.com.au/browse/pantry/pickled-vegetables-condiments/salad-dressings' },
             { subId: '', childId: '', extensionCategory: 'Syrups & Toppings', url: 'https:www.coles.com.au/browse/pantry/pickled-vegetables-condiments/syrups-toppings' },
             { subId: '22811', childId: '22820', extensionCategory: 'Tomato & Bbq Sauces', url: 'https:www.coles.com.au/browse/pantry/pickled-vegetables-condiments/tomato-bbq-sauces' },
+            { subId: '22811', childId: '22814', extensionCategory: 'Tomato & Bbq Sauces', url: 'https:www.coles.com.au/browse/pantry/pickled-vegetables-condiments/tomato-bbq-sauces' },
           ],
         },
         {
@@ -1425,10 +1495,12 @@ const categories = [
             { subId: '22878', childId: '22879', extensionCategory: 'Marinades', url: 'https:www.coles.com.au/browse/pantry/sauces/marinades' },
             { subId: '22811', childId: '22816', extensionCategory: 'Mustards', url: 'https:www.coles.com.au/browse/pantry/sauces/mustards' },
             { subId: '22878', childId: '22881', extensionCategory: 'Pizza & Pasta', url: 'https:www.coles.com.au/browse/pantry/sauces/pizza-pasta' },
-            { subId: '', childId: '', extensionCategory: 'Recipe & Meal Bases', url: 'https:www.coles.com.au/browse/pantry/sauces/recipe-meal-bases' },
+            { subId: '22878', childId: '22883', extensionCategory: 'Recipe & Meal Bases', url: 'https:www.coles.com.au/browse/pantry/sauces/recipe-meal-bases' },
+            { subId: '22878', childId: '22885', extensionCategory: 'Recipe & Meal Bases', url: 'https:www.coles.com.au/browse/pantry/sauces/recipe-meal-bases' },
             { subId: '22878', childId: '22884', extensionCategory: 'Soy & Asian', url: 'https:www.coles.com.au/browse/pantry/sauces/soy-asian' },
             { subId: '', childId: '', extensionCategory: 'Stir-Fry and Curries', url: 'https:www.coles.com.au/browse/pantry/sauces/stir-fry-and-curries' },
             { subId: '22878', childId: '22886', extensionCategory: 'Sweet Chilli & Hot', url: 'https:www.coles.com.au/browse/pantry/sauces/sweet-chilli-hot' },
+            { subId: '22811', childId: '22819', extensionCategory: 'Sweet Chilli & Hot', url: 'https:www.coles.com.au/browse/pantry/sauces/sweet-chilli-hot' },
             { subId: '22811', childId: '22820', extensionCategory: 'Tomato & Bbq', url: 'https:www.coles.com.au/browse/pantry/sauces/tomato-bbq' },
           ],
         },
@@ -1457,6 +1529,7 @@ const categories = [
    },
    {
     category: 'Chips, Chocolates & Snacks',
+    id: "22770",
     subCategories: [
       {
         subCategory: 'Biscuits & Cookies',
@@ -1523,6 +1596,7 @@ const categories = [
   },
    {
      category: 'Pet',
+     id: '22916',
      subCategories: [
        {
          subCategory: 'Birds',
@@ -1577,6 +1651,7 @@ const categories = [
    },
    {
      category: 'Poultry, Meat & Seafood',
+     id: '22713',
      subCategories: [
        {
          subCategory: 'Bbq, Sausages & Burgers',
