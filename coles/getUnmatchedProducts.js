@@ -35,20 +35,18 @@ const getData = async () => {
       let childId = '';
       const matchedCategory = categories.find((cat) => cat.category === category);
       if (matchedCategory) {
-        const sub = matchedCategory.subCategories.find((sub) => sub.name === productObj.subCategory);
-        if (Array.isArray(matchedCategory.subCategories)) {
-          const sub = matchedCategory.subCategories.find((sub) => sub.name === productObj.subCategory);
+        const sub = matchedCategory.subCategories.find((sub) => sub.subCategory === productObj.subCategory);
 
-          if (sub && Array.isArray(sub.childItems)) {
-            const a = sub.childItems.find((item) => item.extensionCategory === productObj.extensionCategory);
-            if (a) {
-              subId = a.subId ?? '';
-              childId = a.childId ?? '';
-            }
+        if (sub) {
+          console.log('sub', sub);
+          const a = sub.childItems.find((item) => item.extensionCategory === productObj.extensionCategory);
+          if (a) {
+            console.log('a', a);
+            subId = a.subId ?? '';
+            childId = a.childId ?? '';
           }
-        } else {
-          console.warn(`No subCategory found for category: "${category}"`, matchedCategory);
         }
+
         // if(sub){
         //     const a = sub.childItems.find((item) => item.extensionCategory === productObj.extensionCategory)
         //     if(a){
@@ -92,17 +90,17 @@ const getData = async () => {
       try {
         if (fs.existsSync(filePath)) {
           // Merge existing and new data
-         try {
+          try {
             console.log(`File already exists: ${filePath}. Skipping save.`);
             const data = JSON.parse(fs.readFileSync(`${baseFolder}/${category}.json`, 'utf8'));
             const combinedData = [...data, ...productsData];
-  
+
             // Remove duplicates based on source_id
             const uniqueData = combinedData.filter((item, index, self) => index === self.findIndex((t) => t.source_id === item.source_id && t.shop === item.shop));
             fs.writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
-         } catch (error) {
-            console.log('error')
-         }
+          } catch (error) {
+            console.log('error');
+          }
         } else {
           if (productsData.length > 0) {
             fs.mkdirSync(folderPath, { recursive: true });
@@ -115,7 +113,6 @@ const getData = async () => {
 
         total += productsData.length;
         console.log('totalProducts', total);
-
       } catch (error) {
         console.error('Error writing data to file:', error);
       }
