@@ -42,10 +42,13 @@ Follow these steps to set up and run the scraper:
   JARROD_KEY="API_KEY" //replace with the actual key
   JARROD_API="API_TO_BACKEND_SERVER" // replace with the actual API
 
-  #COLES DB
+  # COLES DB
   MONGO_COLES_URI="mongodb://127.0.0.1/coles_1-1-2025" // replace with the actual date
 
-  #WOOLYDB
+  # coles db uri for barcodes to save
+  MONGO_COLES_BARCODE="mongodb://127.0.0.1/colesbarcodes" # replace with the actual date
+
+  # WOOLYDB
   MONGO_WOOLY_URI="mongodb://127.0.0.1/wooly_1-22-2025" // replace with the actual date
   ```
 

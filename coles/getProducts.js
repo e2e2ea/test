@@ -1,4 +1,4 @@
-import categories from '../constant/copy.js';
+import categories from './constant/categories.js';
 import fs from 'fs';
 import path from 'path';
 import Product from './models/products.js';
@@ -6,7 +6,7 @@ import dbConnect from './db/dbConnect.js';
 import { createArrayCsvWriter } from 'csv-writer';
 import dotenv from 'dotenv';
 
-const categoriesId = JSON.parse(fs.readFileSync(`./constant/categories.json`, 'utf8'));
+// const categoriesId = JSON.parse(fs.readFileSync(`./coles/constant/categories.js`, 'utf8'));
 dotenv.config();
 const csvWriter = createArrayCsvWriter({
   path: `./coles/output_${process.env.FOLDER_DATE}.csv`,
@@ -18,24 +18,45 @@ const getData = async () => {
   let b;
   b = await Product.find();
   let data = [];
-  let total = 0
+  let total = 0;
   for (const categ of categories) {
     const category = categ.category;
-    let categId = '';
-    const matchedCategory = categoriesId.find((cat) => cat.name === category);
-    if (matchedCategory) {
-      categId = matchedCategory.id;
-    } else {
-      console.warn(`Category "${category}" not found in categoriesId`);
-    }
+    let categId = categ.id;
 
     const a = await Product.find({ category: category }).exec();
     const productsData = a.map((product) => {
       const productObj = product.toObject();
+      if (productObj.prices.length === 0) return false;
       const cleanedPrices = productObj.prices.map((price) => {
         const { _id, ...rest } = price; // Destructure to exclude _id
         return rest; // Return the remaining price object without _id
       });
+      let subId = '';
+      let childId = '';
+      const matchedCategory = categories.find((cat) => cat.category === category);
+      if (matchedCategory) {
+        const sub = matchedCategory.subCategories.find((sub) => sub.subCategory === productObj.subCategory);
+
+        if (sub) {
+          console.log('sub', sub);
+          const a = sub.childItems.find((item) => item.extensionCategory === productObj.extensionCategory);
+          if (a) {
+            console.log('a', a);
+            subId = a.subId ?? '';
+            childId = a.childId ?? '';
+          }
+        }
+
+        // if(sub){
+        //     const a = sub.childItems.find((item) => item.extensionCategory === productObj.extensionCategory)
+        //     if(a){
+        //         subId = a.subId ?? '';
+        //         childId = a.childId ?? '';
+        //     }
+        // }
+      } else {
+        console.warn(`Category "${category}" not found in categoriesId`);
+      }
       const formattedProduct = {
         source_url: productObj.source_url || null,
         name: productObj.name || null,
@@ -43,6 +64,8 @@ const getData = async () => {
         source_id: `${productObj.coles_product_id}` || null,
         barcode: productObj.barcode || '',
         category_id: categId || '',
+        subcategory_id: subId || '',
+        subsubcategory_id: childId || '',
         shop: productObj.shop || null,
         weight: productObj.weight || '',
         prices: cleanedPrices,
@@ -63,17 +86,33 @@ const getData = async () => {
 
       const fileName = `${category}.json`;
       const filePath = path.join(folderPath, fileName);
-      // Check if the file already exists
-      if (fs.existsSync(filePath)) {
-        console.log(`File already exists: ${filePath}. Skipping save.`);
-        // continue; // Skip saving the file
-      }
+
       try {
-        total += productsData.length
+        if (fs.existsSync(filePath)) {
+          // Merge existing and new data
+          try {
+            console.log(`File already exists: ${filePath}. Skipping save.`);
+            const data = JSON.parse(fs.readFileSync(`${baseFolder}/${category}.json`, 'utf8'));
+            const combinedData = [...data, ...productsData];
+
+            // Remove duplicates based on source_id
+            const uniqueData = combinedData.filter((item, index, self) => index === self.findIndex((t) => t.source_id === item.source_id && t.shop === item.shop));
+            fs.writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
+          } catch (error) {
+            console.log('error');
+          }
+        } else {
+          if (productsData.length > 0) {
+            fs.mkdirSync(folderPath, { recursive: true });
+            console.log(`Created folder: ${folderPath}`);
+
+            fs.writeFileSync(filePath, JSON.stringify(productsData, null, 2));
+            console.log(`Data saved to ${filePath}`);
+          }
+        }
+
+        total += productsData.length;
         console.log('totalProducts', total);
-        console.log(`${fileName} - ${productsData.length} products`);
-        fs.writeFileSync(filePath, JSON.stringify(productsData, null, 2)); // Pretty print with 2 spaces
-        console.log(`Data saved to ${filePath}`);
       } catch (error) {
         console.error('Error writing data to file:', error);
       }
