@@ -20,6 +20,9 @@ const getData = async () => {
     if (category === 'Beauty & Personal Care') mycat = 'Health & Beauty';
     if (category === 'Home & Lifestyle') mycat = 'Household';
     if (category === 'Cleaning & Maintenance') mycat = 'Household';
+    if (category === 'Fruit & Veg') mycat = 'Fruit & Vegetables';
+    if (category === 'Freezer') mycat = 'Frozen';
+    if (category === 'Deli & Chilled Meals') mycat = 'Deli';
     try {
       ColesData = JSON.parse(fs.readFileSync(`coles/data/${process.env.FOLDER_DATE}/${mycat}.json`, 'utf8'));
     } catch (error) {
@@ -34,7 +37,7 @@ const getData = async () => {
         let woolworthsData;
 
         try {
-          woolworthsData = JSON.parse(fs.readFileSync(`woolworths/data/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
+          woolworthsData = JSON.parse(fs.readFileSync(`woolworths/data/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId ?? ''}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
         } catch (error) {
           continue;
         }
