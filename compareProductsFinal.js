@@ -54,34 +54,36 @@ const getData = async () => {
             }
           });
           if (filteredProducts && filteredProducts.length > 0) {
-            const formattedProduct1 = {
-              source_url: filteredProducts[0].source_url || null,
-              name: filteredProducts[0].name || null,
-              image_url: filteredProducts[0].image_url || null,
-              source_id: filteredProducts[0].source_id || null,
-              barcode: filteredProducts[0].barcode || null,
-              shop: filteredProducts[0].shop || null,
-              category_id: data.subsubcategory_id ?? data.subcategory_id,
-              subcategory_id: '',
-              subsubcategory_id: '',
-              weight: filteredProducts[0].weight || null,
-              prices: filteredProducts[0].prices,
-            };
-            const formattedProduct2 = {
-              source_url: data.source_url || null,
-              name: data.name || null,
-              image_url: data.image_url || null,
-              source_id: data.source_id || null,
-              barcode: data.barcode || null,
-              shop: data.shop || null,
-              category_id: data.subsubcategory_id ?? data.category_id,
-              subcategory_id: '',
-              subsubcategory_id: '',
-              weight: data.weight || null,
-              prices: data.prices,
-            };
-            productsMatched.push(formattedProduct1);
-            productsMatched.push(formattedProduct2);
+            if (filteredProducts[0].subcategory_id) {
+              const formattedProduct1 = {
+                source_url: filteredProducts[0].source_url || null,
+                name: filteredProducts[0].name || null,
+                image_url: filteredProducts[0].image_url || null,
+                source_id: filteredProducts[0].source_id || null,
+                barcode: filteredProducts[0].barcode || null,
+                shop: filteredProducts[0].shop || null,
+                category_id: data.subsubcategory_id ?? data.subcategory_id,
+                subcategory_id: '',
+                subsubcategory_id: '',
+                weight: filteredProducts[0].weight || null,
+                prices: filteredProducts[0].prices,
+              };
+              const formattedProduct2 = {
+                source_url: data.source_url || null,
+                name: data.name || null,
+                image_url: data.image_url || null,
+                source_id: data.source_id || null,
+                barcode: data.barcode || null,
+                shop: data.shop || null,
+                category_id: data.subsubcategory_id ?? data.subcategory_id,
+                subcategory_id: '',
+                subsubcategory_id: '',
+                weight: data.weight || null,
+                prices: data.prices,
+              };
+              productsMatched.push(formattedProduct1);
+              productsMatched.push(formattedProduct2);
+            }
           }
         }
 
@@ -136,20 +138,22 @@ const getData = async () => {
               unMatchedColes = a.filter((c) => !filteredProductsMatched.some((p) => p.source_id === c.source_id));
               if (unMatchedColes.length > 0) {
                 for (const data of unMatchedColes) {
-                  const formattedProduct = {
-                    source_url: data.source_url || null,
-                    name: data.name || null,
-                    image_url: data.image_url || null,
-                    source_id: data.source_id || null,
-                    barcode: data.barcode || null,
-                    shop: data.shop || null,
-                    category_id: data.subsubcategory_id ?? data.category_id,
-                    subcategory_id: '',
-                    subsubcategory_id: '',
-                    weight: data.weight || null,
-                    prices: data.prices,
-                  };
-                  formattedProducts.push(formattedProduct);
+                  if (data.subcategory_id) {
+                    const formattedProduct = {
+                      source_url: data.source_url || null,
+                      name: data.name || null,
+                      image_url: data.image_url || null,
+                      source_id: data.source_id || null,
+                      barcode: data.barcode || null,
+                      shop: data.shop || null,
+                      category_id: data.subsubcategory_id ?? data.subcategory_id,
+                      subcategory_id: '',
+                      subsubcategory_id: '',
+                      weight: data.weight || null,
+                      prices: data.prices,
+                    };
+                    formattedProducts.push(formattedProduct);
+                  }
                 }
                 const baseFolder = `./unMatched/coles/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}`;
                 const folderPath = path.join(baseFolder);
@@ -176,28 +180,28 @@ const getData = async () => {
                     console.log(`Data saved to ${filePath}`);
                   }
                 }
-                // try {
-                //   const externalApiUrl = process.env.JARROD_API;
-                //   const apiKey = process.env.JARROD_KEY;
+                try {
+                  const externalApiUrl = process.env.JARROD_API;
+                  const apiKey = process.env.JARROD_KEY;
 
-                //   const response = await axios.post(externalApiUrl, unMatchedColes, {
-                //     headers: {
-                //       accept: 'application/json',
-                //       'X-API-Key': apiKey,
-                //       'Content-Type': 'application/json',
-                //     },
-                //   });
+                  const response = await axios.post(externalApiUrl, formattedProducts, {
+                    headers: {
+                      accept: 'application/json',
+                      'X-API-Key': apiKey,
+                      'Content-Type': 'application/json',
+                    },
+                  });
 
-                //   console.log(`Success! category: ${ext.catId ? ext.catId : categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}`, response.data);
-                // } catch (error) {
-                //   if (error.response) {
-                //     console.error('Error response:', error.response.status, error.response.data);
-                //   } else if (error.request) {
-                //     console.error('No response received:', error.request);
-                //   } else {
-                //     console.error('Error:', error.message);
-                //   }
-                // }
+                  console.log(`Success! category: ${ext.catId ? ext.catId : categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}`, response.data);
+                } catch (error) {
+                  if (error.response) {
+                    console.error('Error response in C:', error.response.status, error.response.data);
+                  } else if (error.request) {
+                    console.error('No response received:', error.request);
+                  } else {
+                    console.error('Error:', error.message);
+                  }
+                }
               }
               // try {
               //  const b = JSON.parse(fs.readFileSync(`matched/data/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
@@ -211,20 +215,22 @@ const getData = async () => {
           let formattedUnmatchedWooly = [];
           if (unmatchedWoolworthsProducts && unmatchedWoolworthsProducts.length > 0) {
             for (const data of unmatchedWoolworthsProducts) {
-              const formattedProduct = {
-                source_url: data.source_url || null,
-                name: data.name || null,
-                image_url: data.image_url || null,
-                source_id: data.source_id || null,
-                barcode: data.barcode || null,
-                shop: data.shop || null,
-                category_id: data.subsubcategory_id ?? data.category_id,
-                subcategory_id: '',
-                subsubcategory_id: '',
-                weight: data.weight || null,
-                prices: data.prices,
-              };
-              formattedUnmatchedWooly.push(formattedProduct);
+              if (data.subcategory_id) {
+                const formattedProduct = {
+                  source_url: data.source_url || null,
+                  name: data.name || null,
+                  image_url: data.image_url || null,
+                  source_id: data.source_id || null,
+                  barcode: data.barcode || null,
+                  shop: data.shop || null,
+                  category_id: data.subsubcategory_id ?? data.subcategory_id,
+                  subcategory_id: '',
+                  subsubcategory_id: '',
+                  weight: data.weight || null,
+                  prices: data.prices,
+                };
+                formattedUnmatchedWooly.push(formattedProduct);
+              }
             }
             const baseFolder = `./unMatched/woolworths/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}`;
             const folderPath = path.join(baseFolder);
@@ -250,28 +256,28 @@ const getData = async () => {
                 console.log(`Data saved to ${filePath}`);
               }
             }
-            // try {
-            //   const externalApiUrl = process.env.JARROD_API;
-            //   const apiKey = process.env.JARROD_KEY;
+            try {
+              const externalApiUrl = process.env.JARROD_API;
+              const apiKey = process.env.JARROD_KEY;
 
-            //   const response = await axios.post(externalApiUrl, unmatchedWoolworthsProducts, {
-            //     headers: {
-            //       accept: 'application/json',
-            //       'X-API-Key': apiKey,
-            //       'Content-Type': 'application/json',
-            //     },
-            //   });
+              const response = await axios.post(externalApiUrl, formattedUnmatchedWooly, {
+                headers: {
+                  accept: 'application/json',
+                  'X-API-Key': apiKey,
+                  'Content-Type': 'application/json',
+                },
+              });
 
-            //   console.log(`Success! category: ${ext.catId ? ext.catId : categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}`, response.data);
-            // } catch (error) {
-            //   if (error.response) {
-            //     console.error('Error response:', error.response.status, error.response.data);
-            //   } else if (error.request) {
-            //     console.error('No response received:', error.request);
-            //   } else {
-            //     console.error('Error:', error.message);
-            //   }
-            // }
+              console.log(`Success! category: ${ext.catId ? ext.catId : categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}`, response.data);
+            } catch (error) {
+              if (error.response) {
+                console.error('Error response in W:', error.response.status, error.response.data);
+              } else if (error.request) {
+                console.error('No response received:', error.request);
+              } else {
+                console.error('Error:', error.message);
+              }
+            }
           }
         } catch (error) {
           console.error('Error writing data to file:', error);
@@ -281,42 +287,42 @@ const getData = async () => {
   }
   const chunkSize = 100;
   const skipCount = 0; //
-  for (const categ of categories) {
-    for (const sub of categ.subCategories) {
-      for (const ext of sub.childItems) {
-        let matchedData = [];
-        try {
-          matchedData = JSON.parse(fs.readFileSync(`matched/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId ?? ''}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
-          console.log('woolworthsData', matchedData.length);
-        } catch (error) {
-          continue;
-        }
-        const chunk = matchedData.slice(skipCount, skipCount + chunkSize);
-        for (let i = skipCount; i < matchedData.length; i += chunkSize) {
-          // try {
-          //   const externalApiUrl = process.env.JARROD_API;
-          //   const apiKey = process.env.JARROD_KEY;
-          //   const response = await axios.post(externalApiUrl, chunk, {
-          //     headers: {
-          //       accept: 'application/json',
-          //       'X-API-Key': apiKey,
-          //       'Content-Type': 'application/json',
-          //     },
-          //   });
-          //   console.log(`Success! category: ${categ.id} Batch in  ${i / chunkSize + 1}`, response.data);
-          // } catch (error) {
-          //   if (error.response) {
-          //     console.error('Error response:', error.response.status, error.response.data);
-          //   } else if (error.request) {
-          //     console.error('No response received:', error.request);
-          //   } else {
-          //     console.error('Error:', error.message);
-          //   }
-          // }
-        }
-      }
-    }
-  }
+  // for (const categ of categories) {
+  //   for (const sub of categ.subCategories) {
+  //     for (const ext of sub.childItems) {
+  //       let matchedData = [];
+  //       try {
+  //         matchedData = JSON.parse(fs.readFileSync(`matched/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId ?? ''}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
+  //         console.log('woolworthsData', matchedData.length);
+  //       } catch (error) {
+  //         continue;
+  //       }
+  //       const chunk = matchedData.slice(skipCount, skipCount + chunkSize);
+  //       for (let i = skipCount; i < matchedData.length; i += chunkSize) {
+  //         try {
+  //           const externalApiUrl = process.env.JARROD_API;
+  //           const apiKey = process.env.JARROD_KEY;
+  //           const response = await axios.post(externalApiUrl, chunk, {
+  //             headers: {
+  //               accept: 'application/json',
+  //               'X-API-Key': apiKey,
+  //               'Content-Type': 'application/json',
+  //             },
+  //           });
+  //           console.log(`Success! category: ${categ.id} Batch in  ${i / chunkSize + 1}`, response.data);
+  //         } catch (error) {
+  //           if (error.response) {
+  //             console.error('Error response:', error.response.status, error.response.data);
+  //           } else if (error.request) {
+  //             console.error('No response received:', error.request);
+  //           } else {
+  //             console.error('Error:', error.message);
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 };
 
 (async () => {
