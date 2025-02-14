@@ -290,42 +290,42 @@ const getData = async () => {
   }
   const chunkSize = 100;
   const skipCount = 0; //
-  // for (const categ of categories) {
-  //   for (const sub of categ.subCategories) {
-  //     for (const ext of sub.childItems) {
-  //       let matchedData = [];
-  //       try {
-  //         matchedData = JSON.parse(fs.readFileSync(`matched/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId ?? ''}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
-  //         console.log('woolworthsData', matchedData.length);
-  //       } catch (error) {
-  //         continue;
-  //       }
-  //       const chunk = matchedData.slice(skipCount, skipCount + chunkSize);
-  //       for (let i = skipCount; i < matchedData.length; i += chunkSize) {
-  //         try {
-  //           const externalApiUrl = process.env.JARROD_API;
-  //           const apiKey = process.env.JARROD_KEY;
-  //           const response = await axios.post(externalApiUrl, chunk, {
-  //             headers: {
-  //               accept: 'application/json',
-  //               'X-API-Key': apiKey,
-  //               'Content-Type': 'application/json',
-  //             },
-  //           });
-  //           console.log(`Success! category: ${categ.id} Batch in  ${i / chunkSize + 1}`, response.data);
-  //         } catch (error) {
-  //           if (error.response) {
-  //             console.error('Error response:', error.response.status, error.response.data);
-  //           } else if (error.request) {
-  //             console.error('No response received:', error.request);
-  //           } else {
-  //             console.error('Error:', error.message);
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+  for (const categ of categories) {
+    for (const sub of categ.subCategories) {
+      for (const ext of sub.childItems) {
+        let matchedData = [];
+        try {
+          matchedData = JSON.parse(fs.readFileSync(`matched/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId ?? ''}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
+          console.log('woolworthsData', matchedData.length);
+        } catch (error) {
+          continue;
+        }
+        const chunk = matchedData.slice(skipCount, skipCount + chunkSize);
+        for (let i = skipCount; i < matchedData.length; i += chunkSize) {
+          try {
+            const externalApiUrl = process.env.JARROD_API;
+            const apiKey = process.env.JARROD_KEY;
+            const response = await axios.post(externalApiUrl, chunk, {
+              headers: {
+                accept: 'application/json',
+                'X-API-Key': apiKey,
+                'Content-Type': 'application/json',
+              },
+            });
+            console.log(`Success! category: ${categ.id} Batch in  ${i / chunkSize + 1}`, response.data);
+          } catch (error) {
+            if (error.response) {
+              console.error('Error response:', error.response.status, error.response.data);
+            } else if (error.request) {
+              console.error('No response received:', error.request);
+            } else {
+              console.error('Error:', error.message);
+            }
+          }
+        }
+      }
+    }
+  }
 };
 
 (async () => {
