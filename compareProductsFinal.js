@@ -26,7 +26,7 @@ const getData = async () => {
     try {
       const a = JSON.parse(fs.readFileSync(`coles/data/${process.env.FOLDER_DATE}/${mycat}.json`, 'utf8'));
       ColesData = a.filter((p) => p.subcategory_id !== '');
-      console.log('cole', ColesData.length);
+      // console.log('cole', ColesData.length);
     } catch (error) {
       console.log(`Skipping ${mycat}: File(s) missing.`);
       continue;
@@ -107,7 +107,10 @@ const getData = async () => {
             }
             if (fs.existsSync(filePath)) {
               // Merge existing and new data
-              console.log(`File already exists: ${filePath}. Skipping save.`);
+              /* The above code is a JavaScript console log statement that outputs a message indicating
+              that a file already exists at a specific file path, and therefore it is skipping the
+              save operation. */
+              // console.log(`File already exists: ${filePath}. Skipping save.`);
               const data = JSON.parse(fs.readFileSync(`matched/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
               const combinedData = [...data, ...productsMatched];
 
@@ -116,9 +119,9 @@ const getData = async () => {
               fs.writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
             } else {
               fs.mkdirSync(folderPath, { recursive: true });
-              console.log(`Created folder: ${folderPath}`);
+              // console.log(`Created folder: ${folderPath}`);
               fs.writeFileSync(filePath, JSON.stringify(productsMatched, null, 2));
-              console.log(`Data saved to ${filePath}`);
+              // console.log(`Data saved to ${filePath}`);
             }
             /**
              * 1. get
@@ -164,7 +167,7 @@ const getData = async () => {
                 const filePath = path.join(folderPath, fileName);
                 if (fs.existsSync(filePath)) {
                   // Merge existing and new data
-                  console.log(`File already exists: ${filePath}. Skipping save.`);
+                  // console.log(`File already exists: ${filePath}. Skipping save.`);
                   const data = JSON.parse(fs.readFileSync(`unMatched/coles/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
                   const combinedData = [...data, ...formattedProducts];
 
@@ -174,10 +177,10 @@ const getData = async () => {
                 } else {
                   if (unMatchedColes.length > 0) {
                     fs.mkdirSync(folderPath, { recursive: true });
-                    console.log(`Created folder: ${folderPath}`);
+                    // console.log(`Created folder: ${folderPath}`);
 
                     fs.writeFileSync(filePath, JSON.stringify(formattedProducts, null, 2));
-                    console.log(`Data saved to ${filePath}`);
+                    // console.log(`Data saved to ${filePath}`);
                   }
                 }
                 try {
@@ -241,7 +244,7 @@ const getData = async () => {
             const filePath = path.join(folderPath, fileName);
             if (fs.existsSync(filePath)) {
               // Merge existing and new data
-              console.log(`File already exists: ${filePath}. Skipping save.`);
+              // console.log(`File already exists: ${filePath}. Skipping save.`);
               const data = JSON.parse(fs.readFileSync(`unMatched/woolworths/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
               const combinedData = [...data, ...formattedUnmatchedWooly];
 
@@ -251,9 +254,9 @@ const getData = async () => {
             } else {
               if (formattedUnmatchedWooly.length > 0) {
                 fs.mkdirSync(folderPath, { recursive: true });
-                console.log(`Created folder: ${folderPath}`);
+                // console.log(`Created folder: ${folderPath}`);
                 fs.writeFileSync(filePath, JSON.stringify(formattedUnmatchedWooly, null, 2));
-                console.log(`Data saved to ${filePath}`);
+                // console.log(`Data saved to ${filePath}`);
               }
             }
             try {
