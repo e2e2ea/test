@@ -71,8 +71,6 @@ const getData = async () => {
                   barcode: filteredProducts[0].barcode || null,
                   shop: filteredProducts[0].shop || null,
                   category_id: data.subsubcategory_id ? data.subsubcategory_id : data.subcategory_id,
-                  subcategory_id: '',
-                  subsubcategory_id: '',
                   weight: filteredProducts[0].weight || null,
                   prices: cleanPrices(filteredProducts[0].prices),
                 };
@@ -84,8 +82,6 @@ const getData = async () => {
                   barcode: data.barcode || null,
                   shop: data.shop || null,
                   category_id: data.subsubcategory_id ? data.subsubcategory_id : data.subcategory_id,
-                  subcategory_id: '',
-                  subsubcategory_id: '',
                   weight: data.weight || null,
                   prices: cleanPrices(data.prices),
                 };
@@ -162,8 +158,6 @@ const getData = async () => {
                           barcode: data.barcode || null,
                           shop: data.shop || null,
                           category_id: data.subsubcategory_id ? data.subsubcategory_id : data.subcategory_id,
-                          subcategory_id: '',
-                          subsubcategory_id: '',
                           weight: data.weight || null,
                           prices: filteredPrices1,
                         };
@@ -243,8 +237,6 @@ const getData = async () => {
                       barcode: data.barcode || null,
                       shop: data.shop || null,
                       category_id: data.subsubcategory_id ? data.subsubcategory_id : data.subcategory_id,
-                      subcategory_id: '',
-                      subsubcategory_id: '',
                       weight: data.weight || null,
                       prices: filteredPrices1,
                     };

@@ -738,7 +738,7 @@ const categories = [
        {
          subCategory: 'Frozen Gluten Free',
          childItems: [
-           { subId: '', childId: '', extensionCategory: 'All Gluten Free', url: 'https:www.coles.com.au/browse/frozen/frozen-gluten-free/all-gluten-free' },
+           { subId: '22287', childId: '22288', extensionCategory: 'All Gluten Free', url: 'https:www.coles.com.au/browse/frozen/frozen-gluten-free/all-gluten-free' },
            ],
        },
        {
@@ -1031,13 +1031,13 @@ const categories = [
        {
          subCategory: 'Shower & Bath Care',
          childItems: [
-           { subId: '', childId: '', extensionCategory: 'Bath Accessories', url: 'https:www.coles.com.au/browse/health-beauty/shower-bath-care/bath-accessories' },
-           { subId: '', childId: '', extensionCategory: 'Body Lotion', url: 'https:www.coles.com.au/browse/health-beauty/shower-bath-care/body-lotion' },
-           { subId: '', childId: '', extensionCategory: 'Body Wash', url: 'https:www.coles.com.au/browse/health-beauty/shower-bath-care/body-wash' },
-           { subId: '', childId: '', extensionCategory: 'Bubble Bath & Salts', url: 'https:www.coles.com.au/browse/health-beauty/shower-bath-care/bubble-bath-salts' },
-           { subId: '', childId: '', extensionCategory: 'Hand Santiser', url: 'https:www.coles.com.au/browse/health-beauty/shower-bath-care/hand-santiser' },
-           { subId: '', childId: '', extensionCategory: 'Mens Body Wash', url: 'https:www.coles.com.au/browse/health-beauty/shower-bath-care/mens-body-wash' },
-           { subId: '', childId: '', extensionCategory: 'Soap & Hand Wash', url: 'https:www.coles.com.au/browse/health-beauty/shower-bath-care/soap-hand-wash' },
+           { subId: '23883', childId: '23887', extensionCategory: 'Bath Accessories', url: 'https:www.coles.com.au/browse/health-beauty/shower-bath-care/bath-accessories' },
+           { subId: '23883', childId: '23885', extensionCategory: 'Body Lotion', url: 'https:www.coles.com.au/browse/health-beauty/shower-bath-care/body-lotion' },
+           { subId: '23883', childId: '23885', extensionCategory: 'Body Wash', url: 'https:www.coles.com.au/browse/health-beauty/shower-bath-care/body-wash' },
+           { subId: '23883', childId: '23887', extensionCategory: 'Bubble Bath & Salts', url: 'https:www.coles.com.au/browse/health-beauty/shower-bath-care/bubble-bath-salts' },
+           { subId: '23883', childId: '23889', extensionCategory: 'Hand Santiser', url: 'https:www.coles.com.au/browse/health-beauty/shower-bath-care/hand-santiser' },
+           { subId: '23883', childId: '23885', extensionCategory: 'Mens Body Wash', url: 'https:www.coles.com.au/browse/health-beauty/shower-bath-care/mens-body-wash' },
+           { subId: '23883', childId: '23889', extensionCategory: 'Soap & Hand Wash', url: 'https:www.coles.com.au/browse/health-beauty/shower-bath-care/soap-hand-wash' },
          ],
        },
        {
@@ -1637,7 +1637,7 @@ const categories = [
        {
          subCategory: 'Pet Scoop & Weigh',
          childItems: [
-           { subId: '', childId: '', extensionCategory: 'Scoop & Weigh Treats', url: 'https:www.coles.com.au/browse/pet/pet-scoop-weigh/scoop-weigh-treats' },
+           { subId: '23373', childId: '22939', extensionCategory: 'Scoop & Weigh Treats', url: 'https:www.coles.com.au/browse/pet/pet-scoop-weigh/scoop-weigh-treats' },
          ],
        },
        {
