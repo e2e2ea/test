@@ -64,25 +64,25 @@ const getData = async () => {
               // If both cleaned prices arrays are empty, do not add to productsMatched
               if (filteredPrices1.length > 0 && filteredPrices2.length > 0) {
                 const formattedProduct1 = {
-                  source_url: filteredProducts[0].source_url || null,
-                  name: filteredProducts[0].name || null,
-                  image_url: filteredProducts[0].image_url || null,
-                  source_id: filteredProducts[0].source_id || null,
-                  barcode: filteredProducts[0].barcode || null,
-                  shop: filteredProducts[0].shop || null,
+                  source_url: filteredProducts[0].source_url || '',
+                  name: filteredProducts[0].name || '',
+                  image_url: filteredProducts[0].image_url || '',
+                  source_id: filteredProducts[0].source_id || '',
+                  barcode: filteredProducts[0].barcode || '',
+                  shop: filteredProducts[0].shop || '',
                   category_id: data.subsubcategory_id ? data.subsubcategory_id : data.subcategory_id,
-                  weight: filteredProducts[0].weight || null,
+                  weight: filteredProducts[0].weight || '',
                   prices: cleanPrices(filteredProducts[0].prices),
                 };
                 const formattedProduct2 = {
-                  source_url: data.source_url || null,
-                  name: data.name || null,
-                  image_url: data.image_url || null,
-                  source_id: data.source_id || null,
-                  barcode: data.barcode || null,
-                  shop: data.shop || null,
+                  source_url: data.source_url || '',
+                  name: data.name || '',
+                  image_url: data.image_url || '',
+                  source_id: data.source_id || '',
+                  barcode: data.barcode || '',
+                  shop: data.shop || '',
                   category_id: data.subsubcategory_id ? data.subsubcategory_id : data.subcategory_id,
-                  weight: data.weight || null,
+                  weight: data.weight || '',
                   prices: cleanPrices(data.prices),
                 };
                 productsMatched.push(formattedProduct1);
@@ -151,14 +151,14 @@ const getData = async () => {
                       // If both cleaned prices arrays are empty, do not add to productsMatched
                       if (filteredPrices1.length > 0) {
                         const formattedProduct = {
-                          source_url: data.source_url || null,
-                          name: data.name || null,
-                          image_url: data.image_url || null,
-                          source_id: data.source_id || null,
-                          barcode: data.barcode || null,
-                          shop: data.shop || null,
+                          source_url: data.source_url || '',
+                          name: data.name || '',
+                          image_url: data.image_url || '',
+                          source_id: data.source_id || '',
+                          barcode: data.barcode || '',
+                          shop: data.shop || '',
                           category_id: data.subsubcategory_id ? data.subsubcategory_id : data.subcategory_id,
-                          weight: data.weight || null,
+                          weight: data.weight || '',
                           prices: filteredPrices1,
                         };
                         formattedProducts.push(formattedProduct);
@@ -230,14 +230,14 @@ const getData = async () => {
                   // If both cleaned prices arrays are empty, do not add to productsMatched
                   if (filteredPrices1.length > 0) {
                     const formattedProduct = {
-                      source_url: data.source_url || null,
-                      name: data.name || null,
-                      image_url: data.image_url || null,
-                      source_id: data.source_id || null,
-                      barcode: data.barcode || null,
-                      shop: data.shop || null,
+                      source_url: data.source_url || '',
+                      name: data.name || '',
+                      image_url: data.image_url || '',
+                      source_id: data.source_id || '',
+                      barcode: data.barcode || '',
+                      shop: data.shop || '',
                       category_id: data.subsubcategory_id ? data.subsubcategory_id : data.subcategory_id,
-                      weight: data.weight || null,
+                      weight: data.weight || '',
                       prices: filteredPrices1,
                     };
                     formattedUnmatchedWooly.push(formattedProduct);
