@@ -30,9 +30,9 @@ const categories = [
                     { extensionCategory: "Lawn Care & Plant Food", subId: "22519", childId: "22527" },
                     { extensionCategory: "Gloves, Tools & Watering", subId: "22519", childId: "22525" },
                     { extensionCategory: "Seeds & Plants", subId: "22519", childId: "22529" },
-                    { extensionCategory: "Garden Power Tools & Equipment", subId: "22519", childId: "22525" },
+                    { extensionCategory: "Garden Power Tools & Equipment", subId: "", childId: "" },
                     { extensionCategory: "Garage Storage & Organisation", subId: "", childId: "" },
-                    { extensionCategory: "Pool Maintenance", subId: "22519", childId: "22523" },
+                    { extensionCategory: "Pool Maintenance", subId: "", childId: "" },
                     // { extensionCategory: "Garden Décor & Accessories", subId: "22519", childId: "22523" },
                     { extensionCategory: "Garden Decor & Accessories", subId: "22519", childId: "22523" },
                     { extensionCategory: "Automotive", subId: "22519", childId: "22520" },
@@ -41,8 +41,8 @@ const categories = [
             {
                 subCategory: "Hardware",
                 childItems: [
-                    { extensionCategory: "Extension Cords & Adapters", subId: "22530", childId: "22536" },
-                    { extensionCategory: "Lighting & Torches", subId: "22530", childId: "22536" },
+                    { extensionCategory: "Extension Cords & Adapters", subId: "", childId: "" },
+                    { extensionCategory: "Lighting & Torches", subId: "", childId: "" },
                     { extensionCategory: "Adhesives, Glues & Tapes", subId: "22530", childId: "22531" },
                     { extensionCategory: "Hooks & Fasteners", subId: "22530", childId: "22534" },
                     { extensionCategory: "Tools & Accessories", subId: "22530", childId: "22536" },
@@ -58,7 +58,7 @@ const categories = [
                     { extensionCategory: "Lunch Boxes & Drink Bottles", subId: "22552", childId: "22560" },
                     { extensionCategory: "Sandwich & Freezer Bags", subId: "22552", childId: "22564" },
                     { extensionCategory: "Water Filtration", subId: "22537", childId: "23979" },
-                    { extensionCategory: "Waste Bins", subId: "22552", childId: "22557" },
+                    { extensionCategory: "Waste Bins", subId: "", childId: "" },
                 ]
             },
             {
@@ -87,9 +87,9 @@ const categories = [
             {
                 subCategory: "Toilet Paper, Tissues & Paper Towels",
                 childItems: [
-                    { extensionCategory: "Toilet Paper", subId: "22462", childId: "22466" },
-                    { extensionCategory: "Paper Towels", subId: "22462", childId: "22466" },
-                    { extensionCategory: "Tissues & Wipes", subId: "22462", childId: "22466" }
+                    { extensionCategory: "Toilet Paper", subId: "", childId: "" },
+                    { extensionCategory: "Paper Towels", subId: "", childId: "" },
+                    { extensionCategory: "Tissues & Wipes", subId: "", childId: "" }
                 ]
             },
         ]
@@ -111,23 +111,23 @@ const categories = [
             {
                 subCategory: "Party Supplies",
                 childItems: [
-                    { extensionCategory: "Party Tableware", subId: "22579", childId: "22581" },
+                    { extensionCategory: "Party Tableware", subId: "", childId: "" },
                     { extensionCategory: "Candles", subId: "22579", childId: "22580" },
-                    { extensionCategory: "Gift Wrap, Bags & Cards", subId: "22579", childId: "22581" },
+                    { extensionCategory: "Gift Wrap, Bags & Cards", subId: "", childId: "" },
                     { extensionCategory: "Decorations", subId: "22579", childId: "22581" },
                 ]
             },
             {
                 subCategory: "Kitchenware & Storage",
                 childItems: [
-                    { extensionCategory: "Lunch Boxes & Drink Bottles", subId: "22552", childId: "22560" },
-                    { extensionCategory: "Food Storage Containers", subId: "22552", childId: "22564" },
-                    { extensionCategory: "Kitchen Utensils", subId: "22552", childId: "23928" },
-                    { extensionCategory: "Pots & Pans", subId: "22552", childId: "22553" },
-                    { extensionCategory: "Bakeware & Oven Trays", subId: "22552", childId: "22553" },
-                    { extensionCategory: "Chopping Boards", subId: "22552", childId: "22553" },
-                    { extensionCategory: "Knives", subId: "22552", childId: "22553" },
-                    { extensionCategory: "Kitchen Organisation", subId: "22552", childId: "22553" },
+                    { extensionCategory: "Lunch Boxes & Drink Bottles", subId: "", childId: "" },
+                    { extensionCategory: "Food Storage Containers", subId: "", childId: "" },
+                    { extensionCategory: "Kitchen Utensils", subId: "", childId: "" },
+                    { extensionCategory: "Pots & Pans", subId: "", childId: "" },
+                    { extensionCategory: "Bakeware & Oven Trays", subId: "", childId: "" },
+                    { extensionCategory: "Chopping Boards", subId: "", childId: "" },
+                    { extensionCategory: "Knives", subId: "", childId: "" },
+                    { extensionCategory: "Kitchen Organisation", subId: "", childId: "" },
                 ]
             },
             {
@@ -185,10 +185,10 @@ const categories = [
             {
                 subCategory: "Bathroom Towels & Accessories",
                 childItems: [
-                    { extensionCategory: "Bath Towels & Mats", subId: "22462", childId: "22466" },
-                    { extensionCategory: "Bathroom Accessories", subId: "22462", childId: "22466" },
-                    { extensionCategory: "Bathrobes", subId: "22462", childId: "22466" },
-                    { extensionCategory: "Beach Towels", subId: "22462", childId: "22466" },
+                    { extensionCategory: "Bath Towels & Mats", subId: "", childId: "" },
+                    { extensionCategory: "Bathroom Accessories", subId: "", childId: "" },
+                    { extensionCategory: "Bathrobes", subId: "", childId: "" },
+                    { extensionCategory: "Beach Towels", subId: "", childId: "" },
                 ]
             },
             {
@@ -222,34 +222,34 @@ const categories = [
             {
                 subCategory: "Toys & Games",
                 childItems: [
-                    { extensionCategory: "Toys", subId: "22594", childId: "" },
-                    { extensionCategory: "Board Games & Puzzles", subId: "22594", childId: "" },
-                    { extensionCategory: "Dolls & Action Figures", subId: "22594", childId: "" },
-                    { extensionCategory: "Sport & Outdoor Toys", subId: "22594", childId: "" },
-                    { extensionCategory: "Toy Cars & Trucks", subId: "22594", childId: "" },
-                    { extensionCategory: "Model Building & Construction", subId: "22594", childId: "" },
-                    { extensionCategory: "Educational & Early Learning", subId: "22594", childId: "" },
-                    { extensionCategory: "Electronic Toys", subId: "22594", childId: "" },
-                    { extensionCategory: "Arts & Craft", subId: "22594", childId: "" },
-                    { extensionCategory: "Dress Up & Costumes", subId: "22594", childId: "" },
+                    { extensionCategory: "Toys", subId: "", childId: "" },
+                    { extensionCategory: "Board Games & Puzzles", subId: "", childId: "" },
+                    { extensionCategory: "Dolls & Action Figures", subId: "", childId: "" },
+                    { extensionCategory: "Sport & Outdoor Toys", subId: "", childId: "" },
+                    { extensionCategory: "Toy Cars & Trucks", subId: "", childId: "" },
+                    { extensionCategory: "Model Building & Construction", subId: "", childId: "" },
+                    { extensionCategory: "Educational & Early Learning", subId: "", childId: "" },
+                    { extensionCategory: "Electronic Toys", subId: "", childId: "" },
+                    { extensionCategory: "Arts & Craft", subId: "", childId: "" },
+                    { extensionCategory: "Dress Up & Costumes", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Books & Magazines",
                 childItems: [
-                    { extensionCategory: "Magazines", subId: "22594", childId: "" },
-                    { extensionCategory: "Children's", subId: "22594", childId: "" },
-                    { extensionCategory: "Teens & Young Adults", subId: "22594", childId: "" },
-                    { extensionCategory: "Fiction & Literature", subId: "22594", childId: "" },
-                    { extensionCategory: "Non-Fiction", subId: "22594", childId: "" },
+                    { extensionCategory: "Magazines", subId: "", childId: "" },
+                    { extensionCategory: "Children's", subId: "", childId: "" },
+                    { extensionCategory: "Teens & Young Adults", subId: "", childId: "" },
+                    { extensionCategory: "Fiction & Literature", subId: "", childId: "" },
+                    { extensionCategory: "Non-Fiction", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Luggage & Travel",
                 childItems: [
-                    { extensionCategory: "Suitcases", catId: '22394', subId: "22414", childId: "23917" },
-                    { extensionCategory: "Travel Bags", catId: '22394', subId: "22414", childId: "23917" },
-                    { extensionCategory: "Travel Accessories", catId: '22394', subId: "22414", childId: "23917" },
+                    { extensionCategory: "Suitcases", subId: "", childId: "" },
+                    { extensionCategory: "Travel Bags", subId: "", childId: "" },
+                    { extensionCategory: "Travel Accessories", subId: "", childId: "" },
                 ]
             }
         ]
@@ -385,10 +385,10 @@ const categories = [
             {
                 subCategory: "Baby Travel & Accessories",
                 childItems: [
-                    { extensionCategory: "Carriers", subId: "22016", childId: "23822" },
-                    { extensionCategory: "Car Seats", subId: "22016", childId: "23822" },
-                    { extensionCategory: "Prams", subId: "22016", childId: "23822" },
-                    { extensionCategory: "Strollers", subId: "22016", childId: "23822" },
+                    { extensionCategory: "Carriers", subId: "", childId: "" },
+                    { extensionCategory: "Car Seats", subId: "", childId: "" },
+                    { extensionCategory: "Prams", subId: "", childId: "" },
+                    { extensionCategory: "Strollers", subId: "", childId: "" },
                 ]
             },
         ]
@@ -405,10 +405,10 @@ const categories = [
                     { extensionCategory: "Breakfast Snacks & Drinks", subId: "22785", childId: "22787" },
                     { extensionCategory: "Jam", subId: "22785", childId: "22790" },
                     { extensionCategory: "Honey", subId: "22785", childId: "22789" },
-                    { extensionCategory: "Peanut Butter", subId: "22785", childId: "22794" },
+                    { extensionCategory: "Peanut Butter", subId: "", childId: "" },
                     { extensionCategory: "Savoury Spread", subId: "22785", childId: "22794" },
                     { extensionCategory: "Sweet Spread", subId: "22785", childId: "22795" },  
-                    { extensionCategory: "Pancake Mix", subId: "22785", childId: "22786" },  
+                    { extensionCategory: "Pancake Mix", subId: "", childId: "" },  
                 ]
             },
             {
@@ -541,8 +541,8 @@ const categories = [
             {
                 subCategory: "Oil & Vinegar",
                 childItems: [
-                    { extensionCategory: "Oil", subId: "22878", childId: "22879" },
-                    { extensionCategory: "Vinegar", subId: "22878", childId: "22879" }
+                    { extensionCategory: "Oil", subId: "", childId: "" },
+                    { extensionCategory: "Vinegar", subId: "", childId: "" }
                 ]
             },
         ]
@@ -556,7 +556,7 @@ const categories = [
                 childItems: [
                     { extensionCategory: "Chocolate Bars", subId: "22889", childId: "22894" },
                     { extensionCategory: "Chocolate Blocks", subId: "22889", childId: "22895" },
-                    { extensionCategory: "Chocolate Bites", subId: "22889", childId: "22894" },
+                    { extensionCategory: "Chocolate Bites", subId: "", childId: "" },
                     { extensionCategory: "Chocolate Share Packs", subId: "22889", childId: "22896" },
                     { extensionCategory: "Chocolate Boxes & Gifts", subId: "22889", childId: "23969" },
                     { extensionCategory: "Sweets, Lollies & Licorice", subId: "22889", childId: "23970" },
@@ -615,15 +615,15 @@ const categories = [
             {
                 subCategory: "Fruit",
                 childItems: [
-                    { extensionCategory: "Organic Fruit", subId: "22352", childId: "22353" },
+                    { extensionCategory: "Organic Fruit", subId: "", childId: "" },
                     { extensionCategory: "Apples & Pears", subId: "22352", childId: "22353" },
                     { extensionCategory: "Bananas", subId: "22352", childId: "22354" },
                     { extensionCategory: "Berries & Cherries", subId: "22352", childId: "22355" },
                     { extensionCategory: "Citrus Fruit", subId: "22352", childId: "22356" },
-                    { extensionCategory: "Stone Fruit", subId: "22352", childId: "22356" },
+                    { extensionCategory: "Stone Fruit", subId: "", childId: "" },
                     { extensionCategory: "Grapes", subId: "22352", childId: "22358" },
                     { extensionCategory: "Melons & Mangoes", subId: "22352", childId: "22359" },
-                    { extensionCategory: "Avocados", subId: "22352", childId: "22362" },
+                    { extensionCategory: "Avocados", subId: "", childId: "" },
                     { extensionCategory: "Pineapples, Kiwi & Tropical Fruit", subId: "22352", childId: "22362" },
                     { extensionCategory: "Asian & Exotic Fruit", subId: "22352", childId: "22364" },
                     { extensionCategory: "Cut Fruit", subId: "22352", childId: "22357" },
@@ -632,7 +632,7 @@ const categories = [
             {
                 subCategory: "Vegetables",
                 childItems: [
-                    { extensionCategory: "Organic Vegetables", subId: "22379", childId: "22381" },
+                    { extensionCategory: "Organic Vegetables", subId: "", childId: "" },
                     { extensionCategory: "Prepacked Vegetables", subId: "22379", childId: "22390" },
                     { extensionCategory: "Potatoes & Pumpkins", subId: "22379", childId: "22389" },
                     { extensionCategory: "Carrots, Onions & Root Veg", subId: "22379", childId: "22383" },
@@ -642,39 +642,39 @@ const categories = [
                     { extensionCategory: "Peas, Beans, Corn & Asparagus", subId: "22379", childId: "22388" },
                     { extensionCategory: "Capsicum", subId: "22379", childId: "22382" },
                     { extensionCategory: "Tomatoes", subId: "22379", childId: "22392" },
-                    { extensionCategory: "Celery", subId: "22379", childId: "22381" },
+                    { extensionCategory: "Celery", subId: "", childId: "" },
                     { extensionCategory: "Avocados", subId: "22379", childId: "22380" },
                     { extensionCategory: "Cucumber", subId: "22379", childId: "22384" },
                     { extensionCategory: "Mushrooms", subId: "22379", childId: "22382" },
                     { extensionCategory: "Fresh Herbs, Garlic & Chillies", subId: "22379", childId: "22385" },
                     { extensionCategory: "Zucchini, Eggplant & Squash", subId: "22379", childId: "22393" },
-                    { extensionCategory: "Sprouts", subId: "22379", childId: "22381" },
+                    { extensionCategory: "Sprouts", subId: "", childId: "" },
                     { extensionCategory: "Snacking", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Salad",
                 childItems: [
-                    { extensionCategory: "Salad Bowls", subId: "22372", childId: "22376" },
+                    { extensionCategory: "Salad Bowls", subId: "", childId: "" },
                     { extensionCategory: "Coleslaw", subId: "22372", childId: "22375" },
                     { extensionCategory: "Salad Bags", subId: "22372", childId: "22376" },
-                    { extensionCategory: "Salad Kits", subId: "22372", childId: "22376" },
-                    { extensionCategory: "Spinach & Rocket", subId: "22372", childId: "22376" },
-                    { extensionCategory: "Beetroot & Carrot", subId: "22372", childId: "22374" },
+                    { extensionCategory: "Salad Kits", subId: "", childId: "" },
+                    { extensionCategory: "Spinach & Rocket", subId: "", childId: "" },
+                    { extensionCategory: "Beetroot & Carrot", subId: "", childId: "" },
                     { extensionCategory: "Sprouts", subId: "22372", childId: "22378" },
                     { extensionCategory: "Organic Salad", subId: "22372", childId: "22374" },
-                    { extensionCategory: "Salad Vegetables", subId: "22372", childId: "22374" },
+                    { extensionCategory: "Salad Vegetables", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Prepared Vegetables",
                 childItems: [
-                    { extensionCategory: "Cut Veg", subId: "22379", childId: "22390" },
-                    { extensionCategory: "Microwave Ready Sides", subId: "22379", childId: "22390" },
-                    { extensionCategory: "Oven Ready Sides", subId: "22379", childId: "22390" },
-                    { extensionCategory: "Stir Fry & Soup Kits", subId: "22379", childId: "22390" },
-                    { extensionCategory: "Sprouts", subId: "22379", childId: "22379" },
-                    { extensionCategory: "Entertaining Sides", subId: "22379", childId: "22390" },
+                    { extensionCategory: "Cut Veg", subId: "", childId: "" },
+                    { extensionCategory: "Microwave Ready Sides", subId: "", childId: "" },
+                    { extensionCategory: "Oven Ready Sides", subId: "", childId: "" },
+                    { extensionCategory: "Stir Fry & Soup Kits", subId: "", childId: "" },
+                    { extensionCategory: "Sprouts", subId: "", childId: "" },
+                    { extensionCategory: "Entertaining Sides", subId: "", childId: "" },
                 ]
             },
             {
@@ -696,7 +696,7 @@ const categories = [
             {
                 subCategory: "Snacking",
                 childItems: [
-                    { extensionCategory: "Prepacked Vegetables", subId: "22379", childId: "22390" },
+                    { extensionCategory: "Prepacked Vegetables", subId: "", childId: "" },
                     { extensionCategory: "Prepacked Fruit", subId: "", childId: "" },
                 ]
             },
@@ -721,14 +721,14 @@ const categories = [
             {
                 subCategory: "Meat",
                 childItems: [
-                    { extensionCategory: "Beef & Veal", subId: "22714", childId: "22720" },
-                    { extensionCategory: "Lamb", subId: "22714", childId: "22719" },
-                    { extensionCategory: "Pork", subId: "22714", childId: "22720" },
-                    { extensionCategory: "Game", subId: "22714", childId: "22720" },
-                    { extensionCategory: "Burgers & Sausages", subId: "22714", childId: "22716" },
+                    { extensionCategory: "Beef & Veal", subId: "", childId: "" },
+                    { extensionCategory: "Lamb", subId: "", childId: "" },
+                    { extensionCategory: "Pork", subId: "", childId: "" },
+                    { extensionCategory: "Game", subId: "", childId: "" },
+                    { extensionCategory: "Burgers & Sausages", subId: "", childId: "" },
                     { extensionCategory: "Deli Meat", subId: "24058", childId: "" },
-                    { extensionCategory: "Organic Meat", subId: "24058", childId: "" },
-                    { extensionCategory: "Gluten Free Meat", subId: "24058", childId: "" },
+                    { extensionCategory: "Organic Meat", subId: "", childId: "" },
+                    { extensionCategory: "Gluten Free Meat", subId: "", childId: "" },
                     { extensionCategory: "Mince", subId: "", childId: "" },
                     { extensionCategory: "Oven Ready Meat", subId: "", childId: "" },
                 ]
@@ -741,7 +741,7 @@ const categories = [
                     { extensionCategory: "Salmon & Other Fish", subId: "22713", childId: "23984" },
                     { extensionCategory: "Prawns", subId: "22714", childId: "22721" },
                     { extensionCategory: "Prawns", subId: "22758", childId: "22766" },
-                    { extensionCategory: "Seafood Entertaining", subId: "22758", childId: "22762" },
+                    { extensionCategory: "Seafood Entertaining", subId: "", childId: "" },
                     { extensionCategory: "Frozen Prepacked Seafood", subId: "22758", childId: "22760" },
                     { extensionCategory: "Frozen Prepacked Seafood", subId: "22758", childId: "22667" },
                     { extensionCategory: "Squid, Octopus & Marinara", subId: "22758", childId: "22763" },
@@ -749,36 +749,36 @@ const categories = [
                     { extensionCategory: "Crab & Lobster", subId: "22758", childId: "22759" },
                     { extensionCategory: "Oysters, Mussels & Scallops", subId: "22758", childId: "22764" },
                     { extensionCategory: "Oysters, Mussels & Scallops", subId: "22758", childId: "22765" },
-                    { extensionCategory: "Sauce & Condiments", subId: "22758", childId: "22760" },
+                    { extensionCategory: "Sauce & Condiments", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Mince",
                 childItems: [
-                    { extensionCategory: "Beef Mince", catId: '22713', subId: "22714", childId: "22720" },
-                    { extensionCategory: "Pork Mince", catId: '22713', subId: "22714", childId: "22720" },
-                    { extensionCategory: "Chicken & Turkey Mince", catId: '22713',subId: "24059", childId: "" },
-                    { extensionCategory: "Lamb Mince", catId: '22713',subId: "24059", childId: "22719" },
+                    { extensionCategory: "Beef Mince", subId: "", childId: "" },
+                    { extensionCategory: "Pork Mince", subId: "", childId: "" },
+                    { extensionCategory: "Chicken & Turkey Mince", subId: "24059", childId: "" },
+                    { extensionCategory: "Lamb Mince", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "BBQ Meat",
                 childItems: [
-                    { extensionCategory: "Burgers", catId: '22713', subId: "22714", childId: "22720" },
-                    { extensionCategory: "Sausages", catId: '22713', subId: "22714", childId: "22720" },
-                    { extensionCategory: "Pork", catId: '22713', subId: "22714", childId: "22720" },
-                    { extensionCategory: "Kebabs",  catId: '22713', subId: "22714", childId: "23935" },
-                    { extensionCategory: "Chicken",  catId: '22713', subId: "22714", childId: "22717" },
-                    { extensionCategory: "Chicken", catId: '22713',subId: "24059", childId: "" },
+                    { extensionCategory: "Burgers", subId: "22714", childId: "22716" },
+                    { extensionCategory: "Sausages", subId: "22714", childId: "22716" },
+                    { extensionCategory: "Pork", subId: "22714", childId: "22720" },
+                    { extensionCategory: "Kebabs", subId: "22714", childId: "23935" },
+                    { extensionCategory: "Chicken", subId: "22714", childId: "22717" },
+                    { extensionCategory: "Chicken", subId: "24059", childId: "" },
                     { extensionCategory: "Lamb", subId: "22714", childId: "22719" },
                 ]
             },
             {
                 subCategory: "Organic Meat & Poultry",
                 childItems: [
-                    { extensionCategory: "Organic Beef", catId: '22713', subId: "22714", childId: "22720" },
-                    { extensionCategory: "Organic Lamb", catId: '22713', subId: "22714", childId: "22719" },
-                    { extensionCategory: "Organic Chicken", catId: '22713', subId: "24059", childId: "" },
+                    { extensionCategory: "Organic Beef", subId: "", childId: "" },
+                    { extensionCategory: "Organic Lamb", subId: "", childId: "" },
+                    { extensionCategory: "Organic Chicken", subId: "24059", childId: "" },
                 ]
             },
         ]
@@ -934,38 +934,38 @@ const categories = [
                 childItems: [
                     { extensionCategory: "Dry Cat Food", subId: "23952", childId: "23953" },
                     { extensionCategory: "Chilled Cat Food", subId: "23952", childId: "23954" },
-                    { extensionCategory: "Trays & Cans Cat Food", subId: "23952", childId: "23954" },
+                    { extensionCategory: "Trays & Cans Cat Food", subId: "", childId: "" },
                     { extensionCategory: "Kitten Food..", subId: "23952", childId: "23957" },
-                    { extensionCategory: "Cat Grooming, Accessories & Toys", subId: "23952", childId: "23953" },
-                    { extensionCategory: "Cat Healthcare", subId: "23952", childId: "23957" },
-                    { extensionCategory: "Cat Litter", subId: "23952", childId: "23957" },
-                    { extensionCategory: "Cat Treats & Milk", subId: "23952", childId: "23957" },
+                    { extensionCategory: "Cat Grooming, Accessories & Toys", subId: "", childId: "" },
+                    { extensionCategory: "Cat Healthcare", subId: "", childId: "" },
+                    { extensionCategory: "Cat Litter", subId: "", childId: "" },
+                    { extensionCategory: "Cat Treats & Milk", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Dog & Puppy",
                 childItems: [
-                    { extensionCategory: "Dry Dog Food", subId: "23373", childId: "22939" },
+                    { extensionCategory: "Dry Dog Food", subId: "", childId: "" },
                     { extensionCategory: "Chilled Dog Food", subId: "23373", childId: "22959" },
                     { extensionCategory: "Frozen Dog Food", subId: "23373", childId: "22937" },
-                    { extensionCategory: "Trays & Cans Dog Food", subId: "23373", childId: "22959" },
+                    { extensionCategory: "Trays & Cans Dog Food", subId: "", childId: "" },
                     { extensionCategory: "Puppy Food", subId: "23373", childId: "22939" },
-                    { extensionCategory: "Dog Grooming, Accessories & Toys", subId: "23373", childId: "22939" },
+                    { extensionCategory: "Dog Grooming, Accessories & Toys", subId: "", childId: "" },
                     { extensionCategory: "Dog Healthcare", subId: "", childId: "" },
-                    { extensionCategory: "Dog Collars & Leads", subId: "23373", childId: "22939" },
-                    { extensionCategory: "Dog Treats & Milk", subId: "23373", childId: "22939" },
+                    { extensionCategory: "Dog Collars & Leads", subId: "", childId: "" },
+                    { extensionCategory: "Dog Treats & Milk", subId: "", childId: "" },
                     { extensionCategory: "Dog Bedding & Carriers", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "Birds, Fish & Small Pets",
                 childItems: [
-                    { extensionCategory: "Bird Food", subId: "22917", childId: "22921" },
+                    { extensionCategory: "Bird Food", subId: "", childId: "" },
                     { extensionCategory: "Bird Treats", subId: "22917", childId: "22919" },
-                    { extensionCategory: "Fish Food", subId: "22917", childId: "22921" },
+                    { extensionCategory: "Fish Food", subId: "", childId: "" },
                     { extensionCategory: "Small Pets Food", subId: "22917", childId: "22921" },
-                    { extensionCategory: "Small Pet Accessories", subId: "22917", childId: "22919" },
-                    { extensionCategory: "Bird Accessories", subId: "22917", childId: "22919" },
+                    { extensionCategory: "Small Pet Accessories", subId: "", childId: "" },
+                    { extensionCategory: "Bird Accessories", subId: "", childId: "" },
                     { extensionCategory: "Fish Tanks, Cleaning & Accessories", subId: "", childId: "" },
                 ]
             },
@@ -1162,7 +1162,7 @@ const categories = [
                     { extensionCategory: "Probiotic & Gut Health Yoghurt", subId: "22158", childId: "23991" },
                     { extensionCategory: "Plant Based Yoghurt", subId: "22158", childId: "" },
                     { extensionCategory: "Lactose Free", subId: "22158", childId: "23990" },
-                    { extensionCategory: "Kefir", subId: "22158", childId: "23991" },
+                    { extensionCategory: "Kefir", subId: "", childId: "" },
                 ]
             },
             {
@@ -1271,13 +1271,13 @@ const categories = [
             {
                 subCategory: "Men's Care",
                 childItems: [
-                    { extensionCategory: "Men's Blades & Razors", subId: "23864", childId: "23898" },
+                    { extensionCategory: "Men's Blades & Razors", subId: "", childId: "" },
                     { extensionCategory: "Men's Shave Gels & Foams", subId: "23864", childId: "23901" },
                     { extensionCategory: "Men's Aftershave", subId: "23864", childId: "23898" },
-                    { extensionCategory: "Men's Skin", subId: "23883", childId: "23885" },
-                    { extensionCategory: "Men's Body Sprays", subId: "23883", childId: "23885" },
+                    { extensionCategory: "Men's Skin", subId: "", childId: "" },
+                    { extensionCategory: "Men's Body Sprays", subId: "", childId: "" },
                     { extensionCategory: "Men's Deodorants", subId: "22440", childId: "23921" },
-                    { extensionCategory: "Men's Shower Gels", subId: "23864", childId: "23901" },
+                    { extensionCategory: "Men's Shower Gels", subId: "", childId: "" },
                     { extensionCategory: "Men's Hair Care", subId: "22423", childId: "23924" },
                 ]
             },
@@ -1313,8 +1313,8 @@ const categories = [
             {
                 subCategory: "Women's Hair Removal",
                 childItems: [
-                    { extensionCategory: "Women's Blades & Razors", subId: "23864", childId: "23898" },
-                    { extensionCategory: "Waxes & Creams", subId: "23864", childId: "23901" },
+                    { extensionCategory: "Women's Blades & Razors" },
+                    { extensionCategory: "Waxes & Creams" },
                 ]
             },
             {
@@ -1330,7 +1330,7 @@ const categories = [
             {
                 subCategory: "Travel Toiletries & Minis",
                 childItems: [
-                    { extensionCategory: "Travel Toiletries & Minis", subId: '22414', childId: '23917' },
+                    { extensionCategory: "Travel Toiletries & Minis" },
                 ]
             },
             
@@ -1382,16 +1382,16 @@ const categories = [
             {
                 subCategory: "Diet & Sports Nutrition",
                 childItems: [
-                    { extensionCategory: "Sports Nutrition Powders", subId: "24007", childId: "" },
-                    { extensionCategory: "Weight Management", subId: "24007", childId: "" },
-                    { extensionCategory: "Ready To Drink", subId: "24007", childId: "" },
-                    { extensionCategory: "Protein Bars & Snacks", subId: "24007", childId: "" },
+                    { extensionCategory: "Sports Nutrition Powders", subId: "", childId: "" },
+                    { extensionCategory: "Weight Management", subId: "", childId: "" },
+                    { extensionCategory: "Ready To Drink", subId: "", childId: "" },
+                    { extensionCategory: "Protein Bars & Snacks", subId: "", childId: "" },
                 ]
             },
             {
                 subCategory: "First Aid & Medicinal",
                 childItems: [
-                    { extensionCategory: "Pain Relief", subId: "22414", childId: "22421" },
+                    { extensionCategory: "Pain Relief", subId: "", childId: "" },
                     { extensionCategory: "Cold, Flu & Allergies", subId: "22414", childId: "22417" },
                     { extensionCategory: "First Aid & Bandages", subId: "22414", childId: "22416" },
                     { extensionCategory: "Digestive Health", subId: "", childId: "" },

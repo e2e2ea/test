@@ -38,10 +38,8 @@ const getData = async () => {
         const sub = matchedCategory.subCategories.find((sub) => sub.subCategory === productObj.subCategory);
 
         if (sub) {
-          console.log('sub', sub);
           const a = sub.childItems.find((item) => item.extensionCategory === productObj.extensionCategory);
           if (a) {
-            console.log('a', a);
             subId = a.subId ?? '';
             childId = a.childId ?? '';
           }
@@ -92,12 +90,31 @@ const getData = async () => {
           // Merge existing and new data
           try {
             console.log(`File already exists: ${filePath}. Skipping save.`);
-            const data = JSON.parse(fs.readFileSync(`${baseFolder}/${category}.json`, 'utf8'));
+            const data = await JSON.parse(fs.readFileSync(`${baseFolder}/${category}.json`, 'utf8'));
             const combinedData = [...data, ...productsData];
 
             // Remove duplicates based on source_id
-            const uniqueData = combinedData.filter((item, index, self) => index === self.findIndex((t) => t.source_id === item.source_id && t.shop === item.shop));
-            fs.writeFileSync(filePath, JSON.stringify(uniqueData, null, 2));
+            const singleProduct = productsData.reduce((acc, item) => {
+              // Check if the product with the same source_id, shop, and IDs already exists
+              const exists = acc.some(
+                (t) =>
+                  t.source_id === item.source_id &&
+                  t.shop === item.shop &&
+                  t.category_id === item.category_id &&
+                  (t.subcategory_id === item.subcategory_id || (!t.subcategory_id && !item.subcategory_id)) &&
+                  (t.subsubcategory_id === item.subsubcategory_id || (!t.subsubcategory_id && !item.subsubcategory_id))
+              );
+
+              // If it doesn't exist, add it and return only the first match
+              if (!exists) acc.push(item);
+
+              return acc;
+            }, []);
+
+            // Return only the first matched product
+            const firstProduct = singleProduct.length > 0 ? singleProduct[0] : null;
+            total += singleProduct.length;
+            fs.writeFileSync(filePath, JSON.stringify(singleProduct, null, 2));
           } catch (error) {
             console.log('error');
           }
@@ -105,13 +122,32 @@ const getData = async () => {
           if (productsData.length > 0) {
             fs.mkdirSync(folderPath, { recursive: true });
             console.log(`Created folder: ${folderPath}`);
+            const singleProduct = productsData.reduce((acc, item) => {
+              // Check if the product with the same source_id, shop, and IDs already exists
+              const exists = acc.some(
+                (t) =>
+                  t.source_id === item.source_id &&
+                  t.shop === item.shop &&
+                  t.category_id === item.category_id &&
+                  (t.subcategory_id === item.subcategory_id || (!t.subcategory_id && !item.subcategory_id)) &&
+                  (t.subsubcategory_id === item.subsubcategory_id || (!t.subsubcategory_id && !item.subsubcategory_id))
+              );
 
-            fs.writeFileSync(filePath, JSON.stringify(productsData, null, 2));
+              // If it doesn't exist, add it and return only the first match
+              if (!exists) acc.push(item);
+
+              return acc;
+            }, []);
+
+            // Return only the first matched product
+            const firstProduct = singleProduct.length > 0 ? singleProduct[0] : null;
+            console.log('singleProduct.length', singleProduct.length)
+            total += singleProduct.length;
+            fs.writeFileSync(filePath, JSON.stringify(singleProduct, null, 2));
             console.log(`Data saved to ${filePath}`);
           }
         }
 
-        total += productsData.length;
         console.log('totalProducts', total);
       } catch (error) {
         console.error('Error writing data to file:', error);

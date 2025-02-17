@@ -5,7 +5,7 @@ import categories from './woolworths/constant/categories.js';
 import fs from 'fs';
 import path from 'path';
 import axios from 'axios';
-
+const MYCATEGORIES = JSON.parse(fs.readFileSync(`constant/categories.json`, 'utf8'));
 const getData = async () => {
   let totalProducts = 0;
   let totalProductsUnmatchedInC = 0;
@@ -354,12 +354,12 @@ const getData = async () => {
    */
   const chunkSize1 = 100;
   const skipCount1 = 0;
-  for (const categ of categories) {
-    for (const sub of categ.subCategories) {
-      for (const ext of sub.childItems) {
+  for (const categ of MYCATEGORIES) {
+    for (const sub of categ.children) {
+      for (const ext of sub.children) {
         let matchedData = [];
         try {
-          matchedData = JSON.parse(fs.readFileSync(`unMatched/coles/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId ?? ''}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
+          matchedData = JSON.parse(fs.readFileSync(`unMatched/coles/${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, 'utf8'));
           // console.log('woolworthsData', matchedData.length);
         } catch (error) {
           continue;
@@ -397,12 +397,12 @@ const getData = async () => {
    */
   const chunkSize2 = 100;
   const skipCount2 = 0;
-  for (const categ of categories) {
-    for (const sub of categ.subCategories) {
-      for (const ext of sub.childItems) {
+  for (const categ of MYCATEGORIES) {
+    for (const sub of categ.children) {
+      for (const ext of sub.children) {
         let matchedData = [];
         try {
-          matchedData = JSON.parse(fs.readFileSync(`unMatched/woolworths/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId ?? ''}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
+          matchedData = JSON.parse(fs.readFileSync(`unMatched/woolworths/${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, 'utf8'));
           // console.log('woolworthsData', matchedData.length);
         } catch (error) {
           continue;
