@@ -1253,7 +1253,7 @@ const categories = [
                 childItems: [
                     { extensionCategory: "Colouring", subId: "22423", childId: "23903" },
                     { extensionCategory: "Shampoo & Conditioner", subId: "22423", childId: "23904" },
-                    { extensionCategory: "Hair Treatments", subId: "22423", childId: "" },
+                    { extensionCategory: "Hair Treatments", subId: "22423", childId: "23906" },
                     { extensionCategory: "Styling Products", subId: "22423", childId: "23905" },
                     { extensionCategory: "Hair Accessories & Brushes", subId: "22423", childId: "23906" },
                 ]
@@ -1365,15 +1365,15 @@ const categories = [
             {
                 subCategory: "Vitamins",
                 childItems: [
-                    { extensionCategory: "Children's Health", subId: "", childId: "" },
-                    { extensionCategory: "Women's Health", subId: "", childId: "" },
-                    { extensionCategory: "Men's Health", subId: "", childId: ""},
-                    { extensionCategory: "Pregnancy & Family Planning", subId: "", childId: "" },
-                    { extensionCategory: "Cold, Flu & Allergies", subId: "22450", childId: "" },
-                    { extensionCategory: "Multi Vitamins", subId: "22450", childId: "" },
+                    { extensionCategory: "Children's Health", subId: "22450", childId: "23916" },
+                    { extensionCategory: "Women's Health", subId: "22450", childId: "23916" },
+                    { extensionCategory: "Men's Health", subId: "22450", childId: "23916"},
+                    { extensionCategory: "Pregnancy & Family Planning", subId: "22450", childId: "23916" },
+                    { extensionCategory: "Cold, Flu & Allergies", subId: "22450", childId: "23916" },
+                    { extensionCategory: "Multi Vitamins", subId: "22450", childId: "23916" },
                     { extensionCategory: "Digestion & Probiotics", subId: "22450", childId: "23872" },
-                    { extensionCategory: "Fatigue, Stress & Sleep", subId: "22450", childId: "" },
-                    { extensionCategory: "Bones, Joints & Muscle Health", subId: "22450", childId: "" },
+                    { extensionCategory: "Fatigue, Stress & Sleep", subId: "22450", childId: "23916" },
+                    { extensionCategory: "Bones, Joints & Muscle Health", subId: "22450", childId: "23916" },
                     { extensionCategory: "Omega-3", subId: "22450", childId: "23916" },
                     { extensionCategory: "Hair, Skin & Nails", subId: "22450", childId: "22453" },
                     { extensionCategory: "Brain & Heart", subId: "22450", childId: "23870" },
