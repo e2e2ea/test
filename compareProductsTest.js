@@ -261,11 +261,11 @@ const getData = async () => {
   const chunkSize = 100;
   const skipCount = 0; //
   for (const categ of categories) {
-    for (const sub of categ.subCategories) {
-      for (const ext of sub.childItems) {
+    for (const sub of categ.children) {
+      for (const ext of sub.children) {
         let matchedData = [];
         try {
-          matchedData = JSON.parse(fs.readFileSync(`matched/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId ?? ''}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
+          matchedData = JSON.parse(fs.readFileSync(`matched/${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, 'utf8'));
           console.log('matched', matchedData.length);
         } catch (error) {
           continue;

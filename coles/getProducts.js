@@ -1,4 +1,4 @@
-import categories from './constant/categories.js';
+import categories from './constant/getProducts.js';
 import fs from 'fs';
 import path from 'path';
 import Product from './models/products.js';
