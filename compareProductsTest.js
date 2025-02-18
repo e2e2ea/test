@@ -260,38 +260,19 @@ const getData = async () => {
    */
   const chunkSize = 100;
   const skipCount = 0; //
-  for (const categ of MYCATEGORIES) {
-    for (const sub of categ.children) {
-      for (const ext of sub.children) {
+  for (const categ of categories) {
+    for (const sub of categ.subCategories) {
+      for (const ext of sub.childItems) {
         let matchedData = [];
         try {
-          matchedData = JSON.parse(fs.readFileSync(`matched/${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, 'utf8'));
+          matchedData = JSON.parse(fs.readFileSync(`matched/${process.env.FOLDER_DATE}/${categ.id}/${ext.subId ?? ''}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
           console.log('matched', matchedData.length);
         } catch (error) {
           continue;
         }
         const chunk = matchedData.slice(skipCount, skipCount + chunkSize);
         for (let i = skipCount; i < matchedData.length; i += chunkSize) {
-          try {
-            const externalApiUrl = process.env.JARROD_API;
-            const apiKey = process.env.JARROD_KEY;
-            const response = await axios.post(externalApiUrl, chunk, {
-              headers: {
-                accept: 'application/json',
-                'X-API-Key': apiKey,
-                'Content-Type': 'application/json',
-              },
-            });
-            console.log(`Success! category: ${categ.id} Batch in  ${i / chunkSize + 1}`, response.data);
-          } catch (error) {
-            if (error.response) {
-              console.error('Error response:', `${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, error.response.status, error.response.data);
-            } else if (error.request) {
-              console.error('No response received:', `${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, error.request);
-            } else {
-              console.error('Error:', error.message);
-            }
-          }
+          // this is the loop to where it should be uploaded
         }
       }
     }
@@ -315,26 +296,7 @@ const getData = async () => {
         totalProductsUnmatchedInC += matchedData.length;
         const chunk = matchedData.slice(skipCount1, skipCount1 + chunkSize1);
         for (let i = skipCount1; i < matchedData.length; i += chunkSize1) {
-          try {
-            const externalApiUrl = process.env.JARROD_API;
-            const apiKey = process.env.JARROD_KEY;
-            const response = await axios.post(externalApiUrl, chunk, {
-              headers: {
-                accept: 'application/json',
-                'X-API-Key': apiKey,
-                'Content-Type': 'application/json',
-              },
-            });
-            console.log(`Success in C! category: ${categ.id} Batch in  ${i / chunkSize1 + 1}`, response.data);
-          } catch (error) {
-            if (error.response) {
-              console.error('Error response in C:', `${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, error.response.status, error.response.data);
-            } else if (error.request) {
-              console.error('No response received in C:', `${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, error.request);
-            } else {
-              console.error('Error in C:', error.message);
-            }
-          }
+          // this is the loop to where it should be uploaded
         }
       }
     }
@@ -358,26 +320,7 @@ const getData = async () => {
         totalProductsUnmatchedInW += matchedData.length;
         const chunk = matchedData.slice(skipCount2, skipCount2 + chunkSize2);
         for (let i = skipCount2; i < matchedData.length; i += chunkSize2) {
-          try {
-            const externalApiUrl = process.env.JARROD_API;
-            const apiKey = process.env.JARROD_KEY;
-            const response = await axios.post(externalApiUrl, chunk, {
-              headers: {
-                accept: 'application/json',
-                'X-API-Key': apiKey,
-                'Content-Type': 'application/json',
-              },
-            });
-            console.log(`Success in W! category: ${categ.id} Batch in  ${i / chunkSize2 + 1}`, response.data);
-          } catch (error) {
-            if (error.response) {
-              console.error('Error response in W:', `${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, error.response.status, error.response.data);
-            } else if (error.request) {
-              console.error('No response received in W:', `${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, error.request);
-            } else {
-              console.error('Error in W:', error.message);
-            }
-          }
+          // this is the loop to where it should be uploaded
         }
       }
     }
