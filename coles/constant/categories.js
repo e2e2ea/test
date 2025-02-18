@@ -1159,11 +1159,11 @@ const categories = [
         subCategory: 'Diy & Car',
         childItems: [
           { subId: '22530', childId: '22531', extensionCategory: 'Adhesives, Glues & Tapes', url: 'https:www.coles.com.au/browse/household/diy-car/adhesives-glues-tapes' },
-          { subId: '', childId: '', extensionCategory: 'Car Care', url: 'https:www.coles.com.au/browse/household/diy-car/car-care' },
-          { subId: '', childId: '', extensionCategory: 'Car Oil & Coolants', url: 'https:www.coles.com.au/browse/household/diy-car/car-oil-coolants' },
-          { subId: '', childId: '', extensionCategory: 'Home Maintenance', url: 'https:www.coles.com.au/browse/household/diy-car/home-maintenance' },
+          { subId: '22519', childId: '22520', extensionCategory: 'Car Care', url: 'https:www.coles.com.au/browse/household/diy-car/car-care' },
+          { subId: '22519', childId: '22520', extensionCategory: 'Car Oil & Coolants', url: 'https:www.coles.com.au/browse/household/diy-car/car-oil-coolants' },
+          { subId: '22519', childId: '22525', extensionCategory: 'Home Maintenance', url: 'https:www.coles.com.au/browse/household/diy-car/home-maintenance' },
           { subId: '22530', childId: '22534', extensionCategory: 'Hooks & Fasteners', url: 'https:www.coles.com.au/browse/household/diy-car/hooks-fasteners' },
-          { subId: '', childId: '', extensionCategory: 'Security', url: 'https:www.coles.com.au/browse/household/diy-car/security' },
+          { subId: '22530', childId: '22534', extensionCategory: 'Security', url: 'https:www.coles.com.au/browse/household/diy-car/security' },
           { subId: '22530', childId: '22536', extensionCategory: 'Tools & Accessories', url: 'https:www.coles.com.au/browse/household/diy-car/tools-accessories' },
         ],
       },
@@ -1180,8 +1180,8 @@ const categories = [
        {
          subCategory: 'Food Storage',
          childItems: [
-           { subId: '', childId: '', extensionCategory: 'Containers & Tubs', url: 'https:www.coles.com.au/browse/household/food-storage/containers-tubs' },
-           { subId: '', childId: '', extensionCategory: 'Freezer Bags & Sandwich', url: 'https:www.coles.com.au/browse/household/food-storage/freezer-bags-sandwich' },
+           { subId: '22552', childId: '22560', extensionCategory: 'Containers & Tubs', url: 'https:www.coles.com.au/browse/household/food-storage/containers-tubs' },
+           { subId: '22552', childId: '22564', extensionCategory: 'Freezer Bags & Sandwich', url: 'https:www.coles.com.au/browse/household/food-storage/freezer-bags-sandwich' },
            { subId: '', childId: '', extensionCategory: 'Plastic Wrap & Bags', url: 'https:www.coles.com.au/browse/household/food-storage/plastic-wrap-bags' },
          ],
        },
