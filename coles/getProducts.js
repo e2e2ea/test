@@ -20,7 +20,9 @@ const getData = async () => {
   let data = [];
   let total = 0;
   for (const categ of categories) {
-    const category = categ.category;
+    let category;
+    category = categ.category;
+    if (category === 'Chips, Chocolates & Snacks') category === 'Pantry';
     let categId = categ.id;
 
     const a = await Product.find({ category: category }).exec();
@@ -141,7 +143,7 @@ const getData = async () => {
 
             // Return only the first matched product
             const firstProduct = singleProduct.length > 0 ? singleProduct[0] : null;
-            console.log('singleProduct.length', singleProduct.length)
+            console.log('singleProduct.length', singleProduct.length);
             total += singleProduct.length;
             fs.writeFileSync(filePath, JSON.stringify(singleProduct, null, 2));
             console.log(`Data saved to ${filePath}`);

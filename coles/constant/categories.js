@@ -1,107 +1,111 @@
 const categories = [
-  {
-    category: 'Baby',
+  // {
+  //   category: 'Baby',
 
-    subCategories: [
-      // {
-      //   subCategory: 'Baby Accessories',
-      //   childItems: [
-      //     { extensionCategory: 'Baby Grooming & Oral Care', url: 'https://www.coles.com.au/browse/baby/baby-accessories/baby-grooming-oral-care' },
-      //     { extensionCategory: 'Baby Health & Safety', url: 'https://www.coles.com.au/browse/baby/baby-accessories/baby-health-safety' },
-      //     { extensionCategory: 'Nappy Change Accessories', url: 'https://www.coles.com.au/browse/baby/baby-accessories/nappy-change-accessories' },
-      //   ],
-      // },
-      // {
-      //   subCategory: 'Baby Formula',
-      //   childItems: [
-      //     { extensionCategory: 'A2 Formula', url: 'https://www.coles.com.au/browse/baby/baby-formula/a2-formula' },
-      //     { extensionCategory: 'Cow Formula', url: 'https://www.coles.com.au/browse/baby/baby-formula/cow-formula' },
-      //     { extensionCategory: 'Goat Formula', url: 'https://www.coles.com.au/browse/baby/baby-formula/goat-formula' },
-      //     { extensionCategory: 'Organic Formula', url: 'https://www.coles.com.au/browse/baby/baby-formula/organic-formula' },
-      //     { extensionCategory: 'Specialty Formula', url: 'https://www.coles.com.au/browse/baby/baby-formula/specialty-formula' },
-      // ],
-      // },
-      // {
-      //   subCategory: 'Nappies & Nappy Pants',
-      //   childItems: [
-      //     { extensionCategory: 'Nappies', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/nappies' },
-      //     { extensionCategory: 'Nappy Pants', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/nappy-pants' },
-      //     { extensionCategory: 'Night Pants', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/night-pants' },
-      //     { extensionCategory: 'Swimmers', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/swimmers' },
-      //   ],
-      // },
-      {
-        subCategory: 'Baby Wipes',
-        childItems: [
-          { extensionCategory: 'Extra Large Pack', url: 'https://www.coles.com.au/browse/baby/baby-wipes/extra-large-pack' },
-          { extensionCategory: 'Large Pack', url: 'http://coles.com.au/browse/baby/baby-wipes/large-pack' },
-          { extensionCategory: 'Medium Pack', url: 'https://www.coles.com.au/browse/baby/baby-wipes/medium-pack' },
-          { extensionCategory: 'Refill Pack', url: 'https://www.coles.com.au/browse/baby/baby-wipes/refill-pack' },
-          { extensionCategory: 'Small Pack', url: 'https://www.coles.com.au/browse/baby/baby-wipes/small-pack' },
-        ],
-      },
-      {
-        subCategory: 'Baby Feeding',
-        childItems: [
-          { extensionCategory: 'Nursing Care', url: 'https://www.coles.com.au/browse/baby/baby-feeding/nursing-care' },
-        ],
-      },
-      {
-        subCategory: 'Baby & Toddler Food',
-        childItems: [
-          { extensionCategory: 'Baby & Toddler Snacks', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-toddler-snacks' },
-          { extensionCategory: 'Baby Cereals', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-cereals' },
-          { extensionCategory: 'Baby Food Jars', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-food-jars' },
-          { extensionCategory: 'Baby Food Pouches', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-food-pouches' },
-          { extensionCategory: 'Baby Pasta', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-pasta' },
-          { extensionCategory: 'Baby Rusks', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-rusks' },
-        ],
-      },
-      {
-        subCategory: 'Baby Meal Time',
-        childItems: [
-          { extensionCategory: 'Baby Plates & Bowls', url: 'https://www.coles.com.au/browse/baby/baby-meal-time/baby-plates-bowls' },
-        ],
-      },
-      {
-        subCategory: 'Bottles & Feeding',
-        childItems: [
-          { extensionCategory: 'Baby Bottles', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/baby-bottles' },
-          { extensionCategory: 'Baby Cups', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/baby-cups' },
-          { extensionCategory: 'Baby Teats', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/baby-teats' },
-          { extensionCategory: 'Bottle Accessories', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/bottle-accessories' },
-          { extensionCategory: 'Bottle Cleaning', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/bottle-cleaning' },
-          { extensionCategory: 'Bottle Feeding', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/bottle-feeding' },
-        ],
-      },
-      {
-        subCategory: 'Bath & Skincare',
-        childItems: [
-          { extensionCategory: 'Baby Bath', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-bath' },
-          { extensionCategory: 'Baby Cotton Buds', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-cotton-buds' },
-          { extensionCategory: 'Baby Hair & Body Wash', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-hair-body-wash' },
-          { extensionCategory: 'Baby Hair Care', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-hair-care' },
-          { extensionCategory: 'Baby Medicinal', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-medicinal' },
-          { extensionCategory: 'Baby Moisturiser', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-moisturiser' },
-          { extensionCategory: 'Baby Oil', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-oil' },
-          { extensionCategory: 'Baby Powder', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-powder' },
-          { extensionCategory: 'Nappy Rash Treatment', url: 'https://www.coles.com.au/browse/baby/bath-skincare/nappy-rash-treatment' },
-        ],
-      },
-      {
-        subCategory: 'Dummies & Teething',
-        childItems: [
-          { extensionCategory: 'Soothers & Teethers', url: 'https://www.coles.com.au/browse/baby/dummies-teething/soothers-teethers' },
-        ],
-      },
-      {
-        subCategory: 'Postpartum Care',
-        childItems: [
-          { extensionCategory: 'Postpartum Care', url: 'https://www.coles.com.au/browse/baby/postpartum-care/postpartum-underwear' },
-        ],
-      },
-    ],
-  },
+  //   subCategories: [
+  //     // {
+  //     //   subCategory: 'Baby Accessories',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Baby Grooming & Oral Care', url: 'https://www.coles.com.au/browse/baby/baby-accessories/baby-grooming-oral-care' },
+  //     //     { extensionCategory: 'Baby Health & Safety', url: 'https://www.coles.com.au/browse/baby/baby-accessories/baby-health-safety' },
+  //     //     { extensionCategory: 'Nappy Change Accessories', url: 'https://www.coles.com.au/browse/baby/baby-accessories/nappy-change-accessories' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Baby Formula',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'A2 Formula', url: 'https://www.coles.com.au/browse/baby/baby-formula/a2-formula' },
+  //     //     { extensionCategory: 'Cow Formula', url: 'https://www.coles.com.au/browse/baby/baby-formula/cow-formula' },
+  //     //     { extensionCategory: 'Goat Formula', url: 'https://www.coles.com.au/browse/baby/baby-formula/goat-formula' },
+  //     //     { extensionCategory: 'Organic Formula', url: 'https://www.coles.com.au/browse/baby/baby-formula/organic-formula' },
+  //     //     { extensionCategory: 'Specialty Formula', url: 'https://www.coles.com.au/browse/baby/baby-formula/specialty-formula' },
+  //     // ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Nappies & Nappy Pants',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Bed Mats', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/bed-mats' },
+  //     //     { extensionCategory: 'Eco Friendly Nappies', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/eco-friendly-nappies' },
+  //     //     { extensionCategory: 'Nappies', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/nappies' },
+  //     //     { extensionCategory: 'Nappy Pants', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/nappy-pants' },
+  //     //     { extensionCategory: 'Night Pants', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/night-pants' },
+  //     //     { extensionCategory: 'Reusable Nappies', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/reusable-nappies' },
+  //     //     { extensionCategory: 'Swimmers', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/swimmers' },
+  //     //   ],
+  //     // },
+  //     {
+  //       subCategory: 'Baby Wipes',
+  //       childItems: [
+  //         { extensionCategory: 'Extra Large Pack', url: 'https://www.coles.com.au/browse/baby/baby-wipes/extra-large-pack' },
+  //         { extensionCategory: 'Large Pack', url: 'http://coles.com.au/browse/baby/baby-wipes/large-pack' },
+  //         { extensionCategory: 'Medium Pack', url: 'https://www.coles.com.au/browse/baby/baby-wipes/medium-pack' },
+  //         { extensionCategory: 'Refill Pack', url: 'https://www.coles.com.au/browse/baby/baby-wipes/refill-pack' },
+  //         { extensionCategory: 'Small Pack', url: 'https://www.coles.com.au/browse/baby/baby-wipes/small-pack' },
+  //         { extensionCategory: 'Travel Pack', url: 'https://www.coles.com.au/browse/baby/baby-wipes/travel-pack' },
+  //       ],
+  //     },
+  //     {
+  //       subCategory: 'Baby Feeding',
+  //       childItems: [
+  //         { extensionCategory: 'Nursing Care', url: 'https://www.coles.com.au/browse/baby/baby-feeding/nursing-care' },
+  //       ],
+  //     },
+  //     {
+  //       subCategory: 'Baby & Toddler Food',
+  //       childItems: [
+  //         { extensionCategory: 'Baby & Toddler Snacks', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-toddler-snacks' },
+  //         { extensionCategory: 'Baby Cereals', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-cereals' },
+  //         { extensionCategory: 'Baby Food Jars', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-food-jars' },
+  //         { extensionCategory: 'Baby Food Pouches', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-food-pouches' },
+  //         { extensionCategory: 'Baby Pasta', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-pasta' },
+  //         { extensionCategory: 'Baby Rusks', url: 'https://www.coles.com.au/browse/baby/baby-toddler-food/baby-rusks' },
+  //       ],
+  //     },
+  //     {
+  //       subCategory: 'Baby Meal Time',
+  //       childItems: [
+  //         { extensionCategory: 'Baby Plates & Bowls', url: 'https://www.coles.com.au/browse/baby/baby-meal-time/baby-plates-bowls' },
+  //       ],
+  //     },
+  //     {
+  //       subCategory: 'Bottles & Feeding',
+  //       childItems: [
+  //         { extensionCategory: 'Baby Bottles', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/baby-bottles' },
+  //         { extensionCategory: 'Baby Cups', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/baby-cups' },
+  //         { extensionCategory: 'Baby Teats', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/baby-teats' },
+  //         { extensionCategory: 'Bottle Accessories', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/bottle-accessories' },
+  //         { extensionCategory: 'Bottle Cleaning', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/bottle-cleaning' },
+  //         { extensionCategory: 'Bottle Feeding', url: 'https://www.coles.com.au/browse/baby/bottles-feeding/bottle-feeding' },
+  //       ],
+  //     },
+  //     {
+  //       subCategory: 'Bath & Skincare',
+  //       childItems: [
+  //         { extensionCategory: 'Baby Bath', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-bath' },
+  //         { extensionCategory: 'Baby Cotton Buds', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-cotton-buds' },
+  //         { extensionCategory: 'Baby Hair & Body Wash', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-hair-body-wash' },
+  //         { extensionCategory: 'Baby Hair Care', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-hair-care' },
+  //         { extensionCategory: 'Baby Medicinal', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-medicinal' },
+  //         { extensionCategory: 'Baby Moisturiser', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-moisturiser' },
+  //         { extensionCategory: 'Baby Oil', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-oil' },
+  //         { extensionCategory: 'Baby Powder', url: 'https://www.coles.com.au/browse/baby/bath-skincare/baby-powder' },
+  //         { extensionCategory: 'Nappy Rash Treatment', url: 'https://www.coles.com.au/browse/baby/bath-skincare/nappy-rash-treatment' },
+  //       ],
+  //     },
+  //     {
+  //       subCategory: 'Dummies & Teething',
+  //       childItems: [
+  //         { extensionCategory: 'Soothers & Teethers', url: 'https://www.coles.com.au/browse/baby/dummies-teething/soothers-teethers' },
+  //       ],
+  //     },
+  //     {
+  //       subCategory: 'Postpartum Care',
+  //       childItems: [
+  //         { extensionCategory: 'Postpartum Care', url: 'https://www.coles.com.au/browse/baby/postpartum-care/postpartum-underwear' },
+  //       ],
+  //     },
+  //   ],
+  // },
   // {
   //   category: 'Bakery',
   //   subCategories: [
@@ -805,157 +809,169 @@ const categories = [
   //     },
   //   ],
   // },
-  // {
-  //   category: 'Health & Beauty',
-  //   subCategories: [
-  //     {
-  //       subCategory: 'Continence Care',
-  //       childItems: [
-  //         { extensionCategory: 'Continence Pads', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/continence-pads' },
-  //         { extensionCategory: 'Female Washable Underwear', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/female-washable-underwear' },
-  //         { extensionCategory: 'Liners', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/liners' },
-  //         { extensionCategory: 'Male Pads', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/male-pads' },
-  //         { extensionCategory: 'Male Pants', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/male-pants' },
-  //         { extensionCategory: 'Male Washable Underwear', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/male-washable-underwear' },
-  //         { extensionCategory: 'Mens Pouches & Shields', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/mens-pouches-shields' },
-  //         { extensionCategory: 'Pants', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/pants' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Cosmetics',
-  //       childItems: [
-  //         { extensionCategory: 'Blush', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/blush' },
-  //         { extensionCategory: 'Brows', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/brows' },
-  //         { extensionCategory: 'Brushes and Tools', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/brushes-and-tools' },
-  //         { extensionCategory: 'Concealer & Foundation', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/concealer-foundation' },
-  //         { extensionCategory: 'Eye Liner, Eye Shadow & Mascara', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/eye-liner-eye-shadow-mascara' },
-  //         { extensionCategory: 'Lashes', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/lashes' },
-  //         { extensionCategory: 'Lips', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/lips' },
-  //         { extensionCategory: 'Nails', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/nails' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Dental Care',
-  //       childItems: [
-  //         { extensionCategory: 'Dental Floss & Tape', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/dental-floss-tape' },
-  //         { extensionCategory: 'Dental Whitening', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/dental-whitening' },
-  //         { extensionCategory: 'Denture Care', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/denture-care' },
-  //         { extensionCategory: 'Electric Toothbushes and Refills', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/electric-toothbushes-and-refills' },
-  //         { extensionCategory: 'Kids Dental', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/kids-dental' },
-  //         { extensionCategory: 'Mouthwash', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/mouthwash' },
-  //         { extensionCategory: 'Sensitive Toothpaste', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/sensitive-toothpaste' },
-  //         { extensionCategory: 'Toothbrushes', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/toothbrushes' },
-  //         { extensionCategory: 'Toothpaste', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/toothpaste' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'First Aid & Medicinal',
-  //       childItems: [
-  //         { extensionCategory: 'Antacid & Indigestion', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/antacid-indigestion' },
-  //         { extensionCategory: 'Antiseptic', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/antiseptic' },
-  //         { extensionCategory: 'Bandages & Strapping', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/bandages-strapping' },
-  //         { extensionCategory: 'Bandaids', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/bandaids' },
-  //         { extensionCategory: 'Cold, Flu and Allergy', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/cold-flu-and-allergy' },
-  //         { extensionCategory: 'Cotton Wool & Cotton Buds', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/cotton-wool-cotton-buds' },
-  //         { extensionCategory: 'Eye & Ear Care', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/eye-ear-care' },
-  //         { extensionCategory: 'Masks & Tests', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/masks-tests' },
-  //         { extensionCategory: 'Medicinal Oils & Ointments', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/medicinal-oils-ointments' },
-  //         { extensionCategory: 'Other First Aid & Medicinal', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/other-first-aid-medicinal' },
-  //         { extensionCategory: 'Pain Relief', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/pain-relief' },
-  //         { extensionCategory: 'Quit Smoking', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/quit-smoking' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Hair Care',
-  //       childItems: [
-  //         { extensionCategory: 'Colouring', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/colouring' },
-  //         { extensionCategory: 'Dandruff', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/dandruff' },
-  //         { extensionCategory: 'Dry Shampoo', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/dry-shampoo' },
-  //         { extensionCategory: 'Gel, Mousse & Styling', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/gel-mousse-styling' },
-  //         { extensionCategory: 'Hair Brushes, Combs & Accessories', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/hair-brushes-combs-accessories' },
-  //         { extensionCategory: 'Kids Hair Care', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/kids-hair-care' },
-  //         { extensionCategory: 'Lice Treatment', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/lice-treatment' },
-  //         { extensionCategory: 'Mens Hair Care', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/mens-hair-care' },
-  //         { extensionCategory: 'Shampoo & Conditioner', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/shampoo-conditioner' },
-  //         { extensionCategory: 'Treatments', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/treatments' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Period Care',
-  //       childItems: [
-  //         { extensionCategory: 'Accessories', url: 'https://www.coles.com.au/browse/health-beauty/period-care/accessories' },
-  //         { extensionCategory: 'Liners', url: 'https://www.coles.com.au/browse/health-beauty/period-care/liners' },
-  //         { extensionCategory: 'Pads', url: 'https://www.coles.com.au/browse/health-beauty/period-care/pads' },
-  //         { extensionCategory: 'Reusables', url: 'https://www.coles.com.au/browse/health-beauty/period-care/reusables' },
-  //         { extensionCategory: 'Tampons', url: 'https://www.coles.com.au/browse/health-beauty/period-care/tampons' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Shaving & Hair Removal',
-  //       childItems: [
-  //         { extensionCategory: 'After Shave Care', url: 'https://www.coles.com.au/browse/health-beauty/shaving-hair-removal/after-shave-care' },
-  //         { extensionCategory: 'Razors & Blades', url: 'https://www.coles.com.au/browse/health-beauty/shaving-hair-removal/razors-blades' },
-  //         { extensionCategory: 'Shave Gel & Foam', url: 'https://www.coles.com.au/browse/health-beauty/shaving-hair-removal/shave-gel-foam' },
-  //         { extensionCategory: 'Wax, Cream & Bleach', url: 'https://www.coles.com.au/browse/health-beauty/shaving-hair-removal/wax-cream-bleach' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Shower & Bath Care',
-  //       childItems: [
-  //         { extensionCategory: 'Bath Accessories', url: 'https://www.coles.com.au/browse/health-beauty/shower-bath-care/bath-accessories' },
-  //         { extensionCategory: 'Body Lotion', url: 'https://www.coles.com.au/browse/health-beauty/shower-bath-care/body-lotion' },
-  //         { extensionCategory: 'Body Wash', url: 'https://www.coles.com.au/browse/health-beauty/shower-bath-care/body-wash' },
-  //         { extensionCategory: 'Bubble Bath & Salts', url: 'https://www.coles.com.au/browse/health-beauty/shower-bath-care/bubble-bath-salts' },
-  //         { extensionCategory: 'Hand Santiser', url: 'https://www.coles.com.au/browse/health-beauty/shower-bath-care/hand-santiser' },
-  //         { extensionCategory: 'Mens Body Wash', url: 'https://www.coles.com.au/browse/health-beauty/shower-bath-care/mens-body-wash' },
-  //         { extensionCategory: 'Soap & Hand Wash', url: 'https://www.coles.com.au/browse/health-beauty/shower-bath-care/soap-hand-wash' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Skin Care',
-  //       childItems: [
-  //         { extensionCategory: 'Body Moisturiser', url: 'https://www.coles.com.au/browse/health-beauty/skin-care/body-moisturiser' },
-  //         { extensionCategory: 'Cleansers & Skincare Wipes', url: 'https://www.coles.com.au/browse/health-beauty/skin-care/cleansers-skincare-wipes' },
-  //         { extensionCategory: 'Face Moisturiser', url: 'https://www.coles.com.au/browse/health-beauty/skin-care/face-moisturiser' },
-  //         { extensionCategory: 'Hand Moisturiser', url: 'https://www.coles.com.au/browse/health-beauty/skin-care/hand-moisturiser' },
-  //         { extensionCategory: 'Lip Care', url: 'https://www.coles.com.au/browse/health-beauty/skin-care/lip-care' },
-  //         { extensionCategory: 'Mens Skin', url: 'https://www.coles.com.au/browse/health-beauty/skin-care/mens-skin' },
-  //         { extensionCategory: 'Self-Tanning', url: 'https://www.coles.com.au/browse/health-beauty/skin-care/self-tanning' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Sun Protection',
-  //       childItems: [
-  //         { extensionCategory: 'After Sun', url: 'https://www.coles.com.au/browse/health-beauty/sun-protection/after-sun' },
-  //         { extensionCategory: 'Sun Care', url: 'https://www.coles.com.au/browse/health-beauty/sun-protection/sun-care' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Travel Packs and Minis',
-  //       childItems: [
-  //         { extensionCategory: 'Travel Packs and Accessories', url: 'https://www.coles.com.au/browse/health-beauty/travel-packs-and-minis/travel-packs-and-accessories' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Vitamins & Supplements',
-  //       childItems: [
-  //         { extensionCategory: 'Bone and Joint Health', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/bone-and-joint-health' },
-  //         { extensionCategory: 'Brain, Eye and Heart Health', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/brain-eye-and-heart-health' },
-  //         { extensionCategory: 'Detox and Digestive Health', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/detox-and-digestive-health' },
-  //         { extensionCategory: 'Energy Support', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/energy-support' },
-  //         { extensionCategory: 'Essential Oils and Aroma Therapy', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/essential-oils-and-aroma-therapy' },
-  //         { extensionCategory: 'Family Planning', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/family-planning' },
-  //         { extensionCategory: 'Fish Oil', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/fish-oil' },
-  //         { extensionCategory: 'Hair, Skin & Nails', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/hair-skin-nails' },
-  //         { extensionCategory: 'Immune Support', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/immune-support' },
-  //         { extensionCategory: 'Iron', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/iron' },
-  //         { extensionCategory: `Kid's Health`, url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/kids-health' },
-  //         { extensionCategory: 'Mens and Womens Multi Vitamins', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/mens-and-womens-multi-vitamins' },
-  //         { extensionCategory: 'Other Vitamins', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/other-vitamins' },
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    category: 'Health & Beauty',
+    subCategories: [
+      // {
+      //   subCategory: 'Continence Care',
+      //   childItems: [
+      //     { extensionCategory: 'Continence Pads', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/continence-pads' },
+      //     { extensionCategory: 'Female Washable Underwear', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/female-washable-underwear' },
+      //     { extensionCategory: 'Liners', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/liners' },
+      //     { extensionCategory: 'Male Pads', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/male-pads' },
+      //     { extensionCategory: 'Male Pants', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/male-pants' },
+      //     { extensionCategory: 'Male Washable Underwear', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/male-washable-underwear' },
+      //     { extensionCategory: 'Mens Pouches & Shields', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/mens-pouches-shields' },
+      //     { extensionCategory: 'Pants', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/pants' },
+      //   ],
+      // },
+      // {
+      //   subCategory: 'Cosmetics',
+      //   childItems: [
+      //     { extensionCategory: 'Blush', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/blush' },
+      //     { extensionCategory: 'Brows', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/brows' },
+      //     { extensionCategory: 'Brushes and Tools', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/brushes-and-tools' },
+      //     { extensionCategory: 'Concealer & Foundation', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/concealer-foundation' },
+      //     { extensionCategory: 'Eye Liner, Eye Shadow & Mascara', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/eye-liner-eye-shadow-mascara' },
+      //     { extensionCategory: 'Lashes', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/lashes' },
+      //     { extensionCategory: 'Lips', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/lips' },
+      //     { extensionCategory: 'Nails', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/nails' },
+      //   ],
+      // },
+      // {
+      //   subCategory: 'Dental Care',
+      //   childItems: [
+      //     { extensionCategory: 'Dental Floss & Tape', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/dental-floss-tape' },
+      //     { extensionCategory: 'Dental Whitening', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/dental-whitening' },
+      //     { extensionCategory: 'Denture Care', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/denture-care' },
+      //     { extensionCategory: 'Electric Toothbushes and Refills', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/electric-toothbushes-and-refills' },
+      //     { extensionCategory: 'Kids Dental', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/kids-dental' },
+      //     { extensionCategory: 'Mouthwash', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/mouthwash' },
+      //     { extensionCategory: 'Sensitive Toothpaste', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/sensitive-toothpaste' },
+      //     { extensionCategory: 'Toothbrushes', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/toothbrushes' },
+      //     { extensionCategory: 'Toothpaste', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/toothpaste' },
+      //   ],
+      // },
+      // {
+      //   subCategory: 'First Aid & Medicinal',
+      //   childItems: [
+      //     { extensionCategory: 'Antacid & Indigestion', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/antacid-indigestion' },
+      //     { extensionCategory: 'Antiseptic', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/antiseptic' },
+      //     { extensionCategory: 'Bandages & Strapping', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/bandages-strapping' },
+      //     { extensionCategory: 'Bandaids', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/bandaids' },
+      //     { extensionCategory: 'Cold, Flu and Allergy', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/cold-flu-and-allergy' },
+      //     { extensionCategory: 'Cotton Wool & Cotton Buds', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/cotton-wool-cotton-buds' },
+      //     { extensionCategory: 'Eye & Ear Care', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/eye-ear-care' },
+      //     { extensionCategory: 'Masks & Tests', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/masks-tests' },
+      //     { extensionCategory: 'Medicinal Oils & Ointments', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/medicinal-oils-ointments' },
+      //     { extensionCategory: 'Other First Aid & Medicinal', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/other-first-aid-medicinal' },
+      //     { extensionCategory: 'Pain Relief', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/pain-relief' },
+      //     { extensionCategory: 'Quit Smoking', url: 'https://www.coles.com.au/browse/health-beauty/first-aid-medicinal/quit-smoking' },
+      //   ],
+      // },
+      // {
+      //   subCategory: 'Hair Care',
+      //   childItems: [
+      //     { extensionCategory: 'Colouring', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/colouring' },
+      //     { extensionCategory: 'Dandruff', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/dandruff' },
+      //     { extensionCategory: 'Dry Shampoo', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/dry-shampoo' },
+      //     { extensionCategory: 'Gel, Mousse & Styling', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/gel-mousse-styling' },
+      //     { extensionCategory: 'Hair Brushes, Combs & Accessories', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/hair-brushes-combs-accessories' },
+      //     { extensionCategory: 'Kids Hair Care', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/kids-hair-care' },
+      //     { extensionCategory: 'Lice Treatment', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/lice-treatment' },
+      //     { extensionCategory: 'Mens Hair Care', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/mens-hair-care' },
+      //     { extensionCategory: 'Shampoo & Conditioner', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/shampoo-conditioner' },
+      //     { extensionCategory: 'Treatments', url: 'https://www.coles.com.au/browse/health-beauty/hair-care/treatments' },
+      //   ],
+      // },
+      // {
+      //   subCategory: 'Period Care',
+      //   childItems: [
+      //     { extensionCategory: 'Accessories', url: 'https://www.coles.com.au/browse/health-beauty/period-care/accessories' },
+      //     { extensionCategory: 'Liners', url: 'https://www.coles.com.au/browse/health-beauty/period-care/liners' },
+      //     { extensionCategory: 'Pads', url: 'https://www.coles.com.au/browse/health-beauty/period-care/pads' },
+      //     { extensionCategory: 'Reusables', url: 'https://www.coles.com.au/browse/health-beauty/period-care/reusables' },
+      //     { extensionCategory: 'Tampons', url: 'https://www.coles.com.au/browse/health-beauty/period-care/tampons' },
+      //   ],
+      // },
+      // {
+      //   subCategory: 'Personal Care', // added
+      //   childItems: [
+      //     { extensionCategory: 'Footcare', url: 'https://www.coles.com.au/browse/health-beauty/personal-care/footcare' },
+      //     { extensionCategory: 'Mens Deodorants', url: 'https://www.coles.com.au/browse/health-beauty/personal-care/mens-deodorants' },
+      //     { extensionCategory: 'Pregnancy Tests', url: 'https://www.coles.com.au/browse/health-beauty/personal-care/pregnancy-tests' },
+      //     { extensionCategory: 'Sexual Health', url: 'https://www.coles.com.au/browse/health-beauty/personal-care/sexual-health' },
+      //     { extensionCategory: 'Womens Deodorants', url: 'https://www.coles.com.au/browse/health-beauty/personal-care/womens-deodorants' },
+      //   ],
+      // },
+      // {
+      //   subCategory: 'Shaving & Hair Removal',
+      //   childItems: [
+      //     { extensionCategory: 'After Shave Care', url: 'https://www.coles.com.au/browse/health-beauty/shaving-hair-removal/after-shave-care' },
+      //     { extensionCategory: 'Razors & Blades', url: 'https://www.coles.com.au/browse/health-beauty/shaving-hair-removal/razors-blades' },
+      //     { extensionCategory: 'Shave Gel & Foam', url: 'https://www.coles.com.au/browse/health-beauty/shaving-hair-removal/shave-gel-foam' },
+      //     { extensionCategory: 'Wax, Cream & Bleach', url: 'https://www.coles.com.au/browse/health-beauty/shaving-hair-removal/wax-cream-bleach' },
+      //   ],
+      // },
+      // {
+      //   subCategory: 'Shower & Bath Care',
+      //   childItems: [
+      //     { extensionCategory: 'Bath Accessories', url: 'https://www.coles.com.au/browse/health-beauty/shower-bath-care/bath-accessories' },
+      //     { extensionCategory: 'Body Lotion', url: 'https://www.coles.com.au/browse/health-beauty/shower-bath-care/body-lotion' },
+      //     { extensionCategory: 'Body Wash', url: 'https://www.coles.com.au/browse/health-beauty/shower-bath-care/body-wash' },
+      //     { extensionCategory: 'Bubble Bath & Salts', url: 'https://www.coles.com.au/browse/health-beauty/shower-bath-care/bubble-bath-salts' },
+      //     { extensionCategory: 'Hand Santiser', url: 'https://www.coles.com.au/browse/health-beauty/shower-bath-care/hand-santiser' },
+      //     { extensionCategory: 'Mens Body Wash', url: 'https://www.coles.com.au/browse/health-beauty/shower-bath-care/mens-body-wash' },
+      //     { extensionCategory: 'Soap & Hand Wash', url: 'https://www.coles.com.au/browse/health-beauty/shower-bath-care/soap-hand-wash' },
+      //   ],
+      // },
+      // {
+      //   subCategory: 'Skin Care',
+      //   childItems: [
+      //     { extensionCategory: 'Body Moisturiser', url: 'https://www.coles.com.au/browse/health-beauty/skin-care/body-moisturiser' },
+      //     { extensionCategory: 'Cleansers & Skincare Wipes', url: 'https://www.coles.com.au/browse/health-beauty/skin-care/cleansers-skincare-wipes' },
+      //     { extensionCategory: 'Face Moisturiser', url: 'https://www.coles.com.au/browse/health-beauty/skin-care/face-moisturiser' },
+      //     { extensionCategory: 'Hand Moisturiser', url: 'https://www.coles.com.au/browse/health-beauty/skin-care/hand-moisturiser' },
+      //     { extensionCategory: 'Lip Care', url: 'https://www.coles.com.au/browse/health-beauty/skin-care/lip-care' },
+      //     { extensionCategory: 'Mens Skin', url: 'https://www.coles.com.au/browse/health-beauty/skin-care/mens-skin' },
+      //     { extensionCategory: 'Self-Tanning', url: 'https://www.coles.com.au/browse/health-beauty/skin-care/self-tanning' },
+      //   ],
+      // },
+      // {
+      //   subCategory: 'Sun Protection',
+      //   childItems: [
+      //     { extensionCategory: 'After Sun', url: 'https://www.coles.com.au/browse/health-beauty/sun-protection/after-sun' },
+      //     { extensionCategory: 'Sun Care', url: 'https://www.coles.com.au/browse/health-beauty/sun-protection/sun-care' },
+      //   ],
+      // },
+      // {
+      //   subCategory: 'Travel Packs and Minis',
+      //   childItems: [
+      //     { extensionCategory: 'Travel Packs and Accessories', url: 'https://www.coles.com.au/browse/health-beauty/travel-packs-and-minis/travel-packs-and-accessories' },
+      //   ],
+      // },
+      {
+        subCategory: 'Vitamins & Supplements',
+        childItems: [
+          { extensionCategory: 'Bone and Joint Health', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/bone-and-joint-health' },
+          { extensionCategory: 'Brain, Eye and Heart Health', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/brain-eye-and-heart-health' },
+          { extensionCategory: 'Detox and Digestive Health', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/detox-and-digestive-health' },
+          { extensionCategory: 'Energy Support', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/energy-support' },
+          { extensionCategory: 'Essential Oils and Aroma Therapy', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/essential-oils-and-aroma-therapy' },
+          { extensionCategory: 'Family Planning', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/family-planning' },
+          { extensionCategory: 'Fish Oil', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/fish-oil' },
+          { extensionCategory: 'Hair, Skin & Nails', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/hair-skin-nails' },
+          { extensionCategory: 'Immune Support', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/immune-support' },
+          { extensionCategory: 'Iron', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/iron' },
+          { extensionCategory: `Kid's Health`, url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/kids-health' },
+          { extensionCategory: 'Mens and Womens Multi Vitamins', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/mens-and-womens-multi-vitamins' },
+          { extensionCategory: 'Other Vitamins', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/other-vitamins' },
+          { extensionCategory: 'Sleep Support', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/sleep-support' }, // added
+          { extensionCategory: 'Supplements and Superfoods', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/supplements-and-superfoods' }, // added
+        ],
+      },
+    ],
+  },
   // {
   //   category: 'Household',
   //   subCategories: [
@@ -1032,153 +1048,153 @@ const categories = [
   //         { extensionCategory: 'Car Oil & Coolants', url: 'https://www.coles.com.au/browse/household/diy-car/car-oil-coolants' },
   //         { extensionCategory: 'Home Maintenance', url: 'https://www.coles.com.au/browse/household/diy-car/home-maintenance' },
   //         { extensionCategory: 'Hooks & Fasteners', url: 'https://www.coles.com.au/browse/household/diy-car/hooks-fasteners' },
-  //         { extensionCategory: 'Security', url: 'https://www.coles.com.au/browse/household/diy-car/security' },
-  //         { extensionCategory: 'Tools & Accessories', url: 'https://www.coles.com.au/browse/household/diy-car/tools-accessories' },
+  //         // { extensionCategory: 'Security', url: 'https://www.coles.com.au/browse/household/diy-car/security' },
+  //         // { extensionCategory: 'Tools & Accessories', url: 'https://www.coles.com.au/browse/household/diy-car/tools-accessories' },
   //       ],
   //     },
-  //     {
-  //       subCategory: 'Electrical',
-  //       childItems: [
-  //         { extensionCategory: 'Batteries', url: 'https://www.coles.com.au/browse/household/electrical/batteries' },
-  //         { extensionCategory: 'Extension Cords & Adapters', url: 'https://www.coles.com.au/browse/household/electrical/extension-cords-adapters' },
-  //         { extensionCategory: 'Lighting', url: 'https://www.coles.com.au/browse/household/electrical/lighting' },
-  //         { extensionCategory: 'Phone Accessories & Earphones', url: 'https://www.coles.com.au/browse/household/electrical/phone-accessories-earphones' },
-  //         { extensionCategory: 'Torches', url: 'https://www.coles.com.au/browse/household/electrical/torches' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Food Storage',
-  //       childItems: [
-  //         { extensionCategory: 'Containers & Tubs', url: 'https://www.coles.com.au/browse/household/food-storage/containers-tubs' },
-  //         { extensionCategory: 'Freezer Bags & Sandwich', url: 'https://www.coles.com.au/browse/household/food-storage/freezer-bags-sandwich' },
-  //         { extensionCategory: 'Plastic Wrap & Bags', url: 'https://www.coles.com.au/browse/household/food-storage/plastic-wrap-bags' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Garden',
-  //       childItems: [
-  //         { extensionCategory: 'Gloves & Tools', url: 'https://www.coles.com.au/browse/household/garden/gloves-tools' },
-  //         { extensionCategory: 'Insecticide & Weed Control', url: 'https://www.coles.com.au/browse/household/garden/insecticide-weed-control' },
-  //         { extensionCategory: 'Lawncare & Plant Food', url: 'https://www.coles.com.au/browse/household/garden/lawncare-plant-food' },
-  //         { extensionCategory: 'Potting Mix & Fertilizer', url: 'https://www.coles.com.au/browse/household/garden/potting-mix-fertilizer' },
-  //         { extensionCategory: 'Seeds & Plants', url: 'https://www.coles.com.au/browse/household/garden/seeds-plants' },
-  //         { extensionCategory: 'Watering', url: 'https://www.coles.com.au/browse/household/garden/watering' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Homewares',
-  //       childItems: [
-  //         { extensionCategory: 'Appliances', url: 'https://www.coles.com.au/browse/household/homewares/appliances' },
-  //         { extensionCategory: 'Cutlery & Servingware', url: 'https://www.coles.com.au/browse/household/homewares/cutlery-servingware' },
-  //         { extensionCategory: 'Glassware', url: 'https://www.coles.com.au/browse/household/homewares/glassware' },
-  //         { extensionCategory: 'Home Storage', url: 'https://www.coles.com.au/browse/household/homewares/home-storage' },
-  //         { extensionCategory: 'Mugs & Cups', url: 'https://www.coles.com.au/browse/household/homewares/mugs-cups' },
-  //         { extensionCategory: 'Plates & Bowls', url: 'https://www.coles.com.au/browse/household/homewares/plates-bowls' },
-  //         { extensionCategory: 'Seasonal Decorations & Accessories', url: 'https://www.coles.com.au/browse/household/homewares/seasonal-decorations-accessories' },
-  //         { extensionCategory: 'Sewing', url: 'https://www.coles.com.au/browse/household/homewares/sewing' },
-  //         { extensionCategory: 'Tea Towels & Aprons', url: 'https://www.coles.com.au/browse/household/homewares/tea-towels-aprons' },
-  //         { extensionCategory: 'Textiles & Accessories', url: 'https://www.coles.com.au/browse/household/homewares/textiles-accessories' },
-  //         { extensionCategory: 'Water Filtration', url: 'https://www.coles.com.au/browse/household/homewares/water-filtration' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Kitchen',
-  //       childItems: [
-  //         { extensionCategory: 'Baking Tins & Trays', url: 'https://www.coles.com.au/browse/household/kitchen/baking-tins-trays' },
-  //         { extensionCategory: 'Foil, Baking Paper & Oven Bags', url: 'https://www.coles.com.au/browse/household/kitchen/foil-baking-paper-oven-bags' },
-  //         { extensionCategory: 'Food Tubs & Containers', url: 'https://www.coles.com.au/browse/household/kitchen/food-tubs-containers' },
-  //         { extensionCategory: 'Kitchen Tidy & Garbage Bags', url: 'https://www.coles.com.au/browse/household/kitchen/kitchen-tidy-garbage-bags' },
-  //         { extensionCategory: 'Plastic Wraps & Bags', url: 'https://www.coles.com.au/browse/household/kitchen/plastic-wraps-bags' },
-  //         { extensionCategory: 'Pots & Saucepans', url: 'https://www.coles.com.au/browse/household/kitchen/pots-saucepans' },
-  //         { extensionCategory: 'Sandwich & Freezer Bags', url: 'https://www.coles.com.au/browse/household/kitchen/sandwich-freezer-bags' },
-  //         { extensionCategory: 'Utensils & Gadgets', url: 'https://www.coles.com.au/browse/household/kitchen/utensils-gadgets' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Laundry',
-  //       childItems: [
-  //         { extensionCategory: 'Fabric Softener', url: 'https://www.coles.com.au/browse/household/laundry/fabric-softener' },
-  //         { extensionCategory: 'Ironing Aids', url: 'https://www.coles.com.au/browse/household/laundry/ironing-aids' },
-  //         { extensionCategory: 'Laundry Accessories', url: 'https://www.coles.com.au/browse/household/laundry/laundry-accessories' },
-  //         { extensionCategory: 'Laundry Liquid', url: 'https://www.coles.com.au/browse/household/laundry/laundry-liquid' },
-  //         { extensionCategory: 'Laundry Powder', url: 'https://www.coles.com.au/browse/household/laundry/laundry-powder' },
-  //         { extensionCategory: 'Pegs, Baskets & Hangers', url: 'https://www.coles.com.au/browse/household/laundry/pegs-baskets-hangers' },
-  //         { extensionCategory: 'Stain Removal & Pre-Wash', url: 'https://www.coles.com.au/browse/household/laundry/stain-removal-pre-wash' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Mobile & Tech Accessories',
-  //       childItems: [
-  //         { extensionCategory: 'Phones', url: 'https://www.coles.com.au/browse/household/mobile-tech-accessories/phones' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Outdoors',
-  //       childItems: [
-  //         { extensionCategory: 'Automotive', url: 'https://www.coles.com.au/browse/household/outdoors/automotive' },
-  //         { extensionCategory: 'Bbq', url: 'https://www.coles.com.au/browse/household/outdoors/bbq' },
-  //         { extensionCategory: 'Camping & Fishing', url: 'https://www.coles.com.au/browse/household/outdoors/camping-fishing' },
-  //         { extensionCategory: 'Matches & Lighters', url: 'https://www.coles.com.au/browse/household/outdoors/matches-lighters' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Party Supplies',
-  //       childItems: [
-  //         { extensionCategory: 'Candles', url: 'https://www.coles.com.au/browse/household/party-supplies/candles' },
-  //         { extensionCategory: 'Cups & Glasses', url: 'https://www.coles.com.au/browse/household/party-supplies/cups-glasses' },
-  //         { extensionCategory: 'Decorations', url: 'https://www.coles.com.au/browse/household/party-supplies/decorations' },
-  //         { extensionCategory: 'Disposable Plates & Bowls', url: 'https://www.coles.com.au/browse/household/party-supplies/disposable-plates-bowls' },
-  //         { extensionCategory: 'Gift Wrap & Bags', url: 'https://www.coles.com.au/browse/household/party-supplies/gift-wrap-bags' },
-  //         { extensionCategory: 'Paper & Plastic Cutlery', url: 'https://www.coles.com.au/browse/household/party-supplies/paper-plastic-cutlery' },
-  //         { extensionCategory: 'Serviettes & Tablecloths', url: 'https://www.coles.com.au/browse/household/party-supplies/serviettes-tablecloths' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Pest Control',
-  //       childItems: [
-  //         { extensionCategory: 'Crawling Insects', url: 'https://www.coles.com.au/browse/household/pest-control/crawling-insects' },
-  //         { extensionCategory: 'Flying Insects', url: 'https://www.coles.com.au/browse/household/pest-control/flying-insects' },
-  //         { extensionCategory: 'Garden Pests', url: 'https://www.coles.com.au/browse/household/pest-control/garden-pests' },
-  //         { extensionCategory: 'Mosquitos', url: 'https://www.coles.com.au/browse/household/pest-control/mosquitos' },
-  //         { extensionCategory: 'Rodents', url: 'https://www.coles.com.au/browse/household/pest-control/rodents' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Reusable Shopping Bags',
-  //       childItems: [
-  //         { extensionCategory: 'Chiller Bags & Bags', url: 'https://www.coles.com.au/browse/household/reusable-shopping-bags/chiller-bags-bags' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Sporting Essentials',
-  //       childItems: [
-  //         { extensionCategory: 'Sports Goods & Accessories', url: 'https://www.coles.com.au/browse/household/sporting-essentials/sports-goods-accessories' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Stationery & Media',
-  //       childItems: [
-  //         { extensionCategory: 'Magazines', url: 'https://www.coles.com.au/browse/household/stationery-media/magazines' },
-  //         { extensionCategory: 'Media', url: 'https://www.coles.com.au/browse/household/stationery-media/media' },
-  //         { extensionCategory: 'Stationery', url: 'https://www.coles.com.au/browse/household/stationery-media/stationery' },
-  //         { extensionCategory: 'Toys & Game', url: 'https://www.coles.com.au/browse/household/stationery-media/toys-game' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Tech Accessories',
-  //       childItems: [
-  //         { extensionCategory: 'All Accessories', url: 'https://www.coles.com.au/browse/household/tech-accessories/all-accessories' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Toilet Paper, Tissues & Paper Towels',
-  //       childItems: [
-  //         { extensionCategory: 'Facial Tissues', url: 'https://www.coles.com.au/browse/household/toilet-paper-tissues-paper-towels/facial-tissues' },
-  //         { extensionCategory: 'Flushable Wipes', url: 'https://www.coles.com.au/browse/household/toilet-paper-tissues-paper-towels/flushable-wipes' },
-  //         { extensionCategory: 'Paper Towel', url: 'https://www.coles.com.au/browse/household/toilet-paper-tissues-paper-towels/paper-towel' },
-  //         { extensionCategory: 'Toilet Tissues', url: 'https://www.coles.com.au/browse/household/toilet-paper-tissues-paper-towels/toilet-tissues' },
-  //       ],
-  //     },
+  //     // {
+  //     //   subCategory: 'Electrical',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Batteries', url: 'https://www.coles.com.au/browse/household/electrical/batteries' },
+  //     //     { extensionCategory: 'Extension Cords & Adapters', url: 'https://www.coles.com.au/browse/household/electrical/extension-cords-adapters' },
+  //     //     { extensionCategory: 'Lighting', url: 'https://www.coles.com.au/browse/household/electrical/lighting' },
+  //     //     { extensionCategory: 'Phone Accessories & Earphones', url: 'https://www.coles.com.au/browse/household/electrical/phone-accessories-earphones' },
+  //     //     { extensionCategory: 'Torches', url: 'https://www.coles.com.au/browse/household/electrical/torches' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Food Storage',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Containers & Tubs', url: 'https://www.coles.com.au/browse/household/food-storage/containers-tubs' },
+  //     //     { extensionCategory: 'Freezer Bags & Sandwich', url: 'https://www.coles.com.au/browse/household/food-storage/freezer-bags-sandwich' },
+  //     //     { extensionCategory: 'Plastic Wrap & Bags', url: 'https://www.coles.com.au/browse/household/food-storage/plastic-wrap-bags' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Garden',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Gloves & Tools', url: 'https://www.coles.com.au/browse/household/garden/gloves-tools' },
+  //     //     { extensionCategory: 'Insecticide & Weed Control', url: 'https://www.coles.com.au/browse/household/garden/insecticide-weed-control' },
+  //     //     { extensionCategory: 'Lawncare & Plant Food', url: 'https://www.coles.com.au/browse/household/garden/lawncare-plant-food' },
+  //     //     { extensionCategory: 'Potting Mix & Fertilizer', url: 'https://www.coles.com.au/browse/household/garden/potting-mix-fertilizer' },
+  //     //     { extensionCategory: 'Seeds & Plants', url: 'https://www.coles.com.au/browse/household/garden/seeds-plants' },
+  //     //     { extensionCategory: 'Watering', url: 'https://www.coles.com.au/browse/household/garden/watering' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Homewares',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Appliances', url: 'https://www.coles.com.au/browse/household/homewares/appliances' },
+  //     //     { extensionCategory: 'Cutlery & Servingware', url: 'https://www.coles.com.au/browse/household/homewares/cutlery-servingware' },
+  //     //     { extensionCategory: 'Glassware', url: 'https://www.coles.com.au/browse/household/homewares/glassware' },
+  //     //     { extensionCategory: 'Home Storage', url: 'https://www.coles.com.au/browse/household/homewares/home-storage' },
+  //     //     { extensionCategory: 'Mugs & Cups', url: 'https://www.coles.com.au/browse/household/homewares/mugs-cups' },
+  //     //     { extensionCategory: 'Plates & Bowls', url: 'https://www.coles.com.au/browse/household/homewares/plates-bowls' },
+  //     //     { extensionCategory: 'Seasonal Decorations & Accessories', url: 'https://www.coles.com.au/browse/household/homewares/seasonal-decorations-accessories' },
+  //     //     { extensionCategory: 'Sewing', url: 'https://www.coles.com.au/browse/household/homewares/sewing' },
+  //     //     { extensionCategory: 'Tea Towels & Aprons', url: 'https://www.coles.com.au/browse/household/homewares/tea-towels-aprons' },
+  //     //     { extensionCategory: 'Textiles & Accessories', url: 'https://www.coles.com.au/browse/household/homewares/textiles-accessories' },
+  //     //     { extensionCategory: 'Water Filtration', url: 'https://www.coles.com.au/browse/household/homewares/water-filtration' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Kitchen',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Baking Tins & Trays', url: 'https://www.coles.com.au/browse/household/kitchen/baking-tins-trays' },
+  //     //     { extensionCategory: 'Foil, Baking Paper & Oven Bags', url: 'https://www.coles.com.au/browse/household/kitchen/foil-baking-paper-oven-bags' },
+  //     //     { extensionCategory: 'Food Tubs & Containers', url: 'https://www.coles.com.au/browse/household/kitchen/food-tubs-containers' },
+  //     //     // { extensionCategory: 'Kitchen Tidy & Garbage Bags', url: 'https://www.coles.com.au/browse/household/kitchen/kitchen-tidy-garbage-bags' },
+  //     //     // { extensionCategory: 'Plastic Wraps & Bags', url: 'https://www.coles.com.au/browse/household/kitchen/plastic-wraps-bags' },
+  //     //     // { extensionCategory: 'Pots & Saucepans', url: 'https://www.coles.com.au/browse/household/kitchen/pots-saucepans' },
+  //     //     // { extensionCategory: 'Sandwich & Freezer Bags', url: 'https://www.coles.com.au/browse/household/kitchen/sandwich-freezer-bags' },
+  //     //     // { extensionCategory: 'Utensils & Gadgets', url: 'https://www.coles.com.au/browse/household/kitchen/utensils-gadgets' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Laundry',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Fabric Softener', url: 'https://www.coles.com.au/browse/household/laundry/fabric-softener' },
+  //     //     { extensionCategory: 'Ironing Aids', url: 'https://www.coles.com.au/browse/household/laundry/ironing-aids' },
+  //     //     { extensionCategory: 'Laundry Accessories', url: 'https://www.coles.com.au/browse/household/laundry/laundry-accessories' },
+  //     //     { extensionCategory: 'Laundry Liquid', url: 'https://www.coles.com.au/browse/household/laundry/laundry-liquid' },
+  //     //     { extensionCategory: 'Laundry Powder', url: 'https://www.coles.com.au/browse/household/laundry/laundry-powder' },
+  //     //     { extensionCategory: 'Pegs, Baskets & Hangers', url: 'https://www.coles.com.au/browse/household/laundry/pegs-baskets-hangers' },
+  //     //     { extensionCategory: 'Stain Removal & Pre-Wash', url: 'https://www.coles.com.au/browse/household/laundry/stain-removal-pre-wash' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Mobile & Tech Accessories',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Phones', url: 'https://www.coles.com.au/browse/household/mobile-tech-accessories/phones' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Outdoors',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Automotive', url: 'https://www.coles.com.au/browse/household/outdoors/automotive' },
+  //     //     { extensionCategory: 'Bbq', url: 'https://www.coles.com.au/browse/household/outdoors/bbq' },
+  //     //     { extensionCategory: 'Camping & Fishing', url: 'https://www.coles.com.au/browse/household/outdoors/camping-fishing' },
+  //     //     { extensionCategory: 'Matches & Lighters', url: 'https://www.coles.com.au/browse/household/outdoors/matches-lighters' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Party Supplies',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Candles', url: 'https://www.coles.com.au/browse/household/party-supplies/candles' },
+  //     //     { extensionCategory: 'Cups & Glasses', url: 'https://www.coles.com.au/browse/household/party-supplies/cups-glasses' },
+  //     //     { extensionCategory: 'Decorations', url: 'https://www.coles.com.au/browse/household/party-supplies/decorations' },
+  //     //     { extensionCategory: 'Disposable Plates & Bowls', url: 'https://www.coles.com.au/browse/household/party-supplies/disposable-plates-bowls' },
+  //     //     { extensionCategory: 'Gift Wrap & Bags', url: 'https://www.coles.com.au/browse/household/party-supplies/gift-wrap-bags' },
+  //     //     { extensionCategory: 'Paper & Plastic Cutlery', url: 'https://www.coles.com.au/browse/household/party-supplies/paper-plastic-cutlery' },
+  //     //     { extensionCategory: 'Serviettes & Tablecloths', url: 'https://www.coles.com.au/browse/household/party-supplies/serviettes-tablecloths' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Pest Control',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Crawling Insects', url: 'https://www.coles.com.au/browse/household/pest-control/crawling-insects' },
+  //     //     { extensionCategory: 'Flying Insects', url: 'https://www.coles.com.au/browse/household/pest-control/flying-insects' },
+  //     //     { extensionCategory: 'Garden Pests', url: 'https://www.coles.com.au/browse/household/pest-control/garden-pests' },
+  //     //     { extensionCategory: 'Mosquitos', url: 'https://www.coles.com.au/browse/household/pest-control/mosquitos' },
+  //     //     { extensionCategory: 'Rodents', url: 'https://www.coles.com.au/browse/household/pest-control/rodents' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Reusable Shopping Bags',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Chiller Bags & Bags', url: 'https://www.coles.com.au/browse/household/reusable-shopping-bags/chiller-bags-bags' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Sporting Essentials',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Sports Goods & Accessories', url: 'https://www.coles.com.au/browse/household/sporting-essentials/sports-goods-accessories' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Stationery & Media',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Magazines', url: 'https://www.coles.com.au/browse/household/stationery-media/magazines' },
+  //     //     { extensionCategory: 'Media', url: 'https://www.coles.com.au/browse/household/stationery-media/media' },
+  //     //     // { extensionCategory: 'Stationery', url: 'https://www.coles.com.au/browse/household/stationery-media/stationery' },
+  //     //     // { extensionCategory: 'Toys & Game', url: 'https://www.coles.com.au/browse/household/stationery-media/toys-game' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Tech Accessories',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'All Accessories', url: 'https://www.coles.com.au/browse/household/tech-accessories/all-accessories' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Toilet Paper, Tissues & Paper Towels',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Facial Tissues', url: 'https://www.coles.com.au/browse/household/toilet-paper-tissues-paper-towels/facial-tissues' },
+  //     //     { extensionCategory: 'Flushable Wipes', url: 'https://www.coles.com.au/browse/household/toilet-paper-tissues-paper-towels/flushable-wipes' },
+  //     //     { extensionCategory: 'Paper Towel', url: 'https://www.coles.com.au/browse/household/toilet-paper-tissues-paper-towels/paper-towel' },
+  //     //     { extensionCategory: 'Toilet Tissues', url: 'https://www.coles.com.au/browse/household/toilet-paper-tissues-paper-towels/toilet-tissues' },
+  //     //   ],
+  //     // },
   //   ],
   // },
   // {
@@ -1220,158 +1236,219 @@ const categories = [
   //         { extensionCategory: 'Canned Fruit', url: 'https://www.coles.com.au/browse/pantry/canned-food-soups-noodles/canned-fruit' },
   //         { extensionCategory: 'Canned Meat', url: 'https://www.coles.com.au/browse/pantry/canned-food-soups-noodles/canned-meat' },
   //         { extensionCategory: 'Canned Vegetables', url: 'https://www.coles.com.au/browse/pantry/canned-food-soups-noodles/canned-vegetables' },
-  //         { extensionCategory: 'Condensed & Evaporated Milk', url: 'https://www.coles.com.au/browse/pantry/canned-food-soups-noodles/condensed-evaporated-milk' },
-  //         { extensionCategory: 'Fish & Seafood', url: 'https://www.coles.com.au/browse/pantry/canned-food-soups-noodles/fish-seafood' },
-  //         { extensionCategory: 'Instant Meals & Sides', url: 'https://www.coles.com.au/browse/pantry/canned-food-soups-noodles/instant-meals-sides' },
-  //         { extensionCategory: 'Noodles', url: 'https://www.coles.com.au/browse/pantry/canned-food-soups-noodles/noodles' },
-  //         { extensionCategory: 'Soups', url: 'https://www.coles.com.au/browse/pantry/canned-food-soups-noodles/soups' },
+  //         // { extensionCategory: 'Condensed & Evaporated Milk', url: 'https://www.coles.com.au/browse/pantry/canned-food-soups-noodles/condensed-evaporated-milk' },
+  //         // { extensionCategory: 'Fish & Seafood', url: 'https://www.coles.com.au/browse/pantry/canned-food-soups-noodles/fish-seafood' },
+  //         // { extensionCategory: 'Instant Meals & Sides', url: 'https://www.coles.com.au/browse/pantry/canned-food-soups-noodles/instant-meals-sides' },
+  //         // { extensionCategory: 'Noodles', url: 'https://www.coles.com.au/browse/pantry/canned-food-soups-noodles/noodles' },
+  //         // { extensionCategory: 'Soups', url: 'https://www.coles.com.au/browse/pantry/canned-food-soups-noodles/soups' },
   //       ],
   //     },
-  //     {
-  //       subCategory: 'Coffee',
-  //       childItems: [
-  //         { extensionCategory: 'Capsules', url: 'https://www.coles.com.au/browse/pantry/coffee/capsules' },
-  //         { extensionCategory: 'Coffee Accessories', url: 'https://www.coles.com.au/browse/pantry/coffee/coffee-accessories' },
-  //         { extensionCategory: 'Coffee Beans', url: 'https://www.coles.com.au/browse/pantry/coffee/coffee-beans' },
-  //         { extensionCategory: 'Coffee Mixes', url: 'https://www.coles.com.au/browse/pantry/coffee/coffee-mixes' },
-  //         { extensionCategory: 'Ground Coffee', url: 'https://www.coles.com.au/browse/pantry/coffee/ground-coffee' },
-  //         { extensionCategory: 'Instant Coffee', url: 'https://www.coles.com.au/browse/pantry/coffee/instant-coffee' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Desserts',
-  //       childItems: [
-  //         { extensionCategory: 'Custard, Cream & Yoghurt Desserts', url: 'https://www.coles.com.au/browse/pantry/desserts/custard-cream-yoghurt-desserts' },
-  //         { extensionCategory: 'Icecream Cones, Syrups & Toppings', url: 'https://www.coles.com.au/browse/pantry/desserts/icecream-cones-syrups-toppings' },
-  //         { extensionCategory: 'Jelly', url: 'https://www.coles.com.au/browse/pantry/desserts/jelly' },
-  //         { extensionCategory: 'Puddings', url: 'https://www.coles.com.au/browse/pantry/desserts/puddings' },
-  //         { extensionCategory: 'ready-to-freeze Ice Blocks', url: 'https://www.coles.com.au/browse/pantry/desserts/ready-to-freeze-ice-blocks' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Health Foods',
-  //       childItems: [
-  //         { extensionCategory: 'Healthy Breakfasts', url: 'https://www.coles.com.au/browse/pantry/health-foods/healthy-breakfasts' },
-  //         { extensionCategory: 'Healthy Cooking', url: 'https://www.coles.com.au/browse/pantry/health-foods/healthy-cooking' },
-  //         { extensionCategory: 'Healthy Snacks', url: 'https://www.coles.com.au/browse/pantry/health-foods/healthy-snacks' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Health Foods Sports Nutrition & Diet',
-  //       childItems: [
-  //         { extensionCategory: 'Collagen', url: 'https://www.coles.com.au/browse/pantry/health-foods-sports-nutrition-diet/collagen' },
-  //         { extensionCategory: 'Diet Slimming Aids', url: 'https://www.coles.com.au/browse/pantry/health-foods-sports-nutrition-diet/diet-slimming-aids' },
-  //         { extensionCategory: 'Energy Gels/Tablets', url: 'https://www.coles.com.au/browse/pantry/health-foods-sports-nutrition-diet/energy-gels-tablets' },
-  //         { extensionCategory: 'Nutrition Powders', url: 'https://www.coles.com.au/browse/pantry/health-foods-sports-nutrition-diet/nutrition-powders' },
-  //         { extensionCategory: 'Protein Bars & Balls', url: 'https://www.coles.com.au/browse/pantry/health-foods-sports-nutrition-diet/protein-bars-balls' },
-  //         { extensionCategory: 'Rtd Protein Shakes', url: 'https://www.coles.com.au/browse/pantry/health-foods-sports-nutrition-diet/rtd-protein-shakes' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Herbs & Spices',
-  //       childItems: [
-  //         { extensionCategory: 'Dried Herbs & Spices', url: 'https://www.coles.com.au/browse/pantry/herbs-spices/dried-herbs-spices' },
-  //         { extensionCategory: 'Dried Spices', url: 'https://www.coles.com.au/browse/pantry/herbs-spices/dried-spices' },
-  //         { extensionCategory: 'Jars & Pastes', url: 'https://www.coles.com.au/browse/pantry/herbs-spices/jars-pastes' },
-  //         { extensionCategory: 'Packet Seasonings', url: 'https://www.coles.com.au/browse/pantry/herbs-spices/packet-seasonings' },
-  //         { extensionCategory: 'Salt & Pepper', url: 'https://www.coles.com.au/browse/pantry/herbs-spices/salt-pepper' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'International Foods',
-  //       childItems: [
-  //         { extensionCategory: 'Asian', url: 'https://www.coles.com.au/browse/pantry/international-foods/asian' },
-  //         { extensionCategory: 'European', url: 'https://www.coles.com.au/browse/pantry/international-foods/european' },
-  //         { extensionCategory: 'Indian', url: 'https://www.coles.com.au/browse/pantry/international-foods/indian' },
-  //         { extensionCategory: 'Kosher', url: 'https://www.coles.com.au/browse/pantry/international-foods/kosher' },
-  //         { extensionCategory: 'Mediterranean', url: 'https://www.coles.com.au/browse/pantry/international-foods/mediterranean' },
-  //         { extensionCategory: 'Mexican', url: 'https://www.coles.com.au/browse/pantry/international-foods/mexican' },
-  //         { extensionCategory: 'Middle Eastern', url: 'https://www.coles.com.au/browse/pantry/international-foods/middle-eastern' },
-  //         { extensionCategory: 'New Zealand', url: 'https://www.coles.com.au/browse/pantry/international-foods/new-zealand' },
-  //         { extensionCategory: 'South African', url: 'https://www.coles.com.au/browse/pantry/international-foods/south-african' },
-  //         { extensionCategory: 'Uk', url: 'https://www.coles.com.au/browse/pantry/international-foods/uk' },
-  //         { extensionCategory: 'Usa', url: 'https://www.coles.com.au/browse/pantry/international-foods/usa' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Jams, Honey & Spreads',
-  //       childItems: [
-  //         { extensionCategory: 'Chocolate Spreads', url: 'https://www.coles.com.au/browse/pantry/jams-honey-spreads/chocolate-spreads' },
-  //         { extensionCategory: 'Honey', url: 'https://www.coles.com.au/browse/pantry/jams-honey-spreads/honey' },
-  //         { extensionCategory: 'Jams', url: 'https://www.coles.com.au/browse/pantry/jams-honey-spreads/jams' },
-  //         { extensionCategory: 'Nut Spreads', url: 'https://www.coles.com.au/browse/pantry/jams-honey-spreads/nut-spreads' },
-  //         { extensionCategory: 'Savoury Spreads', url: 'https://www.coles.com.au/browse/pantry/jams-honey-spreads/savoury-spreads' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Local Foods',
-  //       childItems: [
-  //         { extensionCategory: 'Local Snacks & Drinks', url: 'https://www.coles.com.au/browse/pantry/local-foods/local-snacks-drinks' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Oils & Vinegars',
-  //       childItems: [
-  //         { extensionCategory: 'Oil', url: 'https://www.coles.com.au/browse/pantry/oils-vinegars/oil' },
-  //         { extensionCategory: 'Vinegar', url: 'https://www.coles.com.au/browse/pantry/oils-vinegars/vinegar' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Pasta, Rice, Legumes & Grains',
-  //       childItems: [
-  //         { extensionCategory: 'Beans & Legumes', url: 'https://www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/beans-legumes' },
-  //         { extensionCategory: 'Fresh Pasta', url: 'https://www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/fresh-pasta' },
-  //         { extensionCategory: 'Microwave Rice', url: 'https://www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/microwave-rice' },
-  //         { extensionCategory: 'Pasta', url: 'https://www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/pasta' },
-  //         { extensionCategory: 'Polenta & Other Grains', url: 'https://www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/polenta-other-grains' },
-  //         { extensionCategory: 'Rice', url: 'https://www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/rice' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Pickled Vegetables & Condiments',
-  //       childItems: [
-  //         { extensionCategory: 'Mayonnaise', url: 'https://www.coles.com.au/browse/pantry/pickled-vegetables-condiments/mayonnaise' },
-  //         { extensionCategory: 'Mustard', url: 'https://www.coles.com.au/browse/pantry/pickled-vegetables-condiments/mustard' },
-  //         { extensionCategory: 'Pickles, Chutney & Relish', url: 'https://www.coles.com.au/browse/pantry/pickled-vegetables-condiments/pickles-chutney-relish' },
-  //         { extensionCategory: 'Salad Dressings', url: 'https://www.coles.com.au/browse/pantry/pickled-vegetables-condiments/salad-dressings' },
-  //         { extensionCategory: 'Syrups & Toppings', url: 'https://www.coles.com.au/browse/pantry/pickled-vegetables-condiments/syrups-toppings' },
-  //         { extensionCategory: 'Tomato & Bbq Sauces', url: 'https://www.coles.com.au/browse/pantry/pickled-vegetables-condiments/tomato-bbq-sauces' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Sauces',
-  //       childItems: [
-  //         { extensionCategory: 'Marinades', url: 'https://www.coles.com.au/browse/pantry/sauces/marinades' },
-  //         { extensionCategory: 'Mustards', url: 'https://www.coles.com.au/browse/pantry/sauces/mustards' },
-  //         { extensionCategory: 'Pizza & Pasta', url: 'https://www.coles.com.au/browse/pantry/sauces/pizza-pasta' },
-  //         { extensionCategory: 'Recipe & Meal Bases', url: 'https://www.coles.com.au/browse/pantry/sauces/recipe-meal-bases' },
-  //         { extensionCategory: 'Soy & Asian', url: 'https://www.coles.com.au/browse/pantry/sauces/soy-asian' },
-  //         { extensionCategory: 'Stir-Fry and Curries', url: 'https://www.coles.com.au/browse/pantry/sauces/stir-fry-and-curries' },
-  //         { extensionCategory: 'Sweet Chilli & Hot', url: 'https://www.coles.com.au/browse/pantry/sauces/sweet-chilli-hot' },
-  //         { extensionCategory: 'Tomato & Bbq', url: 'https://www.coles.com.au/browse/pantry/sauces/tomato-bbq' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Stocks & Gravy',
-  //       childItems: [
-  //         { extensionCategory: 'Dry Stock', url: 'https://www.coles.com.au/browse/pantry/stocks-gravy/dry-stock' },
-  //         { extensionCategory: 'Gravy', url: 'https://www.coles.com.au/browse/pantry/stocks-gravy/gravy' },
-  //         { extensionCategory: 'Liquid Stock', url: 'https://www.coles.com.au/browse/pantry/stocks-gravy/liquid-stock' },
-  //       ],
-  //     },
-  //     {
-  //       subCategory: 'Tea',
-  //       childItems: [
-  //         { extensionCategory: 'Black', url: 'https://www.coles.com.au/browse/pantry/tea/black' },
-  //         { extensionCategory: 'Bubble Tea', url: 'https://www.coles.com.au/browse/pantry/tea/bubble-tea' },
-  //         { extensionCategory: 'Chai', url: 'https://www.coles.com.au/browse/pantry/tea/chai' },
-  //         { extensionCategory: 'Green', url: 'https://www.coles.com.au/browse/pantry/tea/green' },
-  //         { extensionCategory: 'Herbal', url: 'https://www.coles.com.au/browse/pantry/tea/herbal' },
-  //         { extensionCategory: 'Loose Leaf', url: 'https://www.coles.com.au/browse/pantry/tea/loose-leaf' },
-  //         { extensionCategory: 'Organic', url: 'https://www.coles.com.au/browse/pantry/tea/organic' },
-  //         { extensionCategory: 'White', url: 'https://www.coles.com.au/browse/pantry/tea/white' },
-  //       ],
-  //     },
+  //     // {
+  //     //   subCategory: 'Coffee',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Capsules', url: 'https://www.coles.com.au/browse/pantry/coffee/capsules' },
+  //     //     { extensionCategory: 'Coffee Accessories', url: 'https://www.coles.com.au/browse/pantry/coffee/coffee-accessories' },
+  //     //     { extensionCategory: 'Coffee Beans', url: 'https://www.coles.com.au/browse/pantry/coffee/coffee-beans' },
+  //     //     { extensionCategory: 'Coffee Mixes', url: 'https://www.coles.com.au/browse/pantry/coffee/coffee-mixes' },
+  //     //     { extensionCategory: 'Ground Coffee', url: 'https://www.coles.com.au/browse/pantry/coffee/ground-coffee' },
+  //     //     { extensionCategory: 'Instant Coffee', url: 'https://www.coles.com.au/browse/pantry/coffee/instant-coffee' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Desserts',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Custard, Cream & Yoghurt Desserts', url: 'https://www.coles.com.au/browse/pantry/desserts/custard-cream-yoghurt-desserts' },
+  //     //     { extensionCategory: 'Icecream Cones, Syrups & Toppings', url: 'https://www.coles.com.au/browse/pantry/desserts/icecream-cones-syrups-toppings' },
+  //     //     { extensionCategory: 'Jelly', url: 'https://www.coles.com.au/browse/pantry/desserts/jelly' },
+  //     //     { extensionCategory: 'Puddings', url: 'https://www.coles.com.au/browse/pantry/desserts/puddings' },
+  //     //     { extensionCategory: 'ready-to-freeze Ice Blocks', url: 'https://www.coles.com.au/browse/pantry/desserts/ready-to-freeze-ice-blocks' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Health Foods',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Healthy Breakfasts', url: 'https://www.coles.com.au/browse/pantry/health-foods/healthy-breakfasts' },
+  //     //     { extensionCategory: 'Healthy Cooking', url: 'https://www.coles.com.au/browse/pantry/health-foods/healthy-cooking' },
+  //     //     { extensionCategory: 'Healthy Snacks', url: 'https://www.coles.com.au/browse/pantry/health-foods/healthy-snacks' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Health Foods Sports Nutrition & Diet',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Collagen', url: 'https://www.coles.com.au/browse/pantry/health-foods-sports-nutrition-diet/collagen' },
+  //     //     { extensionCategory: 'Diet Slimming Aids', url: 'https://www.coles.com.au/browse/pantry/health-foods-sports-nutrition-diet/diet-slimming-aids' },
+  //     //     { extensionCategory: 'Energy Gels/Tablets', url: 'https://www.coles.com.au/browse/pantry/health-foods-sports-nutrition-diet/energy-gels-tablets' },
+  //     //     { extensionCategory: 'Nutrition Powders', url: 'https://www.coles.com.au/browse/pantry/health-foods-sports-nutrition-diet/nutrition-powders' },
+  //     //     { extensionCategory: 'Protein Bars & Balls', url: 'https://www.coles.com.au/browse/pantry/health-foods-sports-nutrition-diet/protein-bars-balls' },
+  //     //     { extensionCategory: 'Rtd Protein Shakes', url: 'https://www.coles.com.au/browse/pantry/health-foods-sports-nutrition-diet/rtd-protein-shakes' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Herbs & Spices',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Dried Herbs & Spices', url: 'https://www.coles.com.au/browse/pantry/herbs-spices/dried-herbs-spices' },
+  //     //     { extensionCategory: 'Dried Spices', url: 'https://www.coles.com.au/browse/pantry/herbs-spices/dried-spices' },
+  //     //     { extensionCategory: 'Jars & Pastes', url: 'https://www.coles.com.au/browse/pantry/herbs-spices/jars-pastes' },
+  //     //     { extensionCategory: 'Packet Seasonings', url: 'https://www.coles.com.au/browse/pantry/herbs-spices/packet-seasonings' },
+  //     //     { extensionCategory: 'Salt & Pepper', url: 'https://www.coles.com.au/browse/pantry/herbs-spices/salt-pepper' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'International Foods',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Asian', url: 'https://www.coles.com.au/browse/pantry/international-foods/asian' },
+  //     //     { extensionCategory: 'European', url: 'https://www.coles.com.au/browse/pantry/international-foods/european' },
+  //     //     { extensionCategory: 'Indian', url: 'https://www.coles.com.au/browse/pantry/international-foods/indian' },
+  //     //     { extensionCategory: 'Kosher', url: 'https://www.coles.com.au/browse/pantry/international-foods/kosher' },
+  //     //     { extensionCategory: 'Mediterranean', url: 'https://www.coles.com.au/browse/pantry/international-foods/mediterranean' },
+  //     //     { extensionCategory: 'Mexican', url: 'https://www.coles.com.au/browse/pantry/international-foods/mexican' },
+  //     //     { extensionCategory: 'Middle Eastern', url: 'https://www.coles.com.au/browse/pantry/international-foods/middle-eastern' },
+  //     //     { extensionCategory: 'New Zealand', url: 'https://www.coles.com.au/browse/pantry/international-foods/new-zealand' },
+  //     //     { extensionCategory: 'South African', url: 'https://www.coles.com.au/browse/pantry/international-foods/south-african' },
+  //     //     { extensionCategory: 'Uk', url: 'https://www.coles.com.au/browse/pantry/international-foods/uk' },
+  //     //     { extensionCategory: 'Usa', url: 'https://www.coles.com.au/browse/pantry/international-foods/usa' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Jams, Honey & Spreads',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Chocolate Spreads', url: 'https://www.coles.com.au/browse/pantry/jams-honey-spreads/chocolate-spreads' },
+  //     //     { extensionCategory: 'Honey', url: 'https://www.coles.com.au/browse/pantry/jams-honey-spreads/honey' },
+  //     //     { extensionCategory: 'Jams', url: 'https://www.coles.com.au/browse/pantry/jams-honey-spreads/jams' },
+  //     //     { extensionCategory: 'Nut Spreads', url: 'https://www.coles.com.au/browse/pantry/jams-honey-spreads/nut-spreads' },
+  //     //     { extensionCategory: 'Savoury Spreads', url: 'https://www.coles.com.au/browse/pantry/jams-honey-spreads/savoury-spreads' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Local Foods',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Local Snacks & Drinks', url: 'https://www.coles.com.au/browse/pantry/local-foods/local-snacks-drinks' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Oils & Vinegars',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Oil', url: 'https://www.coles.com.au/browse/pantry/oils-vinegars/oil' },
+  //     //     { extensionCategory: 'Vinegar', url: 'https://www.coles.com.au/browse/pantry/oils-vinegars/vinegar' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Pasta, Rice, Legumes & Grains',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Beans & Legumes', url: 'https://www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/beans-legumes' },
+  //     //     { extensionCategory: 'Fresh Pasta', url: 'https://www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/fresh-pasta' },
+  //     //     { extensionCategory: 'Microwave Rice', url: 'https://www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/microwave-rice' },
+  //     //     { extensionCategory: 'Pasta', url: 'https://www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/pasta' },
+  //     //     { extensionCategory: 'Polenta & Other Grains', url: 'https://www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/polenta-other-grains' },
+  //     //     { extensionCategory: 'Rice', url: 'https://www.coles.com.au/browse/pantry/pasta-rice-legumes-grains/rice' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Pickled Vegetables & Condiments',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Mayonnaise', url: 'https://www.coles.com.au/browse/pantry/pickled-vegetables-condiments/mayonnaise' },
+  //     //     { extensionCategory: 'Mustard', url: 'https://www.coles.com.au/browse/pantry/pickled-vegetables-condiments/mustard' },
+  //     //     { extensionCategory: 'Pickles, Chutney & Relish', url: 'https://www.coles.com.au/browse/pantry/pickled-vegetables-condiments/pickles-chutney-relish' },
+  //     //     { extensionCategory: 'Salad Dressings', url: 'https://www.coles.com.au/browse/pantry/pickled-vegetables-condiments/salad-dressings' },
+  //     //     { extensionCategory: 'Syrups & Toppings', url: 'https://www.coles.com.au/browse/pantry/pickled-vegetables-condiments/syrups-toppings' },
+  //     //     { extensionCategory: 'Tomato & Bbq Sauces', url: 'https://www.coles.com.au/browse/pantry/pickled-vegetables-condiments/tomato-bbq-sauces' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Sauces',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Marinades', url: 'https://www.coles.com.au/browse/pantry/sauces/marinades' },
+  //     //     { extensionCategory: 'Mustards', url: 'https://www.coles.com.au/browse/pantry/sauces/mustards' },
+  //     //     { extensionCategory: 'Pizza & Pasta', url: 'https://www.coles.com.au/browse/pantry/sauces/pizza-pasta' },
+  //     //     { extensionCategory: 'Recipe & Meal Bases', url: 'https://www.coles.com.au/browse/pantry/sauces/recipe-meal-bases' },
+  //     //     { extensionCategory: 'Soy & Asian', url: 'https://www.coles.com.au/browse/pantry/sauces/soy-asian' },
+  //     //     { extensionCategory: 'Stir-Fry and Curries', url: 'https://www.coles.com.au/browse/pantry/sauces/stir-fry-and-curries' },
+  //     //     { extensionCategory: 'Sweet Chilli & Hot', url: 'https://www.coles.com.au/browse/pantry/sauces/sweet-chilli-hot' },
+  //     //     { extensionCategory: 'Tomato & Bbq', url: 'https://www.coles.com.au/browse/pantry/sauces/tomato-bbq' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Stocks & Gravy',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Dry Stock', url: 'https://www.coles.com.au/browse/pantry/stocks-gravy/dry-stock' },
+  //     //     { extensionCategory: 'Gravy', url: 'https://www.coles.com.au/browse/pantry/stocks-gravy/gravy' },
+  //     //     { extensionCategory: 'Liquid Stock', url: 'https://www.coles.com.au/browse/pantry/stocks-gravy/liquid-stock' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Tea',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Black', url: 'https://www.coles.com.au/browse/pantry/tea/black' },
+  //     //     { extensionCategory: 'Bubble Tea', url: 'https://www.coles.com.au/browse/pantry/tea/bubble-tea' },
+  //     //     { extensionCategory: 'Chai', url: 'https://www.coles.com.au/browse/pantry/tea/chai' },
+  //     //     { extensionCategory: 'Green', url: 'https://www.coles.com.au/browse/pantry/tea/green' },
+  //     //     { extensionCategory: 'Herbal', url: 'https://www.coles.com.au/browse/pantry/tea/herbal' },
+  //     //     { extensionCategory: 'Loose Leaf', url: 'https://www.coles.com.au/browse/pantry/tea/loose-leaf' },
+  //     //     { extensionCategory: 'Organic', url: 'https://www.coles.com.au/browse/pantry/tea/organic' },
+  //     //     { extensionCategory: 'White', url: 'https://www.coles.com.au/browse/pantry/tea/white' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Biscuits & Cookies',
+  //     //   childItems: [
+  //     //     {  extensionCategory: 'Chocolate Biscuits', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/biscuits-cookies/chocolate-biscuits' },
+  //     //     {  extensionCategory: 'Cream & Plain Biscuits', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/biscuits-cookies/cream-plain-biscuits' },
+  //     //     {  extensionCategory: 'Multipack Biscuits', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/biscuits-cookies/multipack-biscuits' },
+  //     //     ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Chips',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Chips Multi Pack', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chips/chips-multi-pack' },
+  //     //     { extensionCategory: 'Chips Sharing', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chips/chips-sharing' },
+  //     //     { extensionCategory: 'Chips Single Pack', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chips/chips-single-pack' },
+  //     //     { extensionCategory: 'Corn Chips & Salsa', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chips/corn-chips-salsa' },
+  //     //     ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Chocolates',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Boxed Chocolate & Gifts', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chocolates/boxed-chocolate-gifts' },
+  //     //     { extensionCategory: 'Chocolate Bars', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chocolates/chocolate-bars' },
+  //     //     { extensionCategory: 'Chocolate Bites', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chocolates/chocolate-bites' },
+  //     //     { extensionCategory: 'Chocolate Blocks', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chocolates/chocolate-blocks' },
+  //     //     { extensionCategory: 'Chocolate Multipacks', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chocolates/chocolate-multipacks' },
+  //     //     { extensionCategory: 'Seasonal Chocolates', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/chocolates/seasonal-chocolates' },
+  //     //     ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Crackers & Rice Cakes',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Crackers & Crispbreads', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/crackers-rice-cakes/crackers-crispbreads' },
+  //     //     { extensionCategory: 'Flavoured Snacks', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/crackers-rice-cakes/flavoured-snacks' },
+  //     //     { extensionCategory: 'Multipack Crackers', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/crackers-rice-cakes/multipack-crackers' },
+  //     //     { extensionCategory: 'Rice & Corn Snacks', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/crackers-rice-cakes/rice-corn-snacks' },
+  //     //     ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Gum, Mints & Lozenges',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Gum', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/gum-mints-lozenges/gum' },
+  //     //     { extensionCategory: 'Medicated Lozenges', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/gum-mints-lozenges/medicated-lozenges' },
+  //     //     { extensionCategory: 'Mints', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/gum-mints-lozenges/mints' },
+  //     //     ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Lollies & Licorice',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Licorice', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/lollies-licorice/licorice' },
+  //     //     { extensionCategory: 'Lollies', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/lollies-licorice/lollies' },
+  //     //     ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Snacks',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Muesli Bars & Fruit Snacks', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/snacks/muesli-bars-fruit-snacks' },
+  //     //     { extensionCategory: 'Nuts & Trail Mix', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/snacks/nuts-trail-mix' },
+  //     //     { extensionCategory: 'Popcorn', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/snacks/popcorn' },
+  //     //     { extensionCategory: 'Pretzels & Other Snacks', url: 'https://www.coles.com.au/browse/chips-chocolates-snacks/snacks/pretzels-other-snacks' },
+  //     //     ],
+  //     // },
   //   ],
   // },
   // {
@@ -1431,127 +1508,127 @@ const categories = [
   // {
   //   category: 'Poultry, Meat & Seafood',
   //   subCategories: [
-  //     // {
-  //     //   subCategory: 'Bbq, Sausages & Burgers',
-  //     //   childItems: [
-  //     //     { extensionCategory: 'Burgers & Rissoles', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/burgers-rissoles' },
-  //     //     { extensionCategory: 'Kebabs', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/kebabs' },
-  //     //     { extensionCategory: 'Meatballs', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/meatballs' },
-  //     //     { extensionCategory: 'Sausage Mince', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/sausage-mince' },
-  //     //     { extensionCategory: 'Sausages', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/sausages' },
-  //     //   ],
-  //     // },
-  //     // {
-  //     //   subCategory: 'Beef & Veal',
-  //     //   childItems: [
-  //     //     { extensionCategory: 'Beef & Veal Mince', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/beef-veal-mince' },
-  //     //     { extensionCategory: 'Beef Bones & Offal', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/beef-bones-offal' },
-  //     //     { extensionCategory: 'Beef Roasts', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/beef-roasts' },
-  //     //     { extensionCategory: 'Beef Steaks', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/beef-steaks' },
-  //     //     { extensionCategory: 'Crumbed Beef', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/crumbed-beef' },
-  //     //     { extensionCategory: 'Graze Beef', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/graze-beef' },
-  //     //     { extensionCategory: 'Slow Cook & Casserole Beef', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/slow-cook-casserole-beef' },
-  //     //     { extensionCategory: 'Stir Fry & Diced Beef', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/stir-fry-diced-beef' },
-  //     //     { extensionCategory: 'Veal', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/veal' },
-  //     //   ],
-  //     // },
-  //     // {
-  //     //   subCategory: 'Coles Made Easy Range',
-  //     //   childItems: [
-  //     //     { extensionCategory: 'Easy Meals', url: 'https://www.coles.com.au/browse/meat-seafood/coles-made-easy-range/easy-meals' },
-  //     //     { extensionCategory: 'Grill', url: 'https://www.coles.com.au/browse/meat-seafood/coles-made-easy-range/grill' },
-  //     //     { extensionCategory: 'Pastry', url: 'https://www.coles.com.au/browse/meat-seafood/coles-made-easy-range/pastry' },
-  //     //     { extensionCategory: 'Slow Cook', url: 'https://www.coles.com.au/browse/meat-seafood/coles-made-easy-range/slow-cook' },
-  //     //   ],
-  //     // },
-  //     // {
-  //     //   subCategory: 'Game',
-  //     //   childItems: [
-  //     //     { extensionCategory: 'Kangaroo', url: 'https://www.coles.com.au/browse/meat-seafood/game/kangaroo' },
-  //     //     { extensionCategory: 'Other Game', url: 'https://www.coles.com.au/browse/meat-seafood/game/other-game' },
-  //     //   ],
-  //     // },
-  //     // {
-  //     //   subCategory: 'Ham',
-  //     //   childItems: [
-  //     //     { extensionCategory: 'Ham Portions', url: 'https://www.coles.com.au/browse/meat-seafood/ham/ham-portions' },
-  //     //     { extensionCategory: 'Ham Shoulder & Steaks', url: 'https://www.coles.com.au/browse/meat-seafood/ham/ham-shoulder-steaks' },
-  //     //   ],
-  //     // },
-  //     // {
-  //     //   subCategory: 'Lamb',
-  //     //   childItems: [
-  //     //     { extensionCategory: 'Diced Lamb', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/diced-lamb' },
-  //     //     { extensionCategory: 'Graze Grass-Fed Lamb', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/graze-grass-fed-lamb' },
-  //     //     { extensionCategory: 'Lamb Chops', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-chops' },
-  //     //     { extensionCategory: 'Lamb Cutlets', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-cutlets' },
-  //     //     { extensionCategory: 'Lamb Offal', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-offal' },
-  //     //     { extensionCategory: 'Lamb Roasts', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-roasts' },
-  //     //     { extensionCategory: 'Lamb Shanks', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-shanks' },
-  //     //     { extensionCategory: 'Lamb Steak', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-steak' },
-  //     //   ],
-  //     // },
-  //     // {
-  //     //   subCategory: 'Mince',
-  //     //   childItems: [
-  //     //     { extensionCategory: 'Beef & Veal Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/beef-veal-mince' },
-  //     //     { extensionCategory: 'Chicken & Turkey Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/chicken-turkey-mince' },
-  //     //     { extensionCategory: 'Kangaroo & Wallaby Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/kangaroo-wallaby-mince' },
-  //     //     { extensionCategory: 'Lamb Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/lamb-mince' },
-  //     //     { extensionCategory: 'Pork Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/pork-mince' },
-  //     //     { extensionCategory: 'Sausage Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/sausage-mince' },
-  //     //   ],
-  //     // },
   //     {
-  //       subCategory: 'Organic Meat',
+  //       subCategory: 'Bbq, Sausages & Burgers',
   //       childItems: [
-  //         { extensionCategory: 'Organic Beef', url: 'https://www.coles.com.au/browse/meat-seafood/organic-meat/organic-beef' },
-  //         { extensionCategory: 'Organic Lamb', url: 'https://www.coles.com.au/browse/meat-seafood/organic-meat/organic-lamb' },
-  //         { extensionCategory: 'Organic Poultry', url: 'https://www.coles.com.au/browse/meat-seafood/organic-meat/organic-poultry' },
-  //         { extensionCategory: 'Organic Sausages & Meatballs', url: 'https://www.coles.com.au/browse/meat-seafood/organic-meat/organic-sausages-meatballs' },
+  //         { extensionCategory: 'Burgers & Rissoles', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/burgers-rissoles' },
+  //         { extensionCategory: 'Kebabs', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/kebabs' },
+  //         { extensionCategory: 'Meatballs', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/meatballs' },
+  //         { extensionCategory: 'Sausage Mince', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/sausage-mince' },
+  //         { extensionCategory: 'Sausages', url: 'https://www.coles.com.au/browse/meat-seafood/bbq-sausages-burgers/sausages' },
   //       ],
   //     },
   //     {
-  //       subCategory: 'Pork',
+  //       subCategory: 'Beef & Veal',
   //       childItems: [
-  //         { extensionCategory: 'Free Range Pork', url: 'https://www.coles.com.au/browse/meat-seafood/pork/free-range-pork' },
-  //         { extensionCategory: 'Pork Chops', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-chops' },
-  //         { extensionCategory: 'Pork Marinade', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-marinade' },
-  //         { extensionCategory: 'Pork Mince', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-mince' },
-  //         { extensionCategory: 'Pork Ribs', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-ribs' },
-  //         { extensionCategory: 'Pork Roasts', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-roasts' },
-  //         { extensionCategory: 'Pork Steaks', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-steaks' },
+  //         { extensionCategory: 'Beef & Veal Mince', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/beef-veal-mince' },
+  //         { extensionCategory: 'Beef Bones & Offal', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/beef-bones-offal' },
+  //         { extensionCategory: 'Beef Roasts', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/beef-roasts' },
+  //         { extensionCategory: 'Beef Steaks', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/beef-steaks' },
+  //         { extensionCategory: 'Crumbed Beef', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/crumbed-beef' },
+  //         { extensionCategory: 'Graze Beef', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/graze-beef' },
+  //         { extensionCategory: 'Slow Cook & Casserole Beef', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/slow-cook-casserole-beef' },
+  //         { extensionCategory: 'Stir Fry & Diced Beef', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/stir-fry-diced-beef' },
+  //         { extensionCategory: 'Veal', url: 'https://www.coles.com.au/browse/meat-seafood/beef-veal/veal' },
   //       ],
   //     },
   //     {
-  //       subCategory: 'Poultry',
+  //       subCategory: 'Coles Made Easy Range',
   //       childItems: [
-  //         { extensionCategory: 'Breast Fillets', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/breast-fillets' },
-  //         { extensionCategory: 'Chicken Offal', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/chicken-offal' },
-  //         { extensionCategory: 'Chicken Wings', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/chicken-wings' },
-  //         { extensionCategory: 'Crumbed Chicken', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/crumbed-chicken' },
-  //         { extensionCategory: 'Diced, Stir-Fry & Tenders', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/diced-stir-fry-tenders' },
-  //         { extensionCategory: 'Drumsticks & Maryland', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/drumsticks-maryland' },
-  //         { extensionCategory: 'Duck', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/duck' },
-  //         { extensionCategory: 'Free Range Chicken', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/free-range-chicken' },
-  //         { extensionCategory: 'Kebabs & Bites', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/kebabs-bites' },
-  //         { extensionCategory: 'Marinated & Roast Chicken', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/marinated-roast-chicken' },
-  //         { extensionCategory: 'Poultry Deli', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/poultry-deli' },
-  //         { extensionCategory: 'Thigh Fillets', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/thigh-fillets' },
-  //         { extensionCategory: 'Turkey', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/turkey' },
-  //         { extensionCategory: 'Whole Chicken', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/whole-chicken' },
+  //         { extensionCategory: 'Easy Meals', url: 'https://www.coles.com.au/browse/meat-seafood/coles-made-easy-range/easy-meals' },
+  //         { extensionCategory: 'Grill', url: 'https://www.coles.com.au/browse/meat-seafood/coles-made-easy-range/grill' },
+  //         { extensionCategory: 'Pastry', url: 'https://www.coles.com.au/browse/meat-seafood/coles-made-easy-range/pastry' },
+  //         { extensionCategory: 'Slow Cook', url: 'https://www.coles.com.au/browse/meat-seafood/coles-made-easy-range/slow-cook' },
   //       ],
   //     },
   //     {
-  //       subCategory: 'Seafood',
+  //       subCategory: 'Game',
   //       childItems: [
-  //         { extensionCategory: 'Deli Fish', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/deli-fish' },
-  //         { extensionCategory: 'Deli Marinara Mix and Other Seafood', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/deli-marinara-mix-and-other-seafood' },
-  //         { extensionCategory: 'Deli Prawns', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/deli-prawns' },
-  //         { extensionCategory: 'Prepacked Seafood', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/prepacked-seafood' },
-  //         { extensionCategory: 'Smoked and Cured Fish', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/smoked-and-cured-fish' },
+  //         { extensionCategory: 'Kangaroo', url: 'https://www.coles.com.au/browse/meat-seafood/game/kangaroo' },
+  //         { extensionCategory: 'Other Game', url: 'https://www.coles.com.au/browse/meat-seafood/game/other-game' },
   //       ],
   //     },
+  //     {
+  //       subCategory: 'Ham',
+  //       childItems: [
+  //         { extensionCategory: 'Ham Portions', url: 'https://www.coles.com.au/browse/meat-seafood/ham/ham-portions' },
+  //         { extensionCategory: 'Ham Shoulder & Steaks', url: 'https://www.coles.com.au/browse/meat-seafood/ham/ham-shoulder-steaks' },
+  //       ],
+  //     },
+  //     {
+  //       subCategory: 'Lamb',
+  //       childItems: [
+  //         { extensionCategory: 'Diced Lamb', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/diced-lamb' },
+  //         { extensionCategory: 'Graze Grass-Fed Lamb', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/graze-grass-fed-lamb' },
+  //         { extensionCategory: 'Lamb Chops', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-chops' },
+  //         { extensionCategory: 'Lamb Cutlets', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-cutlets' },
+  //         { extensionCategory: 'Lamb Offal', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-offal' },
+  //         { extensionCategory: 'Lamb Roasts', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-roasts' },
+  //         { extensionCategory: 'Lamb Shanks', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-shanks' },
+  //         { extensionCategory: 'Lamb Steak', url: 'https://www.coles.com.au/browse/meat-seafood/lamb/lamb-steak' },
+  //       ],
+  //     },
+  //     {
+  //       subCategory: 'Mince',
+  //       childItems: [
+  //         { extensionCategory: 'Beef & Veal Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/beef-veal-mince' },
+  //         { extensionCategory: 'Chicken & Turkey Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/chicken-turkey-mince' },
+  //         { extensionCategory: 'Kangaroo & Wallaby Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/kangaroo-wallaby-mince' },
+  //         { extensionCategory: 'Lamb Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/lamb-mince' },
+  //         { extensionCategory: 'Pork Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/pork-mince' },
+  //         { extensionCategory: 'Sausage Mince', url: 'https://www.coles.com.au/browse/meat-seafood/mince/sausage-mince' },
+  //       ],
+  //     },
+  //     // {
+  //     //   subCategory: 'Organic Meat',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Organic Beef', url: 'https://www.coles.com.au/browse/meat-seafood/organic-meat/organic-beef' },
+  //     //     { extensionCategory: 'Organic Lamb', url: 'https://www.coles.com.au/browse/meat-seafood/organic-meat/organic-lamb' },
+  //     //     { extensionCategory: 'Organic Poultry', url: 'https://www.coles.com.au/browse/meat-seafood/organic-meat/organic-poultry' },
+  //     //     { extensionCategory: 'Organic Sausages & Meatballs', url: 'https://www.coles.com.au/browse/meat-seafood/organic-meat/organic-sausages-meatballs' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Pork',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Free Range Pork', url: 'https://www.coles.com.au/browse/meat-seafood/pork/free-range-pork' },
+  //     //     { extensionCategory: 'Pork Chops', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-chops' },
+  //     //     { extensionCategory: 'Pork Marinade', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-marinade' },
+  //     //     { extensionCategory: 'Pork Mince', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-mince' },
+  //     //     { extensionCategory: 'Pork Ribs', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-ribs' },
+  //     //     { extensionCategory: 'Pork Roasts', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-roasts' },
+  //     //     { extensionCategory: 'Pork Steaks', url: 'https://www.coles.com.au/browse/meat-seafood/pork/pork-steaks' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Poultry',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Breast Fillets', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/breast-fillets' },
+  //     //     { extensionCategory: 'Chicken Offal', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/chicken-offal' },
+  //     //     { extensionCategory: 'Chicken Wings', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/chicken-wings' },
+  //     //     { extensionCategory: 'Crumbed Chicken', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/crumbed-chicken' },
+  //     //     { extensionCategory: 'Diced, Stir-Fry & Tenders', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/diced-stir-fry-tenders' },
+  //     //     { extensionCategory: 'Drumsticks & Maryland', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/drumsticks-maryland' },
+  //     //     { extensionCategory: 'Duck', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/duck' },
+  //     //     { extensionCategory: 'Free Range Chicken', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/free-range-chicken' },
+  //     //     { extensionCategory: 'Kebabs & Bites', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/kebabs-bites' },
+  //     //     { extensionCategory: 'Marinated & Roast Chicken', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/marinated-roast-chicken' },
+  //     //     { extensionCategory: 'Poultry Deli', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/poultry-deli' },
+  //     //     { extensionCategory: 'Thigh Fillets', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/thigh-fillets' },
+  //     //     { extensionCategory: 'Turkey', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/turkey' },
+  //     //     { extensionCategory: 'Whole Chicken', url: 'https://www.coles.com.au/browse/meat-seafood/poultry/whole-chicken' },
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   subCategory: 'Seafood',
+  //     //   childItems: [
+  //     //     { extensionCategory: 'Deli Fish', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/deli-fish' },
+  //     //     { extensionCategory: 'Deli Marinara Mix and Other Seafood', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/deli-marinara-mix-and-other-seafood' },
+  //     //     { extensionCategory: 'Deli Prawns', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/deli-prawns' },
+  //     //     { extensionCategory: 'Prepacked Seafood', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/prepacked-seafood' },
+  //     //     { extensionCategory: 'Smoked and Cured Fish', url: 'https://www.coles.com.au/browse/meat-seafood/seafood/smoked-and-cured-fish' },
+  //     //   ],
+  //     // },
   //   ],
   // },
   // {

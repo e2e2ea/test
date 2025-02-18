@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
 import puppeteer from "puppeteer-extra";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
 import RateLimiter from "../RateLimit/index.js";
@@ -147,7 +150,7 @@ function delay(time) {
   const browser2 = await puppeteer.launch({
     headless: false,
     executablePath: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-    userDataDir: "C:\\Users\\OBI - Raymond\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1",
+    userDataDir: process.env.CHROME_PATH,
   });
 
   for (let i = 0; i < mylocation.length; i++) {
