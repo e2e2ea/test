@@ -15,9 +15,9 @@ const csvWriter = createArrayCsvWriter({
 });
 
 const getData = async () => {
-  // console.log('start clean');
-  // await cleanUpPrices();
-  // console.log('end clean');
+  console.log('start clean');
+  await cleanUpPrices();
+  console.log('end clean');
   await dbConnect();
   const a = await Product.find().exec();
   let total = 0;
@@ -73,7 +73,8 @@ const getData = async () => {
         if (category === 'Snacks & Confectionery') mycat = 'Pantry';
         if (category === 'Deli & Chilled Meals') mycat = 'Deli & Chilled Meats';
         if (category === 'Health & Wellness') mycat = 'Health & Beauty';
-        if (category === 'Beauty & Personal Care') mycat = 'Health & Beauty';
+        if (category === 'Beauty') mycat = 'Health & Beauty';
+        if (category === 'Personal Care') mycat = 'Health & Beauty';
         if (category === 'Home & Lifestyle') mycat = 'Household';
         if (category === 'Cleaning & Maintenance') mycat = 'Household';
 
@@ -122,7 +123,7 @@ const getData = async () => {
             const fileName = `${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`;
             const filePath = path.join(folderPath, fileName);
             if (fs.existsSync(filePath)) {
-              console.log(`File already exists: ${filePath}. Skipping save.`);
+              // console.log(`File already exists: ${filePath}. Skipping save.`);
               const data = JSON.parse(fs.readFileSync(`woolworths/data/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categId}/${ext.subId}${ext.childId && ` - ${ext.childId}`}.json`, 'utf8'));
 
               // Merge existing and new data

@@ -1230,32 +1230,105 @@ const categories = [
             
         ]
     },
+    // {
+    //     category: "Beauty & Personal Care",
+    //     id: "22394",
+    //     subCategories: [
+    //         {
+    //             subCategory: "Women's Hair Removal",
+    //             childItems: [
+    //                 { extensionCategory: "Women's Blades & Razors", subId: "23864", childId: "23898" },
+    //                 { extensionCategory: "Waxes & Creams", subId: "23864", childId: "23901" },
+    //             ]
+    //         },
+           
+            
+    //     ]
+    // },
     {
-        category: "Beauty & Personal Care",
+        category: "Beauty",
         id: "22394",
         subCategories: [
             {
-                subCategory: "Shower, Bath & Body",
+                subCategory: "Cosmetics",
                 childItems: [
-                    { extensionCategory: "Soap" },
-                    { extensionCategory: "Body Wash" },
-                    { extensionCategory: "Handwash & Hand Sanitisers" },
-                    { extensionCategory: "Bubble Bath & Salts" },
-                    { extensionCategory: "Shower & Bath Accessories" },
-                    { extensionCategory: "Female Deodorants" },
-                    { extensionCategory: "Female Body Sprays" },
-                    { extensionCategory: "Cotton Wool & Cotton Buds" },
-                    { extensionCategory: "Wipes & Tissues" },
+                    { extensionCategory: "Complexion", subId: "22400", childId: "23851"  },
+                    { extensionCategory: "Cheeks", subId: "22400", childId: "23852"  },
+                    { extensionCategory: "Lips", subId: "22400", childId: "22402"  },
+                ]
+            },
+            {
+                subCategory: "Beauty Tools & Nails",
+                childItems: [
+                    { extensionCategory: "Nails", subId: "22400", childId: "22403"  },
+                    { extensionCategory: "Cosmetic Tools & Accessories", subId: "22400", childId: "23853"  },
+                ]
+            },
+            {
+                subCategory: "Skincare & Body",
+                childItems: [
+                    { extensionCategory: "Cleansers & Toners", subId: "23883", childId: "23887" },
+                    { extensionCategory: "Serums", subId: "23883", childId: "23889" },
+                    { extensionCategory: "Face Moisturiser", subId: "23883", childId: "23886" },
+                    { extensionCategory: "Face Masks & Patches", subId: "23883", childId: "23886" },
+                    { extensionCategory: "Lip Care", subId: "23883", childId: "23890" },
+                    { extensionCategory: "Body Moisturiser", subId: "23883", childId: "23885" },
+                    { extensionCategory: "Fragrance", subId: "23883", childId: "23885" },
+                    { extensionCategory: "Self-Tanning", subId: "23883", childId: "23891" },
+                    { extensionCategory: "Sun Protection", subId: "23883", childId: "23892" },
                 ]
             },
             {
                 subCategory: "Hair Care",
                 childItems: [
-                    { extensionCategory: "Colouring", subId: "22423", childId: "23903" },
-                    { extensionCategory: "Shampoo & Conditioner", subId: "22423", childId: "23904" },
                     { extensionCategory: "Hair Treatments", subId: "22423", childId: "23906" },
                     { extensionCategory: "Styling Products", subId: "22423", childId: "23905" },
                     { extensionCategory: "Hair Accessories & Brushes", subId: "22423", childId: "23906" },
+                ]
+            },
+            {
+                subCategory: "Hair Colour",
+                childItems: [
+                    { extensionCategory: "Permanent", subId: "22423", childId: "23903" },
+                    { extensionCategory: "Semi Permanent", subId: "22423", childId: "23903" },
+                    { extensionCategory: "Touch Up", subId: "22423", childId: "23903" },
+                    { extensionCategory: "Colour Remover", subId: "22423", childId: "23903" },
+                    { extensionCategory: "Colour Remover", subId: "23864", childId: "23898" },
+                ]
+            },
+            {
+                subCategory: "Travel Toiletries & Minis",
+                childItems: [
+                    { extensionCategory: "Travel Toiletries & Minis", subId: '22414', childId: '23917' },
+                ]
+            },
+            
+        ]
+    },
+    {
+        category: "Personal Care",
+        id: "22394",
+        subCategories: [
+            {
+                subCategory: "Shower, Bath & Body",
+                childItems: [
+                    { extensionCategory: "Soap", subId: '22016', childId: '23821' },
+                    { extensionCategory: "Body Wash", subId: '22016', childId: '23821' },
+                    { extensionCategory: "Handwash & Hand Sanitisers", subId: '22016', childId: '23821' },
+                    { extensionCategory: "Bubble Bath & Salts", subId: '22016', childId: '23821' },
+                    { extensionCategory: "Shower & Bath Accessories", subId: '22016', childId: '23821' },
+                    { extensionCategory: "Female Deodorants", subId: '22016', childId: '23821' },
+                    { extensionCategory: "Female Body Sprays", subId: '22016', childId: '23821' },
+                    { extensionCategory: "Cotton Wool & Cotton Buds", subId: '22016', childId: '23821' },
+                    { extensionCategory: "Wipes & Tissues", subId: '22016', childId: '23821' },
+                ]
+            },
+            {
+                subCategory: "Shampoo & Conditioner",
+                childItems: [
+                    { extensionCategory: "Shampoo & Conditioner", subId: "22423", childId: "23904" },
+                    { extensionCategory: "Anti Dandruff Shampoo", subId: "22423", childId: "23904" },
+                    { extensionCategory: "Kids Shampoo & Conditioner", subId: "22423", childId: "23904" },
                 ]
             },
             {
@@ -1268,6 +1341,7 @@ const categories = [
                     { extensionCategory: "Denture Care", subId: "22394", childId: "22406"  },
                 ]
             },
+            
             {
                 subCategory: "Men's Care",
                 childItems: [
@@ -1298,33 +1372,9 @@ const categories = [
                 ]
             },
             {
-                subCategory: "Skin Care",
+                subCategory: "Sun Protection",
                 childItems: [
-                    { extensionCategory: "Body Moisturiser", subId: "23883", childId: "23885" },
-                    { extensionCategory: "Face Moisturiser", subId: "23883", childId: "23886" },
-                    { extensionCategory: "Facial Cleansers, Toners & Scrubs", subId: "23883", childId: "23887" },
-                    { extensionCategory: "Face Masks & Treatments", subId: "", childId: "" },
-                    { extensionCategory: "Hand Moisturiser", subId: "23883", childId: "23889" },
-                    { extensionCategory: "Lip Care", subId: "23883", childId: "23890" },
-                    { extensionCategory: "Self-Tanning", subId: "23883", childId: "23891" },
-                    { extensionCategory: "Sun Protection", subId: "23883", childId: "23892" },
-                ]
-            },
-            {
-                subCategory: "Women's Hair Removal",
-                childItems: [
-                    { extensionCategory: "Women's Blades & Razors", subId: "23864", childId: "23898" },
-                    { extensionCategory: "Waxes & Creams", subId: "23864", childId: "23901" },
-                ]
-            },
-            {
-                subCategory: "Cosmetics",
-                childItems: [
-                    { extensionCategory: "Eyes", subId: "22400", childId: "23851"  },
-                    { extensionCategory: "Face", subId: "22400", childId: "23852"  },
-                    { extensionCategory: "Lips", subId: "22400", childId: "22402"  },
-                    { extensionCategory: "Nails", subId: "22400", childId: "22403"  },
-                    { extensionCategory: "Cosmetic Tools & Accessories", subId: "22400", childId: "23853"  },
+                    { extensionCategory: "Sun Care", subId: '23883', childId: '23892' },
                 ]
             },
             {
