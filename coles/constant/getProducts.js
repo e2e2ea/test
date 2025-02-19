@@ -1209,8 +1209,8 @@ const categories = [
         childItems: [
           { subId: '22519', childId: '22520', extensionCategory: 'Automotive', url: 'https:www.coles.com.au/browse/household/outdoors/automotive' },
           { subId: '', childId: '', extensionCategory: 'Bbq', url: 'https:www.coles.com.au/browse/household/outdoors/bbq' },
-          { subId: '', childId: '', extensionCategory: 'Camping & Fishing', url: 'https:www.coles.com.au/browse/household/outdoors/camping-fishing' },
-          { subId: '', childId: '', extensionCategory: 'Matches & Lighters', url: 'https:www.coles.com.au/browse/household/outdoors/matches-lighters' },
+          { subId: '22519', childId: '22520', extensionCategory: 'Camping & Fishing', url: 'https:www.coles.com.au/browse/household/outdoors/camping-fishing' },
+          { subId: '22519', childId: '22520', extensionCategory: 'Matches & Lighters', url: 'https:www.coles.com.au/browse/household/outdoors/matches-lighters' },
         ],
       },
       {

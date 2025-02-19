@@ -842,7 +842,7 @@ const categories = [
         subCategory: 'Dental Care',
         childItems: [
           { extensionCategory: 'Dental Floss & Tape', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/dental-floss-tape' },
-          // { extensionCategory: 'Dental Whitening', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/dental-whitening' },
+          //29410 { extensionCategory: 'Dental Whitening', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/dental-whitening' },
           // { extensionCategory: 'Denture Care', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/denture-care' },
           // { extensionCategory: 'Electric Toothbushes and Refills', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/electric-toothbushes-and-refills' },
           // { extensionCategory: 'Kids Dental', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/kids-dental' },

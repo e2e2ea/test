@@ -15,8 +15,8 @@ const csvWriter = createArrayCsvWriter({
 
 const getData = async () => {
   await dbConnect();
-  let b;
-  b = await Product.find();
+  // let b;
+  // b = await Product.find();
   let data = [];
   let total = 0;
   for (const categ of categories) {

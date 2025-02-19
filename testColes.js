@@ -7,8 +7,8 @@ import path from 'path';
 
 const getData = async () => {
   let totalProducts = 0;
+  let products = [];
   for (const categ of categories) {
-    let products = [];
 
     const category = categ.category;
     let mycat = category;
@@ -25,7 +25,6 @@ const getData = async () => {
     if (category === 'Deli & Chilled Meals') mycat = 'Deli';
     try {
       ColesData = JSON.parse(fs.readFileSync(`coles/data/${process.env.FOLDER_DATE}/${mycat}.json`, 'utf8'));
-      if(mycat === 'Deli') console.log(ColesData.length);
     } catch (error) {
       console.log('error parsing', mycat, error);
       continue;
@@ -33,7 +32,10 @@ const getData = async () => {
     for (const data of ColesData) {
       try {
         if (!data.source_url || data.source_url === 'N/A' || data.source_url === null) throw new Error(`No source URL, id: ${data.source_id}, category:${category}.json`);
-        if (!data.image_url || data.image_url === 'N/A' || data.image_url === null) throw new Error(`No image URL, id: ${data.source_id}, category:${category}.json`);
+        if (!data.image_url || data.image_url === 'N/A' || data.image_url === null) {
+          products.push(data);
+          throw new Error(`No image URL, id: ${data.source_id}, category:${category}.json`)
+        };
       } catch (error) {
         console.log('error', error);
         continue;
@@ -61,7 +63,7 @@ const getData = async () => {
       //     console.error(`Price issue detected: ${priceError.message}`);
       //     continue; // Skip this product if there are price issues
       //   }
-      products.push(data);
+      
     }
     try {
       // if (products && products.length > 0) {
@@ -71,7 +73,7 @@ const getData = async () => {
       console.error('Error writing data to file:', error);
     }
   }
-  console.log('All products in coles passed in test');
+  console.log('All products in coles passed in test', products.length);
 };
 
 (async () => {
