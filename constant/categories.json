@@ -1357,47 +1357,6 @@
         "children": []
       },
       {
-        "name": "Personal Care & Hygiene",
-        "id": "22440",
-        "children": [
-          {
-            "name": "Continence Care",
-            "id": "23922",
-            "children": []
-          },
-          {
-            "name": "Contraception & Sexual Health",
-            "id": "23894",
-            "children": []
-          },
-          {
-            "name": "Female Deodorants & Body Sprays",
-            "id": "23920",
-            "children": []
-          },
-          {
-            "name": "Hand & Footcare",
-            "id": "23893",
-            "children": []
-          },
-          {
-            "name": "Male Deodorants & Body Sprays",
-            "id": "23921",
-            "children": []
-          },
-          {
-            "name": "Pregnancy Tests",
-            "id": "23895",
-            "children": []
-          },
-          {
-            "name": "Wipes & Tissues",
-            "id": "23896",
-            "children": []
-          }
-        ]
-      },
-      {
         "name": "Vitamins",
         "id": "22450",
         "children": [
