@@ -1306,68 +1306,6 @@
     "id": "22394",
     "children": [
       {
-        "name": "Cosmetics",
-        "id": "22400",
-        "children": [
-          {
-            "name": "Cosmetics Other",
-            "id": "23853",
-            "children": []
-          },
-          {
-            "name": "Eyes",
-            "id": "23851",
-            "children": []
-          },
-          {
-            "name": "Face",
-            "id": "23852",
-            "children": []
-          },
-          {
-            "name": "Lips",
-            "id": "22402",
-            "children": []
-          },
-          {
-            "name": "Nails",
-            "id": "22403",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Dental Care",
-        "id": "22404",
-        "children": [
-          {
-            "name": "Denture Care",
-            "id": "22406",
-            "children": []
-          },
-          {
-            "name": "Floss & Mouthwash",
-            "id": "23817",
-            "children": []
-          },
-          {
-            "name": "Teeth Whitening",
-            "id": "23854",
-            "children": []
-          },
-          {
-            "name": "Toothbrushes",
-            "id": "23818",
-            "children": []
-          },
-          {
-            "name": "Toothpaste",
-            "id": "23855",
-            "children": []
-          }
-        ]
-      },
-      {
         "name": "First Aid & Medicinal",
         "id": "22414",
         "children": [
@@ -1404,37 +1342,6 @@
           {
             "name": "Travel Health Care",
             "id": "23917",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Hair Care",
-        "id": "22423",
-        "children": [
-          {
-            "name": "Colouring",
-            "id": "23903",
-            "children": []
-          },
-          {
-            "name": "Hair Accessories & Brushes",
-            "id": "23906",
-            "children": []
-          },
-          {
-            "name": "Mens Hair Care",
-            "id": "23924",
-            "children": []
-          },
-          {
-            "name": "Shampoo & Conditioner",
-            "id": "23904",
-            "children": []
-          },
-          {
-            "name": "Styling Products",
-            "id": "23905",
             "children": []
           }
         ]
@@ -1486,68 +1393,6 @@
           {
             "name": "Wipes & Tissues",
             "id": "23896",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Shaving & Hair Removal",
-        "id": "23864",
-        "children": [
-          {
-            "name": "After Shave Care",
-            "id": "23898",
-            "children": []
-          },
-          {
-            "name": "Shave Gel & Foam",
-            "id": "23901",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Skin Care",
-        "id": "23883",
-        "children": [
-          {
-            "name": "Body Moisturiser",
-            "id": "23885",
-            "children": []
-          },
-          {
-            "name": "Face Masks & Treatments",
-            "id": "23888",
-            "children": []
-          },
-          {
-            "name": "Face Moisturiser",
-            "id": "23886",
-            "children": []
-          },
-          {
-            "name": "Facial Cleansers, Toners & Scrubs",
-            "id": "23887",
-            "children": []
-          },
-          {
-            "name": "Hand Moisturiser",
-            "id": "23889",
-            "children": []
-          },
-          {
-            "name": "Lip Care",
-            "id": "23890",
-            "children": []
-          },
-          {
-            "name": "Self-Tanning",
-            "id": "23891",
-            "children": []
-          },
-          {
-            "name": "Sun Protection",
-            "id": "23892",
             "children": []
           }
         ]

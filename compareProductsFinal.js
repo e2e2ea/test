@@ -285,11 +285,11 @@ const getData = async () => {
             console.log(`Success! category: ${categ.id} Batch in  ${i / chunkSize + 1}`, response.data);
           } catch (error) {
             if (error.response) {
-              console.error('Error response:', `${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, error.response.status, error.response.data);
+              console.error('Error response in matched:', `${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, error.response.status, error.response.data);
             } else if (error.request) {
-              console.error('No response received:', `${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, error.request);
+              console.error('No response received in matched:', `${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, error.request);
             } else {
-              console.error('Error:', error.message);
+              console.error('Error in matched:', error.message);
             }
           }
         }

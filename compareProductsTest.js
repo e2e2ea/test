@@ -267,6 +267,7 @@ const getData = async () => {
           matchedData = JSON.parse(fs.readFileSync(`matched/${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, 'utf8'));
           // console.log('matched', matchedData.length);
         } catch (error) {
+          console.log('error', `${sub.id ?? ''}${ext.id && ` - ${ext.id}`}`)
           continue;
         }
         totalProducts += matchedData.length
