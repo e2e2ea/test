@@ -41,7 +41,7 @@ const userAgents = [
 
 // const mylocation = ["nsw", "vic", "qld", "wa", "sa", "tas", "act", "nt"];
 // const mylocation = ["nsw", "vic", "qld", "wa"];
-const mylocation = [ "qld", "wa", "sa", "tas", "act", "nt"];
+const mylocation = [ "tas", "act", "nt"];
 
 const getPrices = (location, priceInCents, priceInCentsPerUnits, unit) => {
   const prices = [];
@@ -314,6 +314,7 @@ const scrapeCategory = async (page, category, myloc, p, browser) => {
       await htmlOnly(page);
 
       try {
+
         await safeNavigate(page, WOOLWORTHS_URL);
       } catch (err) {
         console.log("Failed to load page: ", err);
