@@ -100,7 +100,6 @@ const getData = async () => {
 
           // now we need to do a filteredProductsMatched id seen in "woolworthsData" variable will be removed so we can know what products in woolworths doesnt match
           if (productsMatched && productsMatched.length > 0) {
-            totalProducts = totalProducts + productsMatched.length;
 
             const baseFolder = `./matched/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}`;
             const folderPath = path.join(baseFolder);
@@ -260,16 +259,17 @@ const getData = async () => {
    */
   const chunkSize = 100;
   const skipCount = 0; //
-  for (const categ of categories) {
+  for (const categ of MYCATEGORIES) {
     for (const sub of categ.children) {
       for (const ext of sub.children) {
         let matchedData = [];
         try {
           matchedData = JSON.parse(fs.readFileSync(`matched/${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, 'utf8'));
-          console.log('matched', matchedData.length);
+          // console.log('matched', matchedData.length);
         } catch (error) {
           continue;
         }
+        totalProducts += matchedData.length
         const chunk = matchedData.slice(skipCount, skipCount + chunkSize);
         for (let i = skipCount; i < matchedData.length; i += chunkSize) {
           // this is the loop to where it should be uploaded
@@ -289,7 +289,7 @@ const getData = async () => {
         let matchedData = [];
         try {
           matchedData = JSON.parse(fs.readFileSync(`unMatched/coles/${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, 'utf8'));
-          console.log('unMatchedColes', matchedData.length);
+          // console.log('unMatchedColes', matchedData.length);
         } catch (error) {
           continue;
         }
@@ -313,7 +313,7 @@ const getData = async () => {
         let matchedData = [];
         try {
           matchedData = JSON.parse(fs.readFileSync(`unMatched/woolworths/${process.env.FOLDER_DATE}/${categ.id}/${sub.id ?? ''}${ext.id && ` - ${ext.id}`}.json`, 'utf8'));
-          console.log('unMatchedWoolworths', matchedData.length);
+          // console.log('unMatchedWoolworths', matchedData.length);
         } catch (error) {
           continue;
         }

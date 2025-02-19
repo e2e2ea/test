@@ -100,7 +100,6 @@ const getData = async () => {
 
           // now we need to do a filteredProductsMatched id seen in "woolworthsData" variable will be removed so we can know what products in woolworths doesnt match
           if (productsMatched && productsMatched.length > 0) {
-            totalProducts = totalProducts + productsMatched.length;
 
             const baseFolder = `./matched/${process.env.FOLDER_DATE}/${ext.catId ? ext.catId : categ.id}`;
             const folderPath = path.join(baseFolder);
@@ -270,6 +269,7 @@ const getData = async () => {
         } catch (error) {
           continue;
         }
+        totalProducts += matchedData.length
         const chunk = matchedData.slice(skipCount, skipCount + chunkSize);
         for (let i = skipCount; i < matchedData.length; i += chunkSize) {
           try {
