@@ -812,46 +812,46 @@ const categories = [
   {
     category: 'Health & Beauty',
     subCategories: [
-      // {
-      //   subCategory: 'Continence Care',
-      //   childItems: [
-      //     { extensionCategory: 'Continence Pads', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/continence-pads' },
-      //     { extensionCategory: 'Female Washable Underwear', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/female-washable-underwear' },
-      //     { extensionCategory: 'Liners', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/liners' },
-      //     { extensionCategory: 'Male Pads', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/male-pads' },
-      //     { extensionCategory: 'Male Pants', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/male-pants' },
-      //     { extensionCategory: 'Male Washable Underwear', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/male-washable-underwear' },
-      //     { extensionCategory: 'Mens Pouches & Shields', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/mens-pouches-shields' },
-      //     { extensionCategory: 'Pants', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/pants' },
-      //   ],
-      // },
-      // {
-      //   subCategory: 'Cosmetics',
-      //   childItems: [
-      //     { extensionCategory: 'Blush', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/blush' },
-      //     { extensionCategory: 'Brows', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/brows' },
-      //     { extensionCategory: 'Brushes and Tools', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/brushes-and-tools' },
-      //     { extensionCategory: 'Concealer & Foundation', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/concealer-foundation' },
-      //     { extensionCategory: 'Eye Liner, Eye Shadow & Mascara', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/eye-liner-eye-shadow-mascara' },
-      //     { extensionCategory: 'Lashes', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/lashes' },
-      //     { extensionCategory: 'Lips', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/lips' },
-      //     { extensionCategory: 'Nails', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/nails' },
-      //   ],
-      // },
-      // {
-      //   subCategory: 'Dental Care',
-      //   childItems: [
-      //     { extensionCategory: 'Dental Floss & Tape', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/dental-floss-tape' },
-      //     { extensionCategory: 'Dental Whitening', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/dental-whitening' },
-      //     { extensionCategory: 'Denture Care', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/denture-care' },
-      //     { extensionCategory: 'Electric Toothbushes and Refills', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/electric-toothbushes-and-refills' },
-      //     { extensionCategory: 'Kids Dental', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/kids-dental' },
-      //     { extensionCategory: 'Mouthwash', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/mouthwash' },
-      //     { extensionCategory: 'Sensitive Toothpaste', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/sensitive-toothpaste' },
-      //     { extensionCategory: 'Toothbrushes', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/toothbrushes' },
-      //     { extensionCategory: 'Toothpaste', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/toothpaste' },
-      //   ],
-      // },
+      {
+        subCategory: 'Continence Care',
+        childItems: [
+          { extensionCategory: 'Continence Pads', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/continence-pads' },
+          { extensionCategory: 'Female Washable Underwear', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/female-washable-underwear' },
+          { extensionCategory: 'Liners', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/liners' },
+          { extensionCategory: 'Male Pads', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/male-pads' },
+          { extensionCategory: 'Male Pants', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/male-pants' },
+          { extensionCategory: 'Male Washable Underwear', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/male-washable-underwear' },
+          { extensionCategory: 'Mens Pouches & Shields', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/mens-pouches-shields' },
+          { extensionCategory: 'Pants', url: 'https://www.coles.com.au/browse/health-beauty/continence-care/pants' },
+        ],
+      },
+      {
+        subCategory: 'Cosmetics',
+        childItems: [
+          { extensionCategory: 'Blush', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/blush' },
+          { extensionCategory: 'Brows', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/brows' },
+          { extensionCategory: 'Brushes and Tools', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/brushes-and-tools' },
+          { extensionCategory: 'Concealer & Foundation', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/concealer-foundation' },
+          { extensionCategory: 'Eye Liner, Eye Shadow & Mascara', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/eye-liner-eye-shadow-mascara' },
+          { extensionCategory: 'Lashes', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/lashes' },
+          { extensionCategory: 'Lips', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/lips' },
+          { extensionCategory: 'Nails', url: 'https://www.coles.com.au/browse/health-beauty/cosmetics/nails' },
+        ],
+      },
+      {
+        subCategory: 'Dental Care',
+        childItems: [
+          { extensionCategory: 'Dental Floss & Tape', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/dental-floss-tape' },
+          // { extensionCategory: 'Dental Whitening', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/dental-whitening' },
+          // { extensionCategory: 'Denture Care', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/denture-care' },
+          // { extensionCategory: 'Electric Toothbushes and Refills', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/electric-toothbushes-and-refills' },
+          // { extensionCategory: 'Kids Dental', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/kids-dental' },
+          // { extensionCategory: 'Mouthwash', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/mouthwash' },
+          // { extensionCategory: 'Sensitive Toothpaste', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/sensitive-toothpaste' },
+          // { extensionCategory: 'Toothbrushes', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/toothbrushes' },
+          // { extensionCategory: 'Toothpaste', url: 'https://www.coles.com.au/browse/health-beauty/dental-care/toothpaste' },
+        ],
+      },
       // {
       //   subCategory: 'First Aid & Medicinal',
       //   childItems: [
@@ -950,26 +950,26 @@ const categories = [
       //     { extensionCategory: 'Travel Packs and Accessories', url: 'https://www.coles.com.au/browse/health-beauty/travel-packs-and-minis/travel-packs-and-accessories' },
       //   ],
       // },
-      {
-        subCategory: 'Vitamins & Supplements',
-        childItems: [
-          { extensionCategory: 'Bone and Joint Health', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/bone-and-joint-health' },
-          { extensionCategory: 'Brain, Eye and Heart Health', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/brain-eye-and-heart-health' },
-          { extensionCategory: 'Detox and Digestive Health', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/detox-and-digestive-health' },
-          { extensionCategory: 'Energy Support', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/energy-support' },
-          { extensionCategory: 'Essential Oils and Aroma Therapy', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/essential-oils-and-aroma-therapy' },
-          { extensionCategory: 'Family Planning', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/family-planning' },
-          { extensionCategory: 'Fish Oil', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/fish-oil' },
-          { extensionCategory: 'Hair, Skin & Nails', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/hair-skin-nails' },
-          { extensionCategory: 'Immune Support', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/immune-support' },
-          { extensionCategory: 'Iron', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/iron' },
-          { extensionCategory: `Kid's Health`, url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/kids-health' },
-          { extensionCategory: 'Mens and Womens Multi Vitamins', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/mens-and-womens-multi-vitamins' },
-          { extensionCategory: 'Other Vitamins', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/other-vitamins' },
-          { extensionCategory: 'Sleep Support', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/sleep-support' }, // added
-          { extensionCategory: 'Supplements and Superfoods', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/supplements-and-superfoods' }, // added
-        ],
-      },
+      // {
+      //   subCategory: 'Vitamins & Supplements',
+      //   childItems: [
+      //     { extensionCategory: 'Bone and Joint Health', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/bone-and-joint-health' },
+      //     { extensionCategory: 'Brain, Eye and Heart Health', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/brain-eye-and-heart-health' },
+      //     { extensionCategory: 'Detox and Digestive Health', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/detox-and-digestive-health' },
+      //     { extensionCategory: 'Energy Support', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/energy-support' },
+      //     { extensionCategory: 'Essential Oils and Aroma Therapy', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/essential-oils-and-aroma-therapy' },
+      //     { extensionCategory: 'Family Planning', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/family-planning' },
+      //     { extensionCategory: 'Fish Oil', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/fish-oil' },
+      //     { extensionCategory: 'Hair, Skin & Nails', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/hair-skin-nails' },
+      //     { extensionCategory: 'Immune Support', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/immune-support' },
+      //     { extensionCategory: 'Iron', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/iron' },
+      //     { extensionCategory: `Kid's Health`, url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/kids-health' },
+      //     { extensionCategory: 'Mens and Womens Multi Vitamins', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/mens-and-womens-multi-vitamins' },
+      //     { extensionCategory: 'Other Vitamins', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/other-vitamins' },
+      //     { extensionCategory: 'Sleep Support', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/sleep-support' }, // added
+      //     { extensionCategory: 'Supplements and Superfoods', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/supplements-and-superfoods' }, // added
+      //   ],
+      // },
     ],
   },
   // {

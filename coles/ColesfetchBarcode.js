@@ -83,7 +83,7 @@ const getBarcode = async () => {
             await barcodes.save();
           } else {
             // console.log(`data${i}`, `${barcode.barcode}-${product.name}`);
-            // console.log('barcodes', barcode);
+            console.log('barcodes', barcode);
             product.barcode = barcode.barcode;
           }
           /**
@@ -93,7 +93,7 @@ const getBarcode = async () => {
           
           await product.save();
         } catch (error) {
-          console.log('no product found', 'skip');
+          console.log('no product barcode found', 'skip');
         }
         i++;
         // }
