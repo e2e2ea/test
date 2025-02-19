@@ -895,7 +895,7 @@ const categories = [
       //   ],
       // },
       // {
-      //   subCategory: 'Personal Care', // added
+      //   subCategory: 'Personal Care',
       //   childItems: [
       //     { extensionCategory: 'Footcare', url: 'https://www.coles.com.au/browse/health-beauty/personal-care/footcare' },
       //     { extensionCategory: 'Mens Deodorants', url: 'https://www.coles.com.au/browse/health-beauty/personal-care/mens-deodorants' },

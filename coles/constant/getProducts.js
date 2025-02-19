@@ -28,6 +28,8 @@ const categories = [
       {
         subCategory: 'Nappies & Nappy Pants',
         childItems: [
+          { subId: '22048', childId: '22051', extensionCategory: 'Bed Mats', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/bed-mats' },
+          { subId: '22048', childId: '22055', extensionCategory: 'Eco Friendly Nappies', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/eco-friendly-nappies' },
           { subId: '22048', childId: '22050', extensionCategory: 'Night Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/night-pants' },
           { subId: '22048', childId: '22051', extensionCategory: 'Night Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/night-pants' },
           { subId: '22048', childId: '22052', extensionCategory: 'Night Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/night-pants' },
@@ -43,6 +45,7 @@ const categories = [
           { subId: '22048', childId: '22049', extensionCategory: 'Nappies', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappies' },
           { subId: '22048', childId: '22049', extensionCategory: 'Nappy Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappy-pants' },
           { subId: '22048', childId: '22054', extensionCategory: 'Nappy Pants', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/nappy-pants' },
+          { subId: '22048', childId: '22054', extensionCategory: 'Reusable Nappies', url: 'https://www.coles.com.au/browse/baby/nappies-nappy-pants/reusable-nappies' },
           { subId: '22048', childId: '22058', extensionCategory: 'Swimmers', url: 'https:www.coles.com.au/browse/baby/nappies-nappy-pants/swimmers' },
         ],
       },
@@ -54,6 +57,7 @@ const categories = [
           { subId: '22048', childId: '22059', extensionCategory: 'Medium Pack', url: 'https:www.coles.com.au/browse/baby/baby-wipes/medium-pack' },
           { subId: '22048', childId: '22059', extensionCategory: 'Refill Pack', url: 'https:www.coles.com.au/browse/baby/baby-wipes/refill-pack' },
           { subId: '22048', childId: '22059', extensionCategory: 'Small Pack', url: 'https:www.coles.com.au/browse/baby/baby-wipes/small-pack' },
+          { subId: '22048', childId: '22059', extensionCategory: 'Travel Pack', url: 'https://www.coles.com.au/browse/baby/baby-wipes/travel-pack' },
         ],
       },
       {
@@ -1042,6 +1046,8 @@ const categories = [
           { subId: '22450', childId: '23916', extensionCategory: `Kid's Health`, url: 'https:www.coles.com.au/browse/health-beauty/vitamins-supplements/kids-health' },
           { subId: '22450', childId: '23916', extensionCategory: 'Mens and Womens Multi Vitamins', url: 'https:www.coles.com.au/browse/health-beauty/vitamins-supplements/mens-and-womens-multi-vitamins' },
           { subId: '22450', childId: '23916', extensionCategory: 'Other Vitamins', url: 'https:www.coles.com.au/browse/health-beauty/vitamins-supplements/other-vitamins' },
+          { subId: '22450', childId: '23916', extensionCategory: 'Sleep Support', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/sleep-support' },
+          { subId: '22450', childId: '23916', extensionCategory: 'Supplements and Superfoods', url: 'https://www.coles.com.au/browse/health-beauty/vitamins-supplements/supplements-and-superfoods' },
         ],
       },
     ],
