@@ -73,7 +73,7 @@ const getData = async () => {
       console.error('Error writing data to file:', error);
     }
   }
-  console.log('All products in coles passed in test', products.length);
+  console.log('products have an error:', products.length);
 };
 
 (async () => {
